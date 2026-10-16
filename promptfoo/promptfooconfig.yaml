@@ -1,0 +1,56 @@
+# Prompt 版本对比：同一批用例分别用 v1、v2 两版 Prompt 跑，自动生成对比报告。
+# 运行：cd promptfoo && npx promptfoo@latest eval && npx promptfoo@latest view
+description: 字幕翻译 Prompt v1 vs v2
+
+prompts:
+  - id: v1
+    raw: |
+      你是字幕翻译助手。把下面的中文字幕翻译成英文。只输出译文。
+      {{text}}
+  - id: v2
+    raw: |
+      你是专业的影视字幕译者。把下面这条中文字幕翻译成英文。
+      要求：只输出译文，不要解释，不要加引号；口语化、简洁；人名用拼音（林晓 → Lin Xiao）；保留原文换行。
+      {{text}}
+
+providers:
+  - id: openai:chat:deepseek-chat
+    config:
+      apiBaseUrl: https://api.deepseek.com/v1
+      apiKeyEnvar: LLM_API_KEY
+      temperature: 0
+
+defaultTest:
+  options:
+    # llm-rubric 的裁判模型也用 DeepSeek（默认是 OpenAI）
+    provider:
+      id: openai:chat:deepseek-chat
+      config:
+        apiBaseUrl: https://api.deepseek.com/v1
+        apiKeyEnvar: LLM_API_KEY
+  assert:
+    # 规则断言：不能带解释性前缀或引号
+    - type: not-icontains
+      value: "translation"
+    - type: javascript
+      value: "!output.trim().startsWith('\"')"
+
+tests:
+  - vars:
+      text: 林晓，你今天怎么来得这么早？
+    assert:
+      - type: icontains
+        value: Lin Xiao
+  - vars:
+      text: 别担心，林晓，我已经背熟了。
+    assert:
+      - type: icontains
+        value: Lin Xiao
+      - type: llm-rubric
+        value: “背熟了”被理解为记住了台词
+  - vars:
+      text: "那我们得赶紧对一下台词，\n时间不多了。"
+    assert:
+      - type: javascript
+        value: "output.trim().split('\\n').length === 2"
+# TODO(你来补)：加到 30 条以上，覆盖网络用语、成语、多行字幕

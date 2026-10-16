@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+httpx
+openai
+pytest
+allure-pytest
+# 第 3 个周末再装：pip install deepeval
