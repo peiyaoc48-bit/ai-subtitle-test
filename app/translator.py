@@ -7,15 +7,27 @@
 通过环境变量 TRANSLATOR_MODE 切换，见 .env.example。
 """
 import os
+import re
 from pathlib import Path
 
 from app.srt import Cue
 
 PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
 
+# 同一个字连续出现 5 次及以上（如 62 个"呜"）
+REPEAT_RE = re.compile(r"(.)\1{4,}")
+
 
 def load_prompt(version: str) -> str:
     return (PROMPTS_DIR / f"{version}.txt").read_text(encoding="utf-8")
+
+
+def collapse_repeats(text: str) -> str:
+    """把连续重复 5 次以上的字压缩成 3 个，防止大模型陷入重复输出。
+
+    "呜呜呜……（62 个）李娜真坏" → "呜呜呜李娜真坏"
+    """
+    return REPEAT_RE.sub(r"\1\1\1", text)
 
 
 class MockTranslator:
@@ -42,9 +54,10 @@ class LLMTranslator:
             resp = self.client.chat.completions.create(
                 model=self.model,
                 temperature=0,
+                max_tokens=200,
                 messages=[
                     {"role": "system", "content": self.system_prompt.format(target_lang=target_lang)},
-                    {"role": "user", "content": c.text},
+                    {"role": "user", "content": collapse_repeats(c.text)},
                 ],
             )
             result.append(Cue(c.index, c.start, c.end, resp.choices[0].message.content.strip()))

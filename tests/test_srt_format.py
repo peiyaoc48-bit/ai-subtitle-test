@@ -11,10 +11,10 @@ from app.srt import parse_srt
 
 
 @pytest.fixture(scope="module")
-def pair(client, sample_srt):
-    resp = client.post("/translate", json={"srt": sample_srt, "target_lang": "en"})
+def pair(client, any_srt):
+    resp = client.post("/translate", json={"srt": any_srt, "target_lang": "en"})
     assert resp.status_code == 200
-    return parse_srt(sample_srt), parse_srt(resp.json()["srt"])
+    return parse_srt(any_srt), parse_srt(resp.json()["srt"])
 
 
 def test_cue_count_unchanged(pair):
@@ -42,3 +42,14 @@ def test_line_breaks_preserved(pair):
     src, out = pair
     for s, o in zip(src, out):
         assert o.text.count("\n") == s.text.count("\n"), f"第 {s.index} 条换行数不一致"
+
+
+MAX_RATIO = 10  # 译文长度最多是原文的几倍
+
+
+def test_no_runaway_output(pair):
+    """译文不能比原文长太多，防止大模型重复输出失控。"""
+    src, out = pair
+    for s, o in zip(src, out):
+        ratio = len(o.text) / len(s.text)
+        assert ratio <= MAX_RATIO, f"第 {s.index} 条译文长度是原文的 {ratio:.0f} 倍"
