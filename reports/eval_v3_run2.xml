@@ -1,0 +1,2283 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="14" skipped="0" tests="45" time="329.284" timestamp="2026-10-18T01:22:25.817574+08:00" hostname="cpydeMacBook-Air.local"><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[name-01]" time="3.152" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[context-01]" time="3.542"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation conveys the general meaning but fails the specific requirement: '背熟了' should be rendered as 'memorized my lines' or similar, not the vague 'memorized it.' Otherwise the output is complete, accurate, and natural for subtitles.) failed.">case = {'id': 'context-01', 'category': '需要上下文', 'source': '别担心，我已经背熟了。', 'requirement': "'背熟了'指背熟台词，应译为 memorized my lines 一类，不能只说 memorized it"}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='别担心，我已经背熟了。', actual_output="Don't worry, I've already memorized it.", expected_output=None, contex...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x116644190&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation conveys the general meaning but fails the specific requirement: '背熟了' should be rendered as 'memorized my lines' or similar, not the vague 'memorized it.' Otherwise the output is complete, accurate, and natural for subtitles.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[slang-01]" time="4.088" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[idiom-01]" time="4.109" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[short-01]" time="3.278" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-01]" time="3.074" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-02]" time="3.580"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation conveys the core meaning but mistranslates '词' as 'lyrics' rather than lines/cue cards, which is the key contextual interpretation required by step 3. It does capture the connection between '偏头' (head tilt) and '偷看' (sneaking a peek) coherently, and the tone is natural and concise for screen reading. The main shortcoming is the incorrect contextual rendering of '偷看词'.) failed.">case = {'id': 'corpus-02', 'category': '需要上下文', 'source': '偏头那一下是在偷看词！', 'requirement': '需结合场景（如表演、演讲）理解“偷看词”指偷看台词/提词，翻译要体现“偏头”与“偷看”的关联，不能译成“偷看单词”。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='偏头那一下是在偷看词！', actual_output='That head tilt was him sneaking a peek at the lyrics!', expected_outpu...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x1164efc50&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation conveys the core meaning but mistranslates '词' as 'lyrics' rather than lines/cue cards, which is the key contextual interpretation required by step 3. It does capture the connection between '偏头' (head tilt) and '偷看' (sneaking a peek) coherently, and the tone is natural and concise for screen reading. The main shortcoming is the incorrect contextual rendering of '偷看词'.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-03]" time="3.957" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-04]" time="3.379"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output preserves the core meaning of '这么突然的吗' and retains a rhetorical question form, capturing some surprise. However, 'That sudden?' is grammatically elliptical and less natural/readable for on-screen subtitles than a fuller rendering like 'That sudden?' or 'So sudden?'; it conveys unexpectedness but the phrasing is slightly awkward and omits the copula, reducing smoothness and naturalness.) failed.">case = {'id': 'corpus-04', 'category': '语气情绪', 'source': '这么突然的吗', 'requirement': '需译出惊讶和意外感，保留口语反问语气，不能译成平淡陈述句。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='这么突然的吗', actual_output='That sudden?', expected_output=None, context=None, retrieval_context=None, ...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x116646350&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output preserves the core meaning of '这么突然的吗' and retains a rhetorical question form, capturing some surprise. However, 'That sudden?' is grammatically elliptical and less natural/readable for on-screen subtitles than a fuller rendering like 'That sudden?' or 'So sudden?'; it conveys unexpectedness but the phrasing is slightly awkward and omits the copula, reducing smoothness and naturalness.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-05]" time="4.083" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-06]" time="3.373" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-07]" time="4.593" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-08]" time="9.561" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-09]" time="20.427" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-10]" time="8.031" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-11]" time="4.493"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output conveys the general meaning and uses 'toxic positivity' which is close to the required 'toxic motivational quotes/demotivational sayings,' though not exact. '行' is rendered as 'Alright' rather than the specified 'OK' or 'Fine.' 'When I get back to the country' is slightly awkward versus 'when I return home/back to my country,' affecting naturalness and subtitle conciseness. No major omissions, but the specific required terms and idiomatic phrasing are not fully met.) failed.">case = {'id': 'corpus-11', 'category': '网络梗', 'source': '行，等我回国处理这些毒鸡汤', 'requirement': '“毒鸡汤”不能直译为poisonous chicken soup，应译为toxic motivational quotes或demotivational sayings，传达讽刺意味；“行”表示同意，用OK或Fine。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='行，等我回国处理这些毒鸡汤', actual_output="Alright, I'll deal with all that toxic positivity when I get back to...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x1164efed0&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output conveys the general meaning and uses 'toxic positivity' which is close to the required 'toxic motivational quotes/demotivational sayings,' though not exact. '行' is rendered as 'Alright' rather than the specified 'OK' or 'Fine.' 'When I get back to the country' is slightly awkward versus 'when I return home/back to my country,' affecting naturalness and subtitle conciseness. No major omissions, but the specific required terms and idiomatic phrasing are not fully met.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-12]" time="2.838" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-14]" time="4.549" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-15]" time="4.144" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-16]" time="10.983" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-17]" time="4.196"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.5, threshold: 0.7, strict: False, error: None, reason: The output omits the translation of '不处' (which should be 'Not dating' or 'No relationship') and instead renders it as 'No way,' which changes the meaning. However, '明码标价' is correctly translated as 'comes with a price tag,' preserving the satire about the materialization of love. The output is natural and subtitle-friendly, but the omission/mistranslation of '不处' is a significant shortcoming against the evaluation steps.) failed.">case = {'id': 'corpus-17', 'category': '方言', 'source': '不处，这年头爱情都明码标价了', 'requirement': '“不处”是方言/网络用语，意为不相处/不谈恋爱，译为Not dating或No relationship；“明码标价”译为has a price tag，传达对爱情物质化的讽刺。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='不处，这年头爱情都明码标价了', actual_output='No way. These days even love comes with a price tag.', expected_out...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x116644910&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.5, threshold: 0.7, strict: False, error: None, reason: The output omits the translation of '不处' (which should be 'Not dating' or 'No relationship') and instead renders it as 'No way,' which changes the meaning. However, '明码标价' is correctly translated as 'comes with a price tag,' preserving the satire about the materialization of love. The output is natural and subtitle-friendly, but the omission/mistranslation of '不处' is a significant shortcoming against the evaluation steps.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-18]" time="3.735"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output renders '不处' as 'Not interested' rather than the specified 'Not dating', failing the required terminology check. However, '自己玩去' is correctly translated as 'go play by yourself', preserving the dismissive tone, and the overall meaning and conciseness are appropriate for screen reading with no omissions or additions.) failed.">case = {'id': 'corpus-18', 'category': '方言', 'source': '不处，自己玩去', 'requirement': '“不处”同上，译为Not dating；“自己玩去”译为go play by yourself或leave me alone，传达拒绝和打发语气。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='不处，自己玩去', actual_output='Not interested, go play by yourself.', expected_output=None, context=None,...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x116647390&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output renders '不处' as 'Not interested' rather than the specified 'Not dating', failing the required terminology check. However, '自己玩去' is correctly translated as 'go play by yourself', preserving the dismissive tone, and the overall meaning and conciseness are appropriate for screen reading with no omissions or additions.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-19]" time="93.197"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output is a complete English subtitle translation with no omissions. However, it mistranslates '彩票中奖号码' as 'the lottery numbers I bought' rather than 'lottery winning numbers,' and shifts the comparison so that the bought numbers are compared to 'the winning numbers you mentioned yesterday' instead of the winning numbers being compared to what was said yesterday. '一模一样' is correctly rendered as 'exactly the same,' and the surprised tone is reasonably preserved, but the key terminology and meaning are not fully accurate.) failed.">case = {'id': 'corpus-19', 'category': '普通句子', 'source': '你看我买的彩票中奖号码和你昨天说的一模一样', 'requirement': '准确翻译“彩票中奖号码”为lottery winning numbers，“一模一样”译为exactly the same，保持惊讶语气。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='你看我买的彩票中奖号码和你昨天说的一模一样', actual_output='Look, the lottery numbers I bought are exactly the same as t...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x116644f50&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output is a complete English subtitle translation with no omissions. However, it mistranslates '彩票中奖号码' as 'the lottery numbers I bought' rather than 'lottery winning numbers,' and shifts the comparison so that the bought numbers are compared to 'the winning numbers you mentioned yesterday' instead of the winning numbers being compared to what was said yesterday. '一模一样' is correctly rendered as 'exactly the same,' and the surprised tone is reasonably preserved, but the key terminology and meaning are not fully accurate.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-20]" time="3.844"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.5, threshold: 0.7, strict: False, error: None, reason: The output covers all input content, but '憋出内伤' is mistranslated as 'holding back internal injuries' rather than the required 'suppress laughter until internal injury,' losing the comedic meaning. '哈基米南北绿豆' is appropriately transliterated/kept as a meme, and the translation is concise and readable, but the key mistranslation reduces accuracy.) failed.">case = {'id': 'corpus-20', 'category': '网络梗', 'source': '哈基米南北绿豆，我在工位上憋出内伤', 'requirement': '“哈基米南北绿豆”是网络梗/无意义短语，可能源自歌曲或谐音，需音译或保留原意，不直译；“憋出内伤”译为suppress laughter until internal injury，传达在工位憋笑到内伤。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='哈基米南北绿豆，我在工位上憋出内伤', actual_output="Hajimi north-south green beans, I'm holding back internal injuri...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x1166479d0&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.5, threshold: 0.7, strict: False, error: None, reason: The output covers all input content, but '憋出内伤' is mistranslated as 'holding back internal injuries' rather than the required 'suppress laughter until internal injury,' losing the comedic meaning. '哈基米南北绿豆' is appropriately transliterated/kept as a meme, and the translation is concise and readable, but the key mistranslation reduces accuracy.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-21]" time="3.351" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-22]" time="3.072" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-23]" time="3.102" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-24]" time="3.679"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output conveys the general refusal and the idea of an overwhelming situation, but it mistranslates key slang: '不处' is rendered as 'Not getting involved' rather than a refusal to date/be in a relationship, and '瓜' is translated as 'drama' instead of gossip. '啃不动' as 'too big to handle' partially captures the overwhelmed feeling but loses the humorous 'can't chew/digest' metaphor. The tone is natural and concise for screen reading, but the semantic accuracy of the internet slang is only partial.) failed.">case = {'id': 'corpus-24', 'category': '网络梗', 'source': '不处，瓜太大了啃不动', 'requirement': "'不处'是网络用语，意为'不相处/不交往'；'瓜'指八卦，'啃不动'表示信息量太大难以消化。需意译出拒绝和吃瓜吃撑的幽默，不能字面直译。"}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='不处，瓜太大了啃不动', actual_output='Not getting involved, this drama is too big to handle.', expected_outpu...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x116645450&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output conveys the general refusal and the idea of an overwhelming situation, but it mistranslates key slang: '不处' is rendered as 'Not getting involved' rather than a refusal to date/be in a relationship, and '瓜' is translated as 'drama' instead of gossip. '啃不动' as 'too big to handle' partially captures the overwhelmed feeling but loses the humorous 'can't chew/digest' metaphor. The tone is natural and concise for screen reading, but the semantic accuracy of the internet slang is only partial.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-27]" time="3.503" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-28]" time="3.724" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-29]" time="10.137" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-31]" time="4.642" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-32]" time="4.056" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-33]" time="11.271"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation covers all input content with no omissions and correctly renders '00后' as 'post-00s'. However, '火星文' is translated as 'Martian language' without the required explanatory note, and the phrasing 'Watching post-00s chat' is slightly awkward for subtitle readability, lacking a plural marker or smoother construction.) failed.">case = {'id': 'corpus-33', 'category': '网络梗', 'source': '看00后用火星文聊天', 'requirement': '“00后”应译为“post-00s”或“Gen Z”；“火星文”指网络火星文（一种故意使用生僻字或符号的聊天文字），需译为“Martian language”并加注解释，不能直译为“Mars language”。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='看00后用火星文聊天', actual_output='Watching post-00s chat in Martian language', expected_output=None, cont...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x1176c4690&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation covers all input content with no omissions and correctly renders '00后' as 'post-00s'. However, '火星文' is translated as 'Martian language' without the required explanatory note, and the phrasing 'Watching post-00s chat' is slightly awkward for subtitle readability, lacking a plural marker or smoother construction.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-34]" time="8.118" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-38]" time="8.996"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output conveys the core meaning but fails the term translation step: '煎饼果子' is rendered as 'jianbing guozi' rather than 'Jianbing' with an explanation, and '摊' is not translated as 'make' or 'spread' (it is folded into 'made by'). '大妈' is correctly translated as 'auntie', and the curious tone and readability are good. The main shortcoming is the missing explanation for jianbing and the untranslated '摊'.) failed.">case = {'id': 'corpus-38', 'category': '方言', 'source': '刷视频看到山东大妈摊的超大煎饼果子，突然好奇山东煎饼是不是全国最大的？', 'requirement': '“煎饼果子”是天津特色小吃，但此处指山东煎饼，应译为“Jianbing”并解释；“摊”译为“make”或“spread”；“大妈”译为“auntie”；整体需保留好奇语气。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='刷视频看到山东大妈摊的超大煎饼果子，突然好奇山东煎饼是不是全国最大的？', actual_output='I was scrolling through videos and saw the gia...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x1176c4e10&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The output conveys the core meaning but fails the term translation step: '煎饼果子' is rendered as 'jianbing guozi' rather than 'Jianbing' with an explanation, and '摊' is not translated as 'make' or 'spread' (it is folded into 'made by'). '大妈' is correctly translated as 'auntie', and the curious tone and readability are good. The main shortcoming is the missing explanation for jianbing and the untranslated '摊'.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-39]" time="3.685" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-40]" time="3.643" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-41]" time="4.402"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.5, threshold: 0.7, strict: False, error: None, reason: The translation is complete and natural, correctly rendering '吊睛白额虎' as a descriptive fierce tiger and keeping the brand name 'Qiaolezi' for the ice cream. However, it fails to convey the humorous contrast: 'A Qiaolezi ice cream bar' is not recognizable to English viewers as a cute/weak brand, and the literal 'tiger' vs 'ice cream' framing does not preserve the intended joke, which the evaluation steps explicitly require.) failed.">case = {'id': 'corpus-41', 'category': '网络梗', 'source': '别人：吊睛白额虎我：巧乐兹雪糕', 'requirement': '需理解“吊睛白额虎”是《水浒传》中老虎的经典描述，代表凶猛；“巧乐兹雪糕”是冰淇淋品牌，代表可爱/弱。翻译需保留对比幽默，不能直译成“tiger”和“ice cream”而丢失梗的意味。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='别人：吊睛白额虎我：巧乐兹雪糕', actual_output='Others: A tiger with piercing eyes and a white forehead. Me: A Qia...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x116644b90&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.5, threshold: 0.7, strict: False, error: None, reason: The translation is complete and natural, correctly rendering '吊睛白额虎' as a descriptive fierce tiger and keeping the brand name 'Qiaolezi' for the ice cream. However, it fails to convey the humorous contrast: 'A Qiaolezi ice cream bar' is not recognizable to English viewers as a cute/weak brand, and the literal 'tiger' vs 'ice cream' framing does not preserve the intended joke, which the evaluation steps explicitly require.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-42]" time="3.937"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation covers the full input with no omissions and flows naturally for subtitles. However, '我不行了' is rendered as 'I can't even,' which conveys amusement but does not clearly express 'laughing uncontrollably' as required. '这届网友' is translated as 'this batch of netizens' rather than 'this generation of netizens,' and '有才' as 'talented' misses the intended creative/humorous nuance. Thus it partially meets the term-specific criteria but falls short on key required renderings.) failed.">case = {'id': 'corpus-42', 'category': '语气情绪', 'source': '哈哈哈我不行了，这届网友真的太有才了', 'requirement': "“我不行了”是网络用语表示笑到不行，不能直译“I can't”；“这届网友”指当前网民群体，需译出“this generation of netizens”或类似表达；“有才”指有创意/幽默。"}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='哈哈哈我不行了，这届网友真的太有才了', actual_output="Hahaha I can't even, this batch of netizens is just too talente...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x1176c47d0&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation covers the full input with no omissions and flows naturally for subtitles. However, '我不行了' is rendered as 'I can't even,' which conveys amusement but does not clearly express 'laughing uncontrollably' as required. '这届网友' is translated as 'this batch of netizens' rather than 'this generation of netizens,' and '有才' as 'talented' misses the intended creative/humorous nuance. Thus it partially meets the term-specific criteria but falls short on key required renderings.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-44]" time="4.895"><failure message="AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation covers the full input with no omissions and correctly renders '我不行了' as 'I can't take it anymore' (exhausted to the limit). However, '人都麻了' is translated literally as 'completely numbed me,' which the evaluation steps explicitly flag as incorrect—it should convey exhausted/numb rather than literal numbness. The phrasing is otherwise fluent and concise for subtitles, but the mistranslation of the key idiom reduces overall accuracy.) failed.">case = {'id': 'corpus-44', 'category': '语气情绪', 'source': '我不行了，加班加到人都麻了', 'requirement': '“我不行了”表示累到极限；“人都麻了”是网络流行语，指麻木、疲惫不堪，不能直译“numb”，需译出“exhausted/numb”的引申义。'}
+judge = &lt;deepeval.models.llms.deepseek_model.DeepSeekModel object at 0x11632dbe0&gt;
+translator = &lt;app.translator.LLMTranslator object at 0x11632ea50&gt;
+
+    @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
+    def test_translation_quality(case, judge, translator):
+        from deepeval import assert_test
+        from deepeval.metrics import GEval
+        from deepeval.test_case import LLMTestCase, SingleTurnParams
+    
+        from app.srt import Cue
+    
+        output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+        translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+    
+        metric = GEval(
+            name="字幕翻译质量",
+            criteria=(
+                "判断 actual output 是否是 input 的准确英文字幕翻译：没有漏译、没有误译、"
+                f"语气自然、适合屏幕阅读。额外要求：{case['requirement']}"
+            ),
+            evaluation_params=[SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
+            model=judge,
+            threshold=0.7,
+            async_mode=False,
+        )
+&gt;       assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+
+tests/quality/test_translation_quality.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_case = LLMTestCase(input='我不行了，加班加到人都麻了', actual_output="I can't take it anymore—working overtime has completely numbed me.",...resources_called=None, mcp_prompts_called=None, custom_column_key_values=None, expectations=None, expected_labels=None)
+metrics = [&lt;deepeval.metrics.g_eval.g_eval.GEval object at 0x1176c4050&gt;]
+golden = None, run_async = True, classifiers = None
+
+    def assert_test(
+        test_case: Optional[Union[LLMTestCase, ConversationalTestCase]] = None,
+        metrics: Optional[
+            Union[
+                List[BaseMetric],
+                List[BaseConversationalMetric],
+            ]
+        ] = None,
+        golden: Optional[Golden] = None,
+        run_async: bool = True,
+        classifiers: Optional[List[BaseClassifier]] = None,
+    ):
+        validate_assert_test_inputs(
+            golden=golden,
+            test_case=test_case,
+            metrics=metrics,
+            classifiers=classifiers,
+        )
+        if classifiers:
+            validate_classifiers(
+                [test_case] if test_case is not None else None, classifiers
+            )
+    
+        async_config = AsyncConfig(throttle_value=0, max_concurrent=100)
+        display_config = DisplayConfig(
+            verbose_mode=should_verbose_print(), show_indicator=True
+        )
+        error_config = ErrorConfig(
+            ignore_errors=should_ignore_errors(),
+            skip_on_missing_params=should_skip_on_missing_params(),
+        )
+        cache_config = CacheConfig(
+            write_cache=get_is_running_deepeval(), use_cache=should_use_cache()
+        )
+    
+        if golden and not test_case:
+            # Trace-scoped assert_test: read the active trace set by the plugin.
+            test_result = _assert_test_from_current_trace(
+                golden=golden,
+                metrics=metrics,
+                error_config=error_config,
+                display_config=display_config,
+            )
+    
+        elif test_case and (metrics or classifiers or test_case.expectations):
+            if metrics and not test_case.expectations:
+                check_at_least_one_metric_has_threshold(metrics)
+            if run_async:
+                loop = get_or_create_event_loop()
+                test_result = loop.run_until_complete(
+                    a_execute_test_cases(
+                        [test_case],
+                        metrics or [],
+                        error_config=error_config,
+                        display_config=display_config,
+                        async_config=async_config,
+                        cache_config=cache_config,
+                        identifier=get_identifier(),
+                        _use_bar_indicator=True,
+                        _is_assert_test=True,
+                        classifiers=classifiers,
+                    )
+                )[0]
+            else:
+                test_result = execute_test_cases(
+                    [test_case],
+                    metrics or [],
+                    error_config=error_config,
+                    display_config=display_config,
+                    cache_config=cache_config,
+                    identifier=get_identifier(),
+                    _use_bar_indicator=False,
+                    _is_assert_test=True,
+                    classifiers=classifiers,
+                )[0]
+    
+        # `success is None` means nothing produced a verdict (e.g. classifiers with
+        # no expected labels); that is not a failure.
+        if test_result.success is False:
+            failed_metrics_data: List[MetricData] = []
+            # even for conversations, test_result right now is just the
+            # result for the last message
+            for metric_data in test_result.metrics_data or []:
+                if metric_data.error is not None:
+                    failed_metrics_data.append(metric_data)
+                else:
+                    # This try block is for user defined custom metrics,
+                    # which might not handle the score == undefined case elegantly
+                    try:
+                        if not metric_data.success:
+                            failed_metrics_data.append(metric_data)
+                    except Exception:
+                        failed_metrics_data.append(metric_data)
+    
+            failed_classifications: List[Classification] = [
+                classification
+                for classification in test_result.classifications or []
+                if classification.success is False
+            ]
+    
+            failed_parts = [
+                f"{metrics_data.name} (score: {metrics_data.score}, threshold: {metrics_data.threshold}, strict: {metrics_data.strict_mode}, error: {metrics_data.error}, reason: {metrics_data.reason})"
+                for metrics_data in failed_metrics_data
+            ]
+            failed_parts += [
+                f"{classification.name} (label: {classification.label}, expected: {classification.expected_label}, error: {classification.error}, reason: {classification.reason})"
+                for classification in failed_classifications
+            ]
+            failed_metrics_str = ", ".join(failed_parts)
+    
+            if failed_metrics_data and failed_classifications:
+                subject = "Metrics and classifiers"
+            elif failed_classifications:
+                subject = "Classifiers"
+            else:
+                subject = "Metrics"
+    
+            if test_case is not None and test_case.flaky:
+                # Flaky test cases don't block CI: warn (shows up in pytest's
+                # warnings summary) but don't raise
+                warnings.warn(
+                    f"Flaky test case failed (no assertion raised): "
+                    f"{subject}: {failed_metrics_str} failed."
+                )
+            else:
+&gt;               raise AssertionError(f"{subject}: {failed_metrics_str} failed.")
+E               AssertionError: Metrics: 字幕翻译质量 [GEval] (score: 0.6, threshold: 0.7, strict: False, error: None, reason: The translation covers the full input with no omissions and correctly renders '我不行了' as 'I can't take it anymore' (exhausted to the limit). However, '人都麻了' is translated literally as 'completely numbed me,' which the evaluation steps explicitly flag as incorrect—it should convey exhausted/numb rather than literal numbness. The phrasing is otherwise fluent and concise for subtitles, but the mistranslation of the key idiom reduces overall accuracy.) failed.
+
+.venv/lib/python3.14/site-packages/deepeval/evaluate/evaluate.py:209: AssertionError</failure></testcase><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-45]" time="3.927" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-47]" time="3.249" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-48]" time="3.872" /><testcase classname="tests.quality.test_translation_quality" name="test_translation_quality[corpus-49]" time="15.460" /></testsuite></testsuites>

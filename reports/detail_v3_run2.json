@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "calls": 45,
+    "prompt_tokens": 6449,
+    "completion_tokens": 728,
+    "seconds": 41.79953345900867
+  },
+  "outputs": {
+    "name-01": {
+      "output": "Lin Xiao, how come you're here so early today?"
+    },
+    "context-01": {
+      "output": "Don't worry, I've already memorized it."
+    },
+    "slang-01": {
+      "output": "That move was way too smooth—I'm completely losing it."
+    },
+    "idiom-01": {
+      "output": "That's just gilding the lily."
+    },
+    "short-01": {
+      "output": "Yeah."
+    },
+    "corpus-01": {
+      "output": "Teacher, I really did my homework, but my dog ate it."
+    },
+    "corpus-02": {
+      "output": "That head tilt was him sneaking a peek at the lyrics!"
+    },
+    "corpus-03": {
+      "output": "No way, keeping a sense of mystery is nice."
+    },
+    "corpus-04": {
+      "output": "That sudden?"
+    },
+    "corpus-05": {
+      "output": "It's just hahaha so bizarre, who even gets this question?"
+    },
+    "corpus-06": {
+      "output": "It seems to be true. I even came across leaked videos from his concert."
+    },
+    "corpus-07": {
+      "output": "Which class meeting? How come I didn't hear about it?"
+    },
+    "corpus-08": {
+      "output": "Besides, his honest and down-to-earth vibe makes him so relatable. You're not losing out here—you might even score a free meal with that face."
+    },
+    "corpus-09": {
+      "output": "Should we throw away this souvenir?"
+    },
+    "corpus-10": {
+      "output": "Your idea is pretty out there."
+    },
+    "corpus-11": {
+      "output": "Alright, I'll deal with all that toxic positivity when I get back to the country."
+    },
+    "corpus-12": {
+      "output": "That short? Hit a creative block?"
+    },
+    "corpus-14": {
+      "output": "Whose is better, your proposal or your colleague's PPT?"
+    },
+    "corpus-15": {
+      "output": "Just look at that pretentious expression on his face and you know there's something fishy going on. That kind of deadpan nonsense is comedy gold."
+    },
+    "corpus-16": {
+      "output": "Why didn't you say so earlier? No wonder you post sunrise photos on your feed every day."
+    },
+    "corpus-17": {
+      "output": "No way. These days even love comes with a price tag."
+    },
+    "corpus-18": {
+      "output": "Not interested, go play by yourself."
+    },
+    "corpus-19": {
+      "output": "Look, the lottery numbers I bought are exactly the same as the winning numbers you mentioned yesterday."
+    },
+    "corpus-20": {
+      "output": "Hajimi north-south green beans, I'm holding back internal injuries at my workstation."
+    },
+    "corpus-21": {
+      "output": "On the subway, I ran into this guy who kept muttering anime lines to himself the whole ride."
+    },
+    "corpus-22": {
+      "output": "I stayed up late watching your livestream last night and laughed so hard my stomach hurt."
+    },
+    "corpus-23": {
+      "output": "Was in such a rush this morning that I grabbed a dishcloth instead of a towel and brought it to the office."
+    },
+    "corpus-24": {
+      "output": "Not getting involved, this drama is too big to handle."
+    },
+    "corpus-27": {
+      "output": "Isn't that how it should be?"
+    },
+    "corpus-28": {
+      "output": "The boss is going to marry the cleaning lady."
+    },
+    "corpus-29": {
+      "output": "Which is more suitable for obese people looking to lose fat: a treadmill, an elliptical, or a stationary bike?"
+    },
+    "corpus-31": {
+      "output": "Oh man, I can't even, I'll be laughing about this for a year. Who doesn't have some embarrassing story about buying pads, right?"
+    },
+    "corpus-32": {
+      "output": "I'm already running a fever, so please, aunties, let me off the hook."
+    },
+    "corpus-33": {
+      "output": "Watching post-00s chat in Martian language"
+    },
+    "corpus-34": {
+      "output": "At work, I'm always interrupted by all kinds of messages and find it hard to focus on what I'm doing. Are there any methods to improve efficiency?"
+    },
+    "corpus-38": {
+      "output": "I was scrolling through videos and saw the giant jianbing guozi made by an auntie in Shandong, and suddenly I got curious: is Shandong jianbing the biggest in the whole country?"
+    },
+    "corpus-39": {
+      "output": "Its Douban rating of 9.4 also proves its quality."
+    },
+    "corpus-40": {
+      "output": "I can't even, happiness came way too suddenly."
+    },
+    "corpus-41": {
+      "output": "Others: A tiger with piercing eyes and a white forehead. Me: A Qiaolezi ice cream bar."
+    },
+    "corpus-42": {
+      "output": "Hahaha I can't even, this batch of netizens is just too talented"
+    },
+    "corpus-44": {
+      "output": "I can't take it anymore—working overtime has completely numbed me."
+    },
+    "corpus-45": {
+      "output": "I watch every single one of your videos. Your team is called, what's it again, Xiao Chao Team, right? I remember it all!"
+    },
+    "corpus-47": {
+      "output": "Can you stop dragging me into playing games with you?"
+    },
+    "corpus-48": {
+      "output": "I can't even, this is way too cute!"
+    },
+    "corpus-49": {
+      "output": "I can't take it anymore, I know everything, worked myself to baldness"
+    }
+  }
+}

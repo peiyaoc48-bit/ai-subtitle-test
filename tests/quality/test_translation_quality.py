@@ -32,7 +32,15 @@ def judge():
 def translator():
     from app.translator import get_translator
 
-    return get_translator()
+    t = get_translator()
+    t.outputs = {}
+    yield t
+    # 评测结束后保存成本统计和每条译文（含直译、反思），供 eval_report.py 对比分析
+    version = os.getenv("PROMPT_VERSION", "v1")
+    out = Path(__file__).parents[2] / "reports" / f"detail_{version}.json"
+    out.parent.mkdir(exist_ok=True)
+    out.write_text(json.dumps({"stats": t.stats, "outputs": t.outputs}, ensure_ascii=False, indent=2),
+                   encoding="utf-8")
 
 
 @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
@@ -44,6 +52,7 @@ def test_translation_quality(case, judge, translator):
     from app.srt import Cue
 
     output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+    translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
 
     metric = GEval(
         name="字幕翻译质量",
