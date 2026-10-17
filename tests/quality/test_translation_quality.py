@@ -4,7 +4,10 @@
     TRANSLATOR_MODE=llm PROMPT_VERSION=v1 pytest tests/quality -v
     TRANSLATOR_MODE=llm PROMPT_VERSION=v2 pytest tests/quality -v
 
-评测数据在 data/eval/cases.json，每条包含原文和质量要求。
+评测数据：
+- data/eval/cases.json：单句用例，每条包含原文和质量要求
+- data/eval/context_cases.json：上下文用例，额外带 before（上文）和 after（下文），
+  只有看了上下文才能翻对；只跑这部分：pytest tests/quality -k ctx
 """
 import json
 import os
@@ -16,9 +19,13 @@ pytestmark = pytest.mark.skipif(
     os.getenv("TRANSLATOR_MODE") != "llm", reason="质量评测需要 TRANSLATOR_MODE=llm"
 )
 
-CASES = json.loads(
-    (Path(__file__).parents[2] / "data" / "eval" / "cases.json").read_text(encoding="utf-8")
-)
+EVAL_DIR = Path(__file__).parents[2] / "data" / "eval"
+CASES = [
+    case
+    for name in ("cases.json", "context_cases.json")
+    if (EVAL_DIR / name).exists()
+    for case in json.loads((EVAL_DIR / name).read_text(encoding="utf-8"))
+]
 
 
 @pytest.fixture(scope="module")
@@ -51,8 +58,17 @@ def test_translation_quality(case, judge, translator):
 
     from app.srt import Cue
 
-    output = translator.translate([Cue(1, "00:00:00,000", "00:00:01,000", case["source"])], "en")[0].text
+    before, after = case.get("before", []), case.get("after", [])
+    lines = [*before, case["source"], *after]
+    cues = [Cue(i + 1, "00:00:00,000", "00:00:01,000", text) for i, text in enumerate(lines)]
+    output = translator.translate_cue(cues, len(before), "en")
     translator.outputs[case["id"]] = {"output": output, **translator.last_detail}
+
+    # 裁判也要看到上下文，否则无法判断指代、省略是否翻对
+    judge_input = case["source"]
+    if before or after:
+        judge_input = (f"上文：{' / '.join(before) or '（无）'}\n当前句：{case['source']}\n"
+                       f"下文：{' / '.join(after) or '（无）'}\n（只需评判当前句的翻译）")
 
     metric = GEval(
         name="字幕翻译质量",
@@ -65,4 +81,4 @@ def test_translation_quality(case, judge, translator):
         threshold=0.7,
         async_mode=False,
     )
-    assert_test(LLMTestCase(input=case["source"], actual_output=output), [metric])
+    assert_test(LLMTestCase(input=judge_input, actual_output=output), [metric])

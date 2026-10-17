@@ -1,0 +1,121 @@
+[
+  {
+    "id": "ctx-c02",
+    "category": "需要上下文",
+    "before": [
+      "不是我刚刚换的苦茶子"
+    ],
+    "source": "保持干燥，不然又要换新的了",
+    "after": [],
+    "requirement": "应补出主语“内裤”，译为“Keep it dry, otherwise you'll have to change to a new one.”",
+    "reason": "不看上文：Keep it dry, or we'll have to get a new one again.｜看了上文：Keep it dry, or you'll have to change into a new pair again.｜差异：译文A用'we'且'get a new one'指换新物品，译文B用'you'且'change into a new pair'指换新内裤，主语和词义理解不同。",
+    "difficulty": 2,
+    "accept": true,
+    "alone": "Keep it dry, or we'll have to get a new one again.",
+    "with_context": "Keep it dry, or you'll have to change into a new pair again.",
+    "diff": "译文A用'we'且'get a new one'指换新物品，译文B用'you'且'change into a new pair'指换新内裤，主语和词义理解不同。",
+    "reject_reason": ""
+  },
+  {
+    "id": "ctx-c05",
+    "category": "需要上下文",
+    "before": [
+      "室友两千块工资还天天买奢侈品"
+    ],
+    "source": "6个钱包的威力，家里有矿吧",
+    "after": [],
+    "requirement": "应译为“The power of six wallets, must have a mine at home.”，体现家庭资助的含义。",
+    "reason": "不看上文：The power of six family wallets—your family must be loaded.｜看了上文：The power of six family wallets—their family must be made of money.｜差异：代词指代不同：A用your指代对方家庭，B用their指代室友家庭。",
+    "difficulty": 2,
+    "accept": true,
+    "alone": "The power of six family wallets—your family must be loaded.",
+    "with_context": "The power of six family wallets—their family must be made of money.",
+    "diff": "代词指代不同：A用your指代对方家庭，B用their指代室友家庭。",
+    "reject_reason": ""
+  },
+  {
+    "id": "ctx-c10",
+    "category": "需要上下文",
+    "before": [
+      "这个视频特效也太夸张了吧"
+    ],
+    "source": "福寿无量天尊阿玛特拉斯变身特效",
+    "after": [],
+    "requirement": "应译为“Blessed be the Infinite Heavenly Lord, Amaterasu transformation effect.”，体现夸张特效。",
+    "reason": "不看上文：Blessings of Eternal Life, Heavenly Worthy Amaterasu Transformation Effect｜看了上文：Fushou Wuliang Tianzun Amaterasu Transformation Effect｜差异：译文A将“福寿无量天尊”意译为祝福语，译文B保留为音译专名，词义理解不同",
+    "difficulty": 2,
+    "accept": false,
+    "alone": "Blessings of Eternal Life, Heavenly Worthy Amaterasu Transformation Effect",
+    "with_context": "Fushou Wuliang Tianzun Amaterasu Transformation Effect",
+    "diff": "译文A将“福寿无量天尊”意译为祝福语，译文B保留为音译专名，词义理解不同",
+    "reject_reason": ""
+  },
+  {
+    "id": "ctx-c11",
+    "category": "需要上下文",
+    "before": [
+      "电竞主播直播间弹幕都在刷什么"
+    ],
+    "source": "其实也不奇怪，在串子多的地方'你已急哭'这种梗刷得飞起",
+    "after": [],
+    "requirement": "应译为'trolls'或'people who stir up trouble'，并体现'你已急哭'是弹幕梗。",
+    "reason": "不看上文：It's not really surprising — in places crawling with trolls, memes like \"you're so triggered you're crying\" get spammed like crazy.｜看了上文：Not surprising, really—in places full of trolls, memes like \"you're already crying\" get spammed like crazy.｜差异：梗的翻译不同：A将'你已急哭'译为'you're so triggered you're crying'（强调被激怒），B译为'you're already crying'（仅表示已经在哭），词义理解有差异。",
+    "difficulty": 2,
+    "accept": false,
+    "alone": "It's not really surprising — in places crawling with trolls, memes like \"you're so triggered you're crying\" get spammed like crazy.",
+    "with_context": "Not surprising, really—in places full of trolls, memes like \"you're already crying\" get spammed like crazy.",
+    "diff": "梗的翻译不同：A将'你已急哭'译为'you're so triggered you're crying'（强调被激怒），B译为'you're already crying'（仅表示已经在哭），词义理解有差异。",
+    "reject_reason": ""
+  },
+  {
+    "id": "ctx-c38",
+    "category": "需要上下文",
+    "before": [
+      "篮球比赛三分20投18中观众都惊呆了"
+    ],
+    "source": "有时候手感太恐怖观众都怀疑开挂了，直接666刷屏连嘘声都懒得给",
+    "after": [],
+    "requirement": "应译为 'Sometimes the shooting touch is so terrifying that the audience suspects cheating, spamming 666 and not even bothering to boo'，体现“手感”指投篮手感。",
+    "reason": "不看上文：Sometimes their gameplay is so insanely good that viewers suspect them of hacking—the chat just floods with \"666\" and they don't even bother booing.｜看了上文：Sometimes his hot hand is just insane—the crowd suspects he's hacking, and the chat floods with \"666\" while nobody even bothers to boo.｜差异：主语不同：译文A用their/them指代队伍或玩家，译文B用his/he指代单个球员；且A将'手感'译为gameplay，B译为hot hand，词义理解不同。",
+    "difficulty": 2,
+    "accept": true,
+    "alone": "Sometimes their gameplay is so insanely good that viewers suspect them of hacking—the chat just floods with \"666\" and they don't even bother booing.",
+    "with_context": "Sometimes his hot hand is just insane—the crowd suspects he's hacking, and the chat floods with \"666\" while nobody even bothers to boo.",
+    "diff": "主语不同：译文A用their/them指代队伍或玩家，译文B用his/he指代单个球员；且A将'手感'译为gameplay，B译为hot hand，词义理解不同。",
+    "reject_reason": ""
+  },
+  {
+    "id": "ctx-c50",
+    "category": "需要上下文",
+    "before": [
+      "你是怎么找到这个赛道的？！真的！！很是想雇杀手"
+    ],
+    "source": "当个事办，兄弟你这想法很危险啊",
+    "after": [],
+    "requirement": "应补出'把这事当真/去办'的含义，译为'Don't actually take this seriously, bro, that idea is dangerous'。",
+    "reason": "不看上文：Take this seriously, bro—that idea of yours is dangerous.｜看了上文：I'll hold you to that. Bro, that idea of yours is dangerous.｜差异：译文A将“当个事办”理解为“认真对待”，译文B理解为“我会当真/说到做到”，对原句含义理解不同。",
+    "difficulty": 2,
+    "accept": false,
+    "alone": "Take this seriously, bro—that idea of yours is dangerous.",
+    "with_context": "I'll hold you to that. Bro, that idea of yours is dangerous.",
+    "diff": "译文A将“当个事办”理解为“认真对待”，译文B理解为“我会当真/说到做到”，对原句含义理解不同。",
+    "reject_reason": ""
+  },
+  {
+    "id": "ctx-c57",
+    "category": "需要上下文",
+    "before": [
+      "博主记录了自己精神状态发癫的一天，内向社恐的i人挑战"
+    ],
+    "source": "笑死我啦最后那句加点啊，给老板都整红温啦，社恐人爆发起来是真的猛",
+    "after": [],
+    "requirement": "应体现'最后那句加点'指加码/加料，'红温'指老板被惹怒，译为'The last line really added fuel—even the boss got heated'。",
+    "reason": "不看上文：LMAO, that last line really needed more punch—you got the boss completely flustered. When a socially anxious person finally snaps, they go hard.｜看了上文：I'm dying laughing—you should've added a little more to that last line. You even got the boss all fired up. When a shy person finally snaps, they really go hard.｜差异：译文A将“加点啊”理解为“最后那句需要更有力度/冲击力”，译文B理解为“最后那句应该多说一点/加些内容”，对“加点”的词义理解不同。",
+    "difficulty": 2,
+    "accept": true,
+    "alone": "LMAO, that last line really needed more punch—you got the boss completely flustered. When a socially anxious person finally snaps, they go hard.",
+    "with_context": "I'm dying laughing—you should've added a little more to that last line. You even got the boss all fired up. When a shy person finally snaps, they really go hard.",
+    "diff": "译文A将“加点啊”理解为“最后那句需要更有力度/冲击力”，译文B理解为“最后那句应该多说一点/加些内容”，对“加点”的词义理解不同。",
+    "reject_reason": ""
+  }
+]

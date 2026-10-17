@@ -1,0 +1,52 @@
+{
+  "stats": {
+    "calls": 7,
+    "prompt_tokens": 3397,
+    "completion_tokens": 721,
+    "seconds": 8.756109416979598
+  },
+  "outputs": {
+    "ctx-01": {
+      "output": "Don't worry, I've got it memorized.",
+      "direct": "Don't worry, I've already memorized it thoroughly.",
+      "reflect": "直译准确自然，'背熟了'意为记牢了，英文用 memorized it 或 got it memorized 都地道，语气轻松安慰，无需改动。",
+      "free": "Don't worry, I've got it memorized."
+    },
+    "ctx-02": {
+      "output": "He said he won't be home for dinner tonight.",
+      "direct": "Said won't come back for dinner tonight.",
+      "reflect": "直译漏了主语，英文里需要明确是谁说的；这是转述某人（很可能是家人）打电话或传话说今晚不回家吃饭，语气是平淡的告知。补上主语、用自然的口语表达即可。",
+      "free": "He said he won't be home for dinner tonight."
+    },
+    "ctx-03": {
+      "output": "Unbelievable!",
+      "direct": "Absolutely amazing!",
+      "reflect": "「绝了」是口语感叹，表示极度赞叹或无语，直译 'Absolutely amazing' 语气偏正式，英文口语里常用 'Unbelievable!' 或 'That's insane!' 来表达这种强烈反应。",
+      "free": "Unbelievable!"
+    },
+    "ctx-c02": {
+      "output": "Keep it dry, or we'll have to get a new one again.",
+      "direct": "Keep it dry, otherwise we'll have to replace it with a new one again.",
+      "reflect": "直译准确传达了意思，语气自然，'otherwise' 对应'不然'，'again' 对应'又'，英文口语中这样说很自然，无需改动。",
+      "free": "Keep it dry, or we'll have to get a new one again."
+    },
+    "ctx-c05": {
+      "output": "The power of six wallets—your family must be loaded.",
+      "direct": "The power of 6 wallets, your family must have a mine.",
+      "reflect": "“6个钱包”指全家六个长辈的钱包凑钱（中国网络热梗，指买房靠双方父母+祖父母资助）；“家里有矿”是网络流行语，意为非常有钱，直译成 have a mine 英文读者会误解。",
+      "free": "The power of six wallets—your family must be loaded."
+    },
+    "ctx-c38": {
+      "output": "Sometimes his touch is so insane the audience suspects he's cheating—the chat just floods with \"666\" and they don't even bother booing.",
+      "direct": "Sometimes the touch is so terrifying that the audience all suspect he's cheating, directly 666 flooding the screen and not even bothering to give boos.",
+      "reflect": "「手感」here means a player's in-game feel/skill, not physical touch; 「666」is Chinese internet slang for awesome/skilled, not a literal number; 「刷屏」means flooding the chat/screen; 「连嘘声都懒得给」means they don't even bother booing. Need natural gaming-streamer English.",
+      "free": "Sometimes his touch is so insane the audience suspects he's cheating—the chat just floods with \"666\" and they don't even bother booing."
+    },
+    "ctx-c57": {
+      "output": "LMAO, that last line really pushed it over the edge — it got the boss so worked up. When socially anxious people finally snap, they go hard.",
+      "direct": "Laughing me to death, add a bit to that last sentence, it got the boss all red-temperature, social-phobia people when they explode are really fierce.",
+      "reflect": "「笑死我啦」是网络口语，英文对应 LMAO/I'm dying laughing；「加点啊」指说话时加点料/加把劲；「整红温啦」是网络梗，指把老板气得脸红/破防，英文可用 got the boss so worked up / made the boss lose it；「社恐人」是 social anxiety person，爆发起来指被逼急了爆发，用 when they snap 更地道。",
+      "free": "LMAO, that last line really pushed it over the edge — it got the boss so worked up. When socially anxious people finally snap, they go hard."
+    }
+  }
+}

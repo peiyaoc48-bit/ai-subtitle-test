@@ -1,0 +1,930 @@
+[
+  {
+    "id": "ctx-c01",
+    "category": "需要上下文",
+    "before": [
+      "健身房私教天天催我续课"
+    ],
+    "source": "我不行了，钱包都被榨干了",
+    "after": [],
+    "requirement": "应译为表达经济压力大、无法继续付费的英文，如“I can't take it anymore, my wallet is drained.”",
+    "reason": "B的“我不行了”是口语化表达，需结合A的“催续课”才能确定是“受不了/没钱了”而非字面“不行了”。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I'm done—my wallet's completely drained.",
+    "with_context": "I can't take it anymore—my wallet's completely drained.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c02",
+    "category": "需要上下文",
+    "before": [
+      "不是我刚刚换的苦茶子"
+    ],
+    "source": "保持干燥，不然又要换新的了",
+    "after": [],
+    "requirement": "应补出主语“内裤”，译为“Keep it dry, otherwise you'll have to change to a new one.”",
+    "reason": "B的“保持干燥”和“又要换新的”指代不明，需结合A的“苦茶子”才能确定是内裤需保持干燥否则要换。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Keep it dry, or we'll have to get a new one again.",
+    "with_context": "Keep it dry, or you'll have to change into a new pair again.",
+    "diff": "译文A用'we'且'get a new one'指换新物品，译文B用'you'且'change into a new pair'指换新内裤，主语和词义理解不同。"
+  },
+  {
+    "id": "ctx-c03",
+    "category": "需要上下文",
+    "before": [
+      "我刚找到好工作就被裁了"
+    ],
+    "source": "这明显是被老板做局了",
+    "after": [],
+    "requirement": "应译为“This is clearly a setup by the boss.”，体现“被算计”的含义。",
+    "reason": "B的“做局”是俚语，需结合A的“被裁”才能确定是“被老板设局/算计”。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "It's obvious the boss set me up.",
+    "with_context": "The boss clearly set me up.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c04",
+    "category": "需要上下文",
+    "before": [
+      "当代社畜的敷衍式工作法有哪些"
+    ],
+    "source": "我干客服，30秒内必须会顾客的消息。消息回不过来我就已读乱回",
+    "after": [],
+    "requirement": "应译为“I read but reply randomly.”，体现敷衍回复的意思。",
+    "reason": "B的“已读乱回”是网络用语，需结合A的“敷衍式工作法”才能确定是“已读但胡乱回复”。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I work in customer service—I have to reply to customers within 30 seconds. When I can't keep up with the messages, I just read them and reply with whatever nonsense.",
+    "with_context": "I work in customer service, and I have to reply to customers' messages within 30 seconds. When I can't keep up, I just read them and reply with random nonsense.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c05",
+    "category": "需要上下文",
+    "before": [
+      "室友两千块工资还天天买奢侈品"
+    ],
+    "source": "6个钱包的威力，家里有矿吧",
+    "after": [],
+    "requirement": "应译为“The power of six wallets, must have a mine at home.”，体现家庭资助的含义。",
+    "reason": "B的“6个钱包”是网络梗，需结合A的“买奢侈品”才能确定指“双方父母资助”。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "The power of six family wallets—your family must be loaded.",
+    "with_context": "The power of six family wallets—their family must be made of money.",
+    "diff": "代词指代不同：A用your指代对方家庭，B用their指代室友家庭。"
+  },
+  {
+    "id": "ctx-c06",
+    "category": "需要上下文",
+    "before": [
+      "刚看完最火的那个综艺节目"
+    ],
+    "source": "我不行了，笑到我肚子痛",
+    "after": [],
+    "requirement": "应译为“I can't take it, I laughed until my stomach hurts.”，体现笑到肚子痛。",
+    "reason": "B的“我不行了”需结合A的“综艺节目”才能确定是“笑到不行”而非其他含义。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I can't, I'm laughing so hard my stomach hurts.",
+    "with_context": "I can't, I'm dying laughing—my stomach hurts.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c07",
+    "category": "需要上下文",
+    "before": [
+      "你这视频背景音乐也太洗脑了吧"
+    ],
+    "source": "666演都不演了不是探索宇宙里的吗，要的就是这个效果",
+    "after": [],
+    "requirement": "应译为“666, not even pretending anymore, isn't it from exploring the universe? That's the effect I want.”，体现对洗脑效果的肯定。",
+    "reason": "B的“666演都不演了”和“探索宇宙”指代不明，需结合A的“背景音乐洗脑”才能确定是夸赞音乐效果。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "666, they're not even pretending anymore! Isn't this from Exploring the Universe? That's exactly the effect I wanted.",
+    "with_context": "666, not even trying to hide it anymore! Wasn't that from Exploring the Universe? That's exactly the effect I was going for.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c08",
+    "category": "需要上下文",
+    "before": [
+      "过年打麻将亲戚家小孩特别皮"
+    ],
+    "source": "我侄子也是，动不动就说是我要验牌 给你表演洗牌",
+    "after": [],
+    "requirement": "应译为“My nephew too, always says 'I want to verify the cards' and performs shuffling.”，体现小孩调皮模仿。",
+    "reason": "B的“验牌”“洗牌”需结合A的“小孩特别皮”才能确定是小孩模仿麻将动作。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "My nephew's the same—he's always like, \"I wanna check the cards, let me show you my shuffle.\"",
+    "with_context": "My nephew's the same — he keeps saying he wants to check the cards, and then he'll put on a shuffling show for you.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c09",
+    "category": "需要上下文",
+    "before": [
+      "你说你在山东有关系是吧？"
+    ],
+    "source": "我勒个豆，你以为我在山东没人吗？分分钟给你叫来一堆兄弟",
+    "after": [],
+    "requirement": "应译为“Oh my god, you think I have no one in Shandong? I can call a bunch of brothers in minutes.”，体现有人脉。",
+    "reason": "B的“我勒个豆”是感叹词，“在山东没人”需结合A的“有关系”才能确定是“有人脉”。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Holy crap, you think I don't have people in Shandong? I can have a whole crew of buddies here in no time.",
+    "with_context": "Holy crap, you think I don't have people in Shandong? I can have a whole crew of buddies here in no time.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c10",
+    "category": "需要上下文",
+    "before": [
+      "这个视频特效也太夸张了吧"
+    ],
+    "source": "福寿无量天尊阿玛特拉斯变身特效",
+    "after": [],
+    "requirement": "应译为“Blessed be the Infinite Heavenly Lord, Amaterasu transformation effect.”，体现夸张特效。",
+    "reason": "B的“福寿无量天尊阿玛特拉斯变身特效”是混合梗，需结合A的“特效夸张”才能确定是形容特效花哨。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Blessings of Eternal Life, Heavenly Worthy Amaterasu Transformation Effect",
+    "with_context": "Fushou Wuliang Tianzun Amaterasu Transformation Effect",
+    "diff": "译文A将“福寿无量天尊”意译为祝福语，译文B保留为音译专名，词义理解不同"
+  },
+  {
+    "id": "ctx-c11",
+    "category": "需要上下文",
+    "before": [
+      "电竞主播直播间弹幕都在刷什么"
+    ],
+    "source": "其实也不奇怪，在串子多的地方'你已急哭'这种梗刷得飞起",
+    "after": [],
+    "requirement": "应译为'trolls'或'people who stir up trouble'，并体现'你已急哭'是弹幕梗。",
+    "reason": "B中的'串子'是网络用语，指故意引战的人，不看A的弹幕语境容易误译为'串'或'串子'的字面意思。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "It's not really surprising — in places crawling with trolls, memes like \"you're so triggered you're crying\" get spammed like crazy.",
+    "with_context": "Not surprising, really—in places full of trolls, memes like \"you're already crying\" get spammed like crazy.",
+    "diff": "梗的翻译不同：A将'你已急哭'译为'you're so triggered you're crying'（强调被激怒），B译为'you're already crying'（仅表示已经在哭），词义理解有差异。"
+  },
+  {
+    "id": "ctx-c12",
+    "category": "需要上下文",
+    "before": [
+      "今天班上最搞笑的就是班主任的手机铃声"
+    ],
+    "source": "哪个班会，我怎么没听着",
+    "after": [],
+    "requirement": "应补出'which class meeting'或'what class gathering'，明确指A说的班级活动。",
+    "reason": "B中的'哪个班会'指代A提到的'班上'，不看A会不知道'班会'指什么，容易误译为'class meeting'。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Which class meeting? How come I didn't hear about it?",
+    "with_context": "Which class meeting was that? How come I didn't hear it?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c13",
+    "category": "需要上下文",
+    "before": [
+      "主理人笑的我难受 我不行了"
+    ],
+    "source": "我不行了，笑得我肚子疼",
+    "after": [],
+    "requirement": "应译为'I can't stop laughing'或'I'm dying of laughter'，体现笑得肚子疼的含义。",
+    "reason": "B中的'我不行了'是回应A的'我不行了'，表示笑得受不了，不看A容易误译为'I can't go on'或'I'm dying'。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I can't stop laughing, my stomach hurts!",
+    "with_context": "I can't anymore—I'm laughing so hard my stomach hurts.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c14",
+    "category": "需要上下文",
+    "before": [
+      "你这搭配也太离谱了吧"
+    ],
+    "source": "那咋了，谁理你",
+    "after": [],
+    "requirement": "应译为'So what? Who cares about you?'或类似，体现对A批评的不屑。",
+    "reason": "B中的'那咋了'和'谁理你'是反问和轻蔑语气，不看A的批评容易误译为'So what'和'Who cares'，但需结合A的搭配离谱来体现反驳。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "So what? Who cares?",
+    "with_context": "So what? Who cares?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c15",
+    "category": "需要上下文",
+    "before": [
+      "如果我莫名其妙给你发消息，求你理理我"
+    ],
+    "source": "笑死我了我求你了，你这突然袭击也太离谱了吧",
+    "after": [],
+    "requirement": "应译为'your sudden message'或'you popping up out of nowhere'，体现A突然发消息的行为。",
+    "reason": "B中的'你这突然袭击'指A突然发消息，不看A容易误译为'sudden attack'，但需结合A的请求来理解。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "LMAO, I'm begging you, this out-of-nowhere ambush is just too much.",
+    "with_context": "LMAO, I'm begging you, this surprise attack is way too much.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c16",
+    "category": "需要上下文",
+    "before": [
+      "室友半夜还开着低音炮打游戏"
+    ],
+    "source": "我已经发烧了，请室友不要再折磨我了",
+    "after": [],
+    "requirement": "应译为'please stop torturing me'或'please stop disturbing me'，明确指室友打游戏吵闹。",
+    "reason": "B中的'请室友不要再折磨我了'是请求，但'折磨'指室友打游戏吵闹，不看A容易误译为'torture'，需结合A的噪音语境。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I already have a fever—roommate, please stop torturing me.",
+    "with_context": "I've already got a fever—please, roommate, stop torturing me.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c17",
+    "category": "需要上下文",
+    "before": [
+      "老板骂我的时候我面无表情"
+    ],
+    "source": "我不行了，你这也太淡定了吧",
+    "after": [],
+    "requirement": "应译为'I can't stop laughing'或'I'm dying of laughter'，体现对A淡定的反应。",
+    "reason": "B中的'我不行了'是回应A的淡定，表示笑到不行，不看A容易误译为'I can't go on'。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I can't take it anymore—how are you this calm?!",
+    "with_context": "I can't even—how are you this calm?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c18",
+    "category": "需要上下文",
+    "before": [
+      "这次期末考试题目怎么样"
+    ],
+    "source": "抽象到我怀疑人生",
+    "after": [],
+    "requirement": "应译为'absurd'或'ridiculous'，体现题目离谱到怀疑人生。",
+    "reason": "B中的'抽象'是网络用语，指题目离谱难懂，不看A的考试题目容易误译为'abstract'。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "So absurd it made me question my whole existence.",
+    "with_context": "So bizarre it made me question my whole existence.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c19",
+    "category": "需要上下文",
+    "before": [
+      "为什么朋友圈屏蔽我"
+    ],
+    "source": "没有告知的义务！爱看看不看拉倒",
+    "after": [],
+    "requirement": "应译为'I have no obligation to tell you! Take it or leave it.'，体现对A屏蔽质问的强硬态度。",
+    "reason": "B中的'没有告知的义务'和'爱看看不看拉倒'是强硬拒绝，不看A的屏蔽问题容易误译为'no obligation to inform'，但需结合A的质问。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I'm not obligated to tell you! Take it or leave it.",
+    "with_context": "I don't owe you an explanation! Watch it if you want, or don't—whatever.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c20",
+    "category": "需要上下文",
+    "before": [
+      "这个护肤品用了三天就能美白"
+    ],
+    "source": "尊嘟假嘟？我怕不是要变成白雪公主了",
+    "after": [],
+    "requirement": "应译为'Really? I'm afraid I'll turn into Snow White'，体现反讽和怀疑。",
+    "reason": "B中的'尊嘟假嘟'是网络谐音'真的假的'，'白雪公主'是反讽，不看A的美白宣传容易误译为'Really? Snow White'。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "For real for real? I'm probably about to turn into Snow White here.",
+    "with_context": "For real? I might just turn into Snow White!",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c21",
+    "category": "需要上下文",
+    "before": [
+      "喝可乐脸会变小"
+    ],
+    "source": "我去不早说，那我天天喝可乐",
+    "after": [],
+    "requirement": "应补出省略的内容，译为类似“Damn, why didn't you say that earlier? Then I'll drink cola every day.”，体现“不早说”指代A刚说的信息。",
+    "reason": "B的“我去不早说”省略了宾语，不看A无法确定“不早说”的内容是“喝可乐脸会变小”这件事。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Damn, why didn't you say so earlier? I would've been drinking cola every day!",
+    "with_context": "Damn, why didn't you say so earlier? Then I'd drink cola every day.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c22",
+    "category": "需要上下文",
+    "before": [
+      "班主任严肃脸突然跳起了蜜雪冰城"
+    ],
+    "source": "笑死我了 我不行了，这画面太美",
+    "after": [],
+    "requirement": "应明确“我不行了”是笑到不行，译为类似“I'm dying of laughter, I can't take it—that image is too much.”，并体现“这画面”指A说的班主任跳蜜雪冰城。",
+    "reason": "B的“我不行了”和“这画面太美”指代A描述的场景，不看A无法确定“这画面”指什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I'm dying of laughter, I can't even—this is too much.",
+    "with_context": "I'm dying laughing, I can't even—this is too much.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c23",
+    "category": "需要上下文",
+    "before": [
+      "姐妹们快看我给你们发了什么好东西"
+    ],
+    "source": "我不行了我要笑怀了快救我",
+    "after": [],
+    "requirement": "应补出笑的原因，译为类似“I can't take it, I'm dying of laughter, save me!”并体现是因A发的内容而笑。",
+    "reason": "B的“我不行了我要笑怀了快救我”省略了引发笑的对象，不看A无法确定是看到A发的好东西而笑。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I can't take it, I'm dying laughing—quick, save me!",
+    "with_context": "I can't—I'm dying of laughter, somebody save me!",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c24",
+    "category": "需要上下文",
+    "before": [
+      "私猫 那么懂我"
+    ],
+    "source": "我不行了你艾特的最后一个人名字看得我想笑，这取名也太有创意了吧",
+    "after": [],
+    "requirement": "应明确“你艾特的最后一个人”指A所发内容中最后被@的人，译为类似“I can't take it—the name of the last person you tagged makes me want to laugh; that naming is so creative.”",
+    "reason": "B的“你艾特的最后一个人”指代A提到的“私猫”相关内容，不看A无法确定艾特的对象和语境。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I'm dying—the name of the last person you tagged is so funny, that name is way too creative.",
+    "with_context": "I can't—the name of the last person you @'d just cracks me up. That name is way too creative.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c25",
+    "category": "需要上下文",
+    "before": [
+      "这个表情包好搞笑啊"
+    ],
+    "source": "可是我觉得很神圣啊，不应该拿来开玩笑",
+    "after": [],
+    "requirement": "应体现转折关系，译为类似“But I think it's very sacred and shouldn't be joked about.”，明确“它”指A说的表情包。",
+    "reason": "B的“可是我觉得很神圣啊”中的“可是”和“很神圣”是对A说表情包搞笑的转折回应，不看A无法确定“神圣”指什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "But I think it's really sacred—you shouldn't joke about it.",
+    "with_context": "But I think it's really sacred. It shouldn't be joked about.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c26",
+    "category": "需要上下文",
+    "before": [
+      "我发现了一个超划算的折扣码"
+    ],
+    "source": "哥，算我求你了，别藏着掖着快推给我",
+    "after": [],
+    "requirement": "应补出“推给我”的对象是折扣码，译为类似“Bro, I'm begging you, don't keep it to yourself—send me that discount code.”",
+    "reason": "B的“哥，算我求你了，别藏着掖着快推给我”中的“推给我”指代A发现的折扣码，不看A无法确定推的是什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Bro, I'm begging you—stop holding out on me and just send it over.",
+    "with_context": "Bro, I'm begging you, don't hold out on me—send it my way already.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c27",
+    "category": "需要上下文",
+    "before": [
+      "一口气吃完三包辣条"
+    ],
+    "source": "我不行了，辣到起飞",
+    "after": [],
+    "requirement": "应体现是因吃辣条而辣到不行，译为类似“I can't take it—I'm so spicy I'm flying.”",
+    "reason": "B的“我不行了，辣到起飞”中的“辣到起飞”指A一口气吃完三包辣条，不看A无法确定辣的原因。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I can't take it anymore—this is so spicy I'm dying!",
+    "with_context": "I can't take it anymore—this is insanely spicy!",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c28",
+    "category": "需要上下文",
+    "before": [
+      "博主在演绎雷霆这个网络热梗"
+    ],
+    "source": "可是我觉得很神圣啊，一点都不好笑",
+    "after": [],
+    "requirement": "应体现转折并明确“它”指A说的热梗演绎，译为类似“But I think it's very sacred and not funny at all.”",
+    "reason": "B的“可是我觉得很神圣啊，一点都不好笑”是对A说博主演绎网络热梗的回应，不看A无法确定“神圣”指什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "But I think it's really sacred. It's not funny at all.",
+    "with_context": "But I think it's really sacred—not funny at all.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c29",
+    "category": "需要上下文",
+    "before": [
+      "抖音评论区现状展示了当代大学生的有趣互动"
+    ],
+    "source": "这期是我定制的评论区现状，内容过于真实引起舒适",
+    "after": [],
+    "requirement": "应明确“这期”指A提到的评论区现状内容，译为类似“This episode is a comment-section reality show I customized—it's so real it's comforting.”",
+    "reason": "B的“这期是我定制的评论区现状”中的“这期”指代A说的抖音评论区现状展示，不看A无法确定“这期”指什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "This episode is my custom take on the comment section—so real it's oddly satisfying.",
+    "with_context": "This episode is my custom take on the comment section—it's so real it's oddly satisfying.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c30",
+    "category": "需要上下文",
+    "before": [
+      "办公室新来的00后每句话都在玩梗"
+    ],
+    "source": "现在的小年轻，天天6的6的",
+    "after": [],
+    "requirement": "应体现“6的6的”指年轻人总说“6”（厉害/溜），译为类似“Kids these days, always going ‘6, 6’ all day.”",
+    "reason": "B的“天天6的6的”中的“6的6的”是网络用语，指玩梗说“6”，不看A无法确定是形容00后玩梗。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Kids these days, all they ever say is \"lit\" this and \"lit\" that.",
+    "with_context": "Kids these days, always going on about how \"awesome\" everything is.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c31",
+    "category": "需要上下文",
+    "before": [
+      "好笑吗，玩约瑟夫四跑了"
+    ],
+    "source": "不处了兄弟，这波操作太下饭",
+    "after": [],
+    "requirement": "应译为表示“不跟你一起玩了/不处了”的英文，如 'I'm done playing with you, bro'，并体现“这波操作太下饭”指操作太菜/太烂。",
+    "reason": "“不处了兄弟”中的“处”是多义词（相处/处对象/处朋友），不看A的游戏语境无法确定是“不一起玩了”还是“不处对象了”。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I'm done with you, bro—that play was straight-up embarrassing.",
+    "with_context": "I'm done playing with you, bro — that play was straight-up cringe.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c32",
+    "category": "需要上下文",
+    "before": [
+      "打游戏被队友坑到血压飙升"
+    ],
+    "source": "那TM是红温啊，气得我键盘都要敲坏了",
+    "after": [],
+    "requirement": "应补出主语和指代，译为 'That's fucking rage mode' 或 'That's tilting'，体现“红温”指气到脸红/暴怒。",
+    "reason": "“那TM是红温啊”中的“那”指代A说的“血压飙升”状态，不看A无法确定“那”指什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "That's f**king rage-inducing—I'm so mad I'm about to smash my keyboard.",
+    "with_context": "That shit got me fucking tilted—I was so mad I almost smashed my keyboard.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c33",
+    "category": "需要上下文",
+    "before": [
+      "你这水平可以承包春晚笑点了"
+    ],
+    "source": "春晚有你策划或监制或编剧的吧，这么清楚观众笑点",
+    "after": [],
+    "requirement": "应体现反讽语气，译为 'You must be the planner or producer or writer of the Spring Gala, you know the audience's laugh points so well'，保留讽刺意味。",
+    "reason": "B句是反讽，表面说“你策划春晚”，实际讽刺A“你这么懂笑点”，不看A的调侃无法确定反讽对象和语气。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "You must've planned, produced, or written for the Spring Festival Gala—you know exactly what makes the audience laugh.",
+    "with_context": "You must be the one planning, producing, or writing for the Spring Festival Gala—you know exactly what makes the audience laugh.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c34",
+    "category": "需要上下文",
+    "before": [
+      "最纯困那一年，听力ABCD我写了个E，同桌笑了一声把我吓醒，赶紧擦掉，然后改成了G"
+    ],
+    "source": "如何呢兄弟，你这波操作是想把26个字母都写一遍吗？",
+    "after": [],
+    "requirement": "应补出指代，译为 'So how about it, bro? Was this move of yours trying to write all 26 letters?'，体现调侃A乱写字母。",
+    "reason": "“如何呢兄弟”和“你这波操作”指代A把ABCD写成E又改成G的糗事，不看A无法确定“这波操作”指什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "So, bro, what's the deal here—are you trying to write out all 26 letters or something?",
+    "with_context": "So, bro, what was that? Were you trying to write out the whole alphabet?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c35",
+    "category": "需要上下文",
+    "before": [
+      "接力型：7"
+    ],
+    "source": "我crush太聪明了 故意跳过8，这操作简直秀我一脸",
+    "after": [],
+    "requirement": "应补出“8”指数字8，译为 'My crush is so smart, deliberately skipping 8, this move totally shows off'，体现“秀我一脸”指炫技/秀操作。",
+    "reason": "“故意跳过8”指A说的“接力型：7”中跳过8，不看A无法知道跳过的是什么数字。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "My crush is so smart—they deliberately skipped 8. That move was such a flex right in my face.",
+    "with_context": "My crush is way too smart—skipping 8 on purpose? That move totally flexed on me.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c36",
+    "category": "需要上下文",
+    "before": [
+      "这次考试不及格我就告诉你妈"
+    ],
+    "source": "当个事办，马上开始复习",
+    "after": [],
+    "requirement": "应译为 'I'll take it seriously, starting to review right away'，体现“当个事办”指认真对待这个威胁。",
+    "reason": "“当个事办”是回应A的威胁，意思是“我会认真对待”，不看A的“告诉你妈”无法确定“事”指什么。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Take this seriously and start studying right now.",
+    "with_context": "Take it seriously and start reviewing right now.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c37",
+    "category": "需要上下文",
+    "before": [
+      "我使用净化，或者霸体，或者免控"
+    ],
+    "source": "硬控，直接给你控到怀疑人生",
+    "after": [],
+    "requirement": "应译为 'Hard crowd control, I'll control you until you doubt life'，体现“硬控”指游戏硬性控制技能。",
+    "reason": "“硬控”是游戏术语，回应A的“净化/霸体/免控”，不看A无法确定是游戏中的控制技能。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Hard CC — it'll lock you down so hard you'll question your existence.",
+    "with_context": "Hard CC—it'll lock you down so hard you'll question your existence.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c38",
+    "category": "需要上下文",
+    "before": [
+      "篮球比赛三分20投18中观众都惊呆了"
+    ],
+    "source": "有时候手感太恐怖观众都怀疑开挂了，直接666刷屏连嘘声都懒得给",
+    "after": [],
+    "requirement": "应译为 'Sometimes the shooting touch is so terrifying that the audience suspects cheating, spamming 666 and not even bothering to boo'，体现“手感”指投篮手感。",
+    "reason": "“手感太恐怖”指A说的三分20投18中的投篮手感，不看A无法确定“手感”指篮球投篮。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Sometimes their gameplay is so insanely good that viewers suspect them of hacking—the chat just floods with \"666\" and they don't even bother booing.",
+    "with_context": "Sometimes his hot hand is just insane—the crowd suspects he's hacking, and the chat floods with \"666\" while nobody even bothers to boo.",
+    "diff": "主语不同：译文A用their/them指代队伍或玩家，译文B用his/he指代单个球员；且A将'手感'译为gameplay，B译为hot hand，词义理解不同。"
+  },
+  {
+    "id": "ctx-c39",
+    "category": "需要上下文",
+    "before": [
+      "谁来艾特一下光头强梦女"
+    ],
+    "source": "也曾大喊来财也曾渴望玉牌，结果发现是个秃头伐木工",
+    "after": [],
+    "requirement": "应补出主语（如“I”），并明确“来财”“玉牌”为网络梗或具体事物，“秃头伐木工”指光头强，体现调侃语气。",
+    "reason": "B句中的“来财”“玉牌”“秃头伐木工”需要结合A提到的“光头强梦女”才能确定具体指代和幽默含义。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I used to shout \"bring me wealth\" and dream of a jade tablet—turns out it was just a bald lumberjack.",
+    "with_context": "I used to shout \"bring the wealth\" and dream of a jade token—turns out it's just a bald lumberjack.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c40",
+    "category": "需要上下文",
+    "before": [
+      "兄弟终于凉滴嘟了呀"
+    ],
+    "source": "我去不早说，我这边还裹着大棉袄呢",
+    "after": [],
+    "requirement": "应译出“我去”为感叹词（如“Damn”），并体现“不早说”的抱怨，同时“裹着大棉袄”需结合A的“凉”理解为天气冷。",
+    "reason": "B句“我去不早说”中的“去”是语气词，“凉滴嘟”需要结合A的语境理解，否则容易误译。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Damn, why didn't you say so earlier? I'm still bundled up in a thick winter coat over here.",
+    "with_context": "Damn, why didn't you say so earlier? I'm still bundled up in a thick winter coat over here.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c41",
+    "category": "需要上下文",
+    "before": [
+      "朋友生日给我发了666红包"
+    ],
+    "source": "我看到这个六百六十六的数字就难受的不行",
+    "after": [],
+    "requirement": "应明确“六百六十六”指666元红包，并译出“难受得不行”的情感。",
+    "reason": "B句“六百六十六”指代A中的666红包，单独看可能误解为数字或游戏术语。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Seeing the number 666 makes me super uncomfortable.",
+    "with_context": "Seeing the number 666 just makes me incredibly uncomfortable.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c42",
+    "category": "需要上下文",
+    "before": [
+      "你考试前才知道复习错科目了"
+    ],
+    "source": "我去不早说，现在补还来得及吗",
+    "after": [],
+    "requirement": "应译出“我去”为感叹词，“不早说”为抱怨，并明确“补”指补救复习。",
+    "reason": "B句“我去不早说”需要结合A的考试复习错科目语境，否则“补”的对象不明。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Why didn't you say so earlier? Is it too late to make up for it now?",
+    "with_context": "Damn, why didn't you tell me sooner? Is there still time to cram?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c43",
+    "category": "需要上下文",
+    "before": [
+      "这AI画的图说是100%原创"
+    ],
+    "source": "我要验牌，绝对是缝合的",
+    "after": [],
+    "requirement": "应译出“验牌”为检查/验证，“缝合的”为拼凑/抄袭，并体现质疑语气。",
+    "reason": "B句“验牌”和“缝合的”需要结合A的AI画图声称原创的语境，否则含义模糊。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Let me check the cards—this is definitely a mashup.",
+    "with_context": "I'm gonna verify it—it's definitely a mashup.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c44",
+    "category": "需要上下文",
+    "before": [
+      "我妈把我wifi断了"
+    ],
+    "source": "我不行了，没有网我要死了",
+    "after": [],
+    "requirement": "应译出“我不行了”为夸张的受不了，“没有网我要死了”为没网活不下去的夸张表达。",
+    "reason": "B句“我不行了”和“没有网我要死了”需要结合A的断网语境，否则可能误解为身体不适。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I can't take it anymore—no internet and I'm gonna die.",
+    "with_context": "I can't take it anymore—no internet and I'm gonna die.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c45",
+    "category": "需要上下文",
+    "before": [
+      "领导让我和同事PK项目方案"
+    ],
+    "source": "你方案vs同事的PPT谁更胜一筹",
+    "after": [],
+    "requirement": "应明确“你方案”指你的项目方案，“同事的PPT”指同事的方案展示，并译出“谁更胜一筹”的比较。",
+    "reason": "B句“你方案vs同事的PPT”需要结合A的PK项目方案语境，否则“方案”和“PPT”的对比对象不明。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Your proposal vs. your colleague's slides — who wins?",
+    "with_context": "Your proposal vs. your colleague's PPT—which one's better?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c46",
+    "category": "需要上下文",
+    "before": [
+      "重大发现：水不是H2O其实是奶茶"
+    ],
+    "source": "我去不早说，难怪我总想喝自来水",
+    "after": [],
+    "requirement": "应译出“我去”为感叹词，“不早说”为抱怨，并体现“难怪”的恍然大悟和幽默。",
+    "reason": "B句“我去不早说”和“难怪我总想喝自来水”需要结合A的“水不是H2O是奶茶”的玩笑，否则逻辑不通。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Damn, why didn't you say so earlier? No wonder I keep craving tap water.",
+    "with_context": "Damn, why didn't you say that earlier? No wonder I'm always craving tap water.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c47",
+    "category": "需要上下文",
+    "before": [
+      "最近有什么创新的汤圆做法吗？"
+    ],
+    "source": "当我拿出奶龙汤圆，请问阁下又该如何应对",
+    "after": [],
+    "requirement": "应译出“奶龙汤圆”为一种创意汤圆（可保留拼音或解释），“阁下又该如何应对”为调侃式挑战。",
+    "reason": "B句“奶龙汤圆”和“阁下又该如何应对”需要结合A问创新汤圆做法，否则指代不明。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "So I present the Nailong tangyuan — your move, good sir.",
+    "with_context": "So when I whip out my Nailong tangyuan, how are you gonna counter that, huh?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c48",
+    "category": "需要上下文",
+    "before": [
+      "这个游戏结局太震撼了我忍不住看了剧透"
+    ],
+    "source": "没关系通关时再看一遍",
+    "after": [],
+    "requirement": "应译出“没关系”为安慰，“通关时再看一遍”指游戏通关时再体验剧情。",
+    "reason": "B句“没关系通关时再看一遍”需要结合A说看了剧透，否则“再看一遍”的对象不明。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "It's okay, you can watch it again when you beat the game.",
+    "with_context": "It's fine—you can watch it again when you beat the game.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c49",
+    "category": "需要上下文",
+    "before": [
+      "周杰伦改用美声唱法"
+    ],
+    "source": "哥，今年格莱美有你啊",
+    "after": [],
+    "requirement": "应体现反讽语气，译为类似'Bro, see you at the Grammys this year'并保留调侃意味。",
+    "reason": "B的'哥'和'格莱美有你'是反讽，需结合A的'美声唱法'才能确定是调侃而非真夸。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Bro, you're in the Grammys this year!",
+    "with_context": "Bro, you're at the Grammys this year!",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c50",
+    "category": "需要上下文",
+    "before": [
+      "你是怎么找到这个赛道的？！真的！！很是想雇杀手"
+    ],
+    "source": "当个事办，兄弟你这想法很危险啊",
+    "after": [],
+    "requirement": "应补出'把这事当真/去办'的含义，译为'Don't actually take this seriously, bro, that idea is dangerous'。",
+    "reason": "'当个事办'省略宾语，需结合A的'雇杀手'才能确定是'把雇杀手当个事办'的劝阻。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Take this seriously, bro—that idea of yours is dangerous.",
+    "with_context": "I'll hold you to that. Bro, that idea of yours is dangerous.",
+    "diff": "译文A将“当个事办”理解为“认真对待”，译文B理解为“我会当真/说到做到”，对原句含义理解不同。"
+  },
+  {
+    "id": "ctx-c51",
+    "category": "需要上下文",
+    "before": [
+      "你们怎么长得都一样"
+    ],
+    "source": "我去不早说，早知道我就换个皮肤了",
+    "after": [],
+    "requirement": "应体现'换皮肤'指换外观，译为'Why didn't you say so earlier? I'd have changed my skin'。",
+    "reason": "'换个皮肤'是游戏梗，需结合A的'长得都一样'才能确定指换外貌。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Damn, why didn't you say so earlier? If I'd known, I would've changed my skin.",
+    "with_context": "Damn, why didn't you say so earlier? If I'd known, I would've changed my skin.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c52",
+    "category": "需要上下文",
+    "before": [
+      "室友凌晨四点起床写论文"
+    ],
+    "source": "笑不活了，这是什么神仙作息",
+    "after": [],
+    "requirement": "应体现反讽，译为'What kind of insane schedule is that'而非真夸。",
+    "reason": "'神仙作息'是反讽，需结合A的'凌晨四点起床'才能确定是吐槽作息离谱。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I'm dying laughing—what kind of insane sleep schedule is this?",
+    "with_context": "I'm dying laughing — what kind of insane schedule is that?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c53",
+    "category": "需要上下文",
+    "before": [
+      "我好像对早起上瘾了"
+    ],
+    "source": "我去不早说，难怪你朋友圈天天晒日出",
+    "after": [],
+    "requirement": "应体现'难怪你天天晒日出'的因果，译为'No wonder you post sunrises every day'。",
+    "reason": "'我去不早说'和'难怪'需结合A的'对早起上瘾'才能确定是恍然大悟的调侃。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "Oh man, why didn't you say so earlier? No wonder you post sunrise pics on Moments every day.",
+    "with_context": "Damn, why didn't you say so earlier? No wonder you're always posting sunrises on Moments.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c54",
+    "category": "需要上下文",
+    "before": [
+      "你这组合方式也太奇葩了"
+    ],
+    "source": "那咋了，谁理你，我喜欢就行",
+    "after": [],
+    "requirement": "应体现不在乎他人评价，译为'So what? Who cares? I like it, that's enough'。",
+    "reason": "'那咋了，谁理你'是口语反驳，需结合A的'奇葩'才能确定是'关你什么事'的态度。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "So what? Who cares about you? I like it, and that's all that matters.",
+    "with_context": "So what? Who cares what you think? I like it, and that's all that matters.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c55",
+    "category": "需要上下文",
+    "before": [
+      "第一次看到爱豆的生图"
+    ],
+    "source": "我不行了，这颜值是真实存在的吗",
+    "after": [],
+    "requirement": "应体现惊叹，译为'I can't even—is this face real?'。",
+    "reason": "'我不行了'是网络夸张表达，需结合A的'生图'才能确定是惊叹颜值。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "I can't even—is this level of beauty even real?",
+    "with_context": "I can't even—are these looks even real?",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c56",
+    "category": "需要上下文",
+    "before": [
+      "最近有什么特别火的网络梗吗？"
+    ],
+    "source": "最喜欢的梗是哇塞 感觉没恶意还有点抽象",
+    "after": [],
+    "requirement": "应体现'哇塞'作为梗且'抽象'指无厘头，译为'The 'wow' meme—it feels harmless but kind of abstract'。",
+    "reason": "'哇塞'和'抽象'需结合A问'网络梗'才能确定是描述梗的特点。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "My favorite meme is \"wow\"—it doesn't feel malicious, just kind of random and absurd.",
+    "with_context": "My favorite meme is \"wow\"—it doesn't seem mean-spirited, just kind of absurd.",
+    "diff": "无"
+  },
+  {
+    "id": "ctx-c57",
+    "category": "需要上下文",
+    "before": [
+      "博主记录了自己精神状态发癫的一天，内向社恐的i人挑战"
+    ],
+    "source": "笑死我啦最后那句加点啊，给老板都整红温啦，社恐人爆发起来是真的猛",
+    "after": [],
+    "requirement": "应体现'最后那句加点'指加码/加料，'红温'指老板被惹怒，译为'The last line really added fuel—even the boss got heated'。",
+    "reason": "'加点啊'和'整红温'需结合A的'发癫的一天'才能确定指视频最后加料让老板生气。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "LMAO, that last line really needed more punch—you got the boss completely flustered. When a socially anxious person finally snaps, they go hard.",
+    "with_context": "I'm dying laughing—you should've added a little more to that last line. You even got the boss all fired up. When a shy person finally snaps, they really go hard.",
+    "diff": "译文A将“加点啊”理解为“最后那句需要更有力度/冲击力”，译文B理解为“最后那句应该多说一点/加些内容”，对“加点”的词义理解不同。"
+  },
+  {
+    "id": "ctx-c58",
+    "category": "需要上下文",
+    "before": [
+      "有什么视频是看完就会让你想推荐给别人的"
+    ],
+    "source": "最后还升华了，这不得上春晚啊",
+    "after": [],
+    "requirement": "应体现'升华'指主题拔高，译为'It even elevates at the end—this deserves to be on the Spring Festival Gala'。",
+    "reason": "'最后还升华了'和'上春晚'需结合A问'推荐视频'才能确定是夸视频结尾拔高。",
+    "difficulty": 2,
+    "accept": null,
+    "alone": "It even got all deep and inspirational at the end—this is Spring Festival Gala material for sure!",
+    "with_context": "And it even had a big emotional payoff at the end—this deserves to be on the Spring Festival Gala!",
+    "diff": "无"
+  }
+]

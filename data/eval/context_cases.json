@@ -1,0 +1,76 @@
+[
+  {
+    "id": "ctx-01",
+    "category": "需要上下文",
+    "before": [
+      "那我们得赶紧对一下台词，时间不多了。"
+    ],
+    "source": "别担心，我已经背熟了。",
+    "after": [],
+    "requirement": "上文说的是台词，所以'背熟了'应译为 memorized my lines 一类，不能只说 memorized it"
+  },
+  {
+    "id": "ctx-02",
+    "category": "需要上下文",
+    "before": [
+      "我妈刚给我打了个电话。"
+    ],
+    "source": "说今晚不回来吃饭了。",
+    "after": [
+      "那我们点外卖吧。"
+    ],
+    "requirement": "原句省略了主语，根据上文是'妈妈'，英文必须补出主语 She，不能用 He 或 They，也不能缺主语"
+  },
+  {
+    "id": "ctx-03",
+    "category": "需要上下文",
+    "before": [
+      "你尝尝我做的红烧肉。"
+    ],
+    "source": "绝了！",
+    "after": [
+      "真的？那我下次还做。"
+    ],
+    "requirement": "根据上下文'绝了'是夸菜好吃，应译为 This is amazing! 一类的称赞，不能译成'完了/结束了'"
+  },
+  {
+    "id": "ctx-c02",
+    "category": "需要上下文",
+    "before": [
+      "不是我刚刚换的苦茶子"
+    ],
+    "source": "保持干燥，不然又要换新的了",
+    "after": [],
+    "requirement": "上文说的是刚换的内裤（苦茶子），当前句的'换新的'指换内裤，应体现 change into a new pair / new underwear 一类含义；是对对方说的，主语用 you"
+  },
+  {
+    "id": "ctx-c05",
+    "category": "需要上下文",
+    "before": [
+      "室友两千块工资还天天买奢侈品"
+    ],
+    "source": "6个钱包的威力，家里有矿吧",
+    "after": [],
+    "requirement": "上文说的是室友，'家里有矿'指室友家里很有钱，应使用 their / his / her 指代室友家庭，不能用 your；'家里有矿'要意译为 rich / loaded，不能直译成 mine"
+  },
+  {
+    "id": "ctx-c38",
+    "category": "需要上下文",
+    "before": [
+      "篮球比赛三分20投18中观众都惊呆了"
+    ],
+    "source": "有时候手感太恐怖观众都怀疑开挂了，直接666刷屏连嘘声都懒得给",
+    "after": [],
+    "requirement": "上文是一名球员三分球 20 投 18 中，'手感'指投篮手感（shooting touch / hot hand），主语应是这名球员（he / his），不能用 they 或泛泛的 gameplay"
+  },
+  {
+    "id": "ctx-c57",
+    "category": "需要上下文",
+    "before": [
+      "博主记录了自己精神状态发癫的一天，内向社恐的i人挑战"
+    ],
+    "source": "笑死我啦最后那句加点啊，给老板都整红温啦，社恐人爆发起来是真的猛",
+    "after": [],
+    "requirement": "上文是博主记录自己发癫的一天；当前句是观众的评论，'红温'指老板被气到脸红、被惹怒，'加点'是起哄让最后那句说得更猛；整体保留起哄、夸张的语气"
+  }
+]

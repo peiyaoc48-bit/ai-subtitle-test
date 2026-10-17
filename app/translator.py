@@ -16,6 +16,9 @@ from app.srt import Cue
 
 PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
 
+# 上下文窗口：翻译每句时附带的前后句数（v5 起生效）
+CONTEXT_BEFORE, CONTEXT_AFTER = 2, 1
+
 # 同一个字连续出现 5 次及以上（如 62 个"呜"）
 REPEAT_RE = re.compile(r"(.)\1{4,}")
 
@@ -34,7 +37,10 @@ def collapse_repeats(text: str) -> str:
 
 class MockTranslator:
     def translate(self, cues: list[Cue], target_lang: str) -> list[Cue]:
-        return [Cue(c.index, c.start, c.end, f"[{target_lang.upper()}] {c.text}") for c in cues]
+        return [Cue(c.index, c.start, c.end, self.translate_cue(cues, i, target_lang)) for i, c in enumerate(cues)]
+
+    def translate_cue(self, cues: list[Cue], i: int, target_lang: str) -> str:
+        return f"[{target_lang.upper()}] {cues[i].text}"
 
 
 class LLMTranslator:
@@ -50,6 +56,8 @@ class LLMTranslator:
         self.system_prompt = load_prompt(prompt_version)
         # Prompt 要求输出 JSON（直译→反思→意译）时，按 JSON 解析，取 free 字段作为译文
         self.json_mode = "JSON" in self.system_prompt
+        # Prompt 里有 <当前句> 标记时，翻译每一句都附带前后句作为上下文（v5 起）
+        self.use_context = "<当前句>" in self.system_prompt
         # 成本统计：调用次数、token 用量、耗时，用于对比不同 Prompt 版本的代价
         self.stats = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0, "seconds": 0.0}
         # 最近一次翻译的中间结果（直译、反思），方便分析失败原因
@@ -58,28 +66,37 @@ class LLMTranslator:
     def translate(self, cues: list[Cue], target_lang: str) -> list[Cue]:
         # 逐条翻译：实现简单，且不会出现"模型合并/拆分字幕行"的问题。
         # TODO(进阶)：改成批量翻译以提速，再用格式测试验证没有漏行。
-        result = []
-        for c in cues:
-            extra = {"response_format": {"type": "json_object"}} if self.json_mode else {}
-            start = time.perf_counter()
-            resp = self.client.chat.completions.create(
-                model=self.model,
-                temperature=0,
-                # JSON 模式要输出直译、反思、意译三段，需要更多额度；仍保留上限防止输出失控
-                max_tokens=600 if self.json_mode else 200,
-                **extra,
-                messages=[
-                    {"role": "system", "content": self.system_prompt.format(target_lang=target_lang)},
-                    {"role": "user", "content": collapse_repeats(c.text)},
-                ],
-            )
-            self.stats["calls"] += 1
-            self.stats["seconds"] += time.perf_counter() - start
-            if resp.usage:
-                self.stats["prompt_tokens"] += resp.usage.prompt_tokens
-                self.stats["completion_tokens"] += resp.usage.completion_tokens
-            result.append(Cue(c.index, c.start, c.end, self._extract(resp.choices[0].message.content)))
-        return result
+        return [Cue(c.index, c.start, c.end, self.translate_cue(cues, i, target_lang)) for i, c in enumerate(cues)]
+
+    def translate_cue(self, cues: list[Cue], i: int, target_lang: str) -> str:
+        """翻译 cues[i] 这一句；use_context 时附带前 CONTEXT_BEFORE 句、后 CONTEXT_AFTER 句。"""
+        extra = {"response_format": {"type": "json_object"}} if self.json_mode else {}
+        start = time.perf_counter()
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            temperature=0,
+            # JSON 模式要输出直译、反思、意译三段，需要更多额度；仍保留上限防止输出失控
+            max_tokens=600 if self.json_mode else 200,
+            **extra,
+            messages=[
+                {"role": "system", "content": self.system_prompt.format(target_lang=target_lang)},
+                {"role": "user", "content": self._user_message(cues, i)},
+            ],
+        )
+        self.stats["calls"] += 1
+        self.stats["seconds"] += time.perf_counter() - start
+        if resp.usage:
+            self.stats["prompt_tokens"] += resp.usage.prompt_tokens
+            self.stats["completion_tokens"] += resp.usage.completion_tokens
+        return self._extract(resp.choices[0].message.content)
+
+    def _user_message(self, cues: list[Cue], i: int) -> str:
+        current = collapse_repeats(cues[i].text)
+        if not self.use_context:
+            return current
+        before = "\n".join(collapse_repeats(c.text) for c in cues[max(0, i - CONTEXT_BEFORE):i]) or "（无）"
+        after = "\n".join(collapse_repeats(c.text) for c in cues[i + 1:i + 1 + CONTEXT_AFTER]) or "（无）"
+        return f"<上文>\n{before}\n</上文>\n<当前句>\n{current}\n</当前句>\n<下文>\n{after}\n</下文>"
 
     def _extract(self, content: str) -> str:
         content = (content or "").strip()

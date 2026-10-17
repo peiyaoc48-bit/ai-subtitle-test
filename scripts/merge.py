@@ -1,14 +1,18 @@
 """⑤ 合并：把人工审核通过（accept 为 true）的用例加入评测集，并统计采纳率。
 
 运行：python scripts/merge.py
+合并上下文用例：python scripts/merge.py context
 """
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-LABELED = ROOT / "data" / "corpus" / "candidates_labeled.json"
-CASES = ROOT / "data" / "eval" / "cases.json"
+CONTEXT = len(sys.argv) > 1 and sys.argv[1] == "context"
+LABELED = ROOT / "data" / "corpus" / ("context_labeled.json" if CONTEXT else "candidates_labeled.json")
+CASES = ROOT / "data" / "eval" / ("context_cases.json" if CONTEXT else "cases.json")
+FIELDS = ("id", "category", "before", "source", "after", "requirement") if CONTEXT else ("id", "category", "source", "requirement")
 
 
 def main():
@@ -22,7 +26,7 @@ def main():
     cases = json.loads(CASES.read_text(encoding="utf-8"))
     existing = {c["id"] for c in cases}
     new = [
-        {k: c[k] for k in ("id", "category", "source", "requirement")}
+        {k: c[k] for k in FIELDS}
         for c in accepted
         if c["id"] not in existing
     ]

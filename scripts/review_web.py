@@ -1,10 +1,12 @@
 """④ 人工审核（网页版）：每条用例一张卡片，点按钮决定是否采纳。
 
 启动：.venv/bin/uvicorn scripts.review_web:app --port 8001
+审核上下文用例：REVIEW_FILE=context_labeled.json .venv/bin/uvicorn scripts.review_web:app --port 8001
 打开：http://127.0.0.1:8001
 每次点按钮都会立即保存到 data/corpus/candidates_labeled.json。
 """
 import json
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -12,7 +14,7 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
 ROOT = Path(__file__).parent.parent
-LABELED = ROOT / "data" / "corpus" / "candidates_labeled.json"
+LABELED = ROOT / "data" / "corpus" / os.getenv("REVIEW_FILE", "candidates_labeled.json")
 CATEGORIES = ["网络梗", "方言", "成语俗语", "人名地名", "语气情绪", "需要上下文", "普通句子"]
 
 app = FastAPI(title="测试用例审核")
@@ -74,6 +76,9 @@ PAGE = """<!doctype html>
   .card.yes { border-left-color:var(--ok); } .card.no { border-left-color:var(--no); opacity:.7; }
   .meta { display:flex; gap:8px; align-items:center; font-size:13px; color:var(--muted); margin-bottom:6px; flex-wrap:wrap; }
   .src { font-size:18px; font-weight:600; margin:2px 0 10px; }
+  .ctx { font-size:14px; color:var(--muted); margin:2px 0; }
+  .ctx b { color:var(--text); font-weight:500; }
+  .why { font-size:13px; color:var(--accent); margin:0 0 8px; }
   textarea { width:100%; min-height:60px; font:inherit; padding:8px; border:1px solid var(--line); border-radius:6px; resize:vertical; }
   select, input[type=text] { font:inherit; padding:4px 6px; border:1px solid var(--line); border-radius:6px; }
   .actions { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; align-items:center; }
@@ -117,7 +122,10 @@ function render() {
       <div class="meta"><b>${c.id}</b>
         <select class="cat">${categories.map(x => `<option ${x === c.category ? 'selected' : ''}>${x}</option>`).join('')}</select>
         <span>难度 ${'★'.repeat(c.difficulty || 1)}</span></div>
+      <div class="ctx before" hidden></div>
       <div class="src"></div>
+      <div class="ctx after" hidden></div>
+      <p class="why" hidden></p>
       <textarea class="req"></textarea>
       <div class="actions">
         <button class="yes ${c.accept === true ? 'on' : ''}">✓ 采纳</button>
@@ -125,7 +133,12 @@ function render() {
         <input type="text" class="reason" placeholder="不采纳原因（可选）">
         <span class="saved"></span>
       </div>`;
-    $('.src', card).textContent = c.source;
+    $('.src', card).textContent = (c.before ? '当前句：' : '') + c.source;
+    for (const [cls, label, lines] of [['before', '上文：', c.before], ['after', '下文：', c.after]]) {
+      const el = $('.' + cls, card);
+      if (lines && lines.length) { el.hidden = false; el.innerHTML = '<b></b>'; el.firstChild.textContent = label + lines.join(' / '); }
+    }
+    if (c.reason) { $('.why', card).hidden = false; $('.why', card).textContent = '为什么需要上下文：' + c.reason; }
     $('.req', card).value = c.requirement;
     $('.reason', card).value = c.reject_reason || '';
     $('.yes', card).onclick = () => save(c, card, true);

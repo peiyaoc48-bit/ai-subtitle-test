@@ -1,0 +1,280 @@
+{
+  "stats": {
+    "calls": 45,
+    "prompt_tokens": 29070,
+    "completion_tokens": 4686,
+    "seconds": 55.624177829071414
+  },
+  "outputs": {
+    "name-01": {
+      "output": "Lin Xiao, how come you're here so early today?",
+      "direct": "Lin Xiao, why did you come so early today?",
+      "reflect": "直译准确自然，'来得这么早'在英文中常说 come in this early 或 come so early，语气是日常问候，无需调整。",
+      "free": "Lin Xiao, how come you're here so early today?"
+    },
+    "context-01": {
+      "output": "Don't worry, I've got it memorized.",
+      "direct": "Don't worry, I've already memorized it thoroughly.",
+      "reflect": "直译准确自然。'背熟了'指把内容背得很熟练，英文用 memorize 或 learn by heart 都合适，'thoroughly' 体现'熟'的程度。语气轻松安慰，符合原文。",
+      "free": "Don't worry, I've got it memorized."
+    },
+    "slang-01": {
+      "output": "That was such a sick move — I'm absolutely losing it.",
+      "direct": "This wave of operation is too showy, I directly split open.",
+      "reflect": "\"这波操作\" is internet slang for \"this move/play\"; \"太秀了\" means \"too impressive/flashy\" (from gaming slang 秀); \"我直接裂开\" is slang meaning \"I'm completely shattered/shook/breaking down.\" Literal translation is nonsensical in English.",
+      "free": "That was such a sick move — I'm absolutely losing it."
+    },
+    "idiom-01": {
+      "output": "You're just gilding the lily.",
+      "direct": "This of yours is simply drawing legs on a snake.",
+      "reflect": "直译保留了成语字面，但英文读者不懂这个典故；英语里有对应习语 gild the lily，表示多此一举、画蛇添足，更地道。",
+      "free": "You're just gilding the lily."
+    },
+    "short-01": {
+      "output": "Yeah.",
+      "direct": "Yeah.",
+      "reflect": "单字应答，语气平淡，英文用 Yeah 或 Mm 都自然，Yeah 更通用。",
+      "free": "Yeah."
+    },
+    "corpus-01": {
+      "output": "Teacher, I swear I did my homework—but my dog ate it.",
+      "direct": "Teacher, I really did write my homework but it was eaten by the dog.",
+      "reflect": "直译准确，但英文里\"the dog ate my homework\"是众所周知的借口习语，语气应带点无辜辩解的口吻，用\"I swear\"更自然。",
+      "free": "Teacher, I swear I did my homework—but my dog ate it."
+    },
+    "corpus-02": {
+      "output": "That head tilt was you sneaking a peek at the lyrics!",
+      "direct": "That tilt of the head was stealing a look at the words!",
+      "reflect": "直译准确，但\"偷看词\"在英文里更自然的说法是 sneak a peek at the lyrics/words；\"偏头那一下\"指那一下歪头动作，用 tilt of the head 可以，但口语里更常说 turning your head like that。语气是调侃式揭穿，需要保留。",
+      "free": "That head tilt was you sneaking a peek at the lyrics!"
+    },
+    "corpus-03": {
+      "output": "Not dating anyone—keeping a little mystery is nice.",
+      "direct": "Not dating, keeping a sense of mystery is pretty good.",
+      "reflect": "\"不处\" is slang for \"不处对象\" (not dating/not in a relationship); \"保持神秘感挺好的\" is casual self-justification. Direct version is accurate but \"Not dating\" could be smoother as \"I'm not dating anyone\" or \"Not getting into a relationship.\"",
+      "free": "Not dating anyone—keeping a little mystery is nice."
+    },
+    "corpus-04": {
+      "output": "That was so sudden.",
+      "direct": "Is it this sudden?",
+      "reflect": "直译生硬，不符合英语口语习惯。原文表达对某事来得突然的惊讶，英语母语者常说 That was so sudden 或 This is so sudden。",
+      "free": "That was so sudden."
+    },
+    "corpus-05": {
+      "output": "It's just hahaha so random, like who even gets this question",
+      "direct": "It's just hahaha too abstract, who understands this question",
+      "reflect": "“太抽象了”是网络用语，指某事离谱、让人摸不着头脑，直译 abstract 英文观众也能懂但不够地道；“谁懂啊”是流行语，表达共鸣/吐槽，不是真的问谁懂。",
+      "free": "It's just hahaha so random, like who even gets this question"
+    },
+    "corpus-06": {
+      "output": "I think it's true—I even came across some leaked clips from his concert.",
+      "direct": "It seems to be true, I even scrolled to leaked videos of his concert.",
+      "reflect": "\"刷到\" is internet slang for coming across something while scrolling; \"路透\" means leaked/spoiler footage from a concert. \"好像是真的\" expresses the speaker's tentative belief. Need natural colloquial English.",
+      "free": "I think it's true—I even came across some leaked clips from his concert."
+    },
+    "corpus-07": {
+      "output": "What class meeting? How come I didn't hear about it?",
+      "direct": "Which class meeting, how come I didn't hear it?",
+      "reflect": "直译基本准确，但\"班会\"指班级会议，\"我怎么没听着\"是口语化的反问，表达惊讶/疑惑自己没被告知。英文里用\"How come I didn't hear about it?\"更自然，\"which class meeting\"稍显生硬，可调整为\"What class meeting\"。",
+      "free": "What class meeting? How come I didn't hear about it?"
+    },
+    "corpus-08": {
+      "output": "Besides, he's got that honest, down-to-earth vibe that makes him so relatable. You're not losing out here—you might even mooch a free meal off that face.",
+      "direct": "Besides, his honest and simple aura is so approachable. You don't lose out this time—maybe you can even mooch a meal with this face.",
+      "reflect": "“憨厚老实的气质”指人看起来老实可靠、没有心机，英文用 honest, down-to-earth vibe 更自然；“亲民”指平易近人，用 relatable/approachable；“你这波不亏”是网络口语，意为这波你不吃亏，用 you're not losing out here；“靠这张脸蹭顿饭”指凭长相白吃一顿，用 mooch a meal off that face 地道。",
+      "free": "Besides, he's got that honest, down-to-earth vibe that makes him so relatable. You're not losing out here—you might even mooch a free meal off that face."
+    },
+    "corpus-09": {
+      "output": "Should we throw this souvenir away?",
+      "direct": "Should this souvenir be thrown away?",
+      "reflect": "直译准确自然，'souvenir'对应'纪念品'，'throw away'对应'扔掉'，疑问语气也保留。",
+      "free": "Should we throw this souvenir away?"
+    },
+    "corpus-10": {
+      "output": "That idea of yours is seriously out there.",
+      "direct": "Your idea is also abstract enough.",
+      "reflect": "\"抽象\" is Chinese internet slang meaning bizarre/ridiculous/out there, not literally abstract; \"也是够\" conveys a teasing, exasperated tone. Need a natural English equivalent.",
+      "free": "That idea of yours is seriously out there."
+    },
+    "corpus-11": {
+      "output": "Fine, I'll deal with all this toxic motivational crap when I get back to China.",
+      "direct": "Alright, wait until I return to the country to deal with these poisonous chicken soups.",
+      "reflect": "\"毒鸡汤\" is internet slang for toxic motivational quotes/platitudes, not literal soup; \"回国\" means return to China. \"行\" here is an agreeing/accepting tone, like \"Fine\" or \"Okay.\"",
+      "free": "Fine, I'll deal with all this toxic motivational crap when I get back to China."
+    },
+    "corpus-12": {
+      "output": "That short? Hit a creative block or something?",
+      "direct": "So short, did you hit a creative bottleneck?",
+      "reflect": "直译准确传达了字面意思和调侃语气。'创作瓶颈'在英文中常说 creative block 或 writer's block，'这么短'指内容篇幅短，用 'That short' 更自然。整体是调侃对方作品太短、是不是卡壳了。",
+      "free": "That short? Hit a creative block or something?"
+    },
+    "corpus-14": {
+      "output": "Your proposal vs. your coworker's slides — which one wins?",
+      "direct": "Your proposal vs. your colleague's PPT — who is more superior?",
+      "reflect": "\"谁更胜一筹\" is an idiom meaning \"who comes out on top / which is better.\" \"方案vs同事的PPT\" is a playful comparison format common in Chinese social media. Need natural English phrasing that keeps the casual, comparative tone.",
+      "free": "Your proposal vs. your coworker's slides — which one wins?"
+    },
+    "corpus-15": {
+      "output": "Just look at that fake-deep expression—you can tell something's fishy. That kind of straight-faced nonsense is comedy gold.",
+      "direct": "Look at that deliberately profound expression of his and you know there's a catfish, this kind of deadpan nonsense has the best comedic effect.",
+      "reflect": "\"有猫腻\" is an idiom meaning something fishy is going on, not literally a catfish; \"故作高深\" means putting on a mysteriously deep air; \"一本正经的胡说八道\" is a well-known phrase for deadpan/straight-faced nonsense. Need to render these naturally and keep the casual, amused tone.",
+      "free": "Just look at that fake-deep expression—you can tell something's fishy. That kind of straight-faced nonsense is comedy gold."
+    },
+    "corpus-16": {
+      "output": "Damn, why didn't you say so earlier? No wonder you're always posting sunrises on your Moments.",
+      "direct": "Damn, you didn't say earlier—no wonder you post sunrises on your Moments every day.",
+      "reflect": "\"我去\" is an exclamation of surprise/realization, not \"I go\"; \"不早说\" is a playful complaint meaning \"why didn't you say so earlier\"; \"朋友圈\" is WeChat Moments, commonly rendered as \"Moments\" or \"feed\". Tone is teasing realization.",
+      "free": "Damn, why didn't you say so earlier? No wonder you're always posting sunrises on your Moments."
+    },
+    "corpus-17": {
+      "output": "Nah, not dating. These days love comes with a price tag.",
+      "direct": "No dating. These days, love is all clearly priced.",
+      "reflect": "\"不处\" is slang for \"不处对象\" (not going to date/be in a relationship). \"明码标价\" means openly marked with a price tag — i.e., love has become transactional. The tone is cynical and a bit resigned, so the English should sound casual and jaded.",
+      "free": "Nah, not dating. These days love comes with a price tag."
+    },
+    "corpus-18": {
+      "output": "Not looking to date. Go entertain yourself.",
+      "direct": "No dating, go play by yourself.",
+      "reflect": "\"不处\" is slang for \"不处对象\" (not going to date/be in a relationship), and \"自己玩去\" is a dismissive \"go amuse yourself / go away.\" Direct translation misses the romantic-rejection nuance and sounds odd.",
+      "free": "Not looking to date. Go entertain yourself."
+    },
+    "corpus-19": {
+      "output": "Hey, the winning numbers on the lottery ticket I bought are exactly the same as what you said yesterday!",
+      "direct": "Look at the lottery ticket I bought, the winning numbers are exactly the same as what you said yesterday.",
+      "reflect": "直译准确传达了意思，但'你看'在口语中常用来引起注意，英文用'Look'稍显生硬，可改为'Hey'或直接省略；'中奖号码'译为'winning numbers'正确；整体语气是惊讶/兴奋，英文应保持这种口语感。",
+      "free": "Hey, the winning numbers on the lottery ticket I bought are exactly the same as what you said yesterday!"
+    },
+    "corpus-20": {
+      "output": "Hakimi north-south mung beans — I'm dying trying not to laugh at my desk.",
+      "direct": "Hakimi north-south green beans, I'm holding it in at my workstation until I get internal injuries.",
+      "reflect": "\"哈基米\" is internet slang (from a viral cat meme/song, often used as a cute nonsense word or referring to a pet), \"南北绿豆\" is a nonsense rhyming phrase from the same meme song; together they're a playful meme chant, not literal. \"憋出内伤\" means suppressing laughter/emotion so hard it hurts inside. Need to convey the meme-y nonsense and the feeling of stifling laughter at work.",
+      "free": "Hakimi north-south mung beans — I'm dying trying not to laugh at my desk."
+    },
+    "corpus-21": {
+      "output": "Ran into this guy on the subway who kept muttering anime lines to himself the whole ride.",
+      "direct": "On the subway I ran into a big bro who kept talking to himself using anime lines the whole time.",
+      "reflect": "直译准确，但\"大哥\"在中文口语里指陌生男子，英文用\"guy\"更自然；\"全程\"用\"the whole ride\"更贴合地铁场景；\"动漫台词\"用\"anime lines\"地道。",
+      "free": "Ran into this guy on the subway who kept muttering anime lines to himself the whole ride."
+    },
+    "corpus-22": {
+      "output": "Last night I stayed up late watching your livestream and laughed till my stomach hurt.",
+      "direct": "Last night I stayed up late watching your livestream and laughed until my stomach hurt.",
+      "reflect": "直译准确自然，'laughed until my stomach hurt' 是英语中表达笑到肚子疼的地道说法，'stayed up late' 对应熬夜，语气轻松口语化，无需改动。",
+      "free": "Last night I stayed up late watching your livestream and laughed till my stomach hurt."
+    },
+    "corpus-23": {
+      "output": "Was in such a hurry leaving that I grabbed the rag and brought it to work thinking it was a towel.",
+      "direct": "In a hurry to go out, I directly took the rag to the company as a towel.",
+      "reflect": "直译准确但生硬；'直接把抹布当毛巾带公司去了'是口语化自嘲，英文应更自然，用 'grabbed' 和 'thinking it was' 体现匆忙中拿错的意味。",
+      "free": "Was in such a hurry leaving that I grabbed the rag and brought it to work thinking it was a towel."
+    },
+    "corpus-24": {
+      "output": "Not dating. This drama's too juicy—I can't even keep up.",
+      "direct": "Not dating. The melon is too big to bite through.",
+      "reflect": "\"不处\" is slang for \"not dating / won't date\"; \"瓜\" is internet slang for gossip/drama, and \"啃不动\" means it's too much to handle/digest. Literal \"melon too big to bite\" would confuse English viewers.",
+      "free": "Not dating. This drama's too juicy—I can't even keep up."
+    },
+    "corpus-27": {
+      "output": "Isn't that how it should be?",
+      "direct": "Isn't this what should be?",
+      "reflect": "直译生硬。这句话是反问，表达\"这本来就是理所应当的\"，语气带点理所当然或反问意味。英文常用 Isn't that how it should be? 或 That's how it should be, isn't it?",
+      "free": "Isn't that how it should be?"
+    },
+    "corpus-28": {
+      "output": "The boss is going to marry the cleaning lady.",
+      "direct": "The boss is going to marry the cleaning lady.",
+      "reflect": "直译准确自然，'保洁阿姨'译为 cleaning lady 符合英语习惯，'要和...结婚了'用 is going to marry 传达即将结婚的意思，语气平实，无需调整。",
+      "free": "The boss is going to marry the cleaning lady."
+    },
+    "corpus-29": {
+      "output": "Treadmill, elliptical, or spin bike—which is better for overweight people trying to lose fat?",
+      "direct": "Treadmill, elliptical, and spin bike—which one is more suitable for people with a large body weight who want to lose fat?",
+      "reflect": "直译准确，但'大体重减脂人群'在英文健身语境里更常说 'people who are overweight and want to lose fat' 或 'heavier people trying to lose fat'，'large body weight' 略显生硬。'动感单车'指 spin bike，正确。整体语气是提问，保持自然。",
+      "free": "Treadmill, elliptical, or spin bike—which is better for overweight people trying to lose fat?"
+    },
+    "corpus-31": {
+      "output": "Oh man, I can't even—I'm gonna be laughing about this for a year. I mean, who hasn't had an embarrassing sanitary pad buying story?",
+      "direct": "Oh my, I can't take it anymore, this kind of experience I can laugh about for a year, who among us doesn't have some social-death story about buying sanitary pads!",
+      "reflect": "直译基本准确，但'social-death'是中式网络梗，英文观众不易理解，应改为embarrassing/awkward；'I can't take it anymore'在此是笑到不行，用I can't even更口语化；'who among us doesn't have'稍显正式，可改为we've all got。",
+      "free": "Oh man, I can't even—I'm gonna be laughing about this for a year. I mean, who hasn't had an embarrassing sanitary pad buying story?"
+    },
+    "corpus-32": {
+      "output": "I'm already running a fever—please, aunties, cut me some slack.",
+      "direct": "I'm already running a fever, please let me go, aunties.",
+      "reflect": "“大妈们”指爱管闲事、爱唠叨的中年妇女群体，英文里没有完全对应的词，用 \"aunties\" 能保留称呼感；“放过我吧”是求饶、求别烦我的意思，不是字面“放我走”，用 \"cut me some slack\" 或 \"leave me alone\" 更自然。",
+      "free": "I'm already running a fever—please, aunties, cut me some slack."
+    },
+    "corpus-33": {
+      "output": "Watch Gen Z chat in cryptic internet slang",
+      "direct": "Watch post-00s chat in Martian language",
+      "reflect": "\"火星文\" is Chinese internet slang for the stylized, hard-to-read text/leet-speak that young netizens use, not literal Martian; \"00后\" means the post-2000 generation. Need a natural English equivalent like \"Gen Z\" and \"cryptic internet slang\" or \"text speak.\"",
+      "free": "Watch Gen Z chat in cryptic internet slang"
+    },
+    "corpus-34": {
+      "output": "I keep getting interrupted by messages at work and can't stay focused—any tips for being more productive?",
+      "direct": "At work I'm always interrupted by all kinds of messages, hard to focus on doing things, what methods are there to improve efficiency?",
+      "reflect": "直译准确但略显生硬；'难以专注做事'可更自然地表达为'hard to stay focused'；'提高效率的方法'用'ways to be more productive'更地道口语化。",
+      "free": "I keep getting interrupted by messages at work and can't stay focused—any tips for being more productive?"
+    },
+    "corpus-38": {
+      "output": "I was scrolling through videos and saw a Shandong auntie selling giant jianbing guozi at her stall. Now I'm curious—is Shandong jianbing the biggest in the country?",
+      "direct": "Scrolling videos, I saw a Shandong auntie's stall selling super-large jianbing guozi, and suddenly I got curious: is Shandong jianbing the biggest in the whole country?",
+      "reflect": "直译基本准确，但'auntie'在英文里指亲戚，这里指摊主大妈，应改为'auntie'作称呼不自然，用'a woman vendor'或保留'auntie'作为文化称呼更自然；'jianbing guozi'是专有食物名，保留拼音合理；'scrolling videos'可更口语化为'scrolling through videos'；整体语气是好奇，反问句自然。",
+      "free": "I was scrolling through videos and saw a Shandong auntie selling giant jianbing guozi at her stall. Now I'm curious—is Shandong jianbing the biggest in the country?"
+    },
+    "corpus-39": {
+      "output": "Its 9.4 rating on Douban proves just how good it is.",
+      "direct": "Douban's high score of 9.4 also proves its quality.",
+      "reflect": "直译准确自然，'豆瓣9.4的高分'在英文语境中可保留 Douban 并说明是评分，'proves its quality' 地道。",
+      "free": "Its 9.4 rating on Douban proves just how good it is."
+    },
+    "corpus-40": {
+      "output": "I can't even—this is too much good news all at once!",
+      "direct": "I can't take it anymore, happiness came too suddenly.",
+      "reflect": "\"我不行了\" here is an overwhelmed, excited reaction, not literal inability; \"幸福来得太突然\" is a common internet phrase meaning good news/joy hit unexpectedly. Need a natural, colloquial English equivalent that conveys being overwhelmed by sudden good fortune.",
+      "free": "I can't even—this is too much good news all at once!"
+    },
+    "corpus-41": {
+      "output": "Others: the fierce white-browed tiger. Me: a Qiaolezi ice cream bar.",
+      "direct": "Others: white-browed tiger with upward-slanting eyes. Me: Qiaolezi ice cream.",
+      "reflect": "\"吊睛白额虎\" is the classic fierce tiger from Water Margin (景阳冈), a symbol of something fearsome and mighty; \"巧乐兹\" is a popular Chinese ice cream brand, evoking something soft, sweet, and harmless. The joke is the contrast between the intimidating \"other\" and the cute, silly \"me.\" The literal rendering of the tiger's description is accurate but the brand name should stay as a proper name; the parallel structure \"Others: ... Me: ...\" works naturally in English meme format.",
+      "free": "Others: the fierce white-browed tiger. Me: a Qiaolezi ice cream bar."
+    },
+    "corpus-42": {
+      "output": "Hahaha I can't even—people online this time are seriously too funny.",
+      "direct": "Hahaha I can't anymore, this batch of netizens is really too talented.",
+      "reflect": "\"我不行了\" here means laughing uncontrollably, not physically exhausted; \"这届网友\" is internet slang meaning \"today's netizens/people online this generation\"; \"太有才了\" means hilariously clever/creative. Need natural colloquial English that conveys laughing too hard at how funny/clever netizens are.",
+      "free": "Hahaha I can't even—people online this time are seriously too funny."
+    },
+    "corpus-44": {
+      "output": "I'm done—working all this overtime has left me completely numb.",
+      "direct": "I can't anymore, I've worked overtime until I'm numb.",
+      "reflect": "\"我不行了\" expresses exhaustion/collapse, \"人都麻了\" is slang meaning completely numb/drained from overwork. Direct is accurate but \"I can't anymore\" could be more natural as \"I'm done\" or \"I can't take it anymore\"; \"麻了\" as \"numb\" works but \"drained\" or \"numb\" both fine. Keep colloquial tone.",
+      "free": "I'm done—working all this overtime has left me completely numb."
+    },
+    "corpus-45": {
+      "output": "I watch every single one of your videos. Your team's called, uh, Xiao Chao Team, right? I remember it all!",
+      "direct": "I watch every one of your videos, your team is called that whatchamacallit Xiao Chao Team right, I remember it all!",
+      "reflect": "“那个啥”是口语里想不起名字时的填充词，英文用 whatchamacallit 或 that...thing 更自然；“我都记得的”表达的是“我全都记得/我清楚得很”，语气热情，用 I remember it all 或 I know it 都行。整体是粉丝热情搭话的语气，要保持口语化。",
+      "free": "I watch every single one of your videos. Your team's called, uh, Xiao Chao Team, right? I remember it all!"
+    },
+    "corpus-47": {
+      "output": "Can you stop dragging me into playing games with you?",
+      "direct": "Can you stop pulling me to play games?",
+      "reflect": "\"拉着我打游戏\" means dragging/pulling someone into playing games with you; \"pulling me\" is a bit literal but understandable. More natural English would be \"dragging me into playing games\" or \"making me play games.\" The tone is mild complaint/annoyance, which should be preserved.",
+      "free": "Can you stop dragging me into playing games with you?"
+    },
+    "corpus-48": {
+      "output": "I can't take it anymore—this is way too cute!",
+      "direct": "I can't take it anymore, this is way too cute!",
+      "reflect": "直译准确传达了'我不行了'的夸张感叹和'太可爱了'的程度，'I can't take it anymore'在英语里正是看到可爱事物时夸张表达受不了的常用说法，语气自然。",
+      "free": "I can't take it anymore—this is way too cute!"
+    },
+    "corpus-49": {
+      "output": "I can't take it anymore—I know everything, I've grinded so hard I'm going bald.",
+      "direct": "I can't anymore, I know it all, grinding until bald.",
+      "reflect": "“我不行了”是口语化的崩溃/受不了，“肝到秃头”是网络梗，指熬夜拼命（打游戏/工作）到掉头发，直译 grinding until bald 字面能懂但不够地道，应体现“拼命熬到秃”的夸张调侃语气。",
+      "free": "I can't take it anymore—I know everything, I've grinded so hard I'm going bald."
+    }
+  }
+}

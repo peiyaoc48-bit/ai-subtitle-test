@@ -1,0 +1,52 @@
+{
+  "stats": {
+    "calls": 7,
+    "prompt_tokens": 4581,
+    "completion_tokens": 738,
+    "seconds": 8.586380874970928
+  },
+  "outputs": {
+    "ctx-01": {
+      "output": "Don't worry, I've got my lines down pat.",
+      "direct": "Don't worry, I've already memorized it thoroughly.",
+      "reflect": "“背熟了”在台词语境下指把台词记熟，直译准确；语气轻松自信，符合安慰对方的场景。",
+      "free": "Don't worry, I've got my lines down pat."
+    },
+    "ctx-02": {
+      "output": "She said she's not coming home for dinner tonight.",
+      "direct": "Said she won't come back for dinner tonight.",
+      "reflect": "直译准确，但英文里更自然的是用 she's not coming home for dinner tonight；主语 she 指妈妈，上下文已明确。",
+      "free": "She said she's not coming home for dinner tonight."
+    },
+    "ctx-03": {
+      "output": "This is incredible!",
+      "direct": "Absolutely amazing!",
+      "reflect": "“绝了”是口语感叹，表示极其好吃、太棒了，直译成“absolutely amazing”能传达赞叹语气，符合尝菜场景。",
+      "free": "This is incredible!"
+    },
+    "ctx-c02": {
+      "output": "Keep it dry, or we'll have to change into a new pair again.",
+      "direct": "Keep it dry, otherwise [we] will have to change to a new one again.",
+      "reflect": "“又要换新的了”指内裤又要换新的，语气是提醒/调侃；英文用 keep it dry 自然，后半句补出主语和宾语更清楚。",
+      "free": "Keep it dry, or we'll have to change into a new pair again."
+    },
+    "ctx-c05": {
+      "output": "With six wallets backing them, their family must be loaded.",
+      "direct": "The power of six wallets, their family must have a mine.",
+      "reflect": "\"6个钱包\" refers to the six wallets of two parents and four grandparents pooling money to support one child—a Chinese internet term for family financial backing. \"家里有矿\" is slang meaning the family is super rich. Literal \"have a mine\" would confuse English viewers, so use an idiom like \"loaded\" or \"made of money.\"",
+      "free": "With six wallets backing them, their family must be loaded."
+    },
+    "ctx-c38": {
+      "output": "Sometimes his touch is just insane—the crowd starts suspecting he's cheating, spamming \"666\" all over the screen, not even bothering to boo.",
+      "direct": "Sometimes the touch is too terrifying, the audience all suspect he's cheating, directly 666 flooding the screen, even too lazy to give boos.",
+      "reflect": "“手感太恐怖”指投篮手感火热，英文说“his touch is insane/scary hot”；“开挂”是游戏作弊梗，英文用“cheating”或“hacking”；“666刷屏”是弹幕刷“666”表示惊叹，英文观众对应刷“666”或“WTF/insane”，保留“666”更贴近原梗；“连嘘声都懒得给”意为观众惊叹到连嘘都懒得嘘，需传达这种夸张语气。",
+      "free": "Sometimes his touch is just insane—the crowd starts suspecting he's cheating, spamming \"666\" all over the screen, not even bothering to boo."
+    },
+    "ctx-c57": {
+      "output": "LMAO, that last line needed more punch — you got the boss completely worked up. When us socially anxious folks finally snap, we go hard.",
+      "direct": "I'm dying of laughter, add a bit to that last sentence, you got the boss all red-temperature, when social-phobic people explode they're really fierce",
+      "reflect": "「笑死我啦」是网络口语，英文对应 I'm dying of laughter / LMAO；「加点啊」指最后那句台词/语气再加重一点，不是加内容；「整红温啦」是网络梗，指把老板搞得脸红/破防/上头，英文可用 got the boss all worked up / made the boss lose it；「社恐人爆发起来是真的猛」要传达社恐人一旦爆发很猛的意思。",
+      "free": "LMAO, that last line needed more punch — you got the boss completely worked up. When us socially anxious folks finally snap, we go hard."
+    }
+  }
+}
