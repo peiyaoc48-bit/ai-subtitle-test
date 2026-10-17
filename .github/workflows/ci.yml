@@ -5,6 +5,9 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      # Server 酱 SendKey，存在仓库 Secrets 里；没配置时跳过微信推送
+      SCT_KEY: ${{ secrets.SERVERCHAN_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -12,7 +15,9 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       # CI 用 mock 模式：不调用大模型，不需要 API Key，结果稳定
-      - run: pytest --alluredir=allure-results
+      - run: |
+          set -o pipefail
+          pytest --alluredir=allure-results | tee pytest.log
         env:
           TRANSLATOR_MODE: mock
       - uses: actions/upload-artifact@v4
@@ -20,3 +25,18 @@ jobs:
         with:
           name: allure-results
           path: allure-results
+      - name: 推送测试结果到微信
+        if: always() && env.SCT_KEY != ''
+        env:
+          # 通过环境变量传入，避免提交信息里的特殊字符被当成脚本执行
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          SUMMARY=$(tail -n 1 pytest.log 2>/dev/null || echo "未生成测试日志")
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          curl -s "https://sctapi.ftqq.com/${SCT_KEY}.send" \
+            --data-urlencode "title=字幕翻译测试 ${{ job.status }}" \
+            --data-urlencode "desp=${SUMMARY}
+
+          提交：${COMMIT_MSG}
+
+          [查看运行详情](${RUN_URL})" > /dev/null
