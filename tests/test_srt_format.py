@@ -53,3 +53,12 @@ def test_no_runaway_output(pair):
     for s, o in zip(src, out):
         ratio = len(o.text) / len(s.text)
         assert ratio <= MAX_RATIO, f"第 {s.index} 条译文长度是原文的 {ratio:.0f} 倍"
+
+
+def test_html_tags_preserved(pair):
+    """字幕里的 HTML 格式标签（如 <i>斜体</i>）翻译后要保留。"""
+    import re
+
+    src, out = pair
+    for s, o in zip(src, out):
+        assert re.findall(r"</?[a-z]+>", o.text) == re.findall(r"</?[a-z]+>", s.text), f"第 {s.index} 条 HTML 标签丢失：{o.text!r}"
