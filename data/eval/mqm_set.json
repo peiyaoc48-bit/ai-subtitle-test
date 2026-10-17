@@ -1,0 +1,1430 @@
+[
+ {
+  "id": "name-01",
+  "source": "林晓，你今天怎么来得这么早？",
+  "before": [],
+  "category": "人名地名",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "context-01",
+  "source": "别担心，我已经背熟了。",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "slang-01",
+  "source": "这波操作太秀了，我直接裂开。",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "idiom-01",
+  "source": "你这简直是画蛇添足。",
+  "before": [],
+  "category": "成语俗语",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "short-01",
+  "source": "嗯。",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-01",
+  "source": "老师我作业真写了但被狗吃了",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-02",
+  "source": "偏头那一下是在偷看词！",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-03",
+  "source": "不处，保持神秘感挺好的。",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-04",
+  "source": "这么突然的吗",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-05",
+  "source": "就是哈哈哈太抽象了，这问题谁懂啊",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-06",
+  "source": "好像是真的，我还刷到过他演唱会的路透视频",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-07",
+  "source": "哪个班会，我怎么没听着",
+  "before": [],
+  "category": "方言",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-08",
+  "source": "再说了他那憨厚老实的气质多亲民，你这波不亏，说不定还能靠这张脸蹭顿饭",
+  "before": [],
+  "category": "成语俗语",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-09",
+  "source": "这个纪念品要不要扔掉",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-10",
+  "source": "你这想法也是够抽象的",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-11",
+  "source": "行，等我回国处理这些毒鸡汤",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-12",
+  "source": "这么短，是遇到创作瓶颈了吗",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-14",
+  "source": "你方案vs同事的PPT谁更胜一筹",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-15",
+  "source": "看他那副故作高深的表情就知道有猫腻，这种一本正经的胡说八道最有喜剧效果了",
+  "before": [],
+  "category": "成语俗语",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-16",
+  "source": "我去不早说，难怪你朋友圈天天晒日出",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-17",
+  "source": "不处，这年头爱情都明码标价了",
+  "before": [],
+  "category": "方言",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-18",
+  "source": "不处，自己玩去",
+  "before": [],
+  "category": "方言",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-19",
+  "source": "你看我买的彩票中奖号码和你昨天说的一模一样",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-20",
+  "source": "哈基米南北绿豆，我在工位上憋出内伤",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-21",
+  "source": "地铁上遇到个大哥全程用动漫台词自言自语",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-22",
+  "source": "昨晚熬夜看你直播笑到肚子疼",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-23",
+  "source": "着急出门直接把抹布当毛巾带公司去了",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-24",
+  "source": "不处，瓜太大了啃不动",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-27",
+  "source": "这不是应该的吗",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-28",
+  "source": "老板要和保洁阿姨结婚了",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-29",
+  "source": "跑步机、椭圆机和动感单车，哪种更适合大体重减脂人群？",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-31",
+  "source": "哎哟我不行了，这种经历我能笑一年，大家谁还没点买卫生巾的社死故事啊！",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-32",
+  "source": "我已经发烧了，请大妈们放过我吧",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-33",
+  "source": "看00后用火星文聊天",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-34",
+  "source": "工作中总被各种消息打断，难以专注做事，有什么提高效率的方法？",
+  "before": [],
+  "category": "普通句子",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-38",
+  "source": "刷视频看到山东大妈摊的超大煎饼果子，突然好奇山东煎饼是不是全国最大的？",
+  "before": [],
+  "category": "方言",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-39",
+  "source": "豆瓣9.4的高分也证明了它的品质。",
+  "before": [],
+  "category": "人名地名",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-40",
+  "source": "我不行了，幸福来得太突然",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-41",
+  "source": "别人：吊睛白额虎我：巧乐兹雪糕",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-42",
+  "source": "哈哈哈我不行了，这届网友真的太有才了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-44",
+  "source": "我不行了，加班加到人都麻了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-45",
+  "source": "你的每条视频我都会看的，你们团队叫那个啥小潮team是吧，我都记得的！",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-47",
+  "source": "你能不能别再拉着我打游戏了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-48",
+  "source": "我不行了，这也太可爱了吧！",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "corpus-49",
+  "source": "我不行了，我全知道，肝到秃头",
+  "before": [],
+  "category": "网络梗",
+  "origin": "v1 评测集"
+ },
+ {
+  "id": "ctx-01",
+  "source": "别担心，我已经背熟了。",
+  "before": [
+   "那我们得赶紧对一下台词，时间不多了。"
+  ],
+  "category": "需要上下文",
+  "origin": "上下文评测集"
+ },
+ {
+  "id": "ctx-02",
+  "source": "说今晚不回来吃饭了。",
+  "before": [
+   "我妈刚给我打了个电话。"
+  ],
+  "category": "需要上下文",
+  "origin": "上下文评测集"
+ },
+ {
+  "id": "ctx-03",
+  "source": "绝了！",
+  "before": [
+   "你尝尝我做的红烧肉。"
+  ],
+  "category": "需要上下文",
+  "origin": "上下文评测集"
+ },
+ {
+  "id": "ctx-c02",
+  "source": "保持干燥，不然又要换新的了",
+  "before": [
+   "不是我刚刚换的苦茶子"
+  ],
+  "category": "需要上下文",
+  "origin": "上下文评测集"
+ },
+ {
+  "id": "ctx-c05",
+  "source": "6个钱包的威力，家里有矿吧",
+  "before": [
+   "室友两千块工资还天天买奢侈品"
+  ],
+  "category": "需要上下文",
+  "origin": "上下文评测集"
+ },
+ {
+  "id": "ctx-c38",
+  "source": "有时候手感太恐怖观众都怀疑开挂了，直接666刷屏连嘘声都懒得给",
+  "before": [
+   "篮球比赛三分20投18中观众都惊呆了"
+  ],
+  "category": "需要上下文",
+  "origin": "上下文评测集"
+ },
+ {
+  "id": "ctx-c57",
+  "source": "笑死我啦最后那句加点啊，给老板都整红温啦，社恐人爆发起来是真的猛",
+  "before": [
+   "博主记录了自己精神状态发癫的一天，内向社恐的i人挑战"
+  ],
+  "category": "需要上下文",
+  "origin": "上下文评测集"
+ },
+ {
+  "id": "m-001",
+  "source": "偷偷告诉你搜主理人，养只抖音电子宠物过过瘾",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-002",
+  "source": "建议带父母去实体店试用系统流畅度，内存建议选12+256G版本。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-003",
+  "source": "我请问呢，你是新手村刚出来吗",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-004",
+  "source": "打扑克时有人总爱说电影台词",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-005",
+  "source": "看到路边小狗冲我摇尾巴",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-006",
+  "source": "你知道吗我们学校食堂今天居然免费",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-007",
+  "source": "哈哈哈哈这画面感太强了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-008",
+  "source": "没有告知的义务哦，这是我的小秘密",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-009",
+  "source": "玩抽象也能变大神吗你是鉴抄警察吗",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-010",
+  "source": "最近发现身边好多朋友都在追脱口秀，连我爸妈都开始看了。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-011",
+  "source": "我刚发现我妈把我珍藏的手办送人了",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-012",
+  "source": "这份文件今天必须看完",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-013",
+  "source": "有人说我长得特别白像是混血",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-014",
+  "source": "昨晚打游戏才发现长按这个键能放大招",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-015",
+  "source": "闺蜜我不行了，这瓜太劲爆",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-016",
+  "source": "记得带个轻便的大布袋装所有东西，双肩包在沙滩不方便。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-017",
+  "source": "这主播的故事也太离谱了吧",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-018",
+  "source": "这个游戏难度也太离谱了吧",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-019",
+  "source": "我真不行了，胃要爆炸了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-020",
+  "source": "还有那什么那咋了又能怎，听得我想拉屎，洗脑程度堪比病毒",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-021",
+  "source": "这个表情包是不是很有创意",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-022",
+  "source": "李宗恒这段表演太绝了，分分钟能上大舞台",
+  "before": [],
+  "category": "人名地名",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-023",
+  "source": "我去不早说，现在马上去补课",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-024",
+  "source": "在座的各位你已急哭了吧！",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-025",
+  "source": "0帧教学直接开始可还行，连热身动作都省了，这教练是电竞选手转行的吧？",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-026",
+  "source": "然后我现在每次都说那你受着呗，让他也体会下有苦说不出的心情",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-027",
+  "source": "你们说的应声虫到底啥意思啊",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-028",
+  "source": "你这发音也太魔性了",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-029",
+  "source": "害我浪费这么多时间",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-030",
+  "source": "这跟我下单的不一样",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-031",
+  "source": "你没发现他每次大型活动都要在红毯上转圈圈？",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-032",
+  "source": "我发现最近有个男生总是在我水瓶上做记号",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-033",
+  "source": "b哥演绎学生时代认真听讲却突然一股无名火的真实场景",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-034",
+  "source": "这群没法待了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-035",
+  "source": "老师上课放的PPT也太搞笑了",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-036",
+  "source": "我看搞笑视频都憋着不敢笑出声",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-037",
+  "source": "给大家表演个绝活",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-038",
+  "source": "建议你还是都看看，毕竟去年的考生也说'绝对不考'的那道题最后还是出现了",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-039",
+  "source": "听说雀巢要拍独立电影了",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-040",
+  "source": "我不行了，这也太像了吧",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-041",
+  "source": "太抽象了，这是什么全新战术",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-042",
+  "source": "想当年我也是意气风发，一手技能牌打的那叫一个八方来财，现在沦落到在这儿擦皮鞋",
+  "before": [],
+  "category": "方言",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-043",
+  "source": "我不行了你这备注名看得我想笑，太损了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-044",
+  "source": "这比春晚小品好笑多了",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-045",
+  "source": "我不行了，半夜把人吵醒真顶不住",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-046",
+  "source": "身上有跳蚤就去洗澡，把我手机整的骚哄的",
+  "before": [],
+  "category": "方言",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-047",
+  "source": "打算开始学习Python编程，完全零基础，应该从哪里入手比较好？",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-048",
+  "source": "相亲对象全程在说她的猫",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-049",
+  "source": "作为一个新晋UP主，我发现自己的视频播放量还行，但评论区总是冷冷清清的。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-050",
+  "source": "记住刚开始不需要太多设备，重点是多拍多练。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-051",
+  "source": "快让我掐一下看看是不是在做梦",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-052",
+  "source": "你已急哭，这比冷宫还冷",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-053",
+  "source": "最近工作压力特别大，经常焦虑到睡不着，有什么缓解方法吗？",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-054",
+  "source": "既然都说拼运气了怎么还要看装备",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-055",
+  "source": "宿舍查违禁品，结果舍友枕头底下掉出来个byt",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-056",
+  "source": "家人们我还死着",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-057",
+  "source": "我妈说要介绍相亲对象给我",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-058",
+  "source": "再更新回国弄你",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-059",
+  "source": "看到外卖小哥雨中送餐的视频",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-060",
+  "source": "考试答案就在课本第50页",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-061",
+  "source": "被这个动作迷晕了怎么办姐妹们",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-062",
+  "source": "朋友圈全是发六百六十六的，看得我头皮发麻",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-063",
+  "source": "帮我抢限量球鞋",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-064",
+  "source": "下周要参加教师资格证面试了，试讲环节有什么特别注意的事项吗？",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-065",
+  "source": "隔壁班有个男生下课就对着镜子摆忧郁pose还说自己是xxx剧男主",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-066",
+  "source": "英语听力考试完全听不懂",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-067",
+  "source": "我不行了笑死我了这模仿也太传神了吧简直复刻原版六百六十六装都不装了这个戏精本精",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-068",
+  "source": "我不行了啊啊啊，听得我脑浆都要凝固了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-069",
+  "source": "我对象发的这条朋友圈是什么意思",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-070",
+  "source": "我刚把珍藏一年的梗在群里分享结果冷场了",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-071",
+  "source": "你已急哭，马上回马上回",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-072",
+  "source": "我不行了，这也太猛了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-073",
+  "source": "李宗恒演绎当老丈人喜欢整蛊的故事，展现这届年轻人开始主持大局的春节趣事",
+  "before": [],
+  "category": "人名地名",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-074",
+  "source": "最好能拍照打卡的那种。",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-075",
+  "source": "我要验牌这个梗源自周星驰电影法国赌神的经典台词",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-076",
+  "source": "你需要准备：低筋面粉200g、黄油100g、糖粉60g、鸡蛋1个。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-077",
+  "source": "我勒个豆，这味道太顶了",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-078",
+  "source": "我都做完一半了，PPT都写了50页，现在告诉我可能要推倒重来？",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-079",
+  "source": "这次抽奖出的新角色怎么样",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-080",
+  "source": "还有一个可以可以",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-081",
+  "source": "没有人发现她很聪明吗用抽象起号然后成功了开始走颜值风格给粉丝大反差",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-082",
+  "source": "我真是留在了春晚看，这个节目也太精彩了吧！",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-083",
+  "source": "我不行了，这也太帅了吧！",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-084",
+  "source": "推荐每天专项练习20题，一个月就能看到进步。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-085",
+  "source": "她看到这个表情包应该会笑吧",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-086",
+  "source": "队友0-10还在那疯狂指挥",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-087",
+  "source": "我刚写完一份商业计划书，你看看怎么样",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-088",
+  "source": "最近想开始在家做瑜伽，但是完全零基础，不知道该从哪里入手。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-089",
+  "source": "我求你了憋住，别被老板发现",
+  "before": [],
+  "category": "方言",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-090",
+  "source": "打牌时候怎么识破老千",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-091",
+  "source": "抽象到让人看不懂的东西才叫挑战",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-092",
+  "source": "下期还想挑战什么 评论区留言",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-093",
+  "source": "有病吧我不行了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-094",
+  "source": "哈哈哈我不行了，你这形容也太搞笑了吧",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-095",
+  "source": "这个段子太好笑了应该上央视",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-096",
+  "source": "六百六十六哈哈哈",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-097",
+  "source": "这道题你会不会做？",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-098",
+  "source": "为什么你这么反感网络流行语？",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-099",
+  "source": "职场暖暖的意思明白了吧",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-100",
+  "source": "推荐下载Keep或训记APP跟着免费课程练，安全又系统。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-101",
+  "source": "第一次这么直观的感觉到自己的网瘾这么大",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-102",
+  "source": "你知道吗光头强的配音演员其实是顶级歌手",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-103",
+  "source": "要不是这破班天天困着我，我高低现在就买机票飞西安找你算账！",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-104",
+  "source": "现在00后都在玩什么梗",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-105",
+  "source": "我去不早说，害我琢磨了半天人物关系",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-106",
+  "source": "我抢到了演唱会门票",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-107",
+  "source": "冲下去想理论结果一激动咬到舌头，现在疼得眼泪都出来了",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-108",
+  "source": "我求你了，放过我们战队吧",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-109",
+  "source": "哈，没事，我正在跨年晚会看你说的电影",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-110",
+  "source": "预算2000内就能搭建基础系统，记得留好插座位置和网络覆盖。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-111",
+  "source": "兄弟救命啊！",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-112",
+  "source": "现在的教程都这么水了吗？",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-113",
+  "source": "考研复习进入瓶颈期，每天都很焦虑看不进书，该怎么调整心态提高效率？",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-114",
+  "source": "我妈说我再不找对象就别回家了",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-115",
+  "source": "简历控制在一页内，排版简洁，千万不要有错别字。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-116",
+  "source": "我把最后一块蛋糕吃了",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-117",
+  "source": "行，等我回国给你们证婚",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-118",
+  "source": "春晚看是吧，那我直接给你快进到大年三十",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-119",
+  "source": "太抽象了，当代年轻人精神状态一览",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-120",
+  "source": "最近想学习做面包，但是完全没基础，应该从哪里开始入门呢？",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-121",
+  "source": "我不行了，这孩子疯了吧",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-122",
+  "source": "第一次看到这么豪华的别墅",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-123",
+  "source": "带父母旅游建议选择交通便利、设施完善的休闲城市。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-124",
+  "source": "昨晚熬夜太困了",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-125",
+  "source": "这是抽象哥，不像b哥那种安静做题的",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-126",
+  "source": "看到解剖图突然笑出声是怎么回事",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-127",
+  "source": "我说你咋这么在意别人说六百六十六",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-128",
+  "source": "老板说这个月奖金翻倍",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-129",
+  "source": "我求你了忍住，别被当成精神病",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-130",
+  "source": "这比喻也太抽象了吧",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-131",
+  "source": "我不行了，这太阳打西边出来了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-132",
+  "source": "我去不早说，我现在就跑回家换衣服",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-133",
+  "source": "吃东西就去菜市场周边，便宜又地道。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-134",
+  "source": "对象说要和我冷静一个月",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-135",
+  "source": "那咋了，被人家颜值征服了呀",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-136",
+  "source": "如果面积大，Mesh分布式路由是最好方案，虽然贵些但全屋无死角。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-137",
+  "source": "6个钱包的威力，人均存款百万",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-138",
+  "source": "不处，我要在家躺平",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-139",
+  "source": "刚刚抢到的那双鞋其实是预售",
+  "before": [],
+  "category": "需要上下文",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-140",
+  "source": "看看我新学的地狱笑话",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-141",
+  "source": "求你了 我真的想上分 我求你了别走",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-142",
+  "source": "我妈非要我去相亲",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-143",
+  "source": "这次考试太难了我完全不会",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-144",
+  "source": "推荐《华图模块宝典》的图形专项，讲解很系统。",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-145",
+  "source": "我看你是还没清醒吧，996社畜就适合在家葛优躺，外卖小哥就是我最好的玩伴",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-146",
+  "source": "我不行了哈哈哈，他太有才了",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-147",
+  "source": "可是我觉得很神圣啊，那可是传家宝级别的！",
+  "before": [],
+  "category": "语气情绪",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-148",
+  "source": "好抽象让我想到了我同学，在小学的时候感叹我好白，问我是不是白种人",
+  "before": [],
+  "category": "网络梗",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-149",
+  "source": "老板突然让我去国外出差",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ },
+ {
+  "id": "m-150",
+  "source": "我爸说他当年追我妈只用了一顿饭",
+  "before": [],
+  "category": "普通句子",
+  "origin": "语料训练集抽样"
+ }
+]

@@ -1,0 +1,3817 @@
+{
+ "short-01": {
+  "translation": "Yeah.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 476,
+   "completion_tokens": 47
+  },
+  "translate_seconds": 1.0,
+  "judge_tokens": {
+   "prompt_tokens": 276,
+   "completion_tokens": 5
+  }
+ },
+ "context-01": {
+  "translation": "Don't worry, I've got it memorized.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 73
+  },
+  "translate_seconds": 1.29,
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "name-01": {
+  "translation": "Lin Xiao, how come you're here so early today?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 74
+  },
+  "translate_seconds": 1.08,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-02": {
+  "translation": "That head tilt was totally you sneaking a peek at the lines!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 115
+  },
+  "translate_seconds": 1.28,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-01": {
+  "translation": "Teacher, I really did my homework—but the dog ate it.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 76
+  },
+  "translate_seconds": 1.1,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "idiom-01": {
+  "translation": "You're just gilding the lily.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 85
+  },
+  "translate_seconds": 1.22,
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-03": {
+  "translation": "Nah, I'm not dating. Keeping a little mystery is nice.",
+  "errors": [
+   {
+    "span": "I'm not dating",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“不处”在此语境中意为“不谈恋爱/不处对象”，译文将其具体化为“I'm not dating”，属于增译，添加了原文没有的明确信息，可能误导观众。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 109
+  },
+  "translate_seconds": 1.31,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 74
+  }
+ },
+ "slang-01": {
+  "translation": "That move was insane — I'm literally losing it.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 103
+  },
+  "translate_seconds": 1.45,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-09": {
+  "translation": "Should we throw this souvenir away?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 54
+  },
+  "translate_seconds": 0.81,
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-07": {
+  "translation": "Which class meeting? How come I didn't hear about it?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 84
+  },
+  "translate_seconds": 1.17,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-10": {
+  "translation": "That idea of yours is pretty out there.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 70
+  },
+  "translate_seconds": 1.31,
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-04": {
+  "translation": "That's so sudden?",
+  "errors": [
+   {
+    "span": "That's so sudden?",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "陈述句加问号，标点与句式不匹配，应改为疑问句形式如 \"Is that so sudden?\" 或 \"That's so sudden?\" 改为陈述语气。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 477,
+   "completion_tokens": 59
+  },
+  "translate_seconds": 1.09,
+  "judge_tokens": {
+   "prompt_tokens": 281,
+   "completion_tokens": 73
+  }
+ },
+ "corpus-11": {
+  "translation": "Fine, I'll deal with all that toxic motivational crap once I'm back in China.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 128
+  },
+  "translate_seconds": 1.03,
+  "judge_tokens": {
+   "prompt_tokens": 299,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-05": {
+  "translation": "LOL it's just too random—who even gets this question?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 95
+  },
+  "translate_seconds": 1.44,
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-06": {
+  "translation": "Seems like it's true—I even came across some fan-shot clips from his concert.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 124
+  },
+  "translate_seconds": 1.6,
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-08": {
+  "translation": "Plus, his honest, down-to-earth vibe makes him so relatable. You're not losing out here—you might even score a free meal with that face.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 496,
+   "completion_tokens": 168
+  },
+  "translate_seconds": 1.77,
+  "judge_tokens": {
+   "prompt_tokens": 327,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-12": {
+  "translation": "So short—did you hit a creative block?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 64
+  },
+  "translate_seconds": 1.1,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-14": {
+  "translation": "Your proposal vs. your colleague's PPT—who comes out on top?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 92
+  },
+  "translate_seconds": 1.25,
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-19": {
+  "translation": "Look, the lottery numbers I picked are exactly the same as the ones you mentioned yesterday.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 487,
+   "completion_tokens": 114
+  },
+  "translate_seconds": 1.17,
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-16": {
+  "translation": "Damn, why didn't you say that earlier? No wonder you post sunrises on Moments every day.",
+  "errors": [
+   {
+    "span": "Damn",
+    "category": "style",
+    "severity": "minor",
+    "note": "“Damn”语气偏重且带脏话色彩，原文“我去”是较轻的感叹，用“Wow/Oh man”等更贴合字幕口语。"
+   },
+   {
+    "span": "Moments",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "“朋友圈”译为“Moments”是微信官方英文名，但英文字幕观众未必理解，可考虑“WeChat Moments”或意译。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 121
+  },
+  "translate_seconds": 1.35,
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 122
+  }
+ },
+ "corpus-18": {
+  "translation": "Not interested. Go play by yourself.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 99
+  },
+  "translate_seconds": 1.59,
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-15": {
+  "translation": "Just look at that fake-deep expression—you can tell something's fishy. That kind of straight-faced nonsense is comedy gold.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 497,
+   "completion_tokens": 147
+  },
+  "translate_seconds": 1.69,
+  "judge_tokens": {
+   "prompt_tokens": 323,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-17": {
+  "translation": "Not dating. These days, love comes with a price tag.",
+  "errors": [
+   {
+    "span": "Not dating.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“不处”是网络口语，意为“不谈恋爱/不处对象”，译成“Not dating.”意思基本对应，但语气偏书面、缺少原文那种口语化的拒绝/吐槽语气，且与后句衔接略显生硬。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 102
+  },
+  "translate_seconds": 1.5,
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 81
+  }
+ },
+ "corpus-21": {
+  "translation": "Ran into this guy on the subway who kept muttering anime lines to himself the whole ride.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 111
+  },
+  "translate_seconds": 1.19,
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-20": {
+  "translation": "Hakimi north-south green beans — I'm dying trying not to laugh at my desk.",
+  "errors": [
+   {
+    "span": "Hakimi",
+    "category": "terminology",
+    "severity": "major",
+    "note": "“哈基米”是网络流行语（源自日语“はちみ”，常指可爱小动物/猫咪），音译成“Hakimi”会被误读为足球运动员阿什拉夫·哈基米，属专名误用。"
+   },
+   {
+    "span": "north-south green beans",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“南北绿豆”是网络梗/无实义谐音串，直译为方位加豆类会让英文观众误以为在讲某种绿豆品种，意思偏差明显。"
+   },
+   {
+    "span": "I'm dying trying not to laugh at my desk",
+    "category": "style",
+    "severity": "minor",
+    "note": "“憋出内伤”指强忍笑意到内伤，译文基本达意但偏解释性、不够口语化，可更简洁自然。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 487,
+   "completion_tokens": 114
+  },
+  "translate_seconds": 1.43,
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 216
+  }
+ },
+ "corpus-22": {
+  "translation": "Stayed up late last night watching your livestream—laughed so hard my stomach hurt.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 113
+  },
+  "translate_seconds": 1.32,
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-28": {
+  "translation": "The boss is marrying the cleaning lady.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 94
+  },
+  "translate_seconds": 0.85,
+  "judge_tokens": {
+   "prompt_tokens": 286,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-23": {
+  "translation": "Was in such a hurry this morning I grabbed the dish rag instead of a towel and brought it to work.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 124
+  },
+  "translate_seconds": 1.07,
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-27": {
+  "translation": "Isn't that how it should be?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 477,
+   "completion_tokens": 100
+  },
+  "translate_seconds": 1.37,
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-29": {
+  "translation": "Treadmill, elliptical, or spin bike—which is better for heavier people trying to lose fat?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 491,
+   "completion_tokens": 116
+  },
+  "translate_seconds": 1.44,
+  "judge_tokens": {
+   "prompt_tokens": 310,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-31": {
+  "translation": "Oh man, I can't even—I'll be laughing about this for a whole year. Who hasn't had an embarrassing story about buying sanitary pads, right?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 498,
+   "completion_tokens": 201
+  },
+  "translate_seconds": 1.73,
+  "judge_tokens": {
+   "prompt_tokens": 329,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-34": {
+  "translation": "I keep getting interrupted by messages at work and find it hard to focus. Any tips for improving efficiency?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 490,
+   "completion_tokens": 104
+  },
+  "translate_seconds": 1.2,
+  "judge_tokens": {
+   "prompt_tokens": 309,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-32": {
+  "translation": "I'm already running a fever—please, aunties, just leave me alone.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 122
+  },
+  "translate_seconds": 1.41,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-24": {
+  "translation": "Not dating. That drama's too much for me to handle.",
+  "errors": [
+   {
+    "span": "Not dating.",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "“不处”是网络用语，意为“不谈恋爱/不处对象”，译成“Not dating”字面接近，但原文此处更可能是“不处（不相处/不处对象）”的省略口语，需结合语境；若原意是“不处对象”则尚可，但“不处”单独出现常表拒绝，译文可能误导。"
+   },
+   {
+    "span": "That drama's too much for me to handle.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“瓜太大了啃不动”指八卦/事件信息量太大难以消化，译文用“drama”偏向戏剧性冲突，且“too much to handle”侧重难以承受，未准确传达“瓜大（八卦信息量大）啃不动（消化不了）”的含义。"
+   },
+   {
+    "span": "That drama's too much for me to handle.",
+    "category": "style",
+    "severity": "minor",
+    "note": "字幕口语中“drama”虽可指八卦，但“too much for me to handle”略显书面，不够口语化。"
+   }
+  ],
+  "score": -31,
+  "worst": "critical",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 118
+  },
+  "translate_seconds": 1.53,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 258
+  }
+ },
+ "corpus-38": {
+  "translation": "I was scrolling through videos and saw a Shandong auntie making a super huge jianbing guozi at her stall—now I'm suddenly wondering: is Shandong jianbing the biggest in all of China?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 495,
+   "completion_tokens": 161
+  },
+  "translate_seconds": 1.61,
+  "judge_tokens": {
+   "prompt_tokens": 338,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-33": {
+  "translation": "Watch Gen Z chat in Martian script",
+  "errors": [
+   {
+    "span": "Gen Z",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“00后”指2000年后出生的人，与“Gen Z”（约1997–2012年出生）并不完全等同，属于范围偏移的误译。"
+   },
+   {
+    "span": "Martian script",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“火星文”是网络俚语/网络黑话，并非火星文字；译成“Martian script”会让观众误以为是外星文字，意思明显偏差。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 95
+  },
+  "translate_seconds": 1.24,
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 128
+  }
+ },
+ "corpus-39": {
+  "translation": "Its 9.4 rating on Douban also proves its quality.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 82
+  },
+  "translate_seconds": 1.43,
+  "judge_tokens": {
+   "prompt_tokens": 297,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-40": {
+  "translation": "I can't take it—this happiness came out of nowhere!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 120
+  },
+  "translate_seconds": 1.12,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-44": {
+  "translation": "I can't take it anymore—I've been working so much overtime I'm completely numb.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 113
+  },
+  "translate_seconds": 1.35,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-45": {
+  "translation": "I watch every single one of your videos. Your team's called, what's it called, Xiaochao Team, right? I remember everything!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 494,
+   "completion_tokens": 147
+  },
+  "translate_seconds": 1.44,
+  "judge_tokens": {
+   "prompt_tokens": 322,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-48": {
+  "translation": "I can't, this is way too cute!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 73
+  },
+  "translate_seconds": 0.86,
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-47": {
+  "translation": "Can you stop dragging me into playing games with you?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 101
+  },
+  "translate_seconds": 1.35,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-41": {
+  "translation": "Others: a fierce white-browed tiger. Me: a Qiaolezi ice cream bar.",
+  "errors": [
+   {
+    "span": "a fierce white-browed tiger",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“吊睛白额虎”是固定说法，指眼睛上吊、额头白色的猛虎；“white-browed”（白眉）把“白额”（白额/白额头）误译成了白眉毛，细节略有偏差。"
+   },
+   {
+    "span": "a Qiaolezi ice cream bar",
+    "category": "style",
+    "severity": "minor",
+    "note": "“巧乐兹”是品牌名，音译成 Qiaolezi 对英语观众没有意义，宜用官方英文名或加简短说明，否则显得生硬。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 488,
+   "completion_tokens": 134
+  },
+  "translate_seconds": 1.48,
+  "judge_tokens": {
+   "prompt_tokens": 307,
+   "completion_tokens": 152
+  }
+ },
+ "corpus-42": {
+  "translation": "Hahaha I can't even, netizens these days are just too talented.",
+  "errors": [
+   {
+    "span": "I can't even",
+    "category": "style",
+    "severity": "minor",
+    "note": "“I can't even”是网络流行语，与“我不行了”的夸张语气基本对应，但作为字幕口语略显随意，且与后句衔接稍显生硬。"
+   },
+   {
+    "span": "netizens these days",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“这届网友”带有“这一批/这一代网友”的调侃意味，“netizens these days”基本传达，但“这届”的特定网络梗色彩略有流失。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 108
+  },
+  "translate_seconds": 1.49,
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 137
+  }
+ },
+ "ctx-01": {
+  "translation": "Don't worry, I've got it memorized.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 73
+  },
+  "translate_seconds": 1.18,
+  "judge_tokens": {
+   "prompt_tokens": 312,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-49": {
+  "translation": "I can't do this anymore. I know everything—I've grinded so hard I'm going bald.",
+  "errors": [
+   {
+    "span": "I've grinded so hard I'm going bald",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“肝到秃头”是夸张的俚语，指熬夜/拼命工作到掉头发，并非字面意义上的“努力到秃头”；译文按字面理解，丢失了“肝”（熬夜/拼命）的含义。"
+   },
+   {
+    "span": "I can't do this anymore",
+    "category": "style",
+    "severity": "minor",
+    "note": "“我不行了”是口语化的疲惫感叹，译文偏正式、偏字面，语气不够自然。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 106
+  },
+  "translate_seconds": 1.39,
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 138
+  }
+ },
+ "ctx-03": {
+  "translation": "Unbelievable!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 477,
+   "completion_tokens": 72
+  },
+  "translate_seconds": 0.95,
+  "judge_tokens": {
+   "prompt_tokens": 297,
+   "completion_tokens": 5
+  }
+ },
+ "ctx-c02": {
+  "translation": "Keep it dry, or we'll have to get a new one again.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 77
+  },
+  "translate_seconds": 1.16,
+  "judge_tokens": {
+   "prompt_tokens": 315,
+   "completion_tokens": 5
+  }
+ },
+ "ctx-02": {
+  "translation": "He said he's not coming home for dinner tonight.",
+  "errors": [
+   {
+    "span": "He",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "原文是“我妈”（我妈妈），译文却译成“He”，把说话人完全搞错了。"
+   }
+  ],
+  "score": -25,
+  "worst": "critical",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 72
+  },
+  "translate_seconds": 1.16,
+  "judge_tokens": {
+   "prompt_tokens": 307,
+   "completion_tokens": 51
+  }
+ },
+ "ctx-c05": {
+  "translation": "The power of six wallets—your family must be loaded.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 95
+  },
+  "translate_seconds": 1.37,
+  "judge_tokens": {
+   "prompt_tokens": 315,
+   "completion_tokens": 5
+  }
+ },
+ "ctx-c38": {
+  "translation": "Sometimes his touch is so insane the audience suspects he's cheating—the chat just spams \"666\" and they don't even bother booing anymore.",
+  "errors": [
+   {
+    "span": "the chat just spams \"666\"",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“直接666刷屏”指观众刷屏，译文用“the chat”把主体转成了聊天室，略有偏差但可接受。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 494,
+   "completion_tokens": 161
+  },
+  "translate_seconds": 1.73,
+  "judge_tokens": {
+   "prompt_tokens": 346,
+   "completion_tokens": 67
+  }
+ },
+ "ctx-c57": {
+  "translation": "LMAO, add an \"ah\" to that last sentence—it made the boss totally lose it. When introverts snap, they really go hard.",
+  "errors": [
+   {
+    "span": "add an \"ah\" to that last sentence",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“最后那句加点啊”是博主对视频/字幕的评论（建议在最后那句加个“啊”），译文却译成对老板说的话，且“ah”作为语气词处理生硬，改变了说话对象和意思。"
+   },
+   {
+    "span": "it made the boss totally lose it",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“整红温啦”指把老板弄得又气又急/脸红上头，译成“totally lose it”略重且丢失“红温”的调侃色彩，但大意可接受。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 498,
+   "completion_tokens": 166
+  },
+  "translate_seconds": 1.59,
+  "judge_tokens": {
+   "prompt_tokens": 356,
+   "completion_tokens": 161
+  }
+ },
+ "m-003": {
+  "translation": "Seriously, are you a total newbie or what?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 98
+  },
+  "translate_seconds": 1.28,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-001": {
+  "translation": "Psst—search \"brand owner\" on Douyin and get your fix with a virtual pet.",
+  "errors": [
+   {
+    "span": "brand owner",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“主理人”指品牌/店铺的主理人或创始人，译成“brand owner”丢失了“主理人”这一网络流行称谓的特定含义，且与“搜主理人”这一搜索关键词的语境不符。"
+   },
+   {
+    "span": "get your fix with a virtual pet",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“过过瘾”意为满足一下好奇心/解解馋，“get your fix”偏指满足瘾头，语义略有偏移，但整体可理解。"
+   },
+   {
+    "span": "养只抖音电子宠物",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“抖音电子宠物”译为“virtual pet”，漏掉了“抖音”这一平台限定，弱化了“抖音电子宠物”这一特定玩法。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 113
+  },
+  "translate_seconds": 1.13,
+  "judge_tokens": {
+   "prompt_tokens": 308,
+   "completion_tokens": 201
+  }
+ },
+ "m-004": {
+  "translation": "There's always someone who keeps quoting movie lines when we play poker.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 86
+  },
+  "translate_seconds": 1.28,
+  "judge_tokens": {
+   "prompt_tokens": 297,
+   "completion_tokens": 5
+  }
+ },
+ "m-002": {
+  "translation": "I'd suggest taking your parents to a store to try out the system's responsiveness in person. For storage, go with the 12+256GB version.",
+  "errors": [
+   {
+    "span": "For storage",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“内存”指运行内存（RAM），译文误译为“storage”（存储），导致技术信息错误。"
+   },
+   {
+    "span": "12+256GB",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "原文“12+256G”指内存+存储规格，译文加“B”虽常见，但与原文单位表述不完全一致，且未体现“内存”含义。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 494,
+   "completion_tokens": 159
+  },
+  "translate_seconds": 1.29,
+  "judge_tokens": {
+   "prompt_tokens": 324,
+   "completion_tokens": 117
+  }
+ },
+ "m-005": {
+  "translation": "Saw a little dog by the roadside wagging its tail at me.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 84
+  },
+  "translate_seconds": 1.68,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-006": {
+  "translation": "Guess what? Our school cafeteria was actually free today!",
+  "errors": [
+   {
+    "span": "was actually free today",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“今天居然免费”指今天这一餐/活动免费，译文用“was free”容易被理解为食堂本身今天免费（如入场免费），且“actually”位置使语气偏向“竟然真的免费”，与“居然”的意外语气略有偏差。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 65
+  },
+  "translate_seconds": 1.52,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 86
+  }
+ },
+ "m-007": {
+  "translation": "Hahahaha I can picture it so vividly.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 89
+  },
+  "translate_seconds": 1.53,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-010": {
+  "translation": "Lately I've noticed a lot of my friends are into stand-up comedy—even my parents have started watching it.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 491,
+   "completion_tokens": 122
+  },
+  "translate_seconds": 1.68,
+  "judge_tokens": {
+   "prompt_tokens": 313,
+   "completion_tokens": 5
+  }
+ },
+ "m-008": {
+  "translation": "I'm not obligated to tell you — it's my little secret.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 77
+  },
+  "translate_seconds": 1.36,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-012": {
+  "translation": "I have to finish reading this document today.",
+  "errors": [
+   {
+    "span": "I have to",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“这份文件今天必须看完”是客观要求（文件必须被看完），译文用“I have to”变成说话人主观义务，且丢失了“今天”这一时间限制。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 68
+  },
+  "translate_seconds": 1.36,
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 71
+  }
+ },
+ "m-013": {
+  "translation": "Some people say I'm so fair-skinned I look mixed-race.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 132
+  },
+  "translate_seconds": 1.68,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-011": {
+  "translation": "I just found out my mom gave away my prized figurine collection.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 105
+  },
+  "translate_seconds": 1.84,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-009": {
+  "translation": "Can you become a pro just by posting weird shit? Are you the plagiarism police or something?",
+  "errors": [
+   {
+    "span": "posting weird shit",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“玩抽象”指玩梗/搞抽象幽默，译成“posting weird shit”把含义窄化为发奇怪内容，且粗俗化，偏离原意。"
+   },
+   {
+    "span": "or something",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“你是鉴抄警察吗”是直接质问，译文加“or something”增添了原文没有的轻蔑/不确定语气。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 119
+  },
+  "translate_seconds": 1.89,
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 122
+  }
+ },
+ "m-014": {
+  "translation": "Last night while gaming, I just found out that holding down this key triggers your ultimate.",
+  "errors": [
+   {
+    "span": "your ultimate",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文未指明人称，用 your 引入了原文没有的第二人称，与说话者自身经历（I just found out）不一致，宜用 my/the ultimate。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 106
+  },
+  "translate_seconds": 1.36,
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 63
+  }
+ },
+ "m-015": {
+  "translation": "Girl, I can't even—this gossip is way too juicy.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 83
+  },
+  "translate_seconds": 1.6,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-016": {
+  "translation": "Remember to bring a big lightweight cloth bag to carry everything—a backpack's a hassle at the beach.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 492,
+   "completion_tokens": 117
+  },
+  "translate_seconds": 1.51,
+  "judge_tokens": {
+   "prompt_tokens": 311,
+   "completion_tokens": 5
+  }
+ },
+ "m-017": {
+  "translation": "This streamer's story is way too crazy, right?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 110
+  },
+  "translate_seconds": 1.53,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-019": {
+  "translation": "I really can't take it anymore—my stomach's about to explode.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 90
+  },
+  "translate_seconds": 1.7,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-018": {
+  "translation": "This game's difficulty is absolutely ridiculous.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 86
+  },
+  "translate_seconds": 2.07,
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 5
+  }
+ },
+ "m-021": {
+  "translation": "Isn't this meme so creative?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 66
+  },
+  "translate_seconds": 2.16,
+  "judge_tokens": {
+   "prompt_tokens": 286,
+   "completion_tokens": 5
+  }
+ },
+ "m-022": {
+  "translation": "Li Zongheng's performance was absolutely brilliant—he could easily make it onto the big stage any minute.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 109
+  },
+  "translate_seconds": 2.45,
+  "judge_tokens": {
+   "prompt_tokens": 310,
+   "completion_tokens": 5
+  }
+ },
+ "m-020": {
+  "translation": "And all that 'so what, what are you gonna do' crap—it makes me want to crap, it's as brainwashing as a virus.",
+  "errors": [
+   {
+    "span": "so what, what are you gonna do",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“那咋了又能怎”是口语化的“那又怎样/又能怎么办”，译文拆成两句疑问，语气略重，但意思基本对应。"
+   },
+   {
+    "span": "crap",
+    "category": "style",
+    "severity": "minor",
+    "note": "原文“那什么……听得我想拉屎”中“那什么”是含糊指代，译文用 crap 兼作脏话和“屎”，虽双关但把原文的粗俗直白转为英语脏话，语气略有偏移。"
+   },
+   {
+    "span": "it's as brainwashing as a virus",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "“brainwashing”作形容词搭配 as...as 结构生硬，英语中更自然说法是“as brainwashing as a virus”虽可理解但不够地道，属措辞不自然。"
+   }
+  ],
+  "score": -3,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 493,
+   "completion_tokens": 164
+  },
+  "translate_seconds": 2.79,
+  "judge_tokens": {
+   "prompt_tokens": 323,
+   "completion_tokens": 221
+  }
+ },
+ "m-023": {
+  "translation": "Oh man, why didn't you say so earlier? I'm going to catch up on it right now.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 131
+  },
+  "translate_seconds": 2.41,
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-027": {
+  "translation": "What do you guys even mean by 'yes-man'?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 93
+  },
+  "translate_seconds": 1.52,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-026": {
+  "translation": "So now every time I just say, 'Then deal with it.' Let him get a taste of what it's like to suffer in silence.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 491,
+   "completion_tokens": 145
+  },
+  "translate_seconds": 1.77,
+  "judge_tokens": {
+   "prompt_tokens": 319,
+   "completion_tokens": 5
+  }
+ },
+ "m-025": {
+  "translation": "Starting the lesson at zero frames—no warm-up at all? This coach must be a former esports player.",
+  "errors": [
+   {
+    "span": "Starting the lesson at zero frames",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“0帧教学”是网络用语，指毫无铺垫/准备直接开始，译成“at zero frames”字面直译，英语观众无法理解其含义，意思明显偏差。"
+   },
+   {
+    "span": "no warm-up at all?",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“连热身动作都省了”是陈述语气，译文改为反问，语气略有偏差。"
+   },
+   {
+    "span": "This coach must be a former esports player.",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“电竞选手转行的吧”带有调侃推测语气，译文用陈述句“must be”稍显确定，且“转行”意味略弱。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 498,
+   "completion_tokens": 127
+  },
+  "translate_seconds": 2.0,
+  "judge_tokens": {
+   "prompt_tokens": 319,
+   "completion_tokens": 189
+  }
+ },
+ "m-024": {
+  "translation": "Everyone here must be crying from how anxious you are!",
+  "errors": [
+   {
+    "span": "must be crying from how anxious you are",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“你已急哭了吧”是说话人调侃/质问对方（“你”=观众/对方）急得要哭，译文却把“crying”的主语变成“everyone here”，并把“you”处理成焦虑的来源，主客体颠倒，意思明显偏差。"
+   },
+   {
+    "span": "Everyone here",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“在座的各位”是称呼语，译文将其并入主句主语，弱化了原句“各位……你……”的呼告语气。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 113
+  },
+  "translate_seconds": 2.16,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 152
+  }
+ },
+ "m-029": {
+  "translation": "Made me waste so much time.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 69
+  },
+  "translate_seconds": 2.06,
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 5
+  }
+ },
+ "m-028": {
+  "translation": "Your pronunciation is so cursed—I can't stop listening.",
+  "errors": [
+   {
+    "span": "—I can't stop listening.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文无此内容，属增译，添加了原文没有的“忍不住一直听”之意。"
+   },
+   {
+    "span": "cursed",
+    "category": "style",
+    "severity": "minor",
+    "note": "“魔性”指洗脑、上头、魔幻搞笑，用 cursed 偏“邪门/被诅咒”，语气不太贴合，但大致可理解。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 125
+  },
+  "translate_seconds": 2.15,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 115
+  }
+ },
+ "m-030": {
+  "translation": "This isn't what I ordered.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 53
+  },
+  "translate_seconds": 2.26,
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 5
+  }
+ },
+ "m-031": {
+  "translation": "Haven't you noticed he always spins around on the red carpet at every big event?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 107
+  },
+  "translate_seconds": 3.16,
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-034": {
+  "translation": "I can't take this group anymore.",
+  "errors": [
+   {
+    "span": "this group",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“这群”指这群人/这个地方，译成“this group”把“这群人”误解为“这个团体”，意思有偏差。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 478,
+   "completion_tokens": 80
+  },
+  "translate_seconds": 2.33,
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 60
+  }
+ },
+ "m-032": {
+  "translation": "I've noticed a guy keeps leaving marks on my water bottle lately.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 103
+  },
+  "translate_seconds": 2.96,
+  "judge_tokens": {
+   "prompt_tokens": 297,
+   "completion_tokens": 5
+  }
+ },
+ "m-035": {
+  "translation": "The PPT the teacher showed in class was so hilarious.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 81
+  },
+  "translate_seconds": 2.44,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-033": {
+  "translation": "Brother B acts out that relatable moment from school days when you're listening attentively in class and suddenly get hit by a wave of inexplicable anger.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 128
+  },
+  "translate_seconds": 2.9,
+  "judge_tokens": {
+   "prompt_tokens": 319,
+   "completion_tokens": 5
+  }
+ },
+ "m-037": {
+  "translation": "Let me show you a trick.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 76
+  },
+  "translate_seconds": 1.06,
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 5
+  }
+ },
+ "m-036": {
+  "translation": "When I watch funny videos, I hold back my laughter and don't dare make a sound.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 103
+  },
+  "translate_seconds": 1.28,
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 5
+  }
+ },
+ "m-038": {
+  "translation": "I'd suggest you go through all of them—after all, last year's test-takers said that question 'definitely wouldn't be on the exam,' and it still showed up in the end.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 493,
+   "completion_tokens": 146
+  },
+  "translate_seconds": 1.37,
+  "judge_tokens": {
+   "prompt_tokens": 333,
+   "completion_tokens": 5
+  }
+ },
+ "m-039": {
+  "translation": "I heard Nestlé's making an indie film.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 76
+  },
+  "translate_seconds": 0.93,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-043": {
+  "translation": "I can't—your contact name is killing me, that's brutal.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 114
+  },
+  "translate_seconds": 1.02,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "m-044": {
+  "translation": "This is way funnier than the skits on the Spring Festival Gala.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 94
+  },
+  "translate_seconds": 1.04,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-041": {
+  "translation": "That's so bizarre—what kind of brand-new tactic is this?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 96
+  },
+  "translate_seconds": 1.38,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-040": {
+  "translation": "I can't even—this looks way too much like it.",
+  "errors": [
+   {
+    "span": "this looks way too much like it",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“太像了”指某人或某物与另一对象相似，译文用代词“it”指代不明，且“looks like it”易被理解为“看起来是这样”，偏离原意。"
+   },
+   {
+    "span": "I can't even—",
+    "category": "style",
+    "severity": "minor",
+    "note": "“我不行了”在此语境是感叹“受不了/太夸张了”，译为“I can't even—”偏网络流行语的无奈语气，与原文惊叹语气略有出入。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 92
+  },
+  "translate_seconds": 1.24,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 142
+  }
+ },
+ "m-045": {
+  "translation": "I can't take it anymore—getting woken up in the middle of the night is just too much.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 124
+  },
+  "translate_seconds": 1.18,
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-047": {
+  "translation": "I'm planning to start learning Python programming with absolutely no experience. Where should I start?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 110
+  },
+  "translate_seconds": 1.12,
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-048": {
+  "translation": "My blind date talked about her cat the whole time.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 78
+  },
+  "translate_seconds": 0.81,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-042": {
+  "translation": "Back in the day, I was riding high—my skills raked in cash from every direction. Now look at me, shining shoes here.",
+  "errors": [
+   {
+    "span": "my skills raked in cash from every direction",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“一手技能牌”指打牌/牌技（技能牌），译文译成泛指的“skills”丢失了“牌”的意象，但整体意思大致保留。"
+   },
+   {
+    "span": "意气风发",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“riding high”侧重得意/顺遂，未体现“意气风发”的精神饱满、意气昂扬，略有弱化。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 498,
+   "completion_tokens": 132
+  },
+  "translate_seconds": 1.6,
+  "judge_tokens": {
+   "prompt_tokens": 326,
+   "completion_tokens": 127
+  }
+ },
+ "m-049": {
+  "translation": "As a new content creator, I've noticed my videos get decent views, but the comment section is always pretty quiet.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 494,
+   "completion_tokens": 125
+  },
+  "translate_seconds": 1.26,
+  "judge_tokens": {
+   "prompt_tokens": 316,
+   "completion_tokens": 5
+  }
+ },
+ "m-046": {
+  "translation": "If you've got fleas, go take a shower—you made my phone stink.",
+  "errors": [
+   {
+    "span": "you made my phone stink",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“把我手机整的骚哄的”指说话人自己的手机被弄得有异味，译文却用“you made my phone stink”把责任归于对方，且“my phone”与原文“我手机”虽对应，但整句因果关系和主语指向有偏差，容易让观众误解为对方弄臭了说话人的手机。"
+   },
+   {
+    "span": "骚哄的",
+    "category": "style",
+    "severity": "minor",
+    "note": "“骚哄的”是口语化、带方言色彩的贬义表达，译文“stink”只传达“臭”，语气和生动程度有所减弱，但基本可接受。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 105
+  },
+  "translate_seconds": 1.41,
+  "judge_tokens": {
+   "prompt_tokens": 307,
+   "completion_tokens": 171
+  }
+ },
+ "m-051": {
+  "translation": "Quick, let me pinch myself to see if I'm dreaming.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 85
+  },
+  "translate_seconds": 0.93,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-050": {
+  "translation": "Remember, you don't need much gear at the start—the key is to shoot a lot and practice a lot.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 119
+  },
+  "translate_seconds": 1.09,
+  "judge_tokens": {
+   "prompt_tokens": 308,
+   "completion_tokens": 5
+  }
+ },
+ "m-053": {
+  "translation": "Work's been really stressful lately—I get so anxious I can't sleep. Any ways to relieve it?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 490,
+   "completion_tokens": 116
+  },
+  "translate_seconds": 1.12,
+  "judge_tokens": {
+   "prompt_tokens": 310,
+   "completion_tokens": 5
+  }
+ },
+ "m-054": {
+  "translation": "If it's all about luck, why bother checking the gear?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 102
+  },
+  "translate_seconds": 1.18,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-052": {
+  "translation": "You're literally crying—this is colder than the cold palace.",
+  "errors": [
+   {
+    "span": "You're literally crying",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“你已急哭”是夸张/调侃的说法（意为“你急得要哭了”），并非陈述对方真的在哭；译成“literally crying”把比喻坐实，改变了原意。"
+   },
+   {
+    "span": "colder than the cold palace",
+    "category": "style",
+    "severity": "minor",
+    "note": "“冷宫”直译为“cold palace”对不熟悉中国宫廷文化的英语观众不易理解，且“colder than the cold palace”读起来生硬，可考虑意译或加注式表达。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 134
+  },
+  "translate_seconds": 1.45,
+  "judge_tokens": {
+   "prompt_tokens": 297,
+   "completion_tokens": 148
+  }
+ },
+ "m-055": {
+  "translation": "Dorm contraband check — and a condom dropped out from under my roommate's pillow.",
+  "errors": [
+   {
+    "span": "Dorm contraband check",
+    "category": "style",
+    "severity": "minor",
+    "note": "缺少动词，读起来像标题而非口语叙述，字幕中略显生硬。"
+   },
+   {
+    "span": "my roommate's pillow",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“舍友”指室友，译文用“my roommate”可接受，但“舍友”未必是说话人的室友，属轻微增译。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 120
+  },
+  "translate_seconds": 1.16,
+  "judge_tokens": {
+   "prompt_tokens": 308,
+   "completion_tokens": 111
+  }
+ },
+ "m-057": {
+  "translation": "My mom said she wants to set me up with someone.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 91
+  },
+  "translate_seconds": 1.18,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-056": {
+  "translation": "Guys, I'm still dead over here.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 99
+  },
+  "translate_seconds": 1.36,
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 5
+  }
+ },
+ "m-059": {
+  "translation": "Saw a video of a delivery guy delivering food in the rain",
+  "errors": [
+   {
+    "span": "Saw a video",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "字幕中省略主语“I”虽可接受，但作为独立句子略显不完整，加“I”更自然。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 75
+  },
+  "translate_seconds": 1.13,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 59
+  }
+ },
+ "m-060": {
+  "translation": "The exam answer is on page 50 of the textbook.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 62
+  },
+  "translate_seconds": 1.05,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-061": {
+  "translation": "Girls, what do I do? This move has me totally swooning.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 122
+  },
+  "translate_seconds": 1.23,
+  "judge_tokens": {
+   "prompt_tokens": 297,
+   "completion_tokens": 5
+  }
+ },
+ "m-058": {
+  "translation": "Update it again and I'll come back to China and beat your ass.",
+  "errors": [
+   {
+    "span": "Update it again",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“再更新”指“下次更新/再更新一次”，译成“Update it again”带有“再更新一次（重复动作）”的指令语气，且“it”指代不明，与原文“等下次更新时再回来收拾你”的威胁语境有偏差。"
+   },
+   {
+    "span": "come back to China",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“回国”指说话人回到自己的国家，译文“come back to China”把国别具体化，若说话人并非中国人或语境未明确为中国则不准确。"
+   },
+   {
+    "span": "beat your ass",
+    "category": "style",
+    "severity": "minor",
+    "note": "“弄你”为口语威胁，译成“beat your ass”语气过重且偏粗俗，与原文相对含糊的“弄你”不完全对应。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 117
+  },
+  "translate_seconds": 1.32,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 214
+  }
+ },
+ "m-062": {
+  "translation": "My feed is nothing but people spamming \"666\" — it's honestly making my skin crawl.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 487,
+   "completion_tokens": 118
+  },
+  "translate_seconds": 1.69,
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 5
+  }
+ },
+ "m-063": {
+  "translation": "Help me cop the limited-edition sneakers",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 86
+  },
+  "translate_seconds": 1.28,
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 5
+  }
+ },
+ "m-064": {
+  "translation": "I have my teacher certification interview next week—any special tips for the demo lesson part?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 490,
+   "completion_tokens": 119
+  },
+  "translate_seconds": 1.47,
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 5
+  }
+ },
+ "m-066": {
+  "translation": "I can't understand a thing on the English listening exam.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 74
+  },
+  "translate_seconds": 1.21,
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-065": {
+  "translation": "There's this guy in the next class who poses all melancholy in front of the mirror after class and says he's the male lead of that xxx drama.",
+  "errors": [
+   {
+    "span": "poses all melancholy in front of the mirror",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "“poses all melancholy”搭配生硬，口语中更自然说法是“strikes a melancholy pose”或“poses moodily”。"
+   },
+   {
+    "span": "that xxx drama",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“xxx剧”是泛指某部剧（相当于“some drama”），用“that”暗示双方已知的特定剧集，略有偏差。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 490,
+   "completion_tokens": 128
+  },
+  "translate_seconds": 1.45,
+  "judge_tokens": {
+   "prompt_tokens": 320,
+   "completion_tokens": 124
+  }
+ },
+ "m-068": {
+  "translation": "I can't take it anymore! Listening to this is making my brain turn to mush!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 111
+  },
+  "translate_seconds": 1.48,
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 5
+  }
+ },
+ "m-067": {
+  "translation": "I can't even—I'm dying laughing, this impression is so spot-on it's basically a perfect copy of the original. Absolutely legendary. Not even trying to hide it—this one is a total drama queen.",
+  "errors": [
+   {
+    "span": "六百六十六",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“六百六十六”（网络用语，意为“厉害/牛”）被完全漏译，译文用“Absolutely legendary”替代，丢失了原文的具体表达。"
+   },
+   {
+    "span": "装都不装了",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“装都不装了”意为“连装都不装了”，译文“Not even trying to hide it”基本达意，但略偏“不掩饰”，与原意“不再假装”有细微偏差。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 501,
+   "completion_tokens": 169
+  },
+  "translate_seconds": 1.72,
+  "judge_tokens": {
+   "prompt_tokens": 344,
+   "completion_tokens": 132
+  }
+ },
+ "m-069": {
+  "translation": "What does this Moments post my partner posted mean?",
+  "errors": [
+   {
+    "span": "this Moments post my partner posted",
+    "category": "style",
+    "severity": "minor",
+    "note": "“post”与“posted”重复冗余，措辞不够自然，可改为“this Moments post from my partner”。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 102
+  },
+  "translate_seconds": 1.34,
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 60
+  }
+ },
+ "m-070": {
+  "translation": "I just dropped a meme I'd been saving up for a whole year in the group chat, and it totally fell flat.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 113
+  },
+  "translate_seconds": 1.28,
+  "judge_tokens": {
+   "prompt_tokens": 310,
+   "completion_tokens": 5
+  }
+ },
+ "m-072": {
+  "translation": "I can't take it anymore—this is way too intense.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 132
+  },
+  "translate_seconds": 1.37,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-074": {
+  "translation": "Ideally somewhere you can take photos and post them.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 87
+  },
+  "translate_seconds": 0.89,
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 5
+  }
+ },
+ "m-073": {
+  "translation": "Li Zongheng stars in a story about a father-in-law who loves to play pranks, showing the Spring Festival fun as this generation of young people starts to take charge.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 498,
+   "completion_tokens": 173
+  },
+  "translate_seconds": 1.54,
+  "judge_tokens": {
+   "prompt_tokens": 333,
+   "completion_tokens": 5
+  }
+ },
+ "m-071": {
+  "translation": "You're literally crying from panic—answer me, answer me!",
+  "errors": [
+   {
+    "span": "literally crying from panic",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“急哭”是夸张说法，指急得快哭/被逼急，并非真的在哭；“literally crying”把它误译成字面意义的哭泣，改变了意思。"
+   },
+   {
+    "span": "answer me, answer me!",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“马上回”意为“我马上回复/马上回你”，译文变成命令对方“回答我”，主体和语气都偏了。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 105
+  },
+  "translate_seconds": 1.46,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 126
+  }
+ },
+ "m-077": {
+  "translation": "Holy cow, this flavor is insanely good!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 85
+  },
+  "translate_seconds": 0.93,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-076": {
+  "translation": "You'll need: 200g cake flour, 100g butter, 60g powdered sugar, 1 egg.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 496,
+   "completion_tokens": 109
+  },
+  "translate_seconds": 1.16,
+  "judge_tokens": {
+   "prompt_tokens": 319,
+   "completion_tokens": 5
+  }
+ },
+ "m-075": {
+  "translation": "The 'I want to check the cards' meme comes from a classic line in Stephen Chow's God of Gamblers film.",
+  "errors": [
+   {
+    "span": "God of Gamblers",
+    "category": "terminology",
+    "severity": "major",
+    "note": "周星驰的电影是《赌神》（God of Gamblers），但原文说的是“法国赌神”，指《赌侠》中的法国赌神角色，片名/指称不准确，会让观众误以为是《赌神》这部电影。"
+   },
+   {
+    "span": "Stephen Chow's God of Gamblers film",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“法国赌神”是角色/梗的出处，译文丢掉了“法国”，且把周星驰与《赌神》直接绑定，信息有偏差。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 139
+  },
+  "translate_seconds": 1.03,
+  "judge_tokens": {
+   "prompt_tokens": 313,
+   "completion_tokens": 151
+  }
+ },
+ "m-078": {
+  "translation": "I'm already halfway done—I've got 50 slides written—and now you're telling me I might have to scrap it all and start over?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 493,
+   "completion_tokens": 133
+  },
+  "translate_seconds": 1.33,
+  "judge_tokens": {
+   "prompt_tokens": 322,
+   "completion_tokens": 5
+  }
+ },
+ "m-082": {
+  "translation": "I actually stayed to watch the Spring Festival Gala—this show is amazing!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 487,
+   "completion_tokens": 98
+  },
+  "translate_seconds": 1.13,
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 5
+  }
+ },
+ "m-080": {
+  "translation": "There's another one that's not bad.",
+  "errors": [
+   {
+    "span": "that's not bad",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“可以可以”表示认可或同意，译文“not bad”是弱化的评价，意思有明显偏差。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 477,
+   "completion_tokens": 76
+  },
+  "translate_seconds": 0.93,
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 56
+  }
+ },
+ "m-079": {
+  "translation": "How's the new character from this pull?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 83
+  },
+  "translate_seconds": 1.23,
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 5
+  }
+ },
+ "m-085": {
+  "translation": "She'll probably laugh when she sees this meme, right?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 71
+  },
+  "translate_seconds": 1.09,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-083": {
+  "translation": "I can't even—this is way too hot!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 118
+  },
+  "translate_seconds": 1.38,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-084": {
+  "translation": "I recommend doing 20 targeted practice questions every day—you'll see progress in a month.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 81
+  },
+  "translate_seconds": 1.08,
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 5
+  }
+ },
+ "m-086": {
+  "translation": "My teammate's 0-10 and still bossing everyone around.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 99
+  },
+  "translate_seconds": 1.18,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-081": {
+  "translation": "Has no one noticed how smart she is? She built up her account with weird, absurd content, blew up, then switched to a looks-based style—giving her fans a huge contrast.",
+  "errors": [
+   {
+    "span": "weird, absurd content",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“抽象”是网络用语，指荒诞/无厘头风格，译成“weird, absurd”略有增译，但基本可接受。"
+   },
+   {
+    "span": "built up her account",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“起号”指从零开始做账号，译文“built up her account”基本达意，但“起号”更强调起步/起量，略有偏差。"
+   },
+   {
+    "span": "giving her fans a huge contrast",
+    "category": "style",
+    "severity": "minor",
+    "note": "“给粉丝大反差”译成“giving her fans a huge contrast”略显生硬，英语更自然说法是“creating a big contrast for her fans”。"
+   }
+  ],
+  "score": -3,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 493,
+   "completion_tokens": 154
+  },
+  "translate_seconds": 1.48,
+  "judge_tokens": {
+   "prompt_tokens": 330,
+   "completion_tokens": 194
+  }
+ },
+ "m-087": {
+  "translation": "I just finished a business plan—let me know what you think.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 94
+  },
+  "translate_seconds": 1.21,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-088": {
+  "translation": "I've been wanting to start doing yoga at home lately, but I'm a complete beginner and have no idea where to start.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 490,
+   "completion_tokens": 116
+  },
+  "translate_seconds": 1.27,
+  "judge_tokens": {
+   "prompt_tokens": 314,
+   "completion_tokens": 5
+  }
+ },
+ "m-089": {
+  "translation": "I'm begging you, hold it in—don't let the boss catch you.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 137
+  },
+  "translate_seconds": 1.43,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "m-092": {
+  "translation": "What should I challenge next? Let me know in the comments.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 80
+  },
+  "translate_seconds": 0.8,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-090": {
+  "translation": "How do you spot a cheater when playing cards?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 106
+  },
+  "translate_seconds": 1.56,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-093": {
+  "translation": "Are you out of your mind? I can't take this anymore.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 478,
+   "completion_tokens": 91
+  },
+  "translate_seconds": 1.13,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-091": {
+  "translation": "It's only a real challenge when something's so out there that no one can make sense of it.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 136
+  },
+  "translate_seconds": 1.33,
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 5
+  }
+ },
+ "m-094": {
+  "translation": "Hahaha I can't, your description is way too funny.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 84
+  },
+  "translate_seconds": 1.25,
+  "judge_tokens": {
+   "prompt_tokens": 297,
+   "completion_tokens": 5
+  }
+ },
+ "m-095": {
+  "translation": "This joke is so funny it should be on national TV.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 97
+  },
+  "translate_seconds": 0.89,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-097": {
+  "translation": "Can you solve this one?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 69
+  },
+  "translate_seconds": 0.78,
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 5
+  }
+ },
+ "m-096": {
+  "translation": "That's awesome hahaha",
+  "errors": [
+   {
+    "span": "That's awesome",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“六百六十六”是中文网络用语，表示“厉害/牛”，译成“awesome”意思接近，但丢失了数字梗和口语玩味，属于轻微语义偏移。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 478,
+   "completion_tokens": 69
+  },
+  "translate_seconds": 1.12,
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 70
+  }
+ },
+ "m-098": {
+  "translation": "Why do you hate internet slang so much?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 97
+  },
+  "translate_seconds": 0.97,
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 5
+  }
+ },
+ "m-099": {
+  "translation": "You get what 'Workplace Warmth' means now, right?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 75
+  },
+  "translate_seconds": 0.98,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-100": {
+  "translation": "I recommend downloading the Keep or Xunji app and following their free workout courses—it's safe and structured.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 490,
+   "completion_tokens": 102
+  },
+  "translate_seconds": 1.04,
+  "judge_tokens": {
+   "prompt_tokens": 311,
+   "completion_tokens": 5
+  }
+ },
+ "m-102": {
+  "translation": "Did you know that Guangtou Qiang's voice actor is actually a top-tier singer?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 113
+  },
+  "translate_seconds": 0.99,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "m-104": {
+  "translation": "What memes are Gen Z into these days?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 87
+  },
+  "translate_seconds": 1.31,
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-106": {
+  "translation": "I scored concert tickets!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 65
+  },
+  "translate_seconds": 1.09,
+  "judge_tokens": {
+   "prompt_tokens": 283,
+   "completion_tokens": 5
+  }
+ },
+ "m-105": {
+  "translation": "Damn, why didn't you say so earlier? I wasted ages trying to figure out who's who.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 119
+  },
+  "translate_seconds": 1.19,
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-101": {
+  "translation": "It's the first time I've felt so directly just how bad my internet addiction is.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 112
+  },
+  "translate_seconds": 1.98,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "m-108": {
+  "translation": "I'm begging you, just leave our team alone.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 89
+  },
+  "translate_seconds": 1.16,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-103": {
+  "translation": "If it weren't for this damn job keeping me stuck here every day, I'd have bought a ticket and flown to Xi'an to give you a piece of my mind right now!",
+  "errors": [
+   {
+    "span": "I'd have bought a ticket and flown to Xi'an to give you a piece of my mind right now!",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“找你算账”是来算账/兴师问罪，译文“give you a piece of my mind”意为训斥/发泄不满，语义有偏差，且“right now”与虚拟语气搭配不当，原文“现在就买机票”是假设动作。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 493,
+   "completion_tokens": 144
+  },
+  "translate_seconds": 1.67,
+  "judge_tokens": {
+   "prompt_tokens": 328,
+   "completion_tokens": 106
+  }
+ },
+ "m-107": {
+  "translation": "I rushed down to give them a piece of my mind, but I got so worked up I bit my tongue—now it hurts so bad I'm in tears.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 491,
+   "completion_tokens": 148
+  },
+  "translate_seconds": 1.63,
+  "judge_tokens": {
+   "prompt_tokens": 323,
+   "completion_tokens": 5
+  }
+ },
+ "m-111": {
+  "translation": "Bro, help me out!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 478,
+   "completion_tokens": 79
+  },
+  "translate_seconds": 1.23,
+  "judge_tokens": {
+   "prompt_tokens": 282,
+   "completion_tokens": 5
+  }
+ },
+ "m-109": {
+  "translation": "Ha, no worries—I'm at a New Year's Eve show watching that movie you mentioned.",
+  "errors": [
+   {
+    "span": "at a New Year's Eve show",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“跨年晚会”是说话人正在观看的电视节目，译文“at a New Year's Eve show”暗示说话人本人身在该晚会现场，意思发生偏差。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 109
+  },
+  "translate_seconds": 1.32,
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 73
+  }
+ },
+ "m-110": {
+  "translation": "You can set up the basic system within a budget of 2,000. Just remember to plan for socket placement and network coverage.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 492,
+   "completion_tokens": 124
+  },
+  "translate_seconds": 1.41,
+  "judge_tokens": {
+   "prompt_tokens": 317,
+   "completion_tokens": 5
+  }
+ },
+ "m-114": {
+  "translation": "My mom said if I don't find someone soon, I shouldn't bother coming home.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 108
+  },
+  "translate_seconds": 0.94,
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 5
+  }
+ },
+ "m-112": {
+  "translation": "Are tutorials these days really this half-assed?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 87
+  },
+  "translate_seconds": 1.31,
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 5
+  }
+ },
+ "m-115": {
+  "translation": "Keep your resume to one page with a clean layout—and absolutely no typos.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 489,
+   "completion_tokens": 97
+  },
+  "translate_seconds": 1.25,
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 5
+  }
+ },
+ "m-116": {
+  "translation": "I ate the last piece of cake.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 51
+  },
+  "translate_seconds": 0.98,
+  "judge_tokens": {
+   "prompt_tokens": 286,
+   "completion_tokens": 5
+  }
+ },
+ "m-113": {
+  "translation": "I've hit a plateau in my grad school entrance exam prep. I'm anxious every day and can't focus on studying. How should I adjust my mindset and improve my efficiency?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 493,
+   "completion_tokens": 191
+  },
+  "translate_seconds": 1.78,
+  "judge_tokens": {
+   "prompt_tokens": 327,
+   "completion_tokens": 5
+  }
+ },
+ "m-117": {
+  "translation": "Alright, once I'm back in China, I'll officiate your wedding.",
+  "errors": [
+   {
+    "span": "officiate your wedding",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“证婚”指作为证婚人见证婚礼，并非主持婚礼（officiate），语义有偏差。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 112
+  },
+  "translate_seconds": 1.07,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 57
+  }
+ },
+ "m-118": {
+  "translation": "So you're watching the Spring Festival Gala, huh? Then let me just fast-forward you straight to New Year's Eve.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 114
+  },
+  "translate_seconds": 1.25,
+  "judge_tokens": {
+   "prompt_tokens": 311,
+   "completion_tokens": 5
+  }
+ },
+ "m-121": {
+  "translation": "I can't take it anymore—has this kid lost his mind?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 122
+  },
+  "translate_seconds": 1.29,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-122": {
+  "translation": "This is the first time I've ever seen such a luxurious villa.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 82
+  },
+  "translate_seconds": 1.13,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-120": {
+  "translation": "I've been wanting to learn how to bake bread lately, but I have zero experience. Where should I start?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 491,
+   "completion_tokens": 109
+  },
+  "translate_seconds": 1.35,
+  "judge_tokens": {
+   "prompt_tokens": 312,
+   "completion_tokens": 5
+  }
+ },
+ "m-119": {
+  "translation": "So unhinged—a full look at the mental state of today's youth.",
+  "errors": [
+   {
+    "span": "So unhinged",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“太抽象了”是网络流行语，指荒诞、难以理解，译成“unhinged”（精神失常）语义偏移，但结合“精神状态”语境尚可接受。"
+   },
+   {
+    "span": "a full look at",
+    "category": "style",
+    "severity": "minor",
+    "note": "“一览”译成“a full look at”偏书面、生硬，不像字幕口语，可用“a rundown of”等更自然表达。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 95
+  },
+  "translate_seconds": 1.19,
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 132
+  }
+ },
+ "m-123": {
+  "translation": "When traveling with your parents, it's best to pick a relaxing city with convenient transportation and good facilities.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 487,
+   "completion_tokens": 113
+  },
+  "translate_seconds": 1.09,
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 5
+  }
+ },
+ "m-124": {
+  "translation": "I stayed up too late last night and I'm so sleepy.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 78
+  },
+  "translate_seconds": 1.13,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-125": {
+  "translation": "This is Abstract Bro—not like B Bro, who just quietly grinds through practice questions.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 485,
+   "completion_tokens": 119
+  },
+  "translate_seconds": 1.26,
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 5
+  }
+ },
+ "m-128": {
+  "translation": "The boss said our bonus is doubling this month.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 52
+  },
+  "translate_seconds": 1.0,
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-126": {
+  "translation": "Why did I just burst out laughing at the anatomy diagram?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 91
+  },
+  "translate_seconds": 1.26,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-127": {
+  "translation": "Why do you care so much about people calling you a legend?",
+  "errors": [
+   {
+    "span": "calling you a legend",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“六百六十六”是网络用语，意为“厉害/牛”，并非“legend（传奇）”，译文改变了原意。"
+   },
+   {
+    "span": "people calling you a legend",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“别人说六百六十六”是泛指别人说这个说法，译文具体化为“叫你传奇”，略有增译。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 104
+  },
+  "translate_seconds": 1.28,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 114
+  }
+ },
+ "m-129": {
+  "translation": "I'm begging you, hold it in—don't let them think you're a psycho.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 111
+  },
+  "translate_seconds": 1.54,
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 5
+  }
+ },
+ "m-130": {
+  "translation": "That metaphor is way too out there, isn't it?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 89
+  },
+  "translate_seconds": 1.18,
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-131": {
+  "translation": "I can't even—never thought I'd see the day.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 108
+  },
+  "translate_seconds": 1.12,
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-132": {
+  "translation": "Damn, why didn't you say so earlier? I'm running home to change right now.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 108
+  },
+  "translate_seconds": 1.25,
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 5
+  }
+ },
+ "m-133": {
+  "translation": "For food, just head to the area around the market—it's cheap and legit.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 100
+  },
+  "translate_seconds": 1.53,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "m-135": {
+  "translation": "So what? You got charmed by her looks, huh?",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 484,
+   "completion_tokens": 109
+  },
+  "translate_seconds": 1.35,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-134": {
+  "translation": "My partner said they want us to take a month-long break.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 479,
+   "completion_tokens": 101
+  },
+  "translate_seconds": 1.36,
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-136": {
+  "translation": "For larger spaces, a Mesh Wi-Fi system is the best option—it costs a bit more, but you get full coverage with no dead zones.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 494,
+   "completion_tokens": 143
+  },
+  "translate_seconds": 1.13,
+  "judge_tokens": {
+   "prompt_tokens": 322,
+   "completion_tokens": 5
+  }
+ },
+ "m-139": {
+  "translation": "Those shoes I just snagged are actually a pre-order.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 92
+  },
+  "translate_seconds": 1.45,
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-138": {
+  "translation": "No thanks, I'd rather just stay home and chill.",
+  "errors": [
+   {
+    "span": "No thanks",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“不处”是网络用语，意为“不谈恋爱/不处对象”，并非“不用了/谢谢”，译成“No thanks”改变了原意。"
+   },
+   {
+    "span": "I'd rather just stay home and chill",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“躺平”指放弃奋斗、不再努力的生活态度，译成“stay home and chill”只保留了在家放松的字面意思，丢失了“躺平”的社会文化含义。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 91
+  },
+  "translate_seconds": 0.99,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 134
+  }
+ },
+ "m-140": {
+  "translation": "Check out this dark joke I just learned.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 481,
+   "completion_tokens": 84
+  },
+  "translate_seconds": 1.33,
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 5
+  }
+ },
+ "m-141": {
+  "translation": "I'm begging you, I really wanna rank up. Please, don't leave.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 487,
+   "completion_tokens": 84
+  },
+  "translate_seconds": 1.19,
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 5
+  }
+ },
+ "m-142": {
+  "translation": "My mom is insisting I go on a blind date.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 478,
+   "completion_tokens": 79
+  },
+  "translate_seconds": 1.24,
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 5
+  }
+ },
+ "m-137": {
+  "translation": "The power of six family wallets—a million in savings per person",
+  "errors": [
+   {
+    "span": "a million in savings per person",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“人均存款百万”指人均存款达到一百万，译文“a million in savings per person”可理解为每人存了一百万，但原文“威力”语境下更可能是夸张说法，译文基本传达了字面意思，但“人均”与“per person”对应尚可，主要问题在于“百万”未明确是人民币还是泛指，且“a million”易被英语观众理解为美元，造成信息偏差。"
+   },
+   {
+    "span": "six family wallets",
+    "category": "style",
+    "severity": "minor",
+    "note": "“6个钱包”是中文网络流行语，指夫妻双方及各自父母共六个家庭的钱包，直译为“six family wallets”生硬且英语观众难以理解其文化含义，建议意译或加注。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 86
+  },
+  "translate_seconds": 1.32,
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 196
+  }
+ },
+ "m-143": {
+  "translation": "This exam was so hard—I was totally lost.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 98
+  },
+  "translate_seconds": 1.27,
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-147": {
+  "translation": "But I think it's really sacred—that's a family heirloom we're talking about!",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 486,
+   "completion_tokens": 117
+  },
+  "translate_seconds": 1.04,
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 5
+  }
+ },
+ "m-144": {
+  "translation": "I recommend the figure reasoning section of Huatu Module Treasure Book—the explanations are very systematic.",
+  "errors": [
+   {
+    "span": "figure reasoning section",
+    "category": "terminology",
+    "severity": "major",
+    "note": "“图形”在公考语境指图形推理（graphic/visual reasoning），译成“figure reasoning”不是该考试术语的通行说法，易让观众误解专项内容。"
+   },
+   {
+    "span": "Huatu Module Treasure Book",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "书名《华图模块宝典》宜用规范译名或音译加说明，逐字直译成“Module Treasure Book”不像正式书名。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 490,
+   "completion_tokens": 112
+  },
+  "translate_seconds": 1.46,
+  "judge_tokens": {
+   "prompt_tokens": 307,
+   "completion_tokens": 132
+  }
+ },
+ "m-149": {
+  "translation": "My boss suddenly asked me to go abroad on a business trip.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 480,
+   "completion_tokens": 63
+  },
+  "translate_seconds": 1.11,
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-146": {
+  "translation": "I can't hahaha, he's a genius",
+  "errors": [
+   {
+    "span": "I can't",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“我不行了”是口语化的“我受不了了/笑死我了”，译成“I can't”意思不完整，观众可能误解为字面意义的“我不能”。"
+   },
+   {
+    "span": "he's a genius",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“他太有才了”是口语化的赞叹，译成“he's a genius”略强、略正式，但基本达意。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 483,
+   "completion_tokens": 98
+  },
+  "translate_seconds": 1.29,
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 126
+  }
+ },
+ "m-150": {
+  "translation": "My dad said all it took to win my mom over back in the day was one meal.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 482,
+   "completion_tokens": 107
+  },
+  "translate_seconds": 1.27,
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "m-148": {
+  "translation": "That's so random—it reminds me of my classmate in elementary school. She marveled at how pale I was and asked if I was Caucasian.",
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 493,
+   "completion_tokens": 143
+  },
+  "translate_seconds": 1.76,
+  "judge_tokens": {
+   "prompt_tokens": 323,
+   "completion_tokens": 5
+  }
+ },
+ "m-145": {
+  "translation": "I don't think you're awake yet. A 996 corporate drone like me is better off just slouching at home—the delivery guy is my best buddy.",
+  "errors": [
+   {
+    "span": "A 996 corporate drone like me",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“996社畜就适合在家葛优躺”是泛指/对对方的评价（“996社畜”这类人就适合……），译文改成“像我这样的996社畜”，把泛指对象变成说话人自己，改变了主语和语义指向。"
+   },
+   {
+    "span": "corporate drone",
+    "category": "style",
+    "severity": "minor",
+    "note": "“社畜”译为 corporate drone 意思接近，但“社畜”是网络流行语，drone 偏书面/贬义直译，口语字幕感稍弱。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "translate_tokens": {
+   "prompt_tokens": 496,
+   "completion_tokens": 133
+  },
+  "translate_seconds": 1.53,
+  "judge_tokens": {
+   "prompt_tokens": 329,
+   "completion_tokens": 151
+  }
+ }
+}

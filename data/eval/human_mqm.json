@@ -1,0 +1,992 @@
+[
+ {
+  "key": "v6:m-020",
+  "id": "m-020",
+  "version": "v6",
+  "source": "还有那什么那咋了又能怎，听得我想拉屎，洗脑程度堪比病毒",
+  "before": [],
+  "translation": "And that whole \"so what, what can you do\" thing—listening to it makes me want to crap. It's as brainwashing as a virus.",
+  "judge_worst": "major",
+  "judge_score": -6,
+  "judge_errors": [
+   {
+    "span": "so what, what can you do",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“那咋了又能怎”是口语化的“那又怎样/你能怎么办”，译文拆成“so what, what can you do”改变了原意，且“what can you do”更像“你能做什么”，不是“又能怎”的无奈语气。"
+   },
+   {
+    "span": "as brainwashing as a virus",
+    "category": "style",
+    "severity": "minor",
+    "note": "“洗脑程度堪比病毒”是比喻病毒式传播/洗脑，译文“as brainwashing as a virus”生硬且搭配不自然，英语中通常说“as catchy/addictive as a virus”之类。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-139",
+  "id": "m-139",
+  "version": "v1",
+  "source": "刚刚抢到的那双鞋其实是预售",
+  "before": [],
+  "translation": "The pair of shoes I just managed to grab is actually a pre-sale.",
+  "judge_worst": "major",
+  "judge_score": -6,
+  "judge_errors": [
+   {
+    "span": "The pair of shoes I just managed to grab",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“刚刚抢到的”是名词性结构（“我刚抢到的那双鞋”），译文添加了第一人称主语“I”，改变了主语，属于增译/误译。"
+   },
+   {
+    "span": "a pre-sale",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "“预售”指预售商品/预售状态，用“a pre-sale”作表语略显生硬，宜用“a pre-order”或“a pre-sale item”。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-083",
+  "id": "m-083",
+  "version": "v1",
+  "source": "我不行了，这也太帅了吧！",
+  "before": [],
+  "translation": "I can't even, this is way too handsome!",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "I can't even",
+    "category": "style",
+    "severity": "minor",
+    "note": "“I can't even”是网络流行语，与原文“我不行了”的感叹语气不完全对应，略显生硬。"
+   },
+   {
+    "span": "way too handsome",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“handsome”通常指人外貌英俊，而原文“帅”在此语境更偏向“酷/帅气”，语义略有偏差。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:ctx-c57",
+  "id": "ctx-c57",
+  "version": "v6",
+  "source": "笑死我啦最后那句加点啊，给老板都整红温啦，社恐人爆发起来是真的猛",
+  "before": [
+   "博主记录了自己精神状态发癫的一天，内向社恐的i人挑战"
+  ],
+  "translation": "LMAO, you should've added a little more to that last line—you got the boss completely worked up. When us socially anxious folks snap, we really go hard.",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "you should've added a little more to that last line",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“最后那句加点啊”是建议/感叹语气，译文用“you should've”略显指令性，但基本意思保留，属轻微语气偏差。"
+   },
+   {
+    "span": "us socially anxious folks",
+    "category": "style",
+    "severity": "minor",
+    "note": "原文“社恐人”是网络口语，译文“socially anxious folks”偏书面/正式，字幕口语感稍弱，但不影响理解。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-006",
+  "id": "m-006",
+  "version": "v6",
+  "source": "你知道吗我们学校食堂今天居然免费",
+  "before": [],
+  "translation": "Guess what? Our school cafeteria was free today!",
+  "judge_worst": "major",
+  "judge_score": -5,
+  "judge_errors": [
+   {
+    "span": "was free",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“今天居然免费”指今天这一餐/活动免费，用过去时“was free”易被理解为食堂（本身）过去是免费的，时态与语义有偏差。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-12",
+  "id": "corpus-12",
+  "version": "v1",
+  "source": "这么短，是遇到创作瓶颈了吗",
+  "before": [],
+  "translation": "So short, have you hit a creative block?",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v6:corpus-32",
+  "id": "corpus-32",
+  "version": "v6",
+  "source": "我已经发烧了，请大妈们放过我吧",
+  "before": [],
+  "translation": "I'm already running a fever—please, ladies, just leave me alone.",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v6:m-102",
+  "id": "m-102",
+  "version": "v6",
+  "source": "你知道吗光头强的配音演员其实是顶级歌手",
+  "before": [],
+  "translation": "Did you know that Guang Tou Qiang's voice actor is actually a top-tier singer?",
+  "judge_worst": "major",
+  "judge_score": -5,
+  "judge_errors": [
+   {
+    "span": "Guang Tou Qiang",
+    "category": "terminology",
+    "severity": "major",
+    "note": "角色名应使用官方英文名 \"Logger Vick\"，拼音译名会让英文观众无法识别该角色。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-027",
+  "id": "m-027",
+  "version": "v1",
+  "source": "你们说的应声虫到底啥意思啊",
+  "before": [],
+  "translation": "What exactly do you mean by \"yes-man\"?",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:m-075",
+  "id": "m-075",
+  "version": "v1",
+  "source": "我要验牌这个梗源自周星驰电影法国赌神的经典台词",
+  "before": [],
+  "translation": "The meme \"I want to check the cards\" originates from a classic line in Stephen Chow's movie God of Gamblers III: Back to Shanghai.",
+  "judge_worst": "critical",
+  "judge_score": -30,
+  "judge_errors": [
+   {
+    "span": "God of Gamblers III: Back to Shanghai",
+    "category": "terminology",
+    "severity": "critical",
+    "note": "周星驰的《赌神》系列应为《赌侠》(God of Gamblers II)，而 God of Gamblers III: Back to Shanghai 是另一部影片，片名错误会误导观众。"
+   },
+   {
+    "span": "法国赌神",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“法国赌神”被漏译，译文中未体现这一关键信息。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-077",
+  "id": "m-077",
+  "version": "v1",
+  "source": "我勒个豆，这味道太顶了",
+  "before": [],
+  "translation": "Oh my god, this flavor is absolutely amazing.",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "Oh my god",
+    "category": "style",
+    "severity": "minor",
+    "note": "“我勒个豆”是网络化、俏皮的口语感叹，译成“Oh my god”偏直白、宗教化，语气不够贴合原文的轻松调侃感。"
+   },
+   {
+    "span": "absolutely amazing",
+    "category": "style",
+    "severity": "minor",
+    "note": "“太顶了”是网络俚语，表示“非常棒/很上头”，译成“absolutely amazing”意思对但偏书面、平淡，缺少原文的俚语味。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-110",
+  "id": "m-110",
+  "version": "v1",
+  "source": "预算2000内就能搭建基础系统，记得留好插座位置和网络覆盖。",
+  "before": [],
+  "translation": "You can set up a basic system within a budget of 2,000. Remember to leave space for power outlets and ensure network coverage.",
+  "judge_worst": "major",
+  "judge_score": -5,
+  "judge_errors": [
+   {
+    "span": "2,000",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“2000内”指2000元人民币以内，译文未标明货币单位，英文读者可能误以为是美元或其他货币，金额含义偏差明显。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-069",
+  "id": "m-069",
+  "version": "v6",
+  "source": "我对象发的这条朋友圈是什么意思",
+  "before": [],
+  "translation": "What does this Moments post my partner posted mean?",
+  "judge_worst": "minor",
+  "judge_score": -1,
+  "judge_errors": [
+   {
+    "span": "this Moments post my partner posted",
+    "category": "style",
+    "severity": "minor",
+    "note": "“post”重复出现（post...posted），措辞冗余、不够自然，可改为“this Moments post from my partner”。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-069",
+  "id": "m-069",
+  "version": "v1",
+  "source": "我对象发的这条朋友圈是什么意思",
+  "before": [],
+  "translation": "What does this Moments post from my partner mean?",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:ctx-c57",
+  "id": "ctx-c57",
+  "version": "v1",
+  "source": "笑死我啦最后那句加点啊，给老板都整红温啦，社恐人爆发起来是真的猛",
+  "before": [
+   "博主记录了自己精神状态发癫的一天，内向社恐的i人挑战"
+  ],
+  "translation": "LMAO, add a bit to that last sentence, it got the boss all heated up. When introverts explode, they really go hard.",
+  "judge_worst": "major",
+  "judge_score": -7,
+  "judge_errors": [
+   {
+    "span": "add a bit to that last sentence",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“最后那句加点啊”是博主对视频/内容提出的建议（最后那句要加/补点东西），译文却译成“给最后那句话加点内容”，且与后文“把老板整红温”的因果关系被割裂，意思有偏差。"
+   },
+   {
+    "span": "it got the boss all heated up",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“整红温”是网络用语，指把老板惹到脸红/破防，译文“heated up”偏字面，语气和网络梗味有所流失，但大意可理解。"
+   },
+   {
+    "span": "When introverts explode, they really go hard",
+    "category": "style",
+    "severity": "minor",
+    "note": "“社恐人爆发起来是真的猛”译得基本达意，但“explode/go hard”偏夸张书面，作为字幕口语略生硬。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-03",
+  "id": "corpus-03",
+  "version": "v1",
+  "source": "不处，保持神秘感挺好的。",
+  "before": [],
+  "translation": "No, it's good to keep a sense of mystery.",
+  "judge_worst": "major",
+  "judge_score": -5,
+  "judge_errors": [
+   {
+    "span": "No",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“不处”是网络用语，意为“不谈恋爱/不处对象”，译成“No”丢失了这层含义，观众无法理解说话人拒绝的是什么。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-124",
+  "id": "m-124",
+  "version": "v6",
+  "source": "昨晚熬夜太困了",
+  "before": [],
+  "translation": "I stayed up too late last night, I'm so tired.",
+  "judge_worst": "minor",
+  "judge_score": -1,
+  "judge_errors": [
+   {
+    "span": "I stayed up too late last night, I'm so tired.",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "两个独立分句用逗号连接，构成逗号粘连（run-on），应改为句号或加连词。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-05",
+  "id": "corpus-05",
+  "version": "v1",
+  "source": "就是哈哈哈太抽象了，这问题谁懂啊",
+  "before": [],
+  "translation": "Hahaha, it's just too abstract. Who even gets this question?",
+  "judge_worst": "minor",
+  "judge_score": -1,
+  "judge_errors": [
+   {
+    "span": "it's just too abstract",
+    "category": "style",
+    "severity": "minor",
+    "note": "原文“就是哈哈哈太抽象了”是口语化感叹，译文用“it's just too abstract”略显书面，且“just”位置使语气稍显生硬，不够像字幕口语。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:corpus-01",
+  "id": "corpus-01",
+  "version": "v6",
+  "source": "老师我作业真写了但被狗吃了",
+  "before": [],
+  "translation": "Teacher, I really did my homework, but the dog ate it.",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:m-126",
+  "id": "m-126",
+  "version": "v1",
+  "source": "看到解剖图突然笑出声是怎么回事",
+  "before": [],
+  "translation": "What's going on when someone suddenly bursts out laughing at an anatomy diagram?",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v6:m-077",
+  "id": "m-077",
+  "version": "v6",
+  "source": "我勒个豆，这味道太顶了",
+  "before": [],
+  "translation": "Holy cow, this tastes amazing!",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:m-002",
+  "id": "m-002",
+  "version": "v1",
+  "source": "建议带父母去实体店试用系统流畅度，内存建议选12+256G版本。",
+  "before": [],
+  "translation": "It is recommended to take your parents to a physical store to try out the system smoothness. For memory, the 12+256G version is suggested.",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "For memory",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "“内存”指运行内存/RAM，译为“memory”易与存储混淆，宜用“RAM”或“memory (RAM)”。"
+   },
+   {
+    "span": "the 12+256G version is suggested",
+    "category": "style",
+    "severity": "minor",
+    "note": "被动语态生硬，字幕口语中更自然的是“we suggest the 12+256G version”或“go for the 12+256G version”。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:corpus-21",
+  "id": "corpus-21",
+  "version": "v6",
+  "source": "地铁上遇到个大哥全程用动漫台词自言自语",
+  "before": [],
+  "translation": "Ran into this guy on the subway who kept muttering anime lines to himself the whole time.",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v6:ctx-03",
+  "id": "ctx-03",
+  "version": "v6",
+  "source": "绝了！",
+  "before": [
+   "你尝尝我做的红烧肉。"
+  ],
+  "translation": "This is incredible!",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:m-109",
+  "id": "m-109",
+  "version": "v1",
+  "source": "哈，没事，我正在跨年晚会看你说的电影",
+  "before": [],
+  "translation": "Ha, it's fine. I'm watching the movie you mentioned at the New Year's Eve party.",
+  "judge_worst": "critical",
+  "judge_score": -25,
+  "judge_errors": [
+   {
+    "span": "at the New Year's Eve party",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "原文“跨年晚会”是说话人所在/观看的场合，译文却把“看电影”的地点误挂到跨年晚会上，意思变成“在跨年晚会上看电影”，与原文“我在跨年晚会这边看你说的电影”不符。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:corpus-24",
+  "id": "corpus-24",
+  "version": "v6",
+  "source": "不处，瓜太大了啃不动",
+  "before": [],
+  "translation": "Not dating. This drama's too big to even process.",
+  "judge_worst": "critical",
+  "judge_score": -31,
+  "judge_errors": [
+   {
+    "span": "不处",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "“不处”是网络用语，意为“不谈恋爱/不处对象”，译成“Not dating”虽方向对，但原文“不处”在此语境更可能是“不处了/不处对象”的省略，需结合语境；若指“不处（不相处）”，则“Not dating”属误译，会误导观众。"
+   },
+   {
+    "span": "瓜太大了啃不动",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“瓜”指八卦/爆料，“啃不动”指信息量太大难以消化，译文“too big to even process”基本传达，但“drama”偏指戏剧性事件而非“瓜（八卦）”，语义有偏差。"
+   },
+   {
+    "span": "This drama's too big to even process.",
+    "category": "style",
+    "severity": "minor",
+    "note": "“too big to even process”略显生硬，字幕口语中更自然说法如“too much to take in”，但不影响理解。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-103",
+  "id": "m-103",
+  "version": "v6",
+  "source": "要不是这破班天天困着我，我高低现在就买机票飞西安找你算账！",
+  "before": [],
+  "translation": "If it weren't for this crappy job trapping me every day, I'd buy a plane ticket right now and fly to Xi'an to settle scores with you!",
+  "judge_worst": "minor",
+  "judge_score": -1,
+  "judge_errors": [
+   {
+    "span": "settle scores with you",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“算账”在此口语语境中意为找对方理论/发火，译成“settle scores”偏重“报复旧怨”，语气略有偏差。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-067",
+  "id": "m-067",
+  "version": "v1",
+  "source": "我不行了笑死我了这模仿也太传神了吧简直复刻原版六百六十六装都不装了这个戏精本精",
+  "before": [],
+  "translation": "I can't even, I'm dying laughing, this impression is way too spot-on, it's basically a perfect replica of the original, 666, not even pretending anymore, this drama queen is the real deal.",
+  "judge_worst": "major",
+  "judge_score": -7,
+  "judge_errors": [
+   {
+    "span": "666",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“666”是中文网络用语（表示厉害/牛），直接保留数字对英文观众毫无意义，应意译为类似“insane”或“next level”。"
+   },
+   {
+    "span": "this drama queen is the real deal",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“戏精本精”指此人本身就是戏精/爱演，译成“the real deal”略有偏差，但大意可接受。"
+   },
+   {
+    "span": "I can't even, I'm dying laughing, this impression is way too spot-on, it's basically a perfect replica of the original, 666, not even pretending anymore, this drama queen is the real deal.",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "整句用逗号串成流水句，缺少句号或分句，作为字幕读起来不够自然。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-135",
+  "id": "m-135",
+  "version": "v6",
+  "source": "那咋了，被人家颜值征服了呀",
+  "before": [],
+  "translation": "So what? You got won over by her looks?",
+  "judge_worst": "minor",
+  "judge_score": -1,
+  "judge_errors": [
+   {
+    "span": "You got won over by her looks?",
+    "category": "style",
+    "severity": "minor",
+    "note": "“got won over”略显生硬，口语中更自然说法是“got won over by her looks”可改为“fell for her looks”或“won over by her looks”，但不影响理解。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-021",
+  "id": "m-021",
+  "version": "v6",
+  "source": "这个表情包是不是很有创意",
+  "before": [],
+  "translation": "Isn't this meme so creative?",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v6:corpus-19",
+  "id": "corpus-19",
+  "version": "v6",
+  "source": "你看我买的彩票中奖号码和你昨天说的一模一样",
+  "before": [],
+  "translation": "Look, the numbers on the lottery ticket I bought are exactly the same as what you said yesterday.",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "Look,",
+    "category": "style",
+    "severity": "minor",
+    "note": "“Look”作为引起注意的感叹语略显生硬，口语字幕中更自然的说法是“Hey”或直接省略。"
+   },
+   {
+    "span": "what you said yesterday",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“你昨天说的”指你说的号码，译文“what you said”未明确是号码，略有歧义，但整体可理解。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-072",
+  "id": "m-072",
+  "version": "v6",
+  "source": "我不行了，这也太猛了",
+  "before": [],
+  "translation": "I can't handle this, it's way too intense.",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:m-009",
+  "id": "m-009",
+  "version": "v1",
+  "source": "玩抽象也能变大神吗你是鉴抄警察吗",
+  "before": [],
+  "translation": "Can playing abstract also make you a master? Are you the plagiarism police?",
+  "judge_worst": "major",
+  "judge_score": -6,
+  "judge_errors": [
+   {
+    "span": "playing abstract",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“玩抽象”是网络用语，指做抽象/荒诞搞笑的内容，译成“playing abstract”字面直译，英语观众无法理解其含义。"
+   },
+   {
+    "span": "also",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文“也能”在此处表反问/质疑语气，译文用“also”显得像陈述递进，语气略有偏差。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-47",
+  "id": "corpus-47",
+  "version": "v1",
+  "source": "你能不能别再拉着我打游戏了",
+  "before": [],
+  "translation": "Can you stop dragging me into playing games?",
+  "judge_worst": "minor",
+  "judge_score": -1,
+  "judge_errors": [
+   {
+    "span": "dragging me into playing games",
+    "category": "style",
+    "severity": "minor",
+    "note": "“drag someone into doing”偏书面/生硬，口语字幕中“dragging me to play games”或“making me play games”更自然。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-024",
+  "id": "m-024",
+  "version": "v6",
+  "source": "在座的各位你已急哭了吧！",
+  "before": [],
+  "translation": "Everyone here must be crying from the stress by now!",
+  "judge_worst": "major",
+  "judge_score": -6,
+  "judge_errors": [
+   {
+    "span": "must be crying from the stress",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“急哭”指因焦急/着急而哭，译文改成“因压力而哭”，改变了情绪原因，意思有偏差。"
+   },
+   {
+    "span": "Everyone here",
+    "category": "style",
+    "severity": "minor",
+    "note": "“在座的各位”是直接称呼观众的口语表达，译成“Everyone here”变成第三人称陈述，语气不够自然。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-41",
+  "id": "corpus-41",
+  "version": "v1",
+  "source": "别人：吊睛白额虎我：巧乐兹雪糕",
+  "before": [],
+  "translation": "Others: A white-browed tiger with upturned eyes. Me: A Qiaolezi ice cream bar.",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "A white-browed tiger with upturned eyes",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“吊睛”指眼睛上吊/斜吊的老虎眼型，译成“upturned eyes”偏字面，尚可理解但不够准确自然。"
+   },
+   {
+    "span": "A Qiaolezi ice cream bar",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "“巧乐兹”是品牌名，音译“Qiaolezi”可接受，但英文观众难以理解，宜保留品牌或加注。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-021",
+  "id": "m-021",
+  "version": "v1",
+  "source": "这个表情包是不是很有创意",
+  "before": [],
+  "translation": "Is this meme very creative?",
+  "judge_worst": "minor",
+  "judge_score": -1,
+  "judge_errors": [
+   {
+    "span": "very creative",
+    "category": "style",
+    "severity": "minor",
+    "note": "“very creative”是直译，口语中更自然、更像字幕的说法是“creative”或“so creative”；“very”在这里显得生硬。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-144",
+  "id": "m-144",
+  "version": "v6",
+  "source": "推荐《华图模块宝典》的图形专项，讲解很系统。",
+  "before": [],
+  "translation": "I recommend the figure reasoning volume of Huatu's Module Treasure Book series—the explanations are really systematic.",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "figure reasoning volume",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "“图形”在公考语境指图形推理（graphic/visual reasoning），译成 figure reasoning 不够规范，易被理解为“人物/数字推理”。"
+   },
+   {
+    "span": "Huatu's Module Treasure Book series",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "书名《华图模块宝典》宜按专有名词处理（如 Huatu Module Baodian），此处意译成 Module Treasure Book 不够统一、不够像书名。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:corpus-20",
+  "id": "corpus-20",
+  "version": "v6",
+  "source": "哈基米南北绿豆，我在工位上憋出内伤",
+  "before": [],
+  "translation": "Hakimi north-south mung beans—I'm dying trying not to laugh at my desk.",
+  "judge_worst": "major",
+  "judge_score": -11,
+  "judge_errors": [
+   {
+    "span": "Hakimi",
+    "category": "terminology",
+    "severity": "major",
+    "note": "“哈基米”是网络梗（源自日语“はちみ”/蜂蜜，常指可爱小动物），并非人名 Hakimi，音译成专有人名会误导观众。"
+   },
+   {
+    "span": "north-south mung beans",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“南北绿豆”是配合“哈基米”的无意义押韵梗，直译成 north-south mung beans 让英文观众完全无法理解，属误译/生硬直译。"
+   },
+   {
+    "span": "I'm dying trying not to laugh at my desk",
+    "category": "style",
+    "severity": "minor",
+    "note": "“憋出内伤”强调忍笑到内伤，译文意思基本对但偏解释性、不够口语化，可更贴近字幕口语。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-08",
+  "id": "corpus-08",
+  "version": "v1",
+  "source": "再说了他那憨厚老实的气质多亲民，你这波不亏，说不定还能靠这张脸蹭顿饭",
+  "before": [],
+  "translation": "Besides, his honest and down-to-earth vibe makes him so approachable. You're not losing out at all this time—who knows, you might even score a free meal with that face.",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-34",
+  "id": "corpus-34",
+  "version": "v1",
+  "source": "工作中总被各种消息打断，难以专注做事，有什么提高效率的方法？",
+  "before": [],
+  "translation": "In work, I'm always interrupted by various messages and find it hard to focus on tasks. Are there any methods to improve efficiency?",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:corpus-40",
+  "id": "corpus-40",
+  "version": "v1",
+  "source": "我不行了，幸福来得太突然",
+  "before": [],
+  "translation": "I can't take it anymore, happiness came too suddenly.",
+  "judge_worst": "major",
+  "judge_score": -6,
+  "judge_errors": [
+   {
+    "span": "I can't take it anymore",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“我不行了”在此语境中是表达被幸福冲击得招架不住，而非“再也受不了了”，译文语气偏负面，容易误导观众。"
+   },
+   {
+    "span": "happiness came too suddenly",
+    "category": "style",
+    "severity": "minor",
+    "note": "直译生硬，字幕口语中更自然的说法如“this is so sudden”或“happiness came out of nowhere”。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-138",
+  "id": "m-138",
+  "version": "v6",
+  "source": "不处，我要在家躺平",
+  "before": [],
+  "translation": "No dating for me—I just wanna chill at home and do nothing.",
+  "judge_worst": "major",
+  "judge_score": -5,
+  "judge_errors": [
+   {
+    "span": "No dating for me",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“不处”是网络口语，意为“不谈恋爱/不处对象”，译成“No dating for me”基本达意，但“处”在此语境更接近“处对象”，译文尚可接受；不过若严格看，“不处”也可能指“不相处/不处关系”，此处偏差不大，属可接受范围。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-130",
+  "id": "m-130",
+  "version": "v6",
+  "source": "这比喻也太抽象了吧",
+  "before": [],
+  "translation": "That metaphor is way too abstract, isn't it?",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v1:ctx-02",
+  "id": "ctx-02",
+  "version": "v1",
+  "source": "说今晚不回来吃饭了。",
+  "before": [
+   "我妈刚给我打了个电话。"
+  ],
+  "translation": "Said he won't be back for dinner tonight.",
+  "judge_worst": "critical",
+  "judge_score": -25,
+  "judge_errors": [
+   {
+    "span": "he",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "原文“我妈”指说话人的母亲（女性），译文用“he”把主语性别弄错，观众会得到错误信息。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v6:m-081",
+  "id": "m-081",
+  "version": "v6",
+  "source": "没有人发现她很聪明吗用抽象起号然后成功了开始走颜值风格给粉丝大反差",
+  "before": [],
+  "translation": "Has no one noticed how smart she is? She blew up by starting her account with absurd, meme-y content, then switched to a looks-based style—giving her fans a huge contrast.",
+  "judge_worst": "minor",
+  "judge_score": -2,
+  "judge_errors": [
+   {
+    "span": "absurd, meme-y content",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "“抽象”在此网络语境指荒诞/无厘头风格，译成“absurd, meme-y”基本达意，但“meme-y”略增译，原文未明确提到梗/表情包。"
+   },
+   {
+    "span": "blew up by starting her account",
+    "category": "style",
+    "severity": "minor",
+    "note": "“起号”指开设/运营账号起步，译文“starting her account”稍显生硬，且“blew up by starting”逻辑略绕，可更口语化。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-036",
+  "id": "m-036",
+  "version": "v1",
+  "source": "我看搞笑视频都憋着不敢笑出声",
+  "before": [],
+  "translation": "When I watch funny videos, I hold back and don't dare laugh out loud.",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v6:m-075",
+  "id": "m-075",
+  "version": "v6",
+  "source": "我要验牌这个梗源自周星驰电影法国赌神的经典台词",
+  "before": [],
+  "translation": "The meme \"I want to check the cards\" comes from a classic line in Stephen Chow's movie God of Gamblers in France.",
+  "judge_worst": "critical",
+  "judge_score": -31,
+  "judge_errors": [
+   {
+    "span": "God of Gamblers in France",
+    "category": "terminology",
+    "severity": "critical",
+    "note": "片名错误：周星驰的《赌神》应为 God of Gamblers，而“法国赌神”是另一部片名/角色，译文把“法国”并入片名，误导观众。"
+   },
+   {
+    "span": "in France",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“法国赌神”指片名/角色，译文将其处理为地点“在法国”，意思偏差。"
+   },
+   {
+    "span": "The meme \"I want to check the cards\"",
+    "category": "style",
+    "severity": "minor",
+    "note": "“验牌”译为 check the cards 偏生硬，字幕口语中可更自然，但不影响理解。"
+   }
+  ],
+  "human": null
+ },
+ {
+  "key": "v1:m-094",
+  "id": "m-094",
+  "version": "v1",
+  "source": "哈哈哈我不行了，你这形容也太搞笑了吧",
+  "before": [],
+  "translation": "Hahaha I can't even, your description is way too funny.",
+  "judge_worst": "none",
+  "judge_score": 0,
+  "judge_errors": [],
+  "human": null
+ },
+ {
+  "key": "v6:corpus-07",
+  "id": "corpus-07",
+  "version": "v6",
+  "source": "哪个班会，我怎么没听着",
+  "before": [],
+  "translation": "Which class meeting? How come nobody told me?",
+  "judge_worst": "major",
+  "judge_score": -5,
+  "judge_errors": [
+   {
+    "span": "How come nobody told me?",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文“我怎么没听着”是说话人自己没听到/没收到通知，译文改成“没人告诉我”，把“自己没听到”变成“别人没通知我”，主体和含义都发生了偏移。"
+   }
+  ],
+  "human": null
+ }
+]
