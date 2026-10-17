@@ -1,0 +1,272 @@
+[
+  {
+    "id": "name-01",
+    "category": "人名地名",
+    "source": "林晓，你今天怎么来得这么早？",
+    "requirement": "人名译为 Lin Xiao；是疑问句"
+  },
+  {
+    "id": "context-01",
+    "category": "需要上下文",
+    "source": "别担心，我已经背熟了。",
+    "requirement": "'背熟了'指背熟台词，应译为 memorized my lines 一类，不能只说 memorized it"
+  },
+  {
+    "id": "slang-01",
+    "category": "网络梗",
+    "source": "这波操作太秀了，我直接裂开。",
+    "requirement": "'太秀了'是夸赞操作厉害，'裂开'是震惊或崩溃，不能字面译成 split open"
+  },
+  {
+    "id": "idiom-01",
+    "category": "成语俗语",
+    "source": "你这简直是画蛇添足。",
+    "requirement": "意思是多此一举，不能字面翻译成画蛇加脚"
+  },
+  {
+    "id": "short-01",
+    "category": "语气情绪",
+    "source": "嗯。",
+    "requirement": "译文应简短（如 Mm. / Yeah.），不能添加解释"
+  },
+  {
+    "id": "corpus-01",
+    "category": "网络梗",
+    "source": "老师我作业真写了但被狗吃了",
+    "requirement": "需识别这是经典借口梗，翻译时要保留“作业被狗吃了”的荒诞感，不能只直译成“狗吃了作业”而丢失幽默语气。"
+  },
+  {
+    "id": "corpus-02",
+    "category": "需要上下文",
+    "source": "偏头那一下是在偷看词！",
+    "requirement": "需结合场景（如表演、演讲）理解“偷看词”指偷看台词/提词，翻译要体现“偏头”与“偷看”的关联，不能译成“偷看单词”。"
+  },
+  {
+    "id": "corpus-03",
+    "category": "网络梗",
+    "source": "不处，保持神秘感挺好的。",
+    "requirement": "“不处”是网络用语，意为“不处对象/不谈恋爱”，翻译需传达拒绝恋爱关系并保持神秘感的语气，不能直译为“不相处”。"
+  },
+  {
+    "id": "corpus-04",
+    "category": "语气情绪",
+    "source": "这么突然的吗",
+    "requirement": "需译出惊讶和意外感，保留口语反问语气，不能译成平淡陈述句。"
+  },
+  {
+    "id": "corpus-05",
+    "category": "网络梗",
+    "source": "就是哈哈哈太抽象了，这问题谁懂啊",
+    "requirement": "“抽象”是网络流行语，指离谱、难以理解，翻译需体现调侃和无奈，不能直译为“抽象的”。"
+  },
+  {
+    "id": "corpus-06",
+    "category": "网络梗",
+    "source": "好像是真的，我还刷到过他演唱会的路透视频",
+    "requirement": "“路透”指非官方泄露的现场视频/照片，翻译需用对应英文表达（如leaked footage），不能直译为“路透社”。"
+  },
+  {
+    "id": "corpus-07",
+    "category": "方言",
+    "source": "哪个班会，我怎么没听着",
+    "requirement": "“没听着”是口语/方言表达，意为“没听说/没听到”，翻译需自然传达疑惑，不能直译为“没听见声音”。"
+  },
+  {
+    "id": "corpus-08",
+    "category": "成语俗语",
+    "source": "再说了他那憨厚老实的气质多亲民，你这波不亏，说不定还能靠这张脸蹭顿饭",
+    "requirement": "需准确翻译“憨厚老实”“亲民”“不亏”“蹭顿饭”等口语化表达，保留调侃和占便宜的幽默语气，不能生硬直译。"
+  },
+  {
+    "id": "corpus-09",
+    "category": "普通句子",
+    "source": "这个纪念品要不要扔掉",
+    "requirement": "需准确传达“要不要扔掉”的犹豫询问语气，翻译自然即可。"
+  },
+  {
+    "id": "corpus-10",
+    "category": "网络梗",
+    "source": "你这想法也是够抽象的",
+    "requirement": "“抽象”在此为网络用语，指想法离谱、难以理解，翻译需体现调侃或无语，不能直译为“抽象的”。"
+  },
+  {
+    "id": "corpus-11",
+    "category": "网络梗",
+    "source": "行，等我回国处理这些毒鸡汤",
+    "requirement": "“毒鸡汤”不能直译为poisonous chicken soup，应译为toxic motivational quotes或demotivational sayings，传达讽刺意味；“行”表示同意，用OK或Fine。"
+  },
+  {
+    "id": "corpus-12",
+    "category": "语气情绪",
+    "source": "这么短，是遇到创作瓶颈了吗",
+    "requirement": "需传达调侃或质疑的语气，“创作瓶颈”译为creative block或writer's block，问句保持反问语气。"
+  },
+  {
+    "id": "corpus-14",
+    "category": "普通句子",
+    "source": "你方案vs同事的PPT谁更胜一筹",
+    "requirement": "“vs”保留为versus或vs，“更胜一筹”译为come out on top或be superior，比较对象清晰。"
+  },
+  {
+    "id": "corpus-15",
+    "category": "成语俗语",
+    "source": "看他那副故作高深的表情就知道有猫腻，这种一本正经的胡说八道最有喜剧效果了",
+    "requirement": "“故作高深”译为pretentious或putting on an air of profundity，“有猫腻”译为something fishy，“一本正经的胡说八道”译为deadpan nonsense或serious bullshit，保留幽默感。"
+  },
+  {
+    "id": "corpus-16",
+    "category": "语气情绪",
+    "source": "我去不早说，难怪你朋友圈天天晒日出",
+    "requirement": "“我去”是感叹词，译为Damn或Oh my god，“不早说”译为why didn't you say earlier，“晒日出”译为post sunrise photos，传达恍然大悟和调侃。"
+  },
+  {
+    "id": "corpus-17",
+    "category": "方言",
+    "source": "不处，这年头爱情都明码标价了",
+    "requirement": "“不处”是方言/网络用语，意为不相处/不谈恋爱，译为Not dating或No relationship；“明码标价”译为has a price tag，传达对爱情物质化的讽刺。"
+  },
+  {
+    "id": "corpus-18",
+    "category": "方言",
+    "source": "不处，自己玩去",
+    "requirement": "“不处”同上，译为Not dating；“自己玩去”译为go play by yourself或leave me alone，传达拒绝和打发语气。"
+  },
+  {
+    "id": "corpus-19",
+    "category": "普通句子",
+    "source": "你看我买的彩票中奖号码和你昨天说的一模一样",
+    "requirement": "准确翻译“彩票中奖号码”为lottery winning numbers，“一模一样”译为exactly the same，保持惊讶语气。"
+  },
+  {
+    "id": "corpus-20",
+    "category": "网络梗",
+    "source": "哈基米南北绿豆，我在工位上憋出内伤",
+    "requirement": "“哈基米南北绿豆”是网络梗/无意义短语，可能源自歌曲或谐音，需音译或保留原意，不直译；“憋出内伤”译为suppress laughter until internal injury，传达在工位憋笑到内伤。"
+  },
+  {
+    "id": "corpus-21",
+    "category": "普通句子",
+    "source": "地铁上遇到个大哥全程用动漫台词自言自语",
+    "requirement": "准确翻译'大哥'（指陌生男子，非亲属）和'动漫台词'，保持口语化叙述语气，不能直译'大哥'为'big brother'。"
+  },
+  {
+    "id": "corpus-22",
+    "category": "语气情绪",
+    "source": "昨晚熬夜看你直播笑到肚子疼",
+    "requirement": "传达'笑到肚子疼'的夸张情绪，用英文对应表达如'laughed so hard my stomach hurt'，保留'熬夜看你直播'的亲切感。"
+  },
+  {
+    "id": "corpus-23",
+    "category": "普通句子",
+    "source": "着急出门直接把抹布当毛巾带公司去了",
+    "requirement": "准确翻译'抹布'和'毛巾'的区别，体现匆忙中拿错的幽默感，用自然英文叙述。"
+  },
+  {
+    "id": "corpus-24",
+    "category": "网络梗",
+    "source": "不处，瓜太大了啃不动",
+    "requirement": "'不处'是网络用语，意为'不相处/不交往'；'瓜'指八卦，'啃不动'表示信息量太大难以消化。需意译出拒绝和吃瓜吃撑的幽默，不能字面直译。"
+  },
+  {
+    "id": "corpus-27",
+    "category": "语气情绪",
+    "source": "这不是应该的吗",
+    "requirement": "翻译出反问语气，表达'这是理所当然的'，英文用反问句如'Isn't that how it should be?'，保留略带质疑的情绪。"
+  },
+  {
+    "id": "corpus-28",
+    "category": "普通句子",
+    "source": "老板要和保洁阿姨结婚了",
+    "requirement": "准确翻译'老板'和'保洁阿姨'（清洁女工），保持陈述事实的平淡语气，不添加额外情感色彩。"
+  },
+  {
+    "id": "corpus-29",
+    "category": "普通句子",
+    "source": "跑步机、椭圆机和动感单车，哪种更适合大体重减脂人群？",
+    "requirement": "准确翻译三种健身器材名称（treadmill, elliptical, spin bike）和'大体重减脂人群'，保持疑问句的咨询语气。"
+  },
+  {
+    "id": "corpus-31",
+    "category": "网络梗",
+    "source": "哎哟我不行了，这种经历我能笑一年，大家谁还没点买卫生巾的社死故事啊！",
+    "requirement": "需准确传达“社死”为“social death”（极度尴尬）的含义，不能直译为“social death story”而不解释；同时“笑一年”应译为“laugh for a year”或“laugh about for a year”，体现夸张语气。"
+  },
+  {
+    "id": "corpus-32",
+    "category": "需要上下文",
+    "source": "我已经发烧了，请大妈们放过我吧",
+    "requirement": "“大妈们”在此语境中可能指爱管闲事的中老年女性，需译为“aunties”或“nosy middle-aged women”，不能直译为“big mothers”；“放过我”应译为“leave me alone”或“spare me”，体现恳求语气。"
+  },
+  {
+    "id": "corpus-33",
+    "category": "网络梗",
+    "source": "看00后用火星文聊天",
+    "requirement": "“00后”应译为“post-00s”或“Gen Z”；“火星文”指网络火星文（一种故意使用生僻字或符号的聊天文字），需译为“Martian language”并加注解释，不能直译为“Mars language”。"
+  },
+  {
+    "id": "corpus-34",
+    "category": "普通句子",
+    "source": "工作中总被各种消息打断，难以专注做事，有什么提高效率的方法？",
+    "requirement": "需准确翻译“打断”为“interrupted”，“专注做事”为“focus on work”，“提高效率”为“improve efficiency”，整体保持疑问语气。"
+  },
+  {
+    "id": "corpus-38",
+    "category": "方言",
+    "source": "刷视频看到山东大妈摊的超大煎饼果子，突然好奇山东煎饼是不是全国最大的？",
+    "requirement": "“煎饼果子”是天津特色小吃，但此处指山东煎饼，应译为“Jianbing”并解释；“摊”译为“make”或“spread”；“大妈”译为“auntie”；整体需保留好奇语气。"
+  },
+  {
+    "id": "corpus-39",
+    "category": "人名地名",
+    "source": "豆瓣9.4的高分也证明了它的品质。",
+    "requirement": "“豆瓣”指豆瓣网站，应译为“Douban”并保留； “9.4的高分”译为“high score of 9.4”；“品质”译为“quality”。"
+  },
+  {
+    "id": "corpus-40",
+    "category": "语气情绪",
+    "source": "我不行了，幸福来得太突然",
+    "requirement": "“我不行了”是口语表达，意为“我受不了了/我太激动了”，应译为“I can't take it”或“I'm overwhelmed”，不能直译为“I'm not okay”；“幸福来得太突然”译为“happiness comes too suddenly”，保留感叹语气。"
+  },
+  {
+    "id": "corpus-41",
+    "category": "网络梗",
+    "source": "别人：吊睛白额虎我：巧乐兹雪糕",
+    "requirement": "需理解“吊睛白额虎”是《水浒传》中老虎的经典描述，代表凶猛；“巧乐兹雪糕”是冰淇淋品牌，代表可爱/弱。翻译需保留对比幽默，不能直译成“tiger”和“ice cream”而丢失梗的意味。"
+  },
+  {
+    "id": "corpus-42",
+    "category": "语气情绪",
+    "source": "哈哈哈我不行了，这届网友真的太有才了",
+    "requirement": "“我不行了”是网络用语表示笑到不行，不能直译“I can't”；“这届网友”指当前网民群体，需译出“this generation of netizens”或类似表达；“有才”指有创意/幽默。"
+  },
+  {
+    "id": "corpus-44",
+    "category": "语气情绪",
+    "source": "我不行了，加班加到人都麻了",
+    "requirement": "“我不行了”表示累到极限；“人都麻了”是网络流行语，指麻木、疲惫不堪，不能直译“numb”，需译出“exhausted/numb”的引申义。"
+  },
+  {
+    "id": "corpus-45",
+    "category": "需要上下文",
+    "source": "你的每条视频我都会看的，你们团队叫那个啥小潮team是吧，我都记得的！",
+    "requirement": "需保留“小潮team”作为专有名词（可音译+team），并译出粉丝热情、略带口误的语气（“那个啥”）。"
+  },
+  {
+    "id": "corpus-47",
+    "category": "语气情绪",
+    "source": "你能不能别再拉着我打游戏了",
+    "requirement": "“拉着我”意为“拽着我/缠着我”，需译出略带抱怨的请求语气，不能直译“pull me”。"
+  },
+  {
+    "id": "corpus-48",
+    "category": "语气情绪",
+    "source": "我不行了，这也太可爱了吧！",
+    "requirement": "“我不行了”表示被可爱到受不了，需译出夸张的喜爱情绪，不能直译“I can't”。"
+  },
+  {
+    "id": "corpus-49",
+    "category": "网络梗",
+    "source": "我不行了，我全知道，肝到秃头",
+    "requirement": "“肝到秃头”是游戏/网络梗，指熬夜爆肝导致脱发，需译出“stay up late grinding until bald”的引申义，不能直译“liver”。"
+  }
+]

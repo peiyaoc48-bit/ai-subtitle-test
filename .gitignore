@@ -6,3 +6,4 @@ allure-results/
 allure-report/
 promptfoo/output/
 .DS_Store
+data/corpus/raw/
