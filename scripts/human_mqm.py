@@ -6,6 +6,10 @@
 2. 标注：.venv/bin/uvicorn scripts.human_mqm:app --port 8003，浏览器打开 http://127.0.0.1:8003
    盲评：页面上看不到裁判的结论，避免被影响。
 3. 计算一致性：python scripts/human_mqm.py agreement
+4. 复核：打开 http://127.0.0.1:8003/review
+   只复核"分歧条目"（人工与裁判级别不同，且至少一方判为严重或致命）。此时显示裁判的错误标注与理由，
+   复核者给出最终级别。最终级别作为参考答案，分别计算裁判和盲评人工的准确度，
+   区分"裁判误判"和"人工漏看"。注意：复核时看得到裁判理由，参考答案会偏向裁判（锚定效应）。
 """
 import json
 import random
@@ -22,6 +26,16 @@ LEVELS = ["none", "minor", "major", "critical"]
 LEVEL_ZH = {"none": "无错误", "minor": "轻微", "major": "严重", "critical": "致命"}
 PENALTY = {"none": 0, "minor": -1, "major": -5, "critical": -25}
 SIZE, SEED = 50, 7
+
+
+def disputed(r):
+    h, j = LEVELS.index(r["human"]["worst"]), LEVELS.index(r["judge_worst"])
+    return h != j and max(h, j) >= 2
+
+
+def gold(r):
+    """复核后的参考答案：分歧条目用复核结论，其余用盲评结论（人工与裁判一致或只差轻微级别）。"""
+    return r["final"]["worst"] if disputed(r) and r.get("final") else r["human"]["worst"]
 
 
 def sample():
@@ -86,9 +100,54 @@ def agreement():
     ]
     for a in range(len(LEVELS)):
         lines.append(f"| {LEVEL_ZH[LEVELS[a]]} | " + " | ".join(str(sum(1 for x, y in zip(h, j) if x == a and y == b)) for b in range(len(LEVELS))) + " |")
+    lines += adjudication_section(rows)
     report = "\n".join(lines)
     print(report)
     (ROOT / "reports" / "judge_agreement.md").write_text(report + "\n", encoding="utf-8")
+
+
+def adjudication_section(rows):
+    from eval2 import stats
+
+    dis = [r for r in rows if disputed(r)]
+    done = [r for r in dis if r.get("final")]
+    if not dis:
+        return []
+    lines = ["", "## 复核", "",
+             f"分歧条目（级别不同，且至少一方判为严重或致命）{len(dis)} 条，已复核 {len(done)} 条。"
+             "复核时显示裁判的错误标注与理由，由复核者给出最终级别。"]
+    if len(done) < len(dis):
+        return lines + ["", "复核未完成，暂不计算。"]
+    judge_ok = sum(r["final"]["worst"] == r["judge_worst"] for r in dis)
+    human_ok = sum(r["final"]["worst"] == r["human"]["worst"] for r in dis)
+    lines += ["", "| 复核结论 | 条数 |", "|---|---|",
+              f"| 裁判对（人工盲评漏看或判错）| {judge_ok} |",
+              f"| 人工对（裁判误判）| {human_ok} |",
+              f"| 都不对（最终级别与双方都不同）| {len(dis) - judge_ok - human_ok} |"]
+
+    g = [LEVELS.index(gold(r)) for r in rows]
+    j = [LEVELS.index(r["judge_worst"]) for r in rows]
+    h = [LEVELS.index(r["human"]["worst"]) for r in rows]
+    ship = lambda x: x >= 2  # 严重及以上：这句字幕不能直接上线
+    def acc(pred):
+        tp = sum(ship(a) and ship(b) for a, b in zip(pred, g))
+        return (stats.weighted_kappa(pred, g, len(LEVELS)),
+                sum(ship(a) == ship(b) for a, b in zip(pred, g)) / len(g),
+                tp / max(sum(map(ship, pred)), 1), tp / max(sum(map(ship, g)), 1))
+    lines += ["", "以复核后的级别为参考答案（全部 50 条）：", "",
+              "| | 加权 kappa | 能否上线判断准确率 | 严重错误精确率 | 严重错误召回率 |", "|---|---|---|---|---|"]
+    for name, pred in (("AI 裁判", j), ("人工盲评", h)):
+        k, a, p, rc = acc(pred)
+        lines.append(f"| {name} | {k:.2f} | {a:.0%} | {p:.0%} | {rc:.0%} |")
+    lines += ["", "能否上线：级别为严重或致命即判为不能上线。参考答案由看过裁判理由的复核者给出，对裁判偏有利。"]
+    wrong = [r for r in dis if r["final"]["worst"] != r["judge_worst"]]
+    if wrong:
+        lines += ["", "### 裁判误判的条目", "", "| 原文 | 译文 | 裁判 | 复核 | 备注 |", "|---|---|---|---|---|"]
+        esc = lambda t: t.replace("|", "\\|").replace("\n", " ")
+        for r in wrong:
+            lines.append(f"| {esc(r['source'])} | {esc(r['translation'])} | {LEVEL_ZH[r['judge_worst']]} | "
+                         f"{LEVEL_ZH[r['final']['worst']]} | {esc(r['final'].get('note', ''))} |")
+    return lines
 
 
 # ---------- 标注网页 ----------
@@ -124,6 +183,35 @@ try:
     @app.get("/", response_class=HTMLResponse)
     def page():
         return PAGE
+
+    class Final(BaseModel):
+        worst: str
+        note: str = ""
+
+    @app.get("/api/review")
+    def api_review():
+        # 复核阶段才把裁判结论发给前端；盲评未完成时不开放
+        rows = json.loads(SAMPLE.read_text(encoding="utf-8"))
+        if not all(r.get("human") for r in rows):
+            return []
+        return [{k: r.get(k) for k in ("key", "source", "before", "translation", "human",
+                                        "judge_worst", "judge_errors", "final")}
+                for r in rows if disputed(r)]
+
+    @app.post("/api/review/{key}")
+    def api_final(key: str, final: Final):
+        if final.worst not in LEVELS:
+            return {"ok": False, "error": "级别无效"}
+        rows = json.loads(SAMPLE.read_text(encoding="utf-8"))
+        for r in rows:
+            if r["key"] == key:
+                r["final"] = final.model_dump()
+        SAMPLE.write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
+        return {"ok": True}
+
+    @app.get("/review", response_class=HTMLResponse)
+    def review_page():
+        return REVIEW_PAGE
 except ImportError:  # 只做抽样、计算一致性时不需要 fastapi
     pass
 
@@ -183,6 +271,55 @@ async function save(){
   await fetch('/api/items/'+encodeURIComponent(items[i].key),{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});
   items[i].human=body;if(i<items.length-1)i++;render();
   if(items.every(x=>x.human))$('#prog').textContent='全部标注完成，可以计算一致性了';
+}
+document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT')return;
+  if('1234'.includes(e.key)){sel=LV[+e.key-1][0];render2()}else if(e.key==='Enter')save()});
+load();
+</script></body></html>"""
+
+REVIEW_PAGE = PAGE.split("<title>")[0] + """<title>MQM 复核</title>""" + PAGE.split("</title>")[1].split("</style>")[0] + """
+.side{display:grid;grid-template-columns:1fr 1fr;gap:10px}.box{border:1px solid var(--line);border-radius:8px;padding:10px;font-size:14px}
+.box b{font-size:15px}.err{margin-top:6px;color:var(--muted)}.err span{color:var(--fg);font-weight:600}
+@media (max-width:560px){.side{grid-template-columns:1fr}}
+</style></head><body><main>
+<div class="top"><h2 style="margin:0">MQM 复核</h2><span id="prog"></span></div>
+<div class="guide">这些是你和 AI 裁判<b>判断差别较大</b>的句子。现在可以看到裁判找出的错误和理由：<b>理由站得住</b>就按裁判的级别，
+<b>理由是挑刺或者错的</b>就按你自己的级别，都不对就选你现在认为正确的级别。快捷键：1 2 3 4 选级别，回车保存并下一条。</div>
+<div class="card" id="card"></div></main>
+<script>
+const LV=[['none','无错误'],['minor','轻微'],['major','严重'],['critical','致命']];const ZH=Object.fromEntries(LV);
+const SEV={critical:'致命',major:'严重',minor:'轻微'};
+let items=[],i=0,sel=null;const $=s=>document.querySelector(s);
+const el=(t,cls,txt)=>{const e=document.createElement(t);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e};
+async function load(){items=await (await fetch('/api/review')).json();
+  if(!items.length){$('#card').textContent='盲评还没完成，或者没有分歧条目。';return}
+  i=Math.max(0,items.findIndex(x=>!x.final));render()}
+function render(){
+  const it=items[i];const n=items.filter(x=>x.final).length;$('#prog').textContent=`已复核 ${n}/${items.length}`;
+  sel=it.final?.worst||null;const c=$('#card');c.innerHTML='';
+  if(it.before.length)c.append(el('div','ctx','上文：'+it.before.join(' / ')));
+  for(const [k,v,cls] of [['原文',it.source,'src'],['译文',it.translation,'tgt']]){const w=el('div');w.append(el('div','k',k),el('div',cls,v));c.append(w)}
+  const side=el('div','side');
+  const me=el('div','box');me.append(el('b',null,'你的盲评：'+ZH[it.human.worst]));
+  if(it.human.note)me.append(el('div','err',it.human.note));
+  const jd=el('div','box');jd.append(el('b',null,'AI 裁判：'+ZH[it.judge_worst]));
+  if(!it.judge_errors.length)jd.append(el('div','err','没有找到错误'));
+  for(const e of it.judge_errors){const d=el('div','err');const s=el('span',null,`[${SEV[e.severity]||e.severity}] ${e.span||''}`);d.append(s,document.createTextNode(' — '+(e.note||'')));jd.append(d)}
+  side.append(me,jd);c.append(side);
+  const lv=el('div','levels');
+  LV.forEach(([k,v],n)=>{const b=el('button',null,`${n+1} ${v}`);b.setAttribute('aria-pressed',sel===k);b.onclick=()=>{sel=k;render2()};lv.append(b)});
+  c.append(lv);
+  const note=el('input');note.id='note';note.placeholder='备注（可选，例如：裁判在挑刺 / 我之前没看出来）';note.value=it.final?.note||'';c.append(note);
+  const nav=el('div','nav');nav.innerHTML='<button id="prev">上一条</button><span class="done" id="st"></span><button class="save" id="save">保存并下一条</button>';
+  c.append(nav);$('#prev').onclick=()=>{if(i>0){i--;render()}};$('#save').onclick=save;
+}
+function render2(){document.querySelectorAll('.levels button').forEach((b,n)=>b.setAttribute('aria-pressed',LV[n][0]===sel))}
+async function save(){
+  if(!sel){$('#st').textContent='先选一个级别';return}
+  const body={worst:sel,note:$('#note').value};
+  await fetch('/api/review/'+encodeURIComponent(items[i].key),{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});
+  items[i].final=body;if(i<items.length-1)i++;render();
+  if(items.every(x=>x.final))$('#prog').textContent='复核完成，可以重新计算一致性了';
 }
 document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT')return;
   if('1234'.includes(e.key)){sel=LV[+e.key-1][0];render2()}else if(e.key==='Enter')save()});

@@ -22,7 +22,15 @@
     "note": "“洗脑程度堪比病毒”是比喻病毒式传播/洗脑，译文“as brainwashing as a virus”生硬且搭配不自然，英语中通常说“as catchy/addictive as a virus”之类。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-139",
@@ -47,7 +55,15 @@
     "note": "“预售”指预售商品/预售状态，用“a pre-sale”作表语略显生硬，宜用“a pre-order”或“a pre-sale item”。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-083",
@@ -72,7 +88,11 @@
     "note": "“handsome”通常指人外貌英俊，而原文“帅”在此语境更偏向“酷/帅气”，语义略有偏差。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:ctx-c57",
@@ -99,7 +119,11 @@
     "note": "原文“社恐人”是网络口语，译文“socially anxious folks”偏书面/正式，字幕口语感稍弱，但不影响理解。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:m-006",
@@ -118,7 +142,15 @@
     "note": "原文“今天居然免费”指今天这一餐/活动免费，用过去时“was free”易被理解为食堂（本身）过去是免费的，时态与语义有偏差。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-12",
@@ -130,7 +162,11 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:corpus-32",
@@ -142,7 +178,15 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "none",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-102",
@@ -161,7 +205,15 @@
     "note": "角色名应使用官方英文名 \"Logger Vick\"，拼音译名会让英文观众无法识别该角色。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-027",
@@ -173,7 +225,17 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "none",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-075",
@@ -198,7 +260,15 @@
     "note": "原文“法国赌神”被漏译，译文中未体现这一关键信息。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "critical",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-077",
@@ -223,7 +293,11 @@
     "note": "“太顶了”是网络俚语，表示“非常棒/很上头”，译成“absolutely amazing”意思对但偏书面、平淡，缺少原文的俚语味。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v1:m-110",
@@ -242,7 +316,15 @@
     "note": "原文“2000内”指2000元人民币以内，译文未标明货币单位，英文读者可能误以为是美元或其他货币，金额含义偏差明显。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-069",
@@ -261,7 +343,17 @@
     "note": "“post”重复出现（post...posted），措辞冗余、不够自然，可改为“this Moments post from my partner”。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "minor",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-069",
@@ -273,7 +365,17 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "none",
+   "note": ""
+  }
  },
  {
   "key": "v1:ctx-c57",
@@ -306,7 +408,17 @@
     "note": "“社恐人爆发起来是真的猛”译得基本达意，但“explode/go hard”偏夸张书面，作为字幕口语略生硬。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-03",
@@ -325,7 +437,15 @@
     "note": "“不处”是网络用语，意为“不谈恋爱/不处对象”，译成“No”丢失了这层含义，观众无法理解说话人拒绝的是什么。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-124",
@@ -344,7 +464,13 @@
     "note": "两个独立分句用逗号连接，构成逗号粘连（run-on），应改为句号或加连词。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "style"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-05",
@@ -363,7 +489,11 @@
     "note": "原文“就是哈哈哈太抽象了”是口语化感叹，译文用“it's just too abstract”略显书面，且“just”位置使语气稍显生硬，不够像字幕口语。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:corpus-01",
@@ -375,7 +505,13 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "style"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v1:m-126",
@@ -387,7 +523,13 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v6:m-077",
@@ -399,7 +541,13 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v1:m-002",
@@ -424,7 +572,11 @@
     "note": "被动语态生硬，字幕口语中更自然的是“we suggest the 12+256G version”或“go for the 12+256G version”。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:corpus-21",
@@ -436,7 +588,11 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:ctx-03",
@@ -450,7 +606,11 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v1:m-109",
@@ -469,7 +629,17 @@
     "note": "原文“跨年晚会”是说话人所在/观看的场合，译文却把“看电影”的地点误挂到跨年晚会上，意思变成“在跨年晚会上看电影”，与原文“我在跨年晚会这边看你说的电影”不符。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "style"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "critical",
+   "note": ""
+  }
  },
  {
   "key": "v6:corpus-24",
@@ -500,7 +670,17 @@
     "note": "“too big to even process”略显生硬，字幕口语中更自然说法如“too much to take in”，但不影响理解。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "critical",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-103",
@@ -519,7 +699,11 @@
     "note": "“算账”在此口语语境中意为找对方理论/发火，译成“settle scores”偏重“报复旧怨”，语气略有偏差。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v1:m-067",
@@ -550,7 +734,11 @@
     "note": "整句用逗号串成流水句，缺少句号或分句，作为字幕读起来不够自然。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:m-135",
@@ -569,7 +757,17 @@
     "note": "“got won over”略显生硬，口语中更自然说法是“got won over by her looks”可改为“fell for her looks”或“won over by her looks”，但不影响理解。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "minor",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-021",
@@ -581,7 +779,11 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:corpus-19",
@@ -606,7 +808,11 @@
     "note": "原文“你昨天说的”指你说的号码，译文“what you said”未明确是号码，略有歧义，但整体可理解。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:m-072",
@@ -618,7 +824,13 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v1:m-009",
@@ -643,7 +855,13 @@
     "note": "原文“也能”在此处表反问/质疑语气，译文用“also”显得像陈述递进，语气略有偏差。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "accuracy"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-47",
@@ -662,7 +880,11 @@
     "note": "“drag someone into doing”偏书面/生硬，口语字幕中“dragging me to play games”或“making me play games”更自然。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:m-024",
@@ -687,7 +909,13 @@
     "note": "“在座的各位”是直接称呼观众的口语表达，译成“Everyone here”变成第三人称陈述，语气不够自然。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "style"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-41",
@@ -712,7 +940,17 @@
     "note": "“巧乐兹”是品牌名，音译“Qiaolezi”可接受，但英文观众难以理解，宜保留品牌或加注。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "terminology"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "minor",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-021",
@@ -731,7 +969,13 @@
     "note": "“very creative”是直译，口语中更自然、更像字幕的说法是“creative”或“so creative”；“very”在这里显得生硬。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "style"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v6:m-144",
@@ -756,7 +1000,11 @@
     "note": "书名《华图模块宝典》宜按专有名词处理（如 Huatu Module Baodian），此处意译成 Module Treasure Book 不够统一、不够像书名。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:corpus-20",
@@ -787,7 +1035,13 @@
     "note": "“憋出内伤”强调忍笑到内伤，译文意思基本对但偏解释性、不够口语化，可更贴近字幕口语。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "accuracy"
+   ],
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-08",
@@ -799,7 +1053,15 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "none",
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-34",
@@ -811,7 +1073,11 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v1:corpus-40",
@@ -836,7 +1102,17 @@
     "note": "直译生硬，字幕口语中更自然的说法如“this is so sudden”或“happiness came out of nowhere”。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [
+    "style"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-138",
@@ -855,7 +1131,15 @@
     "note": "“不处”是网络口语，意为“不谈恋爱/不处对象”，译成“No dating for me”基本达意，但“处”在此语境更接近“处对象”，译文尚可接受；不过若严格看，“不处”也可能指“不相处/不处关系”，此处偏差不大，属可接受范围。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "minor",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-130",
@@ -867,7 +1151,17 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "major",
+   "categories": [
+    "accuracy"
+   ],
+   "note": ""
+  },
+  "final": {
+   "worst": "minor",
+   "note": ""
+  }
  },
  {
   "key": "v1:ctx-02",
@@ -888,7 +1182,15 @@
     "note": "原文“我妈”指说话人的母亲（女性），译文用“he”把主语性别弄错，观众会得到错误信息。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "none",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "critical",
+   "note": ""
+  }
  },
  {
   "key": "v6:m-081",
@@ -913,7 +1215,11 @@
     "note": "“起号”指开设/运营账号起步，译文“starting her account”稍显生硬，且“blew up by starting”逻辑略绕，可更口语化。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v1:m-036",
@@ -925,7 +1231,11 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:m-075",
@@ -956,7 +1266,15 @@
     "note": "“验牌”译为 check the cards 偏生硬，字幕口语中可更自然，但不影响理解。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "critical",
+   "note": ""
+  }
  },
  {
   "key": "v1:m-094",
@@ -968,7 +1286,11 @@
   "judge_worst": "none",
   "judge_score": 0,
   "judge_errors": [],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  }
  },
  {
   "key": "v6:corpus-07",
@@ -987,6 +1309,14 @@
     "note": "原文“我怎么没听着”是说话人自己没听到/没收到通知，译文改成“没人告诉我”，把“自己没听到”变成“别人没通知我”，主体和含义都发生了偏移。"
    }
   ],
-  "human": null
+  "human": {
+   "worst": "minor",
+   "categories": [],
+   "note": ""
+  },
+  "final": {
+   "worst": "major",
+   "note": ""
+  }
  }
 ]
