@@ -1,0 +1,339 @@
+{
+ "note": "人工复核记录：标准答案先按规则取当前句中出现的条目，再按下面的修正处理。remove：这些写法在该句中是普通含义（同形词），不算术语；drop：有歧义，删除该用例。 add：未登记叫法用例中被指代的条目（台词里没有登记写法，规则匹配不到，按人工复核结果补上）。",
+ "remove": {
+  "g-030": [
+   "p-baiyu"
+  ],
+  "g-040": [
+   "o-tianjige"
+  ],
+  "g-043": [
+   "l-changan"
+  ],
+  "g-091": [
+   "p-baiyu"
+  ],
+  "g-102": [
+   "o-tianjige"
+  ],
+  "g-173": [
+   "p-baiyu"
+  ],
+  "g-184": [
+   "o-tianjige"
+  ],
+  "g-188": [
+   "p-baiyu"
+  ],
+  "g-104": [
+   "l-changan"
+  ],
+  "g-105": [
+   "o-tianjige"
+  ],
+  "g-106": [
+   "p-baiyu"
+  ],
+  "g-107": [
+   "i-qingshuang"
+  ],
+  "g-108": [
+   "l-changan"
+  ],
+  "g-109": [
+   "p-baiyu"
+  ],
+  "g-110": [
+   "o-tianjige"
+  ],
+  "g-111": [
+   "i-qingshuang"
+  ],
+  "g-112": [
+   "l-changan"
+  ],
+  "g-113": [
+   "p-baiyu"
+  ],
+  "g-114": [
+   "o-tianjige"
+  ],
+  "g-115": [
+   "p-baiyu"
+  ],
+  "g-116": [
+   "o-tianjige"
+  ],
+  "g-118": [
+   "p-baiyu"
+  ],
+  "g-119": [
+   "i-qingshuang"
+  ],
+  "g-120": [
+   "l-changan"
+  ],
+  "g-121": [
+   "p-baiyu"
+  ],
+  "g-122": [
+   "o-tianjige"
+  ],
+  "g-124": [
+   "p-baiyu"
+  ],
+  "g-125": [
+   "i-qingshuang"
+  ],
+  "g-126": [
+   "o-tianjige"
+  ],
+  "g-127": [
+   "p-baiyu"
+  ],
+  "g-129": [
+   "o-tianjige"
+  ],
+  "g-130": [
+   "p-baiyu"
+  ],
+  "g-132": [
+   "l-changan"
+  ],
+  "g-133": [
+   "p-baiyu"
+  ],
+  "g-134": [
+   "o-tianjige"
+  ],
+  "g-135": [
+   "p-baiyu"
+  ]
+ },
+ "drop": {
+  "g-131": "“青霜映着月光，剑锋冷得吓人”：可能指佩剑青霜，也可能是霜，有歧义",
+  "g-212": "“这座城里”不一定指长安",
+  "g-247": "“满城灯火”不一定指长安",
+  "g-248": "“楼上那间雅阁”不一定是落雁楼",
+  "g-251": "“关外”不一定指白玉关",
+  "g-220": "“他那一套剑法”不一定是流云剑法",
+  "g-255": "“这套剑法”不一定是流云剑法",
+  "g-245": "“这丫头”不一定是阿芜",
+  "g-227": "与前面的未登记叫法用例几乎重复",
+  "g-239": "与前面的未登记叫法用例几乎重复",
+  "g-240": "与前面的未登记叫法用例几乎重复",
+  "g-232": "与前面的未登记叫法用例几乎重复",
+  "g-244": "与前面的未登记叫法用例几乎重复",
+  "g-234": "与前面的未登记叫法用例几乎重复",
+  "g-246": "与前面的未登记叫法用例几乎重复",
+  "g-231": "与前面的未登记叫法用例几乎重复",
+  "g-235": "与前面的未登记叫法用例几乎重复",
+  "g-256": "与前面的未登记叫法用例几乎重复",
+  "g-237": "与前面的未登记叫法用例几乎重复",
+  "g-259": "与前面的未登记叫法用例几乎重复",
+  "g-230": "与前面的未登记叫法用例几乎重复"
+ },
+ "add": {
+  "g-193": [
+   "p-linwaner"
+  ],
+  "g-194": [
+   "p-xiaojingxing"
+  ],
+  "g-195": [
+   "p-shenqi"
+  ],
+  "g-196": [
+   "p-baiyu"
+  ],
+  "g-197": [
+   "p-linxiang"
+  ],
+  "g-198": [
+   "p-chenshu"
+  ],
+  "g-199": [
+   "p-sufeng"
+  ],
+  "g-200": [
+   "t-shixiong"
+  ],
+  "g-201": [
+   "p-linwaner"
+  ],
+  "g-202": [
+   "p-xiaojingxing"
+  ],
+  "g-203": [
+   "p-linwaner"
+  ],
+  "g-204": [
+   "p-xiaojingxing"
+  ],
+  "g-205": [
+   "p-shenqi"
+  ],
+  "g-206": [
+   "p-baiyu"
+  ],
+  "g-207": [
+   "p-linxiang"
+  ],
+  "g-208": [
+   "p-chenshu"
+  ],
+  "g-209": [
+   "p-sufeng"
+  ],
+  "g-210": [
+   "p-awu"
+  ],
+  "g-211": [
+   "p-tianjige-master"
+  ],
+  "g-212": [
+   "l-changan"
+  ],
+  "g-213": [
+   "l-luoyanlou"
+  ],
+  "g-214": [
+   "l-donggong"
+  ],
+  "g-215": [
+   "l-xishan"
+  ],
+  "g-216": [
+   "l-baiyuguan"
+  ],
+  "g-217": [
+   "o-tianjige"
+  ],
+  "g-218": [
+   "o-jinjun"
+  ],
+  "g-219": [
+   "o-mingjing"
+  ],
+  "g-220": [
+   "i-liuyun"
+  ],
+  "g-221": [
+   "i-hufu"
+  ],
+  "g-222": [
+   "i-qingshuang"
+  ],
+  "g-223": [
+   "i-mijuan"
+  ],
+  "g-224": [
+   "e-shangyuan"
+  ],
+  "g-225": [
+   "e-qiulie"
+  ],
+  "g-226": [
+   "p-xiaojingxing"
+  ],
+  "g-227": [
+   "p-linwaner"
+  ],
+  "g-228": [
+   "p-xiaojingxing"
+  ],
+  "g-229": [
+   "p-baiyu"
+  ],
+  "g-230": [
+   "p-linxiang"
+  ],
+  "g-231": [
+   "p-chenshu"
+  ],
+  "g-232": [
+   "p-sufeng"
+  ],
+  "g-233": [
+   "p-awu"
+  ],
+  "g-234": [
+   "p-tianjige-master"
+  ],
+  "g-235": [
+   "i-hufu"
+  ],
+  "g-236": [
+   "i-qingshuang"
+  ],
+  "g-237": [
+   "e-shangyuan"
+  ],
+  "g-238": [
+   "p-xiaojingxing"
+  ],
+  "g-239": [
+   "p-linwaner"
+  ],
+  "g-240": [
+   "p-xiaojingxing"
+  ],
+  "g-241": [
+   "p-baiyu"
+  ],
+  "g-242": [
+   "p-linxiang"
+  ],
+  "g-243": [
+   "p-guifei"
+  ],
+  "g-244": [
+   "p-sufeng"
+  ],
+  "g-245": [
+   "p-awu"
+  ],
+  "g-246": [
+   "p-tianjige-master"
+  ],
+  "g-247": [
+   "l-changan"
+  ],
+  "g-248": [
+   "l-luoyanlou"
+  ],
+  "g-249": [
+   "l-donggong"
+  ],
+  "g-250": [
+   "l-xishan"
+  ],
+  "g-251": [
+   "l-baiyuguan"
+  ],
+  "g-252": [
+   "o-tianjige"
+  ],
+  "g-253": [
+   "o-jinjun"
+  ],
+  "g-254": [
+   "o-mingjing"
+  ],
+  "g-255": [
+   "i-liuyun"
+  ],
+  "g-256": [
+   "i-hufu"
+  ],
+  "g-257": [
+   "i-qingshuang"
+  ],
+  "g-258": [
+   "i-mijuan"
+  ],
+  "g-259": [
+   "e-shangyuan"
+  ]
+ }
+}

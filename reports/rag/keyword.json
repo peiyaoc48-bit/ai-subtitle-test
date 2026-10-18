@@ -1,0 +1,2593 @@
+{
+ "g-007": {
+  "translation": "Senior Brother, I've reached the seventh level of the Flowing Cloud Sword Art you taught me.",
+  "retrieved": [
+   "t-shixiong",
+   "i-liuyun"
+  ],
+  "prompt_tokens": 1031,
+  "completion_tokens": 95,
+  "seconds": 0.92,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-008": {
+  "translation": "Your Majesty, Consort Liu had this tea specially prepared for you.",
+  "retrieved": [
+   "t-niangniang",
+   "p-guifei"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 90,
+  "seconds": 0.98,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-002": {
+  "translation": "Shen Qi's sword only ever leaves its sheath once.",
+  "retrieved": [
+   "p-shenqi"
+  ],
+  "prompt_tokens": 988,
+  "completion_tokens": 91,
+  "seconds": 1.0,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-003": {
+  "translation": "Chancellor Lin, if word of this gets out, I'm afraid you won't be able to hold on to your post.",
+  "retrieved": [
+   "p-linxiang"
+  ],
+  "prompt_tokens": 995,
+  "completion_tokens": 117,
+  "seconds": 1.01,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-005": {
+  "translation": "Commander Su, why has the Imperial Guard suddenly changed its watch tonight?",
+  "retrieved": [
+   "p-sufeng",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1006,
+  "completion_tokens": 97,
+  "seconds": 1.05,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-001": {
+  "translation": "Lin Wan'er, are you really going to turn your back on me for some martial artist?",
+  "retrieved": [
+   "p-linwaner"
+  ],
+  "prompt_tokens": 991,
+  "completion_tokens": 98,
+  "seconds": 1.15,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-004": {
+  "translation": "Xiao Jingheng, you go against me at every turn—what exactly are you after?",
+  "retrieved": [
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1001,
+  "completion_tokens": 87,
+  "seconds": 1.31,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-006": {
+  "translation": "A-Wu, I'm going out tonight. Don't follow me.",
+  "retrieved": [
+   "p-awu"
+  ],
+  "prompt_tokens": 981,
+  "completion_tokens": 97,
+  "seconds": 1.39,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-009": {
+  "translation": "Miss, the Wild Goose Tower is no place for you.",
+  "retrieved": [
+   "t-guniang",
+   "l-luoyanlou"
+  ],
+  "prompt_tokens": 1010,
+  "completion_tokens": 84,
+  "seconds": 0.82,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-010": {
+  "translation": "I waited three years for you in Chang'an, and now you're finally back.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1002,
+  "completion_tokens": 81,
+  "seconds": 0.81,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-011": {
+  "translation": "The lamps in the Eastern Palace will probably stay lit until dawn tonight.",
+  "retrieved": [
+   "l-donggong"
+  ],
+  "prompt_tokens": 979,
+  "completion_tokens": 92,
+  "seconds": 0.87,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-012": {
+  "translation": "There's movement over by the Western Hills—the Imperial Guard has already set out.",
+  "retrieved": [
+   "l-xishan",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 998,
+  "completion_tokens": 95,
+  "seconds": 0.91,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-014": {
+  "translation": "Thirty li beyond Baiyu Pass, scouts report unusual movement.",
+  "retrieved": [
+   "l-baiyuguan"
+  ],
+  "prompt_tokens": 988,
+  "completion_tokens": 82,
+  "seconds": 0.82,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-015": {
+  "translation": "The Tianji Pavilion's intel is never wrong.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 88,
+  "seconds": 0.71,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-013": {
+  "translation": "The Lin Residence isn't a place just anyone can waltz into.",
+  "retrieved": [
+   "l-linfu"
+  ],
+  "prompt_tokens": 986,
+  "completion_tokens": 126,
+  "seconds": 1.53,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-019": {
+  "translation": "Once the Chang'an Scroll falls into the Second Prince's hands, the realm will be thrown into chaos.",
+  "retrieved": [
+   "i-mijuan",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1023,
+  "completion_tokens": 88,
+  "seconds": 0.75,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-021": {
+  "translation": "Miss Lin, does your father know you're looking into this?",
+  "retrieved": [
+   "p-linwaner"
+  ],
+  "prompt_tokens": 988,
+  "completion_tokens": 93,
+  "seconds": 0.72,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-016": {
+  "translation": "Agents of the Mirror Bureau slipped into the Chancellor's residence last night.",
+  "retrieved": [
+   "o-mingjing",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1001,
+  "completion_tokens": 134,
+  "seconds": 1.3,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-017": {
+  "translation": "If the tiger tally isn't with the Crown Prince, then who took it?",
+  "retrieved": [
+   "i-hufu",
+   "p-xiaojingxing"
+  ],
+  "prompt_tokens": 1023,
+  "completion_tokens": 99,
+  "seconds": 1.11,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-018": {
+  "translation": "Qingshuang is drawn, and returns only bloodied.",
+  "retrieved": [
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1002,
+  "completion_tokens": 95,
+  "seconds": 1.1,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-020": {
+  "translation": "On the night of the Lantern Festival, everyone on the city wall must die.",
+  "retrieved": [
+   "e-shangyuan"
+  ],
+  "prompt_tokens": 987,
+  "completion_tokens": 102,
+  "seconds": 1.19,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-022": {
+  "translation": "No one in the underworld dares to disrespect Seventh Brother's name.",
+  "retrieved": [
+   "p-shenqi"
+  ],
+  "prompt_tokens": 990,
+  "completion_tokens": 109,
+  "seconds": 1.18,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-023": {
+  "translation": "Yu'er, just pretend you didn't hear any of this, understand?",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 93,
+  "seconds": 0.89,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-026": {
+  "translation": "Commander Su, send another squad over to the Western Hills.",
+  "retrieved": [
+   "p-sufeng",
+   "l-xishan"
+  ],
+  "prompt_tokens": 1008,
+  "completion_tokens": 84,
+  "seconds": 1.1,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-024": {
+  "translation": "Jingxing, has there been any word from the Eastern Palace?",
+  "retrieved": [
+   "p-xiaojingxing",
+   "l-donggong"
+  ],
+  "prompt_tokens": 1016,
+  "completion_tokens": 96,
+  "seconds": 1.19,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-028": {
+  "translation": "Senior Brother said he only ever taught the Flowing Cloud Sword Art to me.",
+  "retrieved": [
+   "t-shixiong",
+   "i-liuyun"
+  ],
+  "prompt_tokens": 1026,
+  "completion_tokens": 108,
+  "seconds": 0.97,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-025": {
+  "translation": "Brother Qi, the Tianji Pavilion has already got their eyes on this street.",
+  "retrieved": [
+   "p-shenqi",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1037,
+  "completion_tokens": 101,
+  "seconds": 1.24,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-027": {
+  "translation": "The Pavilion Master has given orders—the secret scroll must be retrieved from Wild Goose Tower.",
+  "retrieved": [
+   "p-tianjige-master",
+   "i-mijuan",
+   "l-luoyanlou"
+  ],
+  "prompt_tokens": 1065,
+  "completion_tokens": 103,
+  "seconds": 1.22,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-029": {
+  "translation": "A lifetime of peace is nothing compared to one night walking through Chang'an with you.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1002,
+  "completion_tokens": 96,
+  "seconds": 1.07,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-031": {
+  "translation": "The Second Prince is reaching a bit too far.",
+  "retrieved": [
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 998,
+  "completion_tokens": 80,
+  "seconds": 0.84,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-030": {
+  "translation": "Just pawn the white jade hairpin—getting some silver matters more.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1006,
+  "completion_tokens": 95,
+  "seconds": 1.2,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-036": {
+  "translation": "On the night of the Lantern Festival, what exactly happened at Wild Goose Tower?",
+  "retrieved": [
+   "e-shangyuan",
+   "l-luoyanlou"
+  ],
+  "prompt_tokens": 1008,
+  "completion_tokens": 71,
+  "seconds": 0.67,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-035": {
+  "translation": "The urgent report from Baiyu Pass arrived last night.",
+  "retrieved": [
+   "l-baiyuguan"
+  ],
+  "prompt_tokens": 984,
+  "completion_tokens": 71,
+  "seconds": 1.05,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-034": {
+  "translation": "The tiger tally is in my hand. Who among you dares to make a move?",
+  "retrieved": [
+   "i-hufu"
+  ],
+  "prompt_tokens": 981,
+  "completion_tokens": 97,
+  "seconds": 1.27,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-033": {
+  "translation": "The Mirror Bureau is handling a case. Everyone else, clear the area.",
+  "retrieved": [
+   "o-mingjing"
+  ],
+  "prompt_tokens": 980,
+  "completion_tokens": 99,
+  "seconds": 1.34,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-032": {
+  "translation": "The Imperial Guard has surrounded the Lin Residence. Is Chancellor Lin still not coming out?",
+  "retrieved": [
+   "o-jinjun",
+   "l-linfu",
+   "p-linxiang"
+  ],
+  "prompt_tokens": 1029,
+  "completion_tokens": 141,
+  "seconds": 1.51,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-038": {
+  "translation": "Miss Lin, Young Master Xiao has been waiting for you in the Eastern Palace for quite a while.",
+  "retrieved": [
+   "p-linwaner",
+   "p-xiaojingxing",
+   "l-donggong"
+  ],
+  "prompt_tokens": 1043,
+  "completion_tokens": 104,
+  "seconds": 1.12,
+  "term_hits": [
+   true,
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-037": {
+  "translation": "The autumn hunt is approaching, and the Second Prince has requested to accompany the imperial party.",
+  "retrieved": [
+   "e-qiulie",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1020,
+  "completion_tokens": 103,
+  "seconds": 1.35,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-039": {
+  "translation": "Is Shen Qi's Flowing Cloud Sword Art really unbreakable?",
+  "retrieved": [
+   "p-shenqi",
+   "i-liuyun"
+  ],
+  "prompt_tokens": 1028,
+  "completion_tokens": 99,
+  "seconds": 1.18,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-040": {
+  "translation": "Some things aren't meant to be revealed. You should know that.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1008,
+  "completion_tokens": 154,
+  "seconds": 1.17,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-042": {
+  "translation": "Brother Su, this squad of the Imperial Guard answers only to you.",
+  "retrieved": [
+   "p-sufeng",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 102,
+  "seconds": 0.77,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-041": {
+  "translation": "Your Majesty, Uncle Chen requests an audience. He says something has happened at the Lin Residence.",
+  "retrieved": [
+   "p-guifei",
+   "t-niangniang",
+   "p-chenshu",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1047,
+  "completion_tokens": 125,
+  "seconds": 1.11,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-043": {
+  "translation": "Wishing her peace year after year—sounds so lovely. Too bad she can't hear it anymore.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1005,
+  "completion_tokens": 119,
+  "seconds": 1.0,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-045": {
+  "translation": "If you're looking to ask around for information, Miss, Wild Goose Tower is the best place for it.",
+  "retrieved": [
+   "t-guniang",
+   "l-luoyanlou"
+  ],
+  "prompt_tokens": 1010,
+  "completion_tokens": 99,
+  "seconds": 0.8,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-044": {
+  "translation": "So long as the Chang'an Scroll stays hidden, Chang'an will know no peace.",
+  "retrieved": [
+   "i-mijuan",
+   "l-changan"
+  ],
+  "prompt_tokens": 1027,
+  "completion_tokens": 115,
+  "seconds": 1.15,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-047": {
+  "translation": "Senior Brother, Master wants you to go over to the Tianji Pavilion.",
+  "retrieved": [
+   "t-shixiong",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1032,
+  "completion_tokens": 91,
+  "seconds": 0.92,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-046": {
+  "translation": "Shen Qi, the Pavilion Master is asking for you. Says there's a mole in the Tianji Pavilion.",
+  "retrieved": [
+   "p-shenqi",
+   "p-tianjige-master",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1093,
+  "completion_tokens": 123,
+  "seconds": 1.19,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-048": {
+  "translation": "Senior Brother, I've been practicing the Flowing Cloud Sword Art for three years, and I still haven't gotten the hang of it.",
+  "retrieved": [
+   "t-shixiong",
+   "i-liuyun"
+  ],
+  "prompt_tokens": 1030,
+  "completion_tokens": 106,
+  "seconds": 0.92,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-050": {
+  "translation": "Senior Brother, get the Crown Prince out of here. I'll handle this.",
+  "retrieved": [
+   "t-shixiong",
+   "p-xiaojingxing"
+  ],
+  "prompt_tokens": 1028,
+  "completion_tokens": 118,
+  "seconds": 0.94,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-051": {
+  "translation": "Senior Brother, the Second Prince's men have already entered Chang'an.",
+  "retrieved": [
+   "t-shixiong",
+   "p-erhuangzi",
+   "l-changan"
+  ],
+  "prompt_tokens": 1062,
+  "completion_tokens": 96,
+  "seconds": 0.9,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-052": {
+  "translation": "Senior Brother, the Pavilion Master ordered that this scroll must not fall into anyone else's hands.",
+  "retrieved": [
+   "t-shixiong",
+   "p-tianjige-master",
+   "i-mijuan"
+  ],
+  "prompt_tokens": 1069,
+  "completion_tokens": 104,
+  "seconds": 0.89,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-049": {
+  "translation": "Senior Brother, a sedan chair just arrived downstairs—from the looks of it, it's headed for the Eastern Palace.",
+  "retrieved": [
+   "t-shixiong",
+   "l-donggong"
+  ],
+  "prompt_tokens": 1008,
+  "completion_tokens": 102,
+  "seconds": 1.3,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-054": {
+  "translation": "Your Highness, Baiyu Pass is just ahead. Please switch horses.",
+  "retrieved": [
+   "t-dianxia",
+   "l-baiyuguan"
+  ],
+  "prompt_tokens": 1013,
+  "completion_tokens": 97,
+  "seconds": 0.92,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-053": {
+  "translation": "Senior Brother, those wounds on you—did the Imperial Guard give you those?",
+  "retrieved": [
+   "t-shixiong",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1004,
+  "completion_tokens": 91,
+  "seconds": 0.99,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-056": {
+  "translation": "Your Highness, Commander Su requests an audience. He says he has important matters to report.",
+  "retrieved": [
+   "t-dianxia",
+   "p-sufeng"
+  ],
+  "prompt_tokens": 1020,
+  "completion_tokens": 97,
+  "seconds": 1.03,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-057": {
+  "translation": "Your Highness, if you go to the Western Hills, no one will be left to guard the Eastern Palace.",
+  "retrieved": [
+   "t-dianxia",
+   "l-xishan",
+   "l-donggong"
+  ],
+  "prompt_tokens": 1026,
+  "completion_tokens": 95,
+  "seconds": 0.94,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-055": {
+  "translation": "Your Highness, I have finished investigating what happened that night of the Lantern Festival.",
+  "retrieved": [
+   "t-dianxia",
+   "e-shangyuan"
+  ],
+  "prompt_tokens": 1016,
+  "completion_tokens": 108,
+  "seconds": 1.25,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-059": {
+  "translation": "Your Highness, the Second Prince has been waiting outside the palace gate for half an hour.",
+  "retrieved": [
+   "t-dianxia",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1027,
+  "completion_tokens": 96,
+  "seconds": 0.92,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-060": {
+  "translation": "Your Highness, Uncle Chen sent word—something's going on at the Lin Residence today.",
+  "retrieved": [
+   "t-dianxia",
+   "p-chenshu",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1033,
+  "completion_tokens": 97,
+  "seconds": 0.82,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-058": {
+  "translation": "Your Highness, you'd better keep the tiger tally yourself—it's safer that way.",
+  "retrieved": [
+   "t-dianxia",
+   "i-hufu"
+  ],
+  "prompt_tokens": 1011,
+  "completion_tokens": 90,
+  "seconds": 1.12,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-062": {
+  "translation": "Your Majesty, the Second Prince is outside the hall waiting to pay his respects.",
+  "retrieved": [
+   "t-niangniang",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1015,
+  "completion_tokens": 92,
+  "seconds": 0.73,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-061": {
+  "translation": "Your Majesty, is Consort Liu feeling any better today?",
+  "retrieved": [
+   "t-niangniang",
+   "p-guifei"
+  ],
+  "prompt_tokens": 1004,
+  "completion_tokens": 89,
+  "seconds": 1.14,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-065": {
+  "translation": "Your Majesty, Chancellor Lin has submitted this memorial.",
+  "retrieved": [
+   "t-niangniang",
+   "p-linxiang"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 74,
+  "seconds": 0.74,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-066": {
+  "translation": "Your Majesty, the roster for the autumn hunt is ready. Please review it.",
+  "retrieved": [
+   "t-niangniang",
+   "e-qiulie"
+  ],
+  "prompt_tokens": 1005,
+  "completion_tokens": 104,
+  "seconds": 0.78,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-068": {
+  "translation": "Miss, I've finished polishing your Qingshuang sword.",
+  "retrieved": [
+   "t-guniang",
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1029,
+  "completion_tokens": 84,
+  "seconds": 0.76,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-063": {
+  "translation": "Your Majesty, the Mirror Bureau's people came into the palace last night—did you know?",
+  "retrieved": [
+   "t-niangniang",
+   "o-mingjing"
+  ],
+  "prompt_tokens": 1001,
+  "completion_tokens": 102,
+  "seconds": 1.2,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-069": {
+  "translation": "Miss, Uncle Chen says the carriage is already waiting at the back gate.",
+  "retrieved": [
+   "t-guniang",
+   "p-chenshu"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 89,
+  "seconds": 0.95,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-067": {
+  "translation": "Your Majesty, I'm afraid the Tianji Pavilion already knows what we're planning.",
+  "retrieved": [
+   "t-niangniang",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1030,
+  "completion_tokens": 99,
+  "seconds": 1.19,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-064": {
+  "translation": "Please calm down, Your Majesty. Bai Yu is just a songstress—she can't make any waves.",
+  "retrieved": [
+   "t-niangniang",
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1027,
+  "completion_tokens": 131,
+  "seconds": 1.34,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-070": {
+  "translation": "Miss, word from Wild Goose Tower — Young Master Xiao is going there tonight.",
+  "retrieved": [
+   "t-guniang",
+   "l-luoyanlou",
+   "p-xiaojingxing"
+  ],
+  "prompt_tokens": 1052,
+  "completion_tokens": 98,
+  "seconds": 0.86,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-072": {
+  "translation": "Miss, there's a man outside claiming to be Shen Qi. He says he's been sent to protect you.",
+  "retrieved": [
+   "t-guniang",
+   "p-shenqi"
+  ],
+  "prompt_tokens": 1017,
+  "completion_tokens": 113,
+  "seconds": 0.8,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-075": {
+  "translation": "Miss, the Mirror Bureau has traced things to the Lin Residence—what do we do now?",
+  "retrieved": [
+   "t-guniang",
+   "o-mingjing",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1031,
+  "completion_tokens": 90,
+  "seconds": 0.74,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-074": {
+  "translation": "Miss, the lantern fair on the Lantern Festival is crowded. Please stay close to me, Miss.",
+  "retrieved": [
+   "t-guniang",
+   "e-shangyuan"
+  ],
+  "prompt_tokens": 1016,
+  "completion_tokens": 121,
+  "seconds": 0.89,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-073": {
+  "translation": "Miss, the military report from Baiyu Pass has arrived. The master is in his study, absolutely furious.",
+  "retrieved": [
+   "t-guniang",
+   "l-baiyuguan"
+  ],
+  "prompt_tokens": 1018,
+  "completion_tokens": 105,
+  "seconds": 1.11,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-071": {
+  "translation": "Miss, the Chancellor wants you to go to the front hall tomorrow.",
+  "retrieved": [
+   "t-guniang",
+   "p-linxiang"
+  ],
+  "prompt_tokens": 1017,
+  "completion_tokens": 124,
+  "seconds": 1.4,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-076": {
+  "translation": "Miss, if word of this reaches Consort Liu's ears, we're in trouble.",
+  "retrieved": [
+   "t-guniang",
+   "p-guifei"
+  ],
+  "prompt_tokens": 1015,
+  "completion_tokens": 97,
+  "seconds": 1.07,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-078": {
+  "translation": "Commander Su, there's movement over at the Western Hills. The Imperial Guard needs to be on alert through the night.",
+  "retrieved": [
+   "p-sufeng",
+   "l-xishan",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1028,
+  "completion_tokens": 103,
+  "seconds": 0.92,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-077": {
+  "translation": "Wan'er, the Crown Prince is coming to the Lin Residence tonight. Hurry and go change your clothes.",
+  "retrieved": [
+   "p-linwaner",
+   "p-xiaojingxing",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1052,
+  "completion_tokens": 104,
+  "seconds": 1.28,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-079": {
+  "translation": "By order of Consort Liu, the Second Prince is not to enter the Eastern Palace tonight.",
+  "retrieved": [
+   "p-guifei",
+   "p-erhuangzi",
+   "l-donggong"
+  ],
+  "prompt_tokens": 1040,
+  "completion_tokens": 82,
+  "seconds": 1.05,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-081": {
+  "translation": "Jingxing, this Flowing Cloud Sword Art of yours—who did you learn it from?",
+  "retrieved": [
+   "p-xiaojingxing",
+   "i-liuyun"
+  ],
+  "prompt_tokens": 1044,
+  "completion_tokens": 84,
+  "seconds": 0.75,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-082": {
+  "translation": "A-Wu, fetch my Qingshuang sword. I'm paying a visit to Wild Goose Tower.",
+  "retrieved": [
+   "p-awu",
+   "i-qingshuang",
+   "l-luoyanlou"
+  ],
+  "prompt_tokens": 1046,
+  "completion_tokens": 109,
+  "seconds": 1.04,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-080": {
+  "translation": "The Pavilion Master said the Tianji Pavilion won't take on the Chang'an Scroll matter.",
+  "retrieved": [
+   "p-tianjige-master",
+   "i-mijuan",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1091,
+  "completion_tokens": 140,
+  "seconds": 1.25,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-083": {
+  "translation": "The night of the Lantern Festival, the urgent report from Baiyu Pass reached the Mirror Bureau.",
+  "retrieved": [
+   "e-shangyuan",
+   "l-baiyuguan",
+   "o-mingjing"
+  ],
+  "prompt_tokens": 1031,
+  "completion_tokens": 93,
+  "seconds": 1.02,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-085": {
+  "translation": "Your Highness, the tiger tally isn't in the Eastern Palace. I'm afraid it's already fallen into the Second Prince's hands.",
+  "retrieved": [
+   "t-dianxia",
+   "i-hufu",
+   "l-donggong",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1065,
+  "completion_tokens": 105,
+  "seconds": 0.98,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-084": {
+  "translation": "Senior Brother, who exactly is the Pavilion Master of the Tianji Pavilion?",
+  "retrieved": [
+   "t-shixiong",
+   "o-tianjige",
+   "p-tianjige-master"
+  ],
+  "prompt_tokens": 1089,
+  "completion_tokens": 92,
+  "seconds": 1.02,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-086": {
+  "translation": "Miss, Wild Goose Tower is just ahead. Miss Bai Yu is waiting for you upstairs.",
+  "retrieved": [
+   "t-guniang",
+   "l-luoyanlou",
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1055,
+  "completion_tokens": 95,
+  "seconds": 0.95,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-087": {
+  "translation": "The autumn hunt is coming up, and the Imperial Guard will accompany His Highness the Crown Prince to the Western Hills.",
+  "retrieved": [
+   "e-qiulie",
+   "o-jinjun",
+   "p-xiaojingxing",
+   "l-xishan"
+  ],
+  "prompt_tokens": 1060,
+  "completion_tokens": 120,
+  "seconds": 1.04,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-088": {
+  "translation": "Shen Qi, that man in black who's always with the Second Prince—did you find out who he is?",
+  "retrieved": [
+   "p-shenqi",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1025,
+  "completion_tokens": 111,
+  "seconds": 1.15,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-090": {
+  "translation": "Chancellor Lin, if the secret scroll really is in the Lin Residence, you won't be able to escape involvement.",
+  "retrieved": [
+   "p-linxiang",
+   "i-mijuan",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1041,
+  "completion_tokens": 112,
+  "seconds": 0.84,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-089": {
+  "translation": "Brother Su, the Mirror Bureau's people have already entered Chang'an.",
+  "retrieved": [
+   "p-sufeng",
+   "o-mingjing",
+   "l-changan"
+  ],
+  "prompt_tokens": 1048,
+  "completion_tokens": 113,
+  "seconds": 0.98,
+  "term_hits": [
+   true,
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-091": {
+  "translation": "Wan'er, was this white jade hairpin a gift from the Crown Prince?",
+  "retrieved": [
+   "p-linwaner",
+   "p-baiyu",
+   "p-xiaojingxing"
+  ],
+  "prompt_tokens": 1071,
+  "completion_tokens": 115,
+  "seconds": 1.17,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-092": {
+  "translation": "Rest assured, Senior Brother. I only used thirty percent of the Flowing Cloud Sword Art.",
+  "retrieved": [
+   "t-shixiong",
+   "i-liuyun"
+  ],
+  "prompt_tokens": 1027,
+  "completion_tokens": 104,
+  "seconds": 1.29,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-093": {
+  "translation": "Uncle Chen, get the car ready. I need to pay a visit to the Tianji Pavilion.",
+  "retrieved": [
+   "p-chenshu",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1029,
+  "completion_tokens": 131,
+  "seconds": 1.35,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-094": {
+  "translation": "Please don't be angry, Your Majesty. The Second Prince has only gone hunting in the Western Hills.",
+  "retrieved": [
+   "t-niangniang",
+   "p-erhuangzi",
+   "l-xishan"
+  ],
+  "prompt_tokens": 1035,
+  "completion_tokens": 119,
+  "seconds": 1.38,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-095": {
+  "translation": "Bai Yu, the distinguished guest at Wild Goose Tower tonight is someone from the Lin Residence.",
+  "retrieved": [
+   "p-baiyu",
+   "l-luoyanlou",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1051,
+  "completion_tokens": 143,
+  "seconds": 1.21,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-097": {
+  "translation": "Commander Su, whoever holds the tiger tally commands the Imperial Guard.",
+  "retrieved": [
+   "p-sufeng",
+   "i-hufu",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1030,
+  "completion_tokens": 84,
+  "seconds": 0.95,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-096": {
+  "translation": "A-Wu, your lady's Qingshuang sword is faster than my blade.",
+  "retrieved": [
+   "p-awu",
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1023,
+  "completion_tokens": 98,
+  "seconds": 1.06,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-098": {
+  "translation": "Jingheng, has your mother Consort Liu ever mentioned the Chang'an Scroll?",
+  "retrieved": [
+   "p-erhuangzi",
+   "p-guifei",
+   "i-mijuan"
+  ],
+  "prompt_tokens": 1051,
+  "completion_tokens": 90,
+  "seconds": 0.93,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-099": {
+  "translation": "Your Highness, the Mirror Bureau's men have been posted outside the Eastern Palace all night.",
+  "retrieved": [
+   "t-dianxia",
+   "l-donggong",
+   "o-mingjing"
+  ],
+  "prompt_tokens": 1026,
+  "completion_tokens": 112,
+  "seconds": 0.99,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-100": {
+  "translation": "Miss Lin, on the night of the Lantern Festival, did you see anyone from Baiyu Pass?",
+  "retrieved": [
+   "p-linwaner",
+   "e-shangyuan",
+   "l-baiyuguan"
+  ],
+  "prompt_tokens": 1040,
+  "completion_tokens": 97,
+  "seconds": 0.8,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-106": {
+  "translation": "This white jade hairpin was left to me by my mother.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1004,
+  "completion_tokens": 77,
+  "seconds": 0.88,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-101": {
+  "translation": "Uncle Chen, no one is allowed through the gates of the Lin Residence tonight.",
+  "retrieved": [
+   "p-chenshu",
+   "l-linfu"
+  ],
+  "prompt_tokens": 1003,
+  "completion_tokens": 99,
+  "seconds": 1.2,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-103": {
+  "translation": "Hold on, Miss. Miss Bai Yu said Wild Goose Tower doesn't serve the Imperial Guard.",
+  "retrieved": [
+   "t-guniang",
+   "p-baiyu",
+   "l-luoyanlou",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1073,
+  "completion_tokens": 105,
+  "seconds": 0.97,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-104": {
+  "translation": "For this lifetime of peace, I'll stay right by your side.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1001,
+  "completion_tokens": 101,
+  "seconds": 1.17,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-107": {
+  "translation": "The ground is covered in frost, and it's not even light out yet.",
+  "retrieved": [
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1001,
+  "completion_tokens": 115,
+  "seconds": 0.89,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-105": {
+  "translation": "Some things are not meant to be revealed. Stop asking.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1008,
+  "completion_tokens": 135,
+  "seconds": 1.29,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-102": {
+  "translation": "Senior Brother, the Pavilion Master says heaven's secrets can't be revealed—but I'm going to dig into it anyway.",
+  "retrieved": [
+   "t-shixiong",
+   "p-tianjige-master",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1092,
+  "completion_tokens": 129,
+  "seconds": 1.39,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-108": {
+  "translation": "Peace year after year—that is the people's greatest wish.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1001,
+  "completion_tokens": 95,
+  "seconds": 1.07,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-111": {
+  "translation": "Morning frost settles on the roof tiles, cold and crisp.",
+  "retrieved": [
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1002,
+  "completion_tokens": 84,
+  "seconds": 0.91,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-109": {
+  "translation": "Look at this white jade bracelet—the quality's quite nice, actually.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 99,
+  "seconds": 1.1,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-110": {
+  "translation": "The ways of heaven are profound and mysterious—far beyond the reckoning of mere mortals.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1010,
+  "completion_tokens": 118,
+  "seconds": 1.22,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-113": {
+  "translation": "That white jade pendant—did you bring it from beyond the pass?",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1005,
+  "completion_tokens": 95,
+  "seconds": 0.98,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-115": {
+  "translation": "The floor's paved with white jade—I'd be scared to dirty it just by walking on it.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1005,
+  "completion_tokens": 99,
+  "seconds": 1.04,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-112": {
+  "translation": "May the Great Ming's realm enjoy everlasting peace.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1000,
+  "completion_tokens": 92,
+  "seconds": 1.29,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-114": {
+  "translation": "The Pavilion Master said it: heaven's will can't be forced.",
+  "retrieved": [
+   "p-tianjige-master",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1063,
+  "completion_tokens": 113,
+  "seconds": 1.25,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-116": {
+  "translation": "This concerns matters of fate. It's not for me to say.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1006,
+  "completion_tokens": 89,
+  "seconds": 1.3,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-117": {
+  "translation": "Heavy rain like this is pretty rare in Chang'an.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1000,
+  "completion_tokens": 74,
+  "seconds": 1.0,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-119": {
+  "translation": "Qingshuang hasn't melted yet—be careful on the road.",
+  "retrieved": [
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1001,
+  "completion_tokens": 91,
+  "seconds": 0.9,
+  "term_hits": [],
+  "misused": [
+   "i-qingshuang"
+  ]
+ },
+ "g-118": {
+  "translation": "The white jade hairpin in her hand fell and shattered.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1005,
+  "completion_tokens": 85,
+  "seconds": 1.16,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-120": {
+  "translation": "All I wish for is peace, year after year. Nothing more.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1002,
+  "completion_tokens": 101,
+  "seconds": 1.0,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-123": {
+  "translation": "About ten miles outside Chang'an, there's a ruined temple.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1002,
+  "completion_tokens": 86,
+  "seconds": 0.95,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-122": {
+  "translation": "Fate is hard to fathom—no one can say what tomorrow holds.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1008,
+  "completion_tokens": 93,
+  "seconds": 1.11,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-124": {
+  "translation": "The white jade piece landed on the board with a crisp clack.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1004,
+  "completion_tokens": 75,
+  "seconds": 0.8,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-121": {
+  "translation": "That white jade screen was a gift from the palace.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1004,
+  "completion_tokens": 81,
+  "seconds": 1.35,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-126": {
+  "translation": "Revealing heaven's secrets comes at the cost of your lifespan.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1007,
+  "completion_tokens": 86,
+  "seconds": 0.93,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-125": {
+  "translation": "Frost has formed on the window, like a thin layer of snow.",
+  "retrieved": [
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1003,
+  "completion_tokens": 100,
+  "seconds": 1.17,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-128": {
+  "translation": "The moonlight in Chang'an shines a little brighter than anywhere else.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1003,
+  "completion_tokens": 77,
+  "seconds": 0.88,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-132": {
+  "translation": "May your journey be safe and peaceful all the way.",
+  "retrieved": [
+   "l-changan"
+  ],
+  "prompt_tokens": 1000,
+  "completion_tokens": 88,
+  "seconds": 0.74,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-127": {
+  "translation": "This white jade flute—its music just melts your heart.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1006,
+  "completion_tokens": 96,
+  "seconds": 1.28,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-130": {
+  "translation": "He knelt before the white jade steps all night long.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1004,
+  "completion_tokens": 91,
+  "seconds": 1.02,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-129": {
+  "translation": "Fate is already in motion—you and I are both caught in the game.",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1009,
+  "completion_tokens": 126,
+  "seconds": 1.17,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-133": {
+  "translation": "This white jade cup holds poisoned wine.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1004,
+  "completion_tokens": 81,
+  "seconds": 0.95,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-135": {
+  "translation": "Halls of white jade, horses of gold—all just a dream.",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1005,
+  "completion_tokens": 108,
+  "seconds": 0.91,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-137": {
+  "translation": "It rained so hard last night, and I didn't even shut my window all the way.",
+  "retrieved": [],
+  "prompt_tokens": 968,
+  "completion_tokens": 86,
+  "seconds": 0.67,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-134": {
+  "translation": "Fate has its own plan—why fight it so hard?",
+  "retrieved": [
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1008,
+  "completion_tokens": 102,
+  "seconds": 1.15,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-136": {
+  "translation": "Drink this bowl of congee first—it won't taste good once it's cold.",
+  "retrieved": [],
+  "prompt_tokens": 967,
+  "completion_tokens": 107,
+  "seconds": 1.06,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-138": {
+  "translation": "Is this outfit new? The color really suits you.",
+  "retrieved": [],
+  "prompt_tokens": 965,
+  "completion_tokens": 72,
+  "seconds": 0.74,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-141": {
+  "translation": "There's still warm soup on the stove. Want a bowl too?",
+  "retrieved": [],
+  "prompt_tokens": 968,
+  "completion_tokens": 81,
+  "seconds": 0.77,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-139": {
+  "translation": "Don't just stand at the door—come in and have a seat.",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 80,
+  "seconds": 1.04,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-140": {
+  "translation": "You look a bit off—didn't sleep well?",
+  "retrieved": [],
+  "prompt_tokens": 967,
+  "completion_tokens": 101,
+  "seconds": 1.03,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-142": {
+  "translation": "Just keep this between you and me—don't spread it around.",
+  "retrieved": [],
+  "prompt_tokens": 966,
+  "completion_tokens": 94,
+  "seconds": 0.94,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-147": {
+  "translation": "When you smile, your eyes crinkle up.",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 61,
+  "seconds": 0.51,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-145": {
+  "translation": "That tree in the yard is blooming especially well this year.",
+  "retrieved": [],
+  "prompt_tokens": 965,
+  "completion_tokens": 70,
+  "seconds": 0.92,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-144": {
+  "translation": "You get some rest. I'll take care of the rest.",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 80,
+  "seconds": 1.01,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-146": {
+  "translation": "When I was a kid, I was terrified of thunder. I'm not anymore, though.",
+  "retrieved": [],
+  "prompt_tokens": 967,
+  "completion_tokens": 106,
+  "seconds": 1.04,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-143": {
+  "translation": "I've got everything packed. I'm just waiting for dawn to head out.",
+  "retrieved": [],
+  "prompt_tokens": 966,
+  "completion_tokens": 79,
+  "seconds": 1.2,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-150": {
+  "translation": "Your old cloak was torn, so I mended it for you.",
+  "retrieved": [],
+  "prompt_tokens": 967,
+  "completion_tokens": 69,
+  "seconds": 0.69,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-148": {
+  "translation": "Hold on, don't rush off—I'm not done talking.",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 86,
+  "seconds": 1.18,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-149": {
+  "translation": "This herbal medicine is really bitter. I've got some candied fruit for you.",
+  "retrieved": [],
+  "prompt_tokens": 968,
+  "completion_tokens": 106,
+  "seconds": 1.09,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-155": {
+  "translation": "I'm hungry—got anything to eat over there?",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 80,
+  "seconds": 0.64,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-151": {
+  "translation": "So many people out on the street today—it was so crowded my shoe came off.",
+  "retrieved": [],
+  "prompt_tokens": 969,
+  "completion_tokens": 122,
+  "seconds": 1.13,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-154": {
+  "translation": "Why is it so cold in here? Where's the brazier?",
+  "retrieved": [],
+  "prompt_tokens": 965,
+  "completion_tokens": 89,
+  "seconds": 0.94,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-152": {
+  "translation": "My mother always said, always leave yourself a little room.",
+  "retrieved": [],
+  "prompt_tokens": 965,
+  "completion_tokens": 95,
+  "seconds": 1.22,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-153": {
+  "translation": "Stop worrying about me all the time—I know what I'm doing.",
+  "retrieved": [],
+  "prompt_tokens": 965,
+  "completion_tokens": 92,
+  "seconds": 1.2,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-158": {
+  "translation": "I'll come pick you up first thing tomorrow morning. Don't oversleep.",
+  "retrieved": [],
+  "prompt_tokens": 966,
+  "completion_tokens": 76,
+  "seconds": 0.79,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-156": {
+  "translation": "I heard the family next door had a baby boy—it's quite the celebration over there.",
+  "retrieved": [],
+  "prompt_tokens": 966,
+  "completion_tokens": 108,
+  "seconds": 1.03,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-157": {
+  "translation": "If you're tired, lean on me and get some sleep.",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 70,
+  "seconds": 1.02,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-159": {
+  "translation": "That came out too harsh—don't take it to heart.",
+  "retrieved": [],
+  "prompt_tokens": 966,
+  "completion_tokens": 94,
+  "seconds": 0.95,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-160": {
+  "translation": "I spent half the day looking for it, and it was in my hand the whole time.",
+  "retrieved": [],
+  "prompt_tokens": 967,
+  "completion_tokens": 93,
+  "seconds": 0.93,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-161": {
+  "translation": "Don't look at me—there's nothing written on my face.",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 80,
+  "seconds": 0.87,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-162": {
+  "translation": "It's cold out—remember to put on an extra layer when you go out.",
+  "retrieved": [],
+  "prompt_tokens": 964,
+  "completion_tokens": 84,
+  "seconds": 0.92,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-163": {
+  "translation": "I'm not good with words. Sweet talk isn't my thing.",
+  "retrieved": [],
+  "prompt_tokens": 965,
+  "completion_tokens": 87,
+  "seconds": 1.05,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-164": {
+  "translation": "You go on ahead. I'll be right there.",
+  "retrieved": [],
+  "prompt_tokens": 962,
+  "completion_tokens": 91,
+  "seconds": 0.99,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-166": {
+  "translation": "Look at that moon—it's as round as a plate.",
+  "retrieved": [],
+  "prompt_tokens": 965,
+  "completion_tokens": 90,
+  "seconds": 0.9,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-167": {
+  "translation": "I've saved up some money. I want to buy you a new pair.",
+  "retrieved": [],
+  "prompt_tokens": 966,
+  "completion_tokens": 80,
+  "seconds": 0.95,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-165": {
+  "translation": "It's not your fault. I just didn't think it through.",
+  "retrieved": [],
+  "prompt_tokens": 966,
+  "completion_tokens": 90,
+  "seconds": 1.29,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-168": {
+  "translation": "Your Highness, the Imperial Guard have been waiting outside the Xuanwu Gate for two hours.",
+  "retrieved": [
+   "t-dianxia",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1017,
+  "completion_tokens": 100,
+  "seconds": 1.03,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-169": {
+  "translation": "Brother Qi, word came from the Tianji Pavilion—the Pavilion Master wants to see you tonight.",
+  "retrieved": [
+   "p-shenqi",
+   "o-tianjige",
+   "p-tianjige-master"
+  ],
+  "prompt_tokens": 1107,
+  "completion_tokens": 103,
+  "seconds": 1.08,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-171": {
+  "translation": "Commander Su, the troops at the Western Hills camp—not one soldier moves tonight.",
+  "retrieved": [
+   "p-sufeng",
+   "l-xishan"
+  ],
+  "prompt_tokens": 1020,
+  "completion_tokens": 107,
+  "seconds": 0.97,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-170": {
+  "translation": "Yu'er, that gentleman downstairs requested a song—do you know it?",
+  "retrieved": [
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1019,
+  "completion_tokens": 112,
+  "seconds": 1.18,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-172": {
+  "translation": "Your Highness, that shipment you asked for—the Mirror Bureau is already onto it.",
+  "retrieved": [
+   "p-erhuangzi",
+   "o-mingjing"
+  ],
+  "prompt_tokens": 1028,
+  "completion_tokens": 104,
+  "seconds": 0.92,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-174": {
+  "translation": "Jingxing, are you really going to hand the tiger tally over to Chancellor Lin?",
+  "retrieved": [
+   "p-xiaojingxing",
+   "i-hufu",
+   "p-linxiang"
+  ],
+  "prompt_tokens": 1063,
+  "completion_tokens": 74,
+  "seconds": 0.89,
+  "term_hits": [
+   true,
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-173": {
+  "translation": "Miss, this white jade hairpin is top quality. Care to try it on?",
+  "retrieved": [
+   "t-guniang",
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1047,
+  "completion_tokens": 122,
+  "seconds": 1.12,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-175": {
+  "translation": "Your Majesty, the Second Prince hasn't returned to the residence tonight. This subordinate couldn't find out where he went.",
+  "retrieved": [
+   "t-niangniang",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1031,
+  "completion_tokens": 119,
+  "seconds": 1.23,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-177": {
+  "translation": "Miss Lin, someone at the gate of the Lin Residence handed in a note. It just says \"the Lantern Festival.\"",
+  "retrieved": [
+   "p-linwaner",
+   "l-linfu",
+   "e-shangyuan"
+  ],
+  "prompt_tokens": 1047,
+  "completion_tokens": 122,
+  "seconds": 1.04,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-176": {
+  "translation": "Brother Qi, that guy's using the Flowing Cloud Sword Art—that's no ordinary martial-arts move.",
+  "retrieved": [
+   "p-shenqi",
+   "i-liuyun"
+  ],
+  "prompt_tokens": 1042,
+  "completion_tokens": 135,
+  "seconds": 1.3,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-179": {
+  "translation": "Your Highness, the Mirror Bureau's men have already entered Chang'an.",
+  "retrieved": [
+   "t-dianxia",
+   "o-mingjing",
+   "l-changan"
+  ],
+  "prompt_tokens": 1057,
+  "completion_tokens": 119,
+  "seconds": 1.03,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-181": {
+  "translation": "Wan'er, the blood on the Qingshuang sword—whose is it?",
+  "retrieved": [
+   "p-linwaner",
+   "i-qingshuang"
+  ],
+  "prompt_tokens": 1037,
+  "completion_tokens": 89,
+  "seconds": 0.87,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-180": {
+  "translation": "Qi, the matter the Pavilion Master had you look into—is it about the Chang'an Scroll?",
+  "retrieved": [
+   "p-shenqi",
+   "p-tianjige-master",
+   "i-mijuan"
+  ],
+  "prompt_tokens": 1079,
+  "completion_tokens": 142,
+  "seconds": 1.1,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-178": {
+  "translation": "Yuer, listen carefully—that customer said Baiyu Pass.",
+  "retrieved": [
+   "p-baiyu",
+   "l-baiyuguan"
+  ],
+  "prompt_tokens": 1040,
+  "completion_tokens": 105,
+  "seconds": 1.33,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-182": {
+  "translation": "Second Prince, the Crown Prince already has the tiger tally. And you're still not making a move?",
+  "retrieved": [
+   "p-erhuangzi",
+   "p-xiaojingxing",
+   "i-hufu"
+  ],
+  "prompt_tokens": 1070,
+  "completion_tokens": 109,
+  "seconds": 1.16,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-186": {
+  "translation": "Your Highness, the Second Prince's name is on the autumn hunt list.",
+  "retrieved": [
+   "t-dianxia",
+   "e-qiulie",
+   "p-erhuangzi"
+  ],
+  "prompt_tokens": 1061,
+  "completion_tokens": 83,
+  "seconds": 0.7,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-183": {
+  "translation": "Brother Su, has the Imperial Guard's shift change time tonight been moved?",
+  "retrieved": [
+   "p-sufeng",
+   "o-jinjun"
+  ],
+  "prompt_tokens": 1017,
+  "completion_tokens": 147,
+  "seconds": 1.18,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-189": {
+  "translation": "Brother Qi, right before he died, he only said two words: the Western Hills.",
+  "retrieved": [
+   "p-shenqi",
+   "l-xishan"
+  ],
+  "prompt_tokens": 1019,
+  "completion_tokens": 92,
+  "seconds": 0.74,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-187": {
+  "translation": "Jingheng, your brother is waiting for you at the Eastern Palace. You have to go today.",
+  "retrieved": [
+   "p-erhuangzi",
+   "l-donggong"
+  ],
+  "prompt_tokens": 1020,
+  "completion_tokens": 91,
+  "seconds": 0.88,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-188": {
+  "translation": "Wan'er, wear this white jade hairpin so no one recognizes you.",
+  "retrieved": [
+   "p-linwaner",
+   "p-baiyu"
+  ],
+  "prompt_tokens": 1046,
+  "completion_tokens": 97,
+  "seconds": 0.9,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-184": {
+  "translation": "Senior Brother, some things are better left unsaid—how much of that do you actually buy?",
+  "retrieved": [
+   "t-shixiong",
+   "o-tianjige"
+  ],
+  "prompt_tokens": 1041,
+  "completion_tokens": 125,
+  "seconds": 1.3,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-185": {
+  "translation": "Miss, word came from Wild Goose Tower—they say there's an important guest tonight.",
+  "retrieved": [
+   "t-guniang",
+   "l-luoyanlou"
+  ],
+  "prompt_tokens": 1023,
+  "completion_tokens": 94,
+  "seconds": 1.28,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-191": {
+  "translation": "Senior Brother, if the Pavilion Master really is that person, what are we supposed to do?",
+  "retrieved": [
+   "t-shixiong",
+   "p-tianjige-master"
+  ],
+  "prompt_tokens": 1052,
+  "completion_tokens": 94,
+  "seconds": 0.95,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-190": {
+  "translation": "Your Highness, if I may be so bold—do you trust Miss Lin?",
+  "retrieved": [
+   "t-dianxia",
+   "p-linwaner"
+  ],
+  "prompt_tokens": 1028,
+  "completion_tokens": 133,
+  "seconds": 1.41,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-192": {
+  "translation": "Your Majesty, the Imperial Guard has surrounded the Lin Residence—they say it's on the Crown Prince's orders.",
+  "retrieved": [
+   "t-niangniang",
+   "o-jinjun",
+   "l-linfu",
+   "p-xiaojingxing"
+  ],
+  "prompt_tokens": 1069,
+  "completion_tokens": 137,
+  "seconds": 2.68,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ }
+}

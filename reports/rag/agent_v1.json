@@ -1,0 +1,3218 @@
+{
+ "g-005": {
+  "translation": "Commander Su, why did the Imperial Guard\nsuddenly change its watch tonight?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "苏统领",
+   "禁军"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3349,
+  "completion_tokens": 225,
+  "seconds": 2.6,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-006": {
+  "translation": "A-Wu, I'm going out tonight. Don't follow.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "阿芜",
+   "小姐"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3251,
+  "completion_tokens": 218,
+  "seconds": 2.62,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-001": {
+  "translation": "Lin Wan'er, would you really turn on me\nover some jianghu drifter?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "林婉儿",
+   "江湖人"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3315,
+  "completion_tokens": 235,
+  "seconds": 2.85,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-003": {
+  "translation": "Chancellor Lin, if this gets out,\nyou may lose your post.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "林相",
+   "乌纱帽"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3340,
+  "completion_tokens": 231,
+  "seconds": 3.57,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-008": {
+  "translation": "Your Majesty, Consort Liu had this tea\nprepared specially for you.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "娘娘",
+   "贵妃",
+   "贵妃娘娘"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4357,
+  "completion_tokens": 260,
+  "seconds": 3.69,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-007": {
+  "translation": "Senior Brother, I've reached the seventh\nlevel of the Flowing Cloud Sword Art.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "流云剑法"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5800,
+  "completion_tokens": 348,
+  "seconds": 4.37,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-002": {
+  "translation": "Shen Qi's sword only leaves the sheath once.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "沈七",
+   "鞘"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5440,
+  "completion_tokens": 304,
+  "seconds": 4.41,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-004": {
+  "translation": "Xiao Jingheng, you thwart me at every turn.\\nWhat do you want?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "萧景珩"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5305,
+  "completion_tokens": 314,
+  "seconds": 4.69,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-009": {
+  "translation": "Miss, the Wild Goose Tower isn't for you.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "姑娘",
+   "落雁楼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5515,
+  "completion_tokens": 303,
+  "seconds": 4.0,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-010": {
+  "translation": "Three years I waited in Chang'an.\\nAnd now you're back.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5211,
+  "completion_tokens": 293,
+  "seconds": 4.24,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-015": {
+  "translation": "Tianji Pavilion's intel is never wrong.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "天机阁"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3124,
+  "completion_tokens": 179,
+  "seconds": 2.45,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-011": {
+  "translation": "Eastern Palace lamps will burn till dawn, I fear.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "东宫"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5101,
+  "completion_tokens": 277,
+  "seconds": 4.06,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-012": {
+  "translation": "Something's stirring at the Western Hills.\nThe Imperial Guard has already set out.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "西山",
+   "禁军"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3321,
+  "completion_tokens": 223,
+  "seconds": 3.44,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-013": {
+  "translation": "Not just anyone may tread the Lin door.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "相府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5153,
+  "completion_tokens": 276,
+  "seconds": 4.03,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-014": {
+  "translation": "Thirty li out from Baiyu Pass,\nscouts report strange movement.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "白玉关",
+   "探子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5400,
+  "completion_tokens": 309,
+  "seconds": 3.74,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-016": {
+  "translation": "Mirror Bureau men crept into the Lin Residence.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "明镜司",
+   "相府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5543,
+  "completion_tokens": 310,
+  "seconds": 3.84,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-021": {
+  "translation": "Miss Lin, does your father know\nyou're looking into this?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "林姑娘"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3102,
+  "completion_tokens": 187,
+  "seconds": 2.77,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-018": {
+  "translation": "Qingshuang is drawn only to draw blood.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "青霜"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3108,
+  "completion_tokens": 180,
+  "seconds": 3.14,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-017": {
+  "translation": "The tiger tally isn't with the Crown Prince.\nThen who took it?",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "虎符",
+   "太子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5681,
+  "completion_tokens": 325,
+  "seconds": 4.63,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-019": {
+  "translation": "If the Chang'an Scroll falls to the Second Prince,\nthe realm will descend into chaos.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "长安密卷",
+   "二皇子",
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6211,
+  "completion_tokens": 371,
+  "seconds": 4.43,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-020": {
+  "translation": "Lantern Festival night, all on the wall must die.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "上元节",
+   "城楼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5467,
+  "completion_tokens": 315,
+  "seconds": 4.54,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-024": {
+  "translation": "Jingxing, word from the Eastern Palace?",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "景行",
+   "东宫"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4450,
+  "completion_tokens": 258,
+  "seconds": 3.36,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-023": {
+  "translation": "Bai Yu, you heard nothing. Understand?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "玉儿"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3135,
+  "completion_tokens": 180,
+  "seconds": 3.83,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-022": {
+  "translation": "No one in the jianghu dares deny Shen Qi.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "七哥"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5203,
+  "completion_tokens": 295,
+  "seconds": 4.53,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-026": {
+  "translation": "Commander Su, send another squad\nto the Western Hills.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "苏统领",
+   "西山"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4409,
+  "completion_tokens": 261,
+  "seconds": 3.67,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-025": {
+  "translation": "Shen Qi, the Tianji Pavilion is onto us here.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "七哥",
+   "天机阁"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5710,
+  "completion_tokens": 317,
+  "seconds": 4.06,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-031": {
+  "translation": "The Second Prince is reaching too far.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [
+   "二皇子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 2213,
+  "completion_tokens": 126,
+  "seconds": 2.4,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-029": {
+  "translation": "A lifetime of peace is nothing\nnext to one night in Chang'an with you.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3124,
+  "completion_tokens": 196,
+  "seconds": 3.09,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-030": {
+  "translation": "Pawn the jade hairpin. We need the silver.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "白玉簪子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3139,
+  "completion_tokens": 188,
+  "seconds": 3.03,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-027": {
+  "translation": "The Pavilion Master's orders:\nthe Chang'an Scroll must be\nretrieved from Wild Goose Tower.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "阁主",
+   "密卷",
+   "落雁楼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6160,
+  "completion_tokens": 378,
+  "seconds": 4.15,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-028": {
+  "translation": "Senior Brother said he taught the Flowing Cloud Sword Art to me alone.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "流云剑"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5699,
+  "completion_tokens": 331,
+  "seconds": 4.82,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-032": {
+  "translation": "The Imperial Guard has surrounded the Lin Residence.\nIs Chancellor Lin still not coming out?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "禁军",
+   "相府",
+   "丞相",
+   "丞相大人"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5966,
+  "completion_tokens": 348,
+  "seconds": 4.02,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-034": {
+  "translation": "The tiger tally is mine. Who dares move?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "虎符"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3069,
+  "completion_tokens": 182,
+  "seconds": 2.95,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-036": {
+  "translation": "What happened at Wild Goose Tower\nthat night of the Lantern Festival?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "上元节",
+   "落雁楼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3358,
+  "completion_tokens": 223,
+  "seconds": 2.99,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-038": {
+  "translation": "Miss Lin, Master Xiao has been waiting\nfor you in the Eastern Palace for a while.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "林姑娘",
+   "萧公子",
+   "东宫"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3678,
+  "completion_tokens": 263,
+  "seconds": 2.38,
+  "term_hits": [
+   true,
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-035": {
+  "translation": "Baiyu Pass sent urgent word last night.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "白玉关"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4047,
+  "completion_tokens": 224,
+  "seconds": 3.44,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-033": {
+  "translation": "Mirror Bureau business. All stand back.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "明镜司"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5096,
+  "completion_tokens": 274,
+  "seconds": 4.61,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-037": {
+  "translation": "The autumn hunt nears.\nThe Second Prince begs to ride along.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "秋狝",
+   "二殿下"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5673,
+  "completion_tokens": 324,
+  "seconds": 4.56,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-040": {
+  "translation": "Heaven's secrets can't be told. You know.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5560,
+  "completion_tokens": 324,
+  "seconds": 3.58,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-039": {
+  "translation": "Is Shen Qi's Flowing Cloud Sword unbeatable?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "七哥",
+   "流云剑"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5700,
+  "completion_tokens": 315,
+  "seconds": 4.13,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-043": {
+  "translation": "\"Peace year after year\"—such pretty words.\nToo bad she can't hear them anymore.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3142,
+  "completion_tokens": 202,
+  "seconds": 2.67,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-042": {
+  "translation": "Brother Su, these Imperial Guards\nanswer only to your command.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "苏大哥",
+   "禁军"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3352,
+  "completion_tokens": 220,
+  "seconds": 3.0,
+  "term_hits": [
+   false,
+   false
+  ],
+  "misused": []
+ },
+ "g-041": {
+  "translation": "Your Majesty, Uncle Chen asks to see you.\nSomething's happened at the Lin Residence.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "柳妃",
+   "娘娘",
+   "陈叔",
+   "相府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5151,
+  "completion_tokens": 343,
+  "seconds": 4.05,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-044": {
+  "translation": "No Scroll, no peace in Chang'an.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "长安密卷",
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4471,
+  "completion_tokens": 260,
+  "seconds": 3.22,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-045": {
+  "translation": "If you want information, Miss,\nWild Goose Tower is the place.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "落雁楼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3357,
+  "completion_tokens": 221,
+  "seconds": 3.03,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-046": {
+  "translation": "Shen Qi, the Pavilion Master wants you.\nHe says there's a mole in the Pavilion.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "老七",
+   "阁主",
+   "天机阁",
+   "内鬼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5262,
+  "completion_tokens": 357,
+  "seconds": 3.97,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-047": {
+  "translation": "Senior Brother, Master wants you at Tianji.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "师父",
+   "天机阁"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5931,
+  "completion_tokens": 333,
+  "seconds": 4.21,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-048": {
+  "translation": "Senior Brother, three years of the Flowing Cloud\nSword Art, and I still can't get the hang of it.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "流云剑法"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5810,
+  "completion_tokens": 369,
+  "seconds": 3.82,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-051": {
+  "translation": "Senior Brother, the Second Prince's men are in the city.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "二皇子",
+   "长安城"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6143,
+  "completion_tokens": 345,
+  "seconds": 3.49,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-049": {
+  "translation": "Senior Brother, a sedan chair just arrived.\nLooks like it's bound for the Eastern Palace.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "东宫"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5632,
+  "completion_tokens": 342,
+  "seconds": 4.06,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-050": {
+  "translation": "Senior Brother, get him out.\\nI'll hold them off.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "太子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5717,
+  "completion_tokens": 324,
+  "seconds": 4.42,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-053": {
+  "translation": "Senior Brother, did the Imperial Guard do this?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "禁军"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5541,
+  "completion_tokens": 306,
+  "seconds": 4.02,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-052": {
+  "translation": "Senior Brother, the Pavilion Master\nordered: the Chang'an Scroll mustn't\nfall into other hands.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "阁主",
+   "密卷"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6265,
+  "completion_tokens": 386,
+  "seconds": 4.59,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-054": {
+  "translation": "Your Highness, Baiyu Pass is just ahead.\nPlease change horses.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "殿下",
+   "白玉关"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3362,
+  "completion_tokens": 220,
+  "seconds": 2.53,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-056": {
+  "translation": "Your Highness, Commander Su is here.\nHe says he has something urgent to report.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "殿下",
+   "苏统领"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3400,
+  "completion_tokens": 230,
+  "seconds": 3.11,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-055": {
+  "translation": "Your Highness, I've learned the truth of that night.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "上元节",
+   "臣"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5967,
+  "completion_tokens": 366,
+  "seconds": 4.48,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-057": {
+  "translation": "Your Highness, if you go to the Western Hills,\nno one will guard the Eastern Palace.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "西山",
+   "东宫"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6108,
+  "completion_tokens": 383,
+  "seconds": 4.41,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-060": {
+  "translation": "Your Highness, Uncle Chen sent word.\nTrouble at the Lin Residence today.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "殿下",
+   "陈叔",
+   "相府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4810,
+  "completion_tokens": 315,
+  "seconds": 3.49,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-058": {
+  "translation": "Your Highness, best you hold the tiger tally.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "虎符"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5586,
+  "completion_tokens": 311,
+  "seconds": 4.36,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-059": {
+  "translation": "Your Highness, the Second Prince\\nhas waited outside for half an hour.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "二殿下",
+   "宫门"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6035,
+  "completion_tokens": 368,
+  "seconds": 4.12,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-061": {
+  "translation": "Your Majesty, is Consort Liu better today?",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "娘娘",
+   "贵妃",
+   "贵妃娘娘"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5458,
+  "completion_tokens": 292,
+  "seconds": 3.86,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-063": {
+  "translation": "Your Majesty, the Mirror Bureau came into\nthe palace last night. Did you know?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "娘娘",
+   "明镜司"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3334,
+  "completion_tokens": 228,
+  "seconds": 2.59,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-062": {
+  "translation": "Your Majesty, the Second Prince is here to pay respects.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "娘娘",
+   "二殿下",
+   "殿外",
+   "请安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5827,
+  "completion_tokens": 329,
+  "seconds": 4.27,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-067": {
+  "translation": "Your Majesty, the Tianji Pavilion\nlikely knows what we're planning.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "娘娘",
+   "天机阁"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3400,
+  "completion_tokens": 222,
+  "seconds": 2.91,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-069": {
+  "translation": "Miss, Uncle Chen says the carriage\nis ready at the back gate.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "陈叔"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3346,
+  "completion_tokens": 219,
+  "seconds": 2.37,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-071": {
+  "translation": "Miss, the Chancellor wants you\nat the front hall tomorrow.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "丞相",
+   "前厅"
+  ],
+  "looked_up_all": false,
+  "prompt_tokens": 3452,
+  "completion_tokens": 244,
+  "seconds": 2.13,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-064": {
+  "translation": "Calm yourself, Your Majesty.\nBai Yu is just a songstress, nothing more.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "娘娘",
+   "白玉"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4501,
+  "completion_tokens": 296,
+  "seconds": 4.01,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-065": {
+  "translation": "Your Majesty, Chancellor Lin's memorial.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "娘娘",
+   "林相",
+   "折子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5843,
+  "completion_tokens": 324,
+  "seconds": 4.22,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-068": {
+  "translation": "Miss, I've wiped your Qingshuang clean.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "姑娘",
+   "青霜剑"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5626,
+  "completion_tokens": 312,
+  "seconds": 3.93,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-070": {
+  "translation": "Miss, word from Wild Goose Tower:\nLord Xiao goes there tonight.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "落雁楼",
+   "萧公子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3688,
+  "completion_tokens": 250,
+  "seconds": 3.26,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-066": {
+  "translation": "Your Majesty, the autumn hunt list is ready.\nPlease take a look.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "娘娘",
+   "秋狝"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5588,
+  "completion_tokens": 326,
+  "seconds": 5.28,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-072": {
+  "translation": "Miss, a man outside calls himself Shen Qi.\nHe says he's been sent to protect you.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "沈七"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3402,
+  "completion_tokens": 237,
+  "seconds": 2.79,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-073": {
+  "translation": "Miss, word from Baiyu Pass has arrived.\nThe master is raging in his study.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "姑娘",
+   "白玉关",
+   "老爷"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4734,
+  "completion_tokens": 319,
+  "seconds": 3.26,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-074": {
+  "translation": "Miss, the Lantern Festival is crowded.\nPlease stay close to me.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "上元节",
+   "奴婢"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3554,
+  "completion_tokens": 251,
+  "seconds": 2.99,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-077": {
+  "translation": "Wan'er, the Crown Prince comes to the Lin\nResidence tonight. Go change your clothes.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "婉儿",
+   "太子殿下",
+   "林府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3721,
+  "completion_tokens": 270,
+  "seconds": 3.75,
+  "term_hits": [
+   false,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-075": {
+  "translation": "Miss, the Mirror Bureau is onto the Lins. What now?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "姑娘",
+   "明镜司",
+   "林府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6041,
+  "completion_tokens": 355,
+  "seconds": 4.26,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-078": {
+  "translation": "Commander Su, movement in the Western Hills.\nThe Guard must stand watch all night.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "苏统领",
+   "西山",
+   "禁军"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6176,
+  "completion_tokens": 380,
+  "seconds": 4.41,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-076": {
+  "translation": "Miss, if Consort Liu hears this, we're done for.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "姑娘",
+   "柳贵妃"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5628,
+  "completion_tokens": 321,
+  "seconds": 4.8,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-079": {
+  "translation": "Consort Liu orders: the Second Prince\\nmay not enter the Eastern Palace\\ntonight.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "柳贵妃",
+   "娘娘",
+   "二皇子",
+   "东宫"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6524,
+  "completion_tokens": 399,
+  "seconds": 4.42,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-082": {
+  "translation": "A-Wu, fetch the Qingshuang Sword.\nI'm going to Wild Goose Tower.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "阿芜",
+   "青霜剑",
+   "落雁楼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3656,
+  "completion_tokens": 268,
+  "seconds": 3.16,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-080": {
+  "translation": "The Pavilion Master said\nthe Tianji Pavilion won't take\nthe Chang'an Scroll case.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "阁主",
+   "长安密卷",
+   "天机阁"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6317,
+  "completion_tokens": 375,
+  "seconds": 4.4,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-081": {
+  "translation": "Jingxing, who taught you the Flowing Cloud Sword Art?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "景行",
+   "流云剑法"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5809,
+  "completion_tokens": 326,
+  "seconds": 4.38,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-084": {
+  "translation": "Senior Brother, who really leads\nthe Tianji Pavilion?",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "师兄",
+   "天机阁",
+   "阁主"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4942,
+  "completion_tokens": 295,
+  "seconds": 3.04,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-086": {
+  "translation": "Miss, Wild Goose Tower is just ahead.\nBai Yu is waiting for you upstairs.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "落雁楼",
+   "白玉"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3670,
+  "completion_tokens": 258,
+  "seconds": 2.56,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-083": {
+  "translation": "On Lantern Festival night,\nan urgent report from Baiyu Pass\nreached the Mirror Bureau.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "上元节",
+   "白玉关",
+   "明镜司"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6050,
+  "completion_tokens": 387,
+  "seconds": 4.6,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-085": {
+  "translation": "Your Highness, the tiger tally is not in\nthe Eastern Palace. I fear it's already\nin the Second Prince's hands.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "虎符",
+   "东宫",
+   "二皇子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6668,
+  "completion_tokens": 448,
+  "seconds": 4.63,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-087": {
+  "translation": "The autumn hunt nears. The Imperial Guard\ngoes with the Crown Prince to the Western Hills.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "秋狝",
+   "禁军",
+   "太子殿下",
+   "西山"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6661,
+  "completion_tokens": 411,
+  "seconds": 4.17,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-088": {
+  "translation": "Shen Qi, the man in black with the Second Prince—any luck?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "老七",
+   "二殿下",
+   "黑衣人"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6055,
+  "completion_tokens": 371,
+  "seconds": 4.7,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-090": {
+  "translation": "Chancellor Lin, if the Scroll is in your house, you're implicated.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "林大人",
+   "密卷",
+   "相府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6179,
+  "completion_tokens": 378,
+  "seconds": 4.12,
+  "term_hits": [
+   false,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-093": {
+  "translation": "Uncle Chen, ready the carriage.\nI'm going to the Tianji Pavilion.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "陈叔",
+   "天机阁"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3410,
+  "completion_tokens": 228,
+  "seconds": 2.23,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-089": {
+  "translation": "Brother Su, the Mirror Bureau's here in Chang'an.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "苏大哥",
+   "明镜司",
+   "长安城"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6069,
+  "completion_tokens": 344,
+  "seconds": 4.93,
+  "term_hits": [
+   true,
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-092": {
+  "translation": "Rest easy, Senior Brother. I only used\nthirty percent of the Flowing Cloud Sword Art.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "流云剑法"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5735,
+  "completion_tokens": 351,
+  "seconds": 3.67,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-091": {
+  "translation": "Wan'er, this jade hairpin—the Crown Prince's gift?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "婉儿",
+   "太子殿下",
+   "白玉簪子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6255,
+  "completion_tokens": 362,
+  "seconds": 4.64,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-098": {
+  "translation": "Jingheng, did your mother Consort Liu\never mention the Chang'an Scroll?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "景珩",
+   "母妃",
+   "柳贵妃",
+   "长安密卷"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3886,
+  "completion_tokens": 292,
+  "seconds": 2.8,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-094": {
+  "translation": "Calm yourself, Your Majesty. The Second\nPrince only went hunting in the Western Hills.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "娘娘",
+   "二皇子",
+   "西山"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6093,
+  "completion_tokens": 374,
+  "seconds": 4.39,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-095": {
+  "translation": "Bai Yu, tonight's guest at Wild Goose Tower\nis from the Lin family.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "玉儿",
+   "落雁楼",
+   "林府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6139,
+  "completion_tokens": 369,
+  "seconds": 4.48,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-100": {
+  "translation": "Miss Lin, that Lantern Festival night,\ndid you see anyone from Baiyu Pass?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "林姑娘",
+   "上元节",
+   "白玉关"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3671,
+  "completion_tokens": 264,
+  "seconds": 3.34,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-096": {
+  "translation": "A-Wu, your lady's Qingshuang Sword\nis faster than my blade.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "阿芜",
+   "青霜剑",
+   "小姐"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4711,
+  "completion_tokens": 317,
+  "seconds": 4.21,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-101": {
+  "translation": "Uncle Chen, no one gets in tonight.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "老陈",
+   "相府"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4402,
+  "completion_tokens": 258,
+  "seconds": 2.98,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-097": {
+  "translation": "Commander Su, whoever holds the tiger\ntally commands the Imperial Guard.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "苏统领",
+   "虎符",
+   "禁军"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6007,
+  "completion_tokens": 354,
+  "seconds": 4.31,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-099": {
+  "translation": "Your Highness, Mirror Bureau men\nhave been outside the Eastern Palace all night.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "东宫",
+   "明镜司"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6053,
+  "completion_tokens": 374,
+  "seconds": 4.62,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-103": {
+  "translation": "Miss, wait. Bai Yu says Wild Goose Tower\ndoesn't serve the Imperial Guard.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "姑娘",
+   "白玉",
+   "落雁楼",
+   "禁军"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3916,
+  "completion_tokens": 290,
+  "seconds": 3.17,
+  "term_hits": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-106": {
+  "translation": "My mother left me this white jade hairpin.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "白玉簪子",
+   "娘"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3299,
+  "completion_tokens": 211,
+  "seconds": 2.59,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-102": {
+  "translation": "Senior Brother, the Pavilion Master says\nheaven's secrets must not be revealed.\nBut I'll look into it anyway.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "阁主"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5777,
+  "completion_tokens": 367,
+  "seconds": 4.2,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-105": {
+  "translation": "Heaven's secrets stay hidden. Ask no more.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4127,
+  "completion_tokens": 230,
+  "seconds": 3.32,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-109": {
+  "translation": "Look at this white jade bracelet.\nThe quality's quite good, actually.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "白玉镯子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3148,
+  "completion_tokens": 195,
+  "seconds": 2.76,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-107": {
+  "translation": "Frost everywhere, and it's not even dawn.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "青霜"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5191,
+  "completion_tokens": 285,
+  "seconds": 3.83,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-108": {
+  "translation": "Peace year after year—the people's greatest wish.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5172,
+  "completion_tokens": 278,
+  "seconds": 3.7,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-104": {
+  "translation": "May you be safe—I'll stay by your side.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5187,
+  "completion_tokens": 287,
+  "seconds": 4.52,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-112": {
+  "translation": "May Great Ming know peace for all time.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "大明",
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3270,
+  "completion_tokens": 203,
+  "seconds": 3.21,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-110": {
+  "translation": "Heaven's ways are deep—mortals can't grasp them.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5253,
+  "completion_tokens": 291,
+  "seconds": 4.46,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-117": {
+  "translation": "Heavy rain like this is rare in Chang'an.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3098,
+  "completion_tokens": 178,
+  "seconds": 2.58,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-111": {
+  "translation": "Frost on the tiles at dawn, cold to the bone",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "青霜"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5178,
+  "completion_tokens": 281,
+  "seconds": 4.54,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-114": {
+  "translation": "The Master says fate can't be forced.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "阁主",
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4555,
+  "completion_tokens": 249,
+  "seconds": 3.47,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-116": {
+  "translation": "This is Heaven's will. It can't be told.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4116,
+  "completion_tokens": 231,
+  "seconds": 3.66,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-113": {
+  "translation": "That jade pendant—from beyond the pass?",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "白玉佩",
+   "关外"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5504,
+  "completion_tokens": 310,
+  "seconds": 4.8,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-115": {
+  "translation": "White jade floors—you fear to dirty them.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "白玉"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5236,
+  "completion_tokens": 291,
+  "seconds": 4.21,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-118": {
+  "translation": "Her white jade hairpin fell and shattered.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "白玉簪子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3128,
+  "completion_tokens": 180,
+  "seconds": 2.46,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-119": {
+  "translation": "The frost hasn't melted. Watch your step.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "青霜"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3107,
+  "completion_tokens": 180,
+  "seconds": 2.85,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-122": {
+  "translation": "Heaven's will is hard to read.\nNo one can say what tomorrow holds.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3145,
+  "completion_tokens": 197,
+  "seconds": 2.6,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-125": {
+  "translation": "Frost coats the window like thin snow.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3029,
+  "completion_tokens": 188,
+  "seconds": 2.41,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-121": {
+  "translation": "That jade screen was a gift from the palace.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "白玉屏风",
+   "宫里"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5486,
+  "completion_tokens": 306,
+  "seconds": 3.33,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-124": {
+  "translation": "The white jade piece clicks on the board.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "白玉棋子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3321,
+  "completion_tokens": 218,
+  "seconds": 2.46,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-120": {
+  "translation": "I only wish for lasting peace. No more.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5176,
+  "completion_tokens": 274,
+  "seconds": 3.9,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-123": {
+  "translation": "Thirty li from Chang'an, a ruined temple.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5154,
+  "completion_tokens": 271,
+  "seconds": 3.72,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-126": {
+  "translation": "Leaking heaven's secrets costs you life.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5507,
+  "completion_tokens": 307,
+  "seconds": 3.4,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-127": {
+  "translation": "That white jade flute melts every heart.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "白玉笛"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3130,
+  "completion_tokens": 178,
+  "seconds": 2.9,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-132": {
+  "translation": "May peace go with you all the way.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3098,
+  "completion_tokens": 175,
+  "seconds": 2.17,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-133": {
+  "translation": "This white jade cup holds poisoned wine.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [
+   "白玉杯"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 2207,
+  "completion_tokens": 128,
+  "seconds": 2.02,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-134": {
+  "translation": "Heaven's will is fixed. Why fight it?",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 2351,
+  "completion_tokens": 173,
+  "seconds": 2.28,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-128": {
+  "translation": "Chang'an's moon is brighter than elsewhere.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "长安"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5162,
+  "completion_tokens": 266,
+  "seconds": 4.04,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-138": {
+  "translation": "Is that a new dress? The color suits you.",
+  "status": "submitted",
+  "steps": 2,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 1343,
+  "completion_tokens": 93,
+  "seconds": 1.34,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-136": {
+  "translation": "Drink this porridge first.\nIt won't taste good cold.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2164,
+  "completion_tokens": 154,
+  "seconds": 1.7,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-129": {
+  "translation": "Fate has stirred. We're all pawns in play.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "天机"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5220,
+  "completion_tokens": 285,
+  "seconds": 4.0,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-137": {
+  "translation": "It rained so hard last night.\nI didn't even shut my window tight.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2168,
+  "completion_tokens": 159,
+  "seconds": 1.97,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-130": {
+  "translation": "He knelt all night on the white jade steps.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "白玉阶"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5201,
+  "completion_tokens": 279,
+  "seconds": 4.43,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-135": {
+  "translation": "Jade halls, gold horses—all just a dream.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "白玉为堂金作马"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3145,
+  "completion_tokens": 190,
+  "seconds": 2.82,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-140": {
+  "translation": "You look a bit pale. Did you sleep badly?",
+  "status": "submitted",
+  "steps": 2,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 1347,
+  "completion_tokens": 93,
+  "seconds": 1.79,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-139": {
+  "translation": "Don't stand at the door. Come in and sit.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2143,
+  "completion_tokens": 145,
+  "seconds": 2.32,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-141": {
+  "translation": "Soup's still warm on the stove. Want some?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3036,
+  "completion_tokens": 191,
+  "seconds": 2.26,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-143": {
+  "translation": "Everything's packed. I leave at dawn.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2148,
+  "completion_tokens": 140,
+  "seconds": 1.96,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-146": {
+  "translation": "Thunder scared me most as a kid.\nNot anymore, though.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2154,
+  "completion_tokens": 149,
+  "seconds": 1.48,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-147": {
+  "translation": "When you smile, your eyes curve.",
+  "status": "submitted",
+  "steps": 2,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 1338,
+  "completion_tokens": 87,
+  "seconds": 0.92,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-144": {
+  "translation": "You rest. I'll take care of the rest.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2140,
+  "completion_tokens": 142,
+  "seconds": 2.11,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-145": {
+  "translation": "The tree in the yard is blooming\nespecially well this year.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2143,
+  "completion_tokens": 145,
+  "seconds": 2.01,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-142": {
+  "translation": "Say that to me, fine, but don't spread it.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3032,
+  "completion_tokens": 196,
+  "seconds": 2.89,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-148": {
+  "translation": "Don't rush off. I'm not finished.",
+  "status": "submitted",
+  "steps": 2,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 1340,
+  "completion_tokens": 91,
+  "seconds": 1.67,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-155": {
+  "translation": "I'm hungry. Do you have any food left?",
+  "status": "submitted",
+  "steps": 2,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 1341,
+  "completion_tokens": 93,
+  "seconds": 1.49,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-152": {
+  "translation": "My mother said: always leave some room.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [
+   "娘"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 2253,
+  "completion_tokens": 165,
+  "seconds": 1.99,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-150": {
+  "translation": "Your old cloak was torn. I mended it.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "披风"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3214,
+  "completion_tokens": 222,
+  "seconds": 2.78,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-151": {
+  "translation": "So crowded today. I lost my shoe.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 4008,
+  "completion_tokens": 237,
+  "seconds": 3.14,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-149": {
+  "translation": "This brew is bitter. I got you sweets.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "蜜饯",
+   "汤药"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4230,
+  "completion_tokens": 263,
+  "seconds": 3.44,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-153": {
+  "translation": "Stop fretting over me. I know what I'm at.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3990,
+  "completion_tokens": 245,
+  "seconds": 3.49,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-156": {
+  "translation": "I hear the neighbors had a baby boy.\nQuite the fuss they're making.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "小子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3225,
+  "completion_tokens": 238,
+  "seconds": 2.96,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-158": {
+  "translation": "I'll come get you first thing tomorrow.\nDon't oversleep.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2151,
+  "completion_tokens": 149,
+  "seconds": 2.13,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-154": {
+  "translation": "Why's it so cold? Where's the brazier?",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "火盆"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4998,
+  "completion_tokens": 284,
+  "seconds": 4.25,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-157": {
+  "translation": "If you're tired, lean on me and rest.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3022,
+  "completion_tokens": 192,
+  "seconds": 2.79,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-159": {
+  "translation": "That was harsh. Don't take it to heart.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2154,
+  "completion_tokens": 146,
+  "seconds": 2.33,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-164": {
+  "translation": "You go on ahead. I'll be right there.",
+  "status": "submitted",
+  "steps": 2,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 1337,
+  "completion_tokens": 93,
+  "seconds": 1.27,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-162": {
+  "translation": "It's cold. Wear an extra layer out there.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3028,
+  "completion_tokens": 194,
+  "seconds": 2.47,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-161": {
+  "translation": "Don't look at me. My face says nothing.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3022,
+  "completion_tokens": 192,
+  "seconds": 2.94,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-166": {
+  "translation": "Look at the moon—round as a plate.",
+  "status": "submitted",
+  "steps": 2,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 1342,
+  "completion_tokens": 91,
+  "seconds": 1.64,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-163": {
+  "translation": "I'm not good with words.\nSweet talk isn't my thing.",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 2148,
+  "completion_tokens": 149,
+  "seconds": 2.39,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-160": {
+  "translation": "Searched half a day—it was in my hands all along.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 5097,
+  "completion_tokens": 307,
+  "seconds": 4.25,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-165": {
+  "translation": "Not your fault. I didn't think it through.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 3030,
+  "completion_tokens": 192,
+  "seconds": 2.96,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-167": {
+  "translation": "I saved up some money.\nI want to buy you a new pair.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [],
+  "looked_up_all": true,
+  "prompt_tokens": 4014,
+  "completion_tokens": 255,
+  "seconds": 3.68,
+  "term_hits": [],
+  "misused": []
+ },
+ "g-168": {
+  "translation": "Your Highness, the Imperial Guard\nhave waited at Xuanwu Gate two hours.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "禁军",
+   "玄武门",
+   "玄武门",
+   "东宫"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6224,
+  "completion_tokens": 385,
+  "seconds": 4.11,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-170": {
+  "translation": "Yuer, that gentleman downstairs\nrequested a song. Do you know it?",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "玉儿",
+   "妈妈",
+   "落雁楼",
+   "公子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5008,
+  "completion_tokens": 336,
+  "seconds": 3.91,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-169": {
+  "translation": "Seventh Brother, word from the Tianji\nPavilion—the Master wants to see you tonight.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "七哥",
+   "天机阁",
+   "阁主"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6473,
+  "completion_tokens": 381,
+  "seconds": 3.96,
+  "term_hits": [
+   false,
+   false,
+   false
+  ],
+  "misused": []
+ },
+ "g-172": {
+  "translation": "Your Highness, the Mirror Bureau\nhas caught wind of your shipment.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "二殿下",
+   "明镜司"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5672,
+  "completion_tokens": 327,
+  "seconds": 4.52,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-171": {
+  "translation": "Commander Su, no soldier at the Western Hills camp moves tonight.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "苏枫",
+   "统领",
+   "西山大营",
+   "太子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6507,
+  "completion_tokens": 383,
+  "seconds": 4.73,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-173": {
+  "translation": "Miss, this white jade hairpin is superb.\nWant to try it?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "姑娘",
+   "白玉簪子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5804,
+  "completion_tokens": 336,
+  "seconds": 4.41,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-174": {
+  "translation": "Jingxing, you'd really give the tally to Lin?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "景行",
+   "虎符",
+   "林相"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6256,
+  "completion_tokens": 359,
+  "seconds": 4.42,
+  "term_hits": [
+   false,
+   false,
+   false
+  ],
+  "misused": []
+ },
+ "g-175": {
+  "translation": "Your Majesty, the Second Prince isn't home tonight.\nMy men can't find where he went.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "娘娘",
+   "二皇子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5802,
+  "completion_tokens": 354,
+  "seconds": 3.86,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-176": {
+  "translation": "Qi, that's the Flowing Cloud Sword Art.\nNo common fighter uses that.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "七哥",
+   "流云剑法",
+   "江湖"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3670,
+  "completion_tokens": 262,
+  "seconds": 3.11,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-177": {
+  "translation": "Miss Lin, someone at the gate left a note.\nIt only says \"the Lantern Festival.\"",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "林姑娘",
+   "相府",
+   "上元"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3714,
+  "completion_tokens": 274,
+  "seconds": 2.62,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-181": {
+  "translation": "Wan'er, whose blood is this on Qingshuang?",
+  "status": "submitted",
+  "steps": 3,
+  "lookups": [
+   "婉儿",
+   "青霜剑",
+   "林相"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 2604,
+  "completion_tokens": 198,
+  "seconds": 2.05,
+  "term_hits": [
+   true,
+   false
+  ],
+  "misused": []
+ },
+ "g-179": {
+  "translation": "Your Highness, the Mirror Bureau\nhas entered Chang'an.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "殿下",
+   "明镜司",
+   "长安城"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3671,
+  "completion_tokens": 246,
+  "seconds": 2.92,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-178": {
+  "translation": "Bai Yu, listen. He said Baiyu Pass.",
+  "status": "submitted",
+  "steps": 6,
+  "lookups": [
+   "玉儿",
+   "白玉关",
+   "白玉"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6204,
+  "completion_tokens": 342,
+  "seconds": 4.8,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-180": {
+  "translation": "Qi, what the Pavilion Master asked you to check—\nis it about the Chang'an Scroll?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "老七",
+   "阁主",
+   "密卷",
+   "天机阁"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6833,
+  "completion_tokens": 410,
+  "seconds": 4.74,
+  "term_hits": [
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-185": {
+  "translation": "Miss, word from Wild Goose Tower:\na guest of honor tonight.",
+  "status": "submitted",
+  "steps": 5,
+  "lookups": [
+   "姑娘",
+   "落雁楼"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4486,
+  "completion_tokens": 268,
+  "seconds": 3.23,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-182": {
+  "translation": "Second Prince, the Crown Prince has the tiger tally.\nWhy haven't you struck?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "二殿下",
+   "太子",
+   "虎符"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6281,
+  "completion_tokens": 360,
+  "seconds": 4.48,
+  "term_hits": [
+   true,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-188": {
+  "translation": "Wan'er, wear this white jade hairpin.\nDon't let anyone recognize you.",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "婉儿",
+   "白玉簪子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 3483,
+  "completion_tokens": 233,
+  "seconds": 2.29,
+  "term_hits": [
+   false
+  ],
+  "misused": []
+ },
+ "g-183": {
+  "translation": "Su Feng, any change to the Guard's watch tonight?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "苏枫",
+   "林婉儿",
+   "禁军",
+   "大哥"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6398,
+  "completion_tokens": 378,
+  "seconds": 4.86,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-184": {
+  "translation": "Senior Brother, \"heaven's secrets must not be told\" — you buy that?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "师兄",
+   "天机不可泄露"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5795,
+  "completion_tokens": 350,
+  "seconds": 4.74,
+  "term_hits": [
+   true
+  ],
+  "misused": []
+ },
+ "g-187": {
+  "translation": "Jingheng, your brother is waiting at the Eastern\nPalace. You must go today.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "景珩",
+   "东宫",
+   "柳贵妃"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6153,
+  "completion_tokens": 371,
+  "seconds": 4.16,
+  "term_hits": [
+   false,
+   false
+  ],
+  "misused": []
+ },
+ "g-186": {
+  "translation": "Your Highness, the Second Prince is on it.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "秋狝",
+   "二皇子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6209,
+  "completion_tokens": 347,
+  "seconds": 4.71,
+  "term_hits": [
+   false,
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-191": {
+  "translation": "Senior Brother, if the Pavilion Master\nreally is that man, what do we do?",
+  "status": "submitted",
+  "steps": 4,
+  "lookups": [
+   "师兄",
+   "阁主",
+   "天机阁",
+   "沈七"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 4064,
+  "completion_tokens": 291,
+  "seconds": 2.41,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-190": {
+  "translation": "Your Highness, dare I ask—do you trust her?",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "殿下",
+   "林姑娘",
+   "臣"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5997,
+  "completion_tokens": 348,
+  "seconds": 4.07,
+  "term_hits": [
+   false,
+   true
+  ],
+  "misused": []
+ },
+ "g-189": {
+  "translation": "Shen Qi, his last words: Western Hills.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "七哥",
+   "西山"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 5684,
+  "completion_tokens": 321,
+  "seconds": 5.44,
+  "term_hits": [
+   true,
+   true
+  ],
+  "misused": []
+ },
+ "g-192": {
+  "translation": "Your Majesty, the Imperial Guard\nhas surrounded the Lin Residence.",
+  "status": "max_steps",
+  "steps": 6,
+  "lookups": [
+   "娘娘",
+   "禁军",
+   "相府",
+   "太子"
+  ],
+  "looked_up_all": true,
+  "prompt_tokens": 6599,
+  "completion_tokens": 408,
+  "seconds": 4.62,
+  "term_hits": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "misused": []
+ }
+}

@@ -1,0 +1,319 @@
+{
+ "show": "长安夜行（虚构古装剧，用于评测）",
+ "note": "仿照字幕本地化团队的剧集设定表（show bible）：人名、称谓、地名、组织、物品的统一译法。aliases 是剧中对同一对象的其他叫法；ambiguous 列出这个词在普通语境中的另一种意思（同形词），检索和翻译时都要区分。 accept 是说明中规定的称呼译法（如“二皇子”译 the Second Prince），评测时和 en 一样算用对。",
+ "entries": [
+  {
+   "id": "p-linwaner",
+   "type": "人名",
+   "zh": "林婉儿",
+   "aliases": [
+    "婉儿",
+    "林姑娘",
+    "林小姐"
+   ],
+   "en": "Lin Wan'er",
+   "note": "女主角，丞相之女",
+   "accept": [
+    "Miss Lin"
+   ]
+  },
+  {
+   "id": "p-xiaojingxing",
+   "type": "人名",
+   "zh": "萧景行",
+   "aliases": [
+    "景行",
+    "萧公子",
+    "太子殿下",
+    "太子"
+   ],
+   "en": "Xiao Jingxing",
+   "note": "男主角，当朝太子；被称作太子时译 the Crown Prince",
+   "accept": [
+    "the Crown Prince",
+    "Your Highness"
+   ]
+  },
+  {
+   "id": "p-shenqi",
+   "type": "人名",
+   "zh": "沈七",
+   "aliases": [
+    "七哥",
+    "老七"
+   ],
+   "en": "Shen Qi",
+   "note": "天机阁杀手，男主的护卫"
+  },
+  {
+   "id": "p-baiyu",
+   "type": "人名",
+   "zh": "白玉",
+   "aliases": [
+    "玉儿"
+   ],
+   "en": "Bai Yu",
+   "note": "落雁楼歌姬",
+   "ambiguous": "白玉也指白色的玉石，如“白玉簪子”"
+  },
+  {
+   "id": "p-linxiang",
+   "type": "人名",
+   "zh": "林相",
+   "aliases": [
+    "林丞相",
+    "丞相大人",
+    "林大人"
+   ],
+   "en": "Chancellor Lin",
+   "note": "林婉儿之父，当朝丞相",
+   "accept": [
+    "the Chancellor"
+   ]
+  },
+  {
+   "id": "p-guifei",
+   "type": "人名",
+   "zh": "柳贵妃",
+   "aliases": [
+    "贵妃娘娘",
+    "柳妃"
+   ],
+   "en": "Consort Liu",
+   "note": "反派，二皇子生母",
+   "accept": [
+    "Your Majesty"
+   ]
+  },
+  {
+   "id": "p-erhuangzi",
+   "type": "人名",
+   "zh": "萧景珩",
+   "aliases": [
+    "二皇子",
+    "二殿下",
+    "景珩"
+   ],
+   "en": "Xiao Jingheng",
+   "note": "反派，太子的弟弟；“二皇子”译 the Second Prince",
+   "accept": [
+    "the Second Prince"
+   ]
+  },
+  {
+   "id": "p-chenshu",
+   "type": "人名",
+   "zh": "陈叔",
+   "aliases": [
+    "老陈"
+   ],
+   "en": "Uncle Chen",
+   "note": "林府管家"
+  },
+  {
+   "id": "p-sufeng",
+   "type": "人名",
+   "zh": "苏枫",
+   "aliases": [
+    "苏统领",
+    "苏大哥"
+   ],
+   "en": "Su Feng",
+   "note": "禁军统领，“苏统领”译 Commander Su",
+   "accept": [
+    "Commander Su"
+   ]
+  },
+  {
+   "id": "p-awu",
+   "type": "人名",
+   "zh": "阿芜",
+   "aliases": [],
+   "en": "A-Wu",
+   "note": "林婉儿的贴身丫鬟"
+  },
+  {
+   "id": "p-tianjige-master",
+   "type": "人名",
+   "zh": "阁主",
+   "aliases": [
+    "天机阁主"
+   ],
+   "en": "the Pavilion Master",
+   "note": "天机阁首领，真实身份不明",
+   "ambiguous": "“阁主”在其他门派也可泛指首领，本剧中专指天机阁主"
+  },
+  {
+   "id": "t-shixiong",
+   "type": "称谓",
+   "zh": "师兄",
+   "aliases": [],
+   "en": "Senior Brother",
+   "note": "沈七对同门的称呼；统一译 Senior Brother，不用 brother"
+  },
+  {
+   "id": "t-dianxia",
+   "type": "称谓",
+   "zh": "殿下",
+   "aliases": [],
+   "en": "Your Highness",
+   "note": "当面称呼太子、皇子时用；第三人称提及时按具体人物译"
+  },
+  {
+   "id": "t-niangniang",
+   "type": "称谓",
+   "zh": "娘娘",
+   "aliases": [],
+   "en": "Your Majesty",
+   "note": "宫中称呼贵妃；统一译 Your Majesty"
+  },
+  {
+   "id": "t-guniang",
+   "type": "称谓",
+   "zh": "姑娘",
+   "aliases": [],
+   "en": "Miss",
+   "note": "对未婚女子的敬称，单独使用时译 Miss；“林姑娘”见人名条目"
+  },
+  {
+   "id": "l-changan",
+   "type": "地名",
+   "zh": "长安",
+   "aliases": [
+    "长安城"
+   ],
+   "en": "Chang'an",
+   "note": "都城",
+   "ambiguous": "“一世长安”“岁岁长安”中意为平安，不是地名"
+  },
+  {
+   "id": "l-luoyanlou",
+   "type": "地名",
+   "zh": "落雁楼",
+   "aliases": [],
+   "en": "Wild Goose Tower",
+   "note": "长安最大的酒楼，情报交易地"
+  },
+  {
+   "id": "l-donggong",
+   "type": "地名",
+   "zh": "东宫",
+   "aliases": [],
+   "en": "the Eastern Palace",
+   "note": "太子居所"
+  },
+  {
+   "id": "l-xishan",
+   "type": "地名",
+   "zh": "西山",
+   "aliases": [
+    "西山大营"
+   ],
+   "en": "the Western Hills",
+   "note": "禁军驻地"
+  },
+  {
+   "id": "l-linfu",
+   "type": "地名",
+   "zh": "林府",
+   "aliases": [
+    "相府",
+    "丞相府"
+   ],
+   "en": "the Lin Residence",
+   "note": "丞相府邸"
+  },
+  {
+   "id": "l-baiyuguan",
+   "type": "地名",
+   "zh": "白玉关",
+   "aliases": [],
+   "en": "Baiyu Pass",
+   "note": "边关要塞；注意与人名“白玉”区分"
+  },
+  {
+   "id": "o-tianjige",
+   "type": "组织",
+   "zh": "天机阁",
+   "aliases": [
+    "天机"
+   ],
+   "en": "the Tianji Pavilion",
+   "note": "江湖情报组织",
+   "ambiguous": "“天机不可泄露”中的天机意为天意、秘密"
+  },
+  {
+   "id": "o-jinjun",
+   "type": "组织",
+   "zh": "禁军",
+   "aliases": [],
+   "en": "the Imperial Guard",
+   "note": "皇城卫队"
+  },
+  {
+   "id": "o-mingjing",
+   "type": "组织",
+   "zh": "明镜司",
+   "aliases": [],
+   "en": "the Mirror Bureau",
+   "note": "朝廷密探机构"
+  },
+  {
+   "id": "i-liuyun",
+   "type": "物品",
+   "zh": "流云剑法",
+   "aliases": [
+    "流云剑"
+   ],
+   "en": "the Flowing Cloud Sword Art",
+   "note": "沈七的独门剑法；“流云剑”指剑法时同译"
+  },
+  {
+   "id": "i-hufu",
+   "type": "物品",
+   "zh": "虎符",
+   "aliases": [],
+   "en": "the tiger tally",
+   "note": "调兵凭证，统一译 tiger tally"
+  },
+  {
+   "id": "i-qingshuang",
+   "type": "物品",
+   "zh": "青霜",
+   "aliases": [],
+   "en": "Qingshuang",
+   "note": "林婉儿的佩剑名",
+   "ambiguous": "“青霜”也可描写清晨的霜"
+  },
+  {
+   "id": "i-mijuan",
+   "type": "物品",
+   "zh": "长安密卷",
+   "aliases": [
+    "密卷"
+   ],
+   "en": "the Chang'an Scroll",
+   "note": "全剧争夺的密档"
+  },
+  {
+   "id": "e-shangyuan",
+   "type": "事件",
+   "zh": "上元节",
+   "aliases": [
+    "上元"
+   ],
+   "en": "the Lantern Festival",
+   "note": "正月十五，剧中关键夜晚"
+  },
+  {
+   "id": "e-qiulie",
+   "type": "事件",
+   "zh": "秋狝",
+   "aliases": [
+    "秋猎"
+   ],
+   "en": "the autumn hunt",
+   "note": "皇家秋季围猎"
+  }
+ ]
+}

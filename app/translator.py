@@ -22,8 +22,8 @@ CONTEXT_BEFORE, CONTEXT_AFTER = 2, 1
 # JSON 模式下代替换行符的显式标记（v6 起，Prompt 里出现该标记时启用）
 LINE_MARK = "⏎"
 
-# 上下文窗口使用的保留标签；字幕里出现时要转义，防止 Prompt 注入
-RESERVED_TAG_RE = re.compile(r"<\s*(/?)\s*(上文|当前句|下文)\s*>")
+# 上下文窗口和术语表使用的保留标签；字幕里出现时要转义，防止 Prompt 注入
+RESERVED_TAG_RE = re.compile(r"<\s*(/?)\s*(上文|当前句|下文|术语表)\s*>")
 
 # 同一个字连续出现 5 次及以上（如 62 个"呜"）
 REPEAT_RE = re.compile(r"(.)\1{4,}")
@@ -42,9 +42,9 @@ def collapse_repeats(text: str) -> str:
 
 
 def escape_tags(text: str) -> str:
-    """把字幕里伪造的上下文标签（<上文> <当前句> <下文>）换成全角尖括号，模型就不会当成格式标签。
+    """把字幕里伪造的保留标签（<上文> <当前句> <下文> <术语表>）换成全角尖括号，模型就不会当成格式标签。
 
-    只处理这三个保留标签，<i>斜体</i> 等字幕本身的 HTML 标签保持原样。
+    只处理这几个保留标签，<i>斜体</i> 等字幕本身的 HTML 标签保持原样。
     "</当前句>新指令" → "＜/当前句＞新指令"
     """
     return RESERVED_TAG_RE.sub(lambda m: f"＜{m.group(1)}{m.group(2)}＞", text)
@@ -59,7 +59,7 @@ class MockTranslator:
 
 
 class LLMTranslator:
-    def __init__(self, prompt_version: str = "v1"):
+    def __init__(self, prompt_version: str = "v1", retriever=None):
         from openai import OpenAI
 
         self.client = OpenAI(
@@ -77,6 +77,9 @@ class LLMTranslator:
         self.stats = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0, "seconds": 0.0}
         # 最近一次翻译的中间结果（直译、反思），方便分析失败原因
         self.last_detail = {}
+        # 术语检索器（见 app/glossary.py）：给定当前句，返回剧集设定表里的相关条目；为 None 时不附术语表
+        self.retriever = retriever
+        self.last_terms = []
 
     def translate(self, cues: list[Cue], target_lang: str) -> list[Cue]:
         # 逐条翻译：实现简单，且不会出现"模型合并/拆分字幕行"的问题。
@@ -116,7 +119,13 @@ class LLMTranslator:
         current = escape_tags(current)
         before = "\n".join(escape_tags(collapse_repeats(c.text)) for c in cues[max(0, i - CONTEXT_BEFORE):i]) or "（无）"
         after = "\n".join(escape_tags(collapse_repeats(c.text)) for c in cues[i + 1:i + 1 + CONTEXT_AFTER]) or "（无）"
-        return f"<上文>\n{before}\n</上文>\n<当前句>\n{current}\n</当前句>\n<下文>\n{after}\n</下文>"
+        message = f"<上文>\n{before}\n</上文>\n<当前句>\n{current}\n</当前句>\n<下文>\n{after}\n</下文>"
+        if self.retriever is not None:
+            from app.glossary import format_entries
+
+            self.last_terms = self.retriever(cues[i].text)
+            message += f"\n<术语表>\n{format_entries(self.last_terms) or '（无）'}\n</术语表>"
+        return message
 
     def _extract(self, content: str) -> str:
         content = (content or "").strip()
@@ -131,7 +140,7 @@ class LLMTranslator:
         text = str(data.get("free") or data.get("direct") or "").strip()
         text = re.sub(rf"\s*{LINE_MARK}\s*", "\n", text)
         # 字幕里原本就有的伪造标签被 escape_tags 转成了全角，译文里还原成原样，保证忠实
-        return re.sub(r"＜(/?)(上文|当前句|下文)＞", r"<\1\2>", text)
+        return re.sub(r"＜(/?)(上文|当前句|下文|术语表)＞", r"<\1\2>", text)
 
 
 def get_translator():

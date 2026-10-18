@@ -1,0 +1,2229 @@
+[
+ {
+  "id": "g-001",
+  "kind": "全名",
+  "text": "林婉儿，你当真要为了一个江湖人跟我翻脸？",
+  "before": [],
+  "terms": [
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-002",
+  "kind": "全名",
+  "text": "沈七的剑，从来只出一次鞘。",
+  "before": [],
+  "terms": [
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-003",
+  "kind": "全名",
+  "text": "林相，此事若传出去，你这乌纱帽怕是保不住。",
+  "before": [],
+  "terms": [
+   "p-linxiang"
+  ]
+ },
+ {
+  "id": "g-004",
+  "kind": "全名",
+  "text": "萧景珩，你处处与我作对，究竟图什么？",
+  "before": [],
+  "terms": [
+   "p-erhuangzi"
+  ]
+ },
+ {
+  "id": "g-005",
+  "kind": "全名",
+  "text": "苏统领，禁军今夜为何突然换了防？",
+  "before": [],
+  "terms": [
+   "o-jinjun",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-006",
+  "kind": "全名",
+  "text": "阿芜，小姐我今晚要出门，你别跟着。",
+  "before": [],
+  "terms": [
+   "p-awu"
+  ]
+ },
+ {
+  "id": "g-007",
+  "kind": "全名",
+  "text": "师兄，你教我的流云剑法，我练到了第七重。",
+  "before": [],
+  "terms": [
+   "i-liuyun",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-008",
+  "kind": "全名",
+  "text": "娘娘，这杯茶是贵妃娘娘特意为您备的。",
+  "before": [],
+  "terms": [
+   "p-guifei",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-009",
+  "kind": "全名",
+  "text": "姑娘，这落雁楼不是您该来的地方。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-010",
+  "kind": "全名",
+  "text": "我在长安等了你三年，你终于回来了。",
+  "before": [],
+  "terms": [
+   "l-changan"
+  ]
+ },
+ {
+  "id": "g-011",
+  "kind": "全名",
+  "text": "东宫的灯，今夜怕是要亮到天明了。",
+  "before": [],
+  "terms": [
+   "l-donggong"
+  ]
+ },
+ {
+  "id": "g-012",
+  "kind": "全名",
+  "text": "西山那边有动静，禁军已经动身了。",
+  "before": [],
+  "terms": [
+   "l-xishan",
+   "o-jinjun"
+  ]
+ },
+ {
+  "id": "g-013",
+  "kind": "全名",
+  "text": "相府的门槛，可不是谁想踩就能踩的。",
+  "before": [],
+  "terms": [
+   "l-linfu"
+  ]
+ },
+ {
+  "id": "g-014",
+  "kind": "全名",
+  "text": "白玉关外三十里，探子回报有异动。",
+  "before": [],
+  "terms": [
+   "l-baiyuguan"
+  ]
+ },
+ {
+  "id": "g-015",
+  "kind": "全名",
+  "text": "天机阁的消息，从来不出错。",
+  "before": [],
+  "terms": [
+   "o-tianjige"
+  ]
+ },
+ {
+  "id": "g-016",
+  "kind": "全名",
+  "text": "明镜司的人，昨夜潜进了相府。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "o-mingjing"
+  ]
+ },
+ {
+  "id": "g-017",
+  "kind": "全名",
+  "text": "虎符不在太子手里，那会是谁拿走了？",
+  "before": [],
+  "terms": [
+   "i-hufu",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-018",
+  "kind": "全名",
+  "text": "青霜出鞘，见血方回。",
+  "before": [],
+  "terms": [
+   "i-qingshuang"
+  ]
+ },
+ {
+  "id": "g-019",
+  "kind": "全名",
+  "text": "长安密卷一旦落入二皇子手中，天下必乱。",
+  "before": [],
+  "terms": [
+   "i-mijuan",
+   "p-erhuangzi"
+  ]
+ },
+ {
+  "id": "g-020",
+  "kind": "全名",
+  "text": "上元节那晚，城楼上的人都得死。",
+  "before": [],
+  "terms": [
+   "e-shangyuan"
+  ]
+ },
+ {
+  "id": "g-021",
+  "kind": "全名",
+  "text": "林姑娘，你父亲可知道你在查这件事？",
+  "before": [],
+  "terms": [
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-022",
+  "kind": "全名",
+  "text": "七哥的名号，江湖上没人敢不卖面子。",
+  "before": [],
+  "terms": [
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-023",
+  "kind": "全名",
+  "text": "玉儿，这件事你只当没听见，明白吗？",
+  "before": [],
+  "terms": [
+   "p-baiyu"
+  ]
+ },
+ {
+  "id": "g-024",
+  "kind": "别名",
+  "text": "景行，东宫那边可有消息传来？",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-025",
+  "kind": "别名",
+  "text": "七哥，天机阁的人已经盯上这条街了。",
+  "before": [],
+  "terms": [
+   "o-tianjige",
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-026",
+  "kind": "别名",
+  "text": "苏统领，西山那边加派一队人手。",
+  "before": [],
+  "terms": [
+   "l-xishan",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-027",
+  "kind": "别名",
+  "text": "阁主有令，密卷务必在落雁楼取回。",
+  "before": [],
+  "terms": [
+   "i-mijuan",
+   "l-luoyanlou",
+   "p-tianjige-master"
+  ]
+ },
+ {
+  "id": "g-028",
+  "kind": "别名",
+  "text": "师兄说过，流云剑只教过我一个。",
+  "before": [],
+  "terms": [
+   "i-liuyun",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-029",
+  "kind": "别名",
+  "text": "这一世长安，不如陪你走一夜长安。",
+  "before": [],
+  "terms": [
+   "l-changan"
+  ]
+ },
+ {
+  "id": "g-030",
+  "kind": "同形词",
+  "text": "白玉簪子当了吧，换些银钱要紧。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-031",
+  "kind": "别名",
+  "text": "二皇子的手，伸得未免太长了。",
+  "before": [],
+  "terms": [
+   "p-erhuangzi"
+  ]
+ },
+ {
+  "id": "g-032",
+  "kind": "别名",
+  "text": "禁军已经围了相府，丞相大人还不出来？",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "o-jinjun",
+   "p-linxiang"
+  ]
+ },
+ {
+  "id": "g-033",
+  "kind": "别名",
+  "text": "明镜司办案，闲杂人等退开。",
+  "before": [],
+  "terms": [
+   "o-mingjing"
+  ]
+ },
+ {
+  "id": "g-034",
+  "kind": "别名",
+  "text": "虎符在我手里，你们谁敢动？",
+  "before": [],
+  "terms": [
+   "i-hufu"
+  ]
+ },
+ {
+  "id": "g-035",
+  "kind": "别名",
+  "text": "白玉关的急报，昨夜就到了。",
+  "before": [],
+  "terms": [
+   "l-baiyuguan"
+  ]
+ },
+ {
+  "id": "g-036",
+  "kind": "别名",
+  "text": "上元节那夜，落雁楼里到底发生了什么？",
+  "before": [],
+  "terms": [
+   "e-shangyuan",
+   "l-luoyanlou"
+  ]
+ },
+ {
+  "id": "g-037",
+  "kind": "别名",
+  "text": "秋狝在即，二殿下请缨随驾。",
+  "before": [],
+  "terms": [
+   "e-qiulie",
+   "p-erhuangzi"
+  ]
+ },
+ {
+  "id": "g-038",
+  "kind": "别名",
+  "text": "林姑娘，萧公子在东宫等你多时了。",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "p-linwaner",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-039",
+  "kind": "别名",
+  "text": "七哥的流云剑，当真无人能破？",
+  "before": [],
+  "terms": [
+   "i-liuyun",
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-040",
+  "kind": "同形词",
+  "text": "天机不可泄露，这话你该懂。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-041",
+  "kind": "别名",
+  "text": "柳妃娘娘，陈叔求见，说相府出事了。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "p-chenshu",
+   "p-guifei",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-042",
+  "kind": "别名",
+  "text": "苏大哥，这队禁军只听你的号令。",
+  "before": [],
+  "terms": [
+   "o-jinjun",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-043",
+  "kind": "同形词",
+  "text": "岁岁长安，说得多好听，可惜她听不见了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-044",
+  "kind": "别名",
+  "text": "长安密卷一日不现，长安城一日不安。",
+  "before": [],
+  "terms": [
+   "i-mijuan",
+   "l-changan"
+  ]
+ },
+ {
+  "id": "g-045",
+  "kind": "别名",
+  "text": "姑娘若是想打听消息，落雁楼最合适。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-046",
+  "kind": "别名",
+  "text": "老七，阁主找你，说是天机阁里有内鬼。",
+  "before": [],
+  "terms": [
+   "o-tianjige",
+   "p-shenqi",
+   "p-tianjige-master"
+  ]
+ },
+ {
+  "id": "g-047",
+  "kind": "称谓",
+  "text": "师兄，师父让你去一趟天机阁。",
+  "before": [],
+  "terms": [
+   "o-tianjige",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-048",
+  "kind": "称谓",
+  "text": "师兄，这流云剑法我练了三年还是不得要领。",
+  "before": [],
+  "terms": [
+   "i-liuyun",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-049",
+  "kind": "称谓",
+  "text": "师兄，楼下来了一顶轿子，看方向是往东宫去的。",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-050",
+  "kind": "称谓",
+  "text": "师兄，你护着太子先走，这里交给我。",
+  "before": [],
+  "terms": [
+   "p-xiaojingxing",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-051",
+  "kind": "称谓",
+  "text": "师兄，那二皇子的人已经进了长安城。",
+  "before": [],
+  "terms": [
+   "l-changan",
+   "p-erhuangzi",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-052",
+  "kind": "称谓",
+  "text": "师兄，阁主吩咐过，这密卷不能落在旁人手里。",
+  "before": [],
+  "terms": [
+   "i-mijuan",
+   "p-tianjige-master",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-053",
+  "kind": "称谓",
+  "text": "师兄，你身上的伤，是禁军那边留下的？",
+  "before": [],
+  "terms": [
+   "o-jinjun",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-054",
+  "kind": "称谓",
+  "text": "殿下，前面就是白玉关了，还请换马。",
+  "before": [],
+  "terms": [
+   "l-baiyuguan",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-055",
+  "kind": "称谓",
+  "text": "殿下，上元节那夜的事，臣已经查清了。",
+  "before": [],
+  "terms": [
+   "e-shangyuan",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-056",
+  "kind": "称谓",
+  "text": "殿下，苏统领求见，说是有要事禀报。",
+  "before": [],
+  "terms": [
+   "p-sufeng",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-057",
+  "kind": "称谓",
+  "text": "殿下，您若去了西山，东宫就没人守了。",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "l-xishan",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-058",
+  "kind": "称谓",
+  "text": "殿下，这虎符还是您亲自收着稳妥。",
+  "before": [],
+  "terms": [
+   "i-hufu",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-059",
+  "kind": "称谓",
+  "text": "殿下，二殿下在宫门外候了半个时辰了。",
+  "before": [],
+  "terms": [
+   "p-erhuangzi",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-060",
+  "kind": "称谓",
+  "text": "殿下，陈叔让人递了话，说相府今日不太平。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "p-chenshu",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-061",
+  "kind": "称谓",
+  "text": "娘娘，贵妃娘娘今日身子可好些了？",
+  "before": [],
+  "terms": [
+   "p-guifei",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-062",
+  "kind": "称谓",
+  "text": "娘娘，二殿下已在殿外请安。",
+  "before": [],
+  "terms": [
+   "p-erhuangzi",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-063",
+  "kind": "称谓",
+  "text": "娘娘，明镜司的人昨夜进了宫，您可知道？",
+  "before": [],
+  "terms": [
+   "o-mingjing",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-064",
+  "kind": "称谓",
+  "text": "娘娘息怒，那白玉不过是个歌姬，翻不起浪。",
+  "before": [],
+  "terms": [
+   "p-baiyu",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-065",
+  "kind": "称谓",
+  "text": "娘娘，这是林相递进来的折子。",
+  "before": [],
+  "terms": [
+   "p-linxiang",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-066",
+  "kind": "称谓",
+  "text": "娘娘，秋狝的名册已经拟好了，请您过目。",
+  "before": [],
+  "terms": [
+   "e-qiulie",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-067",
+  "kind": "称谓",
+  "text": "娘娘，天机阁那边，怕是已经知道我们的打算了。",
+  "before": [],
+  "terms": [
+   "o-tianjige",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-068",
+  "kind": "称谓",
+  "text": "姑娘，您的青霜剑我给您擦好了。",
+  "before": [],
+  "terms": [
+   "i-qingshuang",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-069",
+  "kind": "称谓",
+  "text": "姑娘，陈叔说马车已经备在后门了。",
+  "before": [],
+  "terms": [
+   "p-chenshu",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-070",
+  "kind": "称谓",
+  "text": "姑娘，落雁楼那边传来消息，萧公子今夜会去。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou",
+   "p-xiaojingxing",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-071",
+  "kind": "称谓",
+  "text": "姑娘，丞相大人让您明日去一趟前厅。",
+  "before": [],
+  "terms": [
+   "p-linxiang",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-072",
+  "kind": "称谓",
+  "text": "姑娘，外面有人自称沈七，说是奉命来护您。",
+  "before": [],
+  "terms": [
+   "p-shenqi",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-073",
+  "kind": "称谓",
+  "text": "姑娘，白玉关的军报到了，老爷在书房发了好大的火。",
+  "before": [],
+  "terms": [
+   "l-baiyuguan",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-074",
+  "kind": "称谓",
+  "text": "姑娘，上元节灯会上人多，还请姑娘跟紧奴婢。",
+  "before": [],
+  "terms": [
+   "e-shangyuan",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-075",
+  "kind": "称谓",
+  "text": "姑娘，明镜司查到了林府头上，这可如何是好？",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "o-mingjing",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-076",
+  "kind": "称谓",
+  "text": "姑娘，这话若是传到柳贵妃耳朵里，就麻烦了。",
+  "before": [],
+  "terms": [
+   "p-guifei",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-077",
+  "kind": "多术语",
+  "text": "婉儿，太子殿下今夜要来林府，你快去换身衣裳。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "p-linwaner",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-078",
+  "kind": "多术语",
+  "text": "苏统领，西山那边有动静，禁军须得连夜戒备。",
+  "before": [],
+  "terms": [
+   "l-xishan",
+   "o-jinjun",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-079",
+  "kind": "多术语",
+  "text": "柳贵妃娘娘有令，二皇子今夜不得入东宫。",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "p-erhuangzi",
+   "p-guifei"
+  ]
+ },
+ {
+  "id": "g-080",
+  "kind": "多术语",
+  "text": "阁主说了，长安密卷的事，天机阁不接。",
+  "before": [],
+  "terms": [
+   "i-mijuan",
+   "o-tianjige",
+   "p-tianjige-master"
+  ]
+ },
+ {
+  "id": "g-081",
+  "kind": "多术语",
+  "text": "景行，你这流云剑法，是跟谁学的？",
+  "before": [],
+  "terms": [
+   "i-liuyun",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-082",
+  "kind": "多术语",
+  "text": "阿芜，把青霜剑取来，我要去一趟落雁楼。",
+  "before": [],
+  "terms": [
+   "i-qingshuang",
+   "l-luoyanlou",
+   "p-awu"
+  ]
+ },
+ {
+  "id": "g-083",
+  "kind": "多术语",
+  "text": "上元节那晚，白玉关的急报就到了明镜司。",
+  "before": [],
+  "terms": [
+   "e-shangyuan",
+   "l-baiyuguan",
+   "o-mingjing"
+  ]
+ },
+ {
+  "id": "g-084",
+  "kind": "多术语",
+  "text": "师兄，天机阁的阁主，到底是谁？",
+  "before": [],
+  "terms": [
+   "o-tianjige",
+   "p-tianjige-master",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-085",
+  "kind": "多术语",
+  "text": "殿下，虎符不在东宫，怕是已经落到二皇子手里了。",
+  "before": [],
+  "terms": [
+   "i-hufu",
+   "l-donggong",
+   "p-erhuangzi",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-086",
+  "kind": "多术语",
+  "text": "姑娘，前面就是落雁楼，白玉姑娘在楼上等您。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou",
+   "p-baiyu",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-087",
+  "kind": "多术语",
+  "text": "秋狝将至，禁军要随太子殿下同去西山。",
+  "before": [],
+  "terms": [
+   "e-qiulie",
+   "l-xishan",
+   "o-jinjun",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-088",
+  "kind": "多术语",
+  "text": "老七，二殿下身边的那个黑衣人，查清楚了吗？",
+  "before": [],
+  "terms": [
+   "p-erhuangzi",
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-089",
+  "kind": "多术语",
+  "text": "苏大哥，明镜司的人已经进了长安城。",
+  "before": [],
+  "terms": [
+   "l-changan",
+   "o-mingjing",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-090",
+  "kind": "多术语",
+  "text": "林大人，密卷若真在相府，您可脱不了干系。",
+  "before": [],
+  "terms": [
+   "i-mijuan",
+   "l-linfu",
+   "p-linxiang"
+  ]
+ },
+ {
+  "id": "g-091",
+  "kind": "多术语",
+  "text": "婉儿，这支白玉簪子，是太子殿下送你的？",
+  "before": [],
+  "terms": [
+   "p-linwaner",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-092",
+  "kind": "多术语",
+  "text": "师兄放心，流云剑法我只使了三成。",
+  "before": [],
+  "terms": [
+   "i-liuyun",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-093",
+  "kind": "多术语",
+  "text": "陈叔，备车，我要去天机阁走一趟。",
+  "before": [],
+  "terms": [
+   "o-tianjige",
+   "p-chenshu"
+  ]
+ },
+ {
+  "id": "g-094",
+  "kind": "多术语",
+  "text": "娘娘息怒，二皇子只是去了西山围猎。",
+  "before": [],
+  "terms": [
+   "l-xishan",
+   "p-erhuangzi",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-095",
+  "kind": "多术语",
+  "text": "玉儿，落雁楼今晚来的贵客，是林府的人。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "l-luoyanlou",
+   "p-baiyu"
+  ]
+ },
+ {
+  "id": "g-096",
+  "kind": "多术语",
+  "text": "阿芜，你家小姐的青霜剑，可比我的刀快。",
+  "before": [],
+  "terms": [
+   "i-qingshuang",
+   "p-awu"
+  ]
+ },
+ {
+  "id": "g-097",
+  "kind": "多术语",
+  "text": "苏统领，虎符在谁手上，禁军就听谁的。",
+  "before": [],
+  "terms": [
+   "i-hufu",
+   "o-jinjun",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-098",
+  "kind": "多术语",
+  "text": "景珩，你母妃柳贵妃，可曾提过长安密卷？",
+  "before": [],
+  "terms": [
+   "i-mijuan",
+   "p-erhuangzi",
+   "p-guifei"
+  ]
+ },
+ {
+  "id": "g-099",
+  "kind": "多术语",
+  "text": "殿下，东宫外头，明镜司的人守了一夜。",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "o-mingjing",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-100",
+  "kind": "多术语",
+  "text": "林姑娘，上元节那夜，你可见过白玉关来的人？",
+  "before": [],
+  "terms": [
+   "e-shangyuan",
+   "l-baiyuguan",
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-101",
+  "kind": "多术语",
+  "text": "老陈，相府的门，今晚谁都不许进。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "p-chenshu"
+  ]
+ },
+ {
+  "id": "g-102",
+  "kind": "多术语",
+  "text": "师兄，阁主说天机不可泄露，可我偏要查。",
+  "before": [],
+  "terms": [
+   "p-tianjige-master",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-103",
+  "kind": "多术语",
+  "text": "姑娘留步，白玉姑娘说了，落雁楼不接禁军的人。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou",
+   "o-jinjun",
+   "p-baiyu",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-104",
+  "kind": "同形词",
+  "text": "这一世长安，我便守在你身边。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-105",
+  "kind": "同形词",
+  "text": "天机不可泄露，你莫再问了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-106",
+  "kind": "同形词",
+  "text": "这支白玉簪子，是我娘留给我的。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-107",
+  "kind": "同形词",
+  "text": "青霜满地，天还没亮呢。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-108",
+  "kind": "同形词",
+  "text": "岁岁长安，是百姓最大的心愿。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-109",
+  "kind": "同形词",
+  "text": "你瞧这白玉镯子，成色倒是不错。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-110",
+  "kind": "同形词",
+  "text": "天机玄妙，岂是凡人能算的。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-111",
+  "kind": "同形词",
+  "text": "清晨的青霜落在瓦上，凉得很。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-112",
+  "kind": "同形词",
+  "text": "愿我大明江山，一世长安。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-113",
+  "kind": "同形词",
+  "text": "那白玉佩，可是你从关外带来的？",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-114",
+  "kind": "全名",
+  "text": "阁主说了，天机不可强求。",
+  "before": [],
+  "terms": [
+   "p-tianjige-master"
+  ]
+ },
+ {
+  "id": "g-115",
+  "kind": "同形词",
+  "text": "白玉铺的地，踩上去都怕脏了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-116",
+  "kind": "同形词",
+  "text": "此事关乎天机，不可说。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-117",
+  "kind": "全名",
+  "text": "长安城里这么大的雨，倒是少见。",
+  "before": [],
+  "terms": [
+   "l-changan"
+  ]
+ },
+ {
+  "id": "g-118",
+  "kind": "同形词",
+  "text": "她手里那支白玉簪子掉了，碎了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-119",
+  "kind": "同形词",
+  "text": "青霜未化，路上小心些。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-120",
+  "kind": "同形词",
+  "text": "我只求岁岁长安，别无他念。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-121",
+  "kind": "同形词",
+  "text": "那白玉屏风，是宫里赏下来的。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-122",
+  "kind": "同形词",
+  "text": "天机难测，谁也说不准明日。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-123",
+  "kind": "全名",
+  "text": "长安城外三十里，有座破庙。",
+  "before": [],
+  "terms": [
+   "l-changan"
+  ]
+ },
+ {
+  "id": "g-124",
+  "kind": "同形词",
+  "text": "白玉棋子落在盘上，清脆一响。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-125",
+  "kind": "同形词",
+  "text": "窗上结了青霜，像一层薄雪。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-126",
+  "kind": "同形词",
+  "text": "泄露天机，是要折寿的。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-127",
+  "kind": "同形词",
+  "text": "这一支白玉笛，吹得人心都软了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-128",
+  "kind": "全名",
+  "text": "长安的月色，比别处都亮些。",
+  "before": [],
+  "terms": [
+   "l-changan"
+  ]
+ },
+ {
+  "id": "g-129",
+  "kind": "同形词",
+  "text": "天机已动，你我皆在局中。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-130",
+  "kind": "同形词",
+  "text": "白玉阶前，他跪了整整一夜。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-132",
+  "kind": "同形词",
+  "text": "愿君此去，一路长安。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-133",
+  "kind": "同形词",
+  "text": "这白玉杯里，装的是毒酒。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-134",
+  "kind": "同形词",
+  "text": "天机自有定数，何必苦争。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-135",
+  "kind": "同形词",
+  "text": "白玉为堂金作马，不过一场梦。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-136",
+  "kind": "无术语",
+  "text": "你先把这碗粥喝了，凉了就不好吃了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-137",
+  "kind": "无术语",
+  "text": "昨夜下了好大的雨，我窗子都没关严。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-138",
+  "kind": "无术语",
+  "text": "这衣裳是新做的？颜色倒是衬你。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-139",
+  "kind": "无术语",
+  "text": "别站在门口了，进来坐吧。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-140",
+  "kind": "无术语",
+  "text": "我瞧你脸色不大好，是不是没睡踏实？",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-141",
+  "kind": "无术语",
+  "text": "灶上还温着汤，你要不要也来一碗？",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-142",
+  "kind": "无术语",
+  "text": "这话你跟我说说就罢了，别往外传。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-143",
+  "kind": "无术语",
+  "text": "东西我都收拾好了，就等天亮动身。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-144",
+  "kind": "无术语",
+  "text": "你先歇着，剩下的事我来办。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-145",
+  "kind": "无术语",
+  "text": "院子里那棵树，今年开得格外好。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-146",
+  "kind": "无术语",
+  "text": "我小时候最怕打雷，现在倒不怕了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-147",
+  "kind": "无术语",
+  "text": "你笑起来的时候，眼睛都弯了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-148",
+  "kind": "无术语",
+  "text": "别急着走，我还有句话没说完。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-149",
+  "kind": "无术语",
+  "text": "这汤药苦得很，我给你备了蜜饯。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-150",
+  "kind": "无术语",
+  "text": "你那件旧披风破了，我替你补好了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-151",
+  "kind": "无术语",
+  "text": "今儿街上人真多，挤得我鞋都掉了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-152",
+  "kind": "无术语",
+  "text": "我娘说过，做人要留三分余地。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-153",
+  "kind": "无术语",
+  "text": "你别老替我操心，我自己心里有数。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-154",
+  "kind": "无术语",
+  "text": "这屋子里怎么这么冷，火盆呢？",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-155",
+  "kind": "无术语",
+  "text": "我饿了，你那儿还有吃的没有？",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-156",
+  "kind": "无术语",
+  "text": "听说隔壁那家添了个小子，热闹得很。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-157",
+  "kind": "无术语",
+  "text": "你要是累了，就靠着我睡一会儿。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-158",
+  "kind": "无术语",
+  "text": "明日一早我来接你，别睡过头了。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-159",
+  "kind": "无术语",
+  "text": "这话说得重了，你莫往心里去。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-160",
+  "kind": "无术语",
+  "text": "我寻了半日，原来东西一直在我手上。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-161",
+  "kind": "无术语",
+  "text": "你别看我，我脸上又没写字。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-162",
+  "kind": "无术语",
+  "text": "天冷，出门记得多加件衣裳。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-163",
+  "kind": "无术语",
+  "text": "我这人嘴笨，好听的话说不来。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-164",
+  "kind": "无术语",
+  "text": "你先回去，我随后就到。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-165",
+  "kind": "无术语",
+  "text": "这事不怪你，是我自己没想周全。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-166",
+  "kind": "无术语",
+  "text": "你看这月亮，圆得跟盘子似的。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-167",
+  "kind": "无术语",
+  "text": "我攒了点钱，想给你买副新的。",
+  "before": [],
+  "terms": []
+ },
+ {
+  "id": "g-168",
+  "kind": "带上文",
+  "text": "殿下，禁军已在玄武门外候了两个时辰。",
+  "before": [
+   "萧景行独自站在东宫廊下，神色难辨。"
+  ],
+  "terms": [
+   "o-jinjun",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-169",
+  "kind": "带上文",
+  "text": "七哥，天机阁那边传话，阁主今夜要见你。",
+  "before": [
+   "沈七正在院中擦拭佩剑，一名同门快步走来。"
+  ],
+  "terms": [
+   "o-tianjige",
+   "p-shenqi",
+   "p-tianjige-master"
+  ]
+ },
+ {
+  "id": "g-170",
+  "kind": "带上文",
+  "text": "玉儿，楼下那位公子点的曲子，你可会唱？",
+  "before": [
+   "白玉抱着琵琶坐在落雁楼二楼，妈妈凑近她耳边。"
+  ],
+  "terms": [
+   "p-baiyu"
+  ]
+ },
+ {
+  "id": "g-171",
+  "kind": "带上文",
+  "text": "苏统领，西山大营的兵，今晚一个都不能动。",
+  "before": [
+   "太子在偏殿召见禁军统领苏枫。"
+  ],
+  "terms": [
+   "l-xishan",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-172",
+  "kind": "带上文",
+  "text": "二殿下，您要的那批货，明镜司已经盯上了。",
+  "before": [
+   "柳贵妃屏退左右，只留下心腹。"
+  ],
+  "terms": [
+   "o-mingjing",
+   "p-erhuangzi"
+  ]
+ },
+ {
+  "id": "g-173",
+  "kind": "带上文",
+  "text": "姑娘，这白玉簪子成色极好，可要试试？",
+  "before": [
+   "林婉儿在街上小摊前停下脚步，摊主笑着招呼。"
+  ],
+  "terms": [
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-174",
+  "kind": "带上文",
+  "text": "景行，你当真要把虎符交给林相？",
+  "before": [
+   "萧景行在灯下展开一卷密信，对面坐着沈七。"
+  ],
+  "terms": [
+   "i-hufu",
+   "p-linxiang",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-175",
+  "kind": "带上文",
+  "text": "娘娘，二皇子今夜没回府，属下打听不到去向。",
+  "before": [
+   "柳贵妃端坐镜前，宫女替她卸下珠钗。"
+  ],
+  "terms": [
+   "p-erhuangzi",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-176",
+  "kind": "带上文",
+  "text": "七哥，那人使的是流云剑法，不像江湖路子。",
+  "before": [
+   "沈七伏在屋脊上，身旁同门压低声音。"
+  ],
+  "terms": [
+   "i-liuyun",
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-177",
+  "kind": "带上文",
+  "text": "林姑娘，相府门口有人递了张字条，只写着上元。",
+  "before": [
+   "阿芜小跑进后院，气喘吁吁。"
+  ],
+  "terms": [
+   "e-shangyuan",
+   "l-linfu",
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-178",
+  "kind": "带上文",
+  "text": "玉儿，你听清楚，那客人说的是白玉关。",
+  "before": [
+   "落雁楼后台，一个歌姬拉着白玉的袖子。"
+  ],
+  "terms": [
+   "l-baiyuguan",
+   "p-baiyu"
+  ]
+ },
+ {
+  "id": "g-179",
+  "kind": "带上文",
+  "text": "殿下，明镜司的人已经进长安城了。",
+  "before": [
+   "苏枫连夜赶到东宫，跪在阶下。"
+  ],
+  "terms": [
+   "l-changan",
+   "o-mingjing",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-180",
+  "kind": "带上文",
+  "text": "老七，阁主让你查的事，跟密卷有关？",
+  "before": [
+   "沈七回到天机阁分舵，师兄迎上来。"
+  ],
+  "terms": [
+   "i-mijuan",
+   "p-shenqi",
+   "p-tianjige-master"
+  ]
+ },
+ {
+  "id": "g-181",
+  "kind": "带上文",
+  "text": "婉儿，青霜剑上的血，是谁的？",
+  "before": [
+   "林相推开书房门，看见女儿正在擦剑。"
+  ],
+  "terms": [
+   "i-qingshuang",
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-182",
+  "kind": "带上文",
+  "text": "二殿下，太子那边已经得了虎符，您还不动手？",
+  "before": [
+   "萧景珩在密室里听幕僚回话。"
+  ],
+  "terms": [
+   "i-hufu",
+   "p-erhuangzi",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-183",
+  "kind": "带上文",
+  "text": "苏大哥，禁军今夜换防的时辰，可有变动？",
+  "before": [
+   "林婉儿在茶楼雅间见到苏枫。"
+  ],
+  "terms": [
+   "o-jinjun",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-184",
+  "kind": "带上文",
+  "text": "师兄，天机不可泄露，这话你信几分？",
+  "before": [
+   "沈七收起剑，看着同门师兄。"
+  ],
+  "terms": [
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-185",
+  "kind": "带上文",
+  "text": "姑娘，落雁楼那边递话，说今夜有贵客。",
+  "before": [
+   "阿芜替林婉儿梳头，凑近镜前。"
+  ],
+  "terms": [
+   "l-luoyanlou",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-186",
+  "kind": "带上文",
+  "text": "殿下，秋狝的名单里，有二皇子的名字。",
+  "before": [
+   "萧景行在校场看完射箭，沈七递上名册。"
+  ],
+  "terms": [
+   "e-qiulie",
+   "p-erhuangzi",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-187",
+  "kind": "带上文",
+  "text": "景珩，你哥哥在东宫等着你，今日必须去。",
+  "before": [
+   "柳贵妃拦住准备出门的儿子。"
+  ],
+  "terms": [
+   "l-donggong",
+   "p-erhuangzi"
+  ]
+ },
+ {
+  "id": "g-188",
+  "kind": "带上文",
+  "text": "婉儿，这白玉簪子你戴着，别让人认出来。",
+  "before": [
+   "阿芜从匣中取出一支簪子，塞给林婉儿。"
+  ],
+  "terms": [
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-189",
+  "kind": "带上文",
+  "text": "七哥，那人临死前只说了两个字，西山。",
+  "before": [
+   "沈七蹲在巷口查看尸首，同门赶来。"
+  ],
+  "terms": [
+   "l-xishan",
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-190",
+  "kind": "带上文",
+  "text": "殿下，臣斗胆问一句，您信林姑娘吗？",
+  "before": [
+   "苏枫在东宫书房里，把茶盏轻轻放下。"
+  ],
+  "terms": [
+   "p-linwaner",
+   "t-dianxia"
+  ]
+ },
+ {
+  "id": "g-191",
+  "kind": "带上文",
+  "text": "师兄，阁主若真是那人，你我该怎么办？",
+  "before": [
+   "沈七和师兄站在天机阁后院的井边。"
+  ],
+  "terms": [
+   "p-tianjige-master",
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-192",
+  "kind": "带上文",
+  "text": "娘娘，禁军已经围了相府，说是奉太子令。",
+  "before": [
+   "宫女跌跌撞撞闯进贵妃寝殿。"
+  ],
+  "terms": [
+   "l-linfu",
+   "o-jinjun",
+   "p-xiaojingxing",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-193",
+  "kind": "未登记叫法",
+  "text": "林家那丫头今日又溜出府了，相爷气得摔了茶盏。",
+  "before": [],
+  "terms": [
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-194",
+  "kind": "未登记叫法",
+  "text": "东宫那位主儿昨夜微服出宫，谁都拦不住。",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-195",
+  "kind": "未登记叫法",
+  "text": "七爷手底下的人，出手从不留活口。",
+  "before": [],
+  "terms": [
+   "p-shenqi"
+  ]
+ },
+ {
+  "id": "g-196",
+  "kind": "未登记叫法",
+  "text": "落雁楼头牌唱的那支曲子，半个长安都听痴了。",
+  "before": [],
+  "terms": [
+   "l-changan",
+   "l-luoyanlou",
+   "p-baiyu"
+  ]
+ },
+ {
+  "id": "g-197",
+  "kind": "未登记叫法",
+  "text": "相爷昨夜在书房坐到三更，谁也不敢去劝。",
+  "before": [],
+  "terms": [
+   "p-linxiang"
+  ]
+ },
+ {
+  "id": "g-198",
+  "kind": "未登记叫法",
+  "text": "相府的老管家守了三十年门，眼睛毒得很。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "p-chenshu"
+  ]
+ },
+ {
+  "id": "g-199",
+  "kind": "未登记叫法",
+  "text": "皇城禁军那位统领，昨日在校场发了大火。",
+  "before": [],
+  "terms": [
+   "o-jinjun",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-200",
+  "kind": "未登记叫法",
+  "text": "师弟，师父交代的事，你可别忘了。",
+  "before": [],
+  "terms": [
+   "t-shixiong"
+  ]
+ },
+ {
+  "id": "g-201",
+  "kind": "未登记叫法",
+  "text": "那位丞相千金，琴棋书画样样拔尖，偏生爱舞剑。",
+  "before": [],
+  "terms": [
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-202",
+  "kind": "未登记叫法",
+  "text": "萧家那位储君，看着温和，下手比谁都狠。",
+  "before": [],
+  "terms": [
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-203",
+  "kind": "未登记叫法",
+  "text": "林家那位千金，今儿又独自出府了。",
+  "before": [],
+  "terms": [
+   "p-linwaner"
+  ]
+ },
+ {
+  "id": "g-204",
+  "kind": "未登记叫法",
+  "text": "东宫那位主子，昨夜可曾回宫？",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-205",
+  "kind": "未登记叫法",
+  "text": "听说太子身边那个冷脸护卫，一剑能封喉。",
+  "before": [],
+  "terms": [
+   "p-shenqi",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-206",
+  "kind": "未登记叫法",
+  "text": "落雁楼唱曲的那位姑娘，嗓子是真绝。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou",
+   "p-baiyu",
+   "t-guniang"
+  ]
+ },
+ {
+  "id": "g-207",
+  "kind": "未登记叫法",
+  "text": "当朝那位老丞相，怕是不会答应这门亲事。",
+  "before": [],
+  "terms": [
+   "p-linxiang"
+  ]
+ },
+ {
+  "id": "g-208",
+  "kind": "未登记叫法",
+  "text": "相府的老管家，嘴比谁都严。",
+  "before": [],
+  "terms": [
+   "l-linfu",
+   "p-chenshu"
+  ]
+ },
+ {
+  "id": "g-209",
+  "kind": "未登记叫法",
+  "text": "禁军那位统领，昨夜亲自巡了城墙。",
+  "before": [],
+  "terms": [
+   "o-jinjun",
+   "p-sufeng"
+  ]
+ },
+ {
+  "id": "g-210",
+  "kind": "未登记叫法",
+  "text": "小姐身边那个小丫头，倒是机灵得很。",
+  "before": [],
+  "terms": [
+   "p-awu"
+  ]
+ },
+ {
+  "id": "g-211",
+  "kind": "未登记叫法",
+  "text": "天机阁那位当家的，至今没人见过真容。",
+  "before": [],
+  "terms": [
+   "o-tianjige",
+   "p-tianjige-master"
+  ]
+ },
+ {
+  "id": "g-213",
+  "kind": "未登记叫法",
+  "text": "城西那家最大的酒楼，三教九流都去。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou"
+  ]
+ },
+ {
+  "id": "g-214",
+  "kind": "未登记叫法",
+  "text": "太子住的那座宫院，守卫竟换了人。",
+  "before": [],
+  "terms": [
+   "l-donggong",
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-215",
+  "kind": "未登记叫法",
+  "text": "西边山脚下的大营，今夜灯火通明。",
+  "before": [],
+  "terms": [
+   "l-xishan"
+  ]
+ },
+ {
+  "id": "g-216",
+  "kind": "未登记叫法",
+  "text": "出了那道关，就是胡人的地界了。",
+  "before": [],
+  "terms": [
+   "l-baiyuguan"
+  ]
+ },
+ {
+  "id": "g-217",
+  "kind": "未登记叫法",
+  "text": "那帮江湖人查消息的路子，比官府还快。",
+  "before": [],
+  "terms": [
+   "o-tianjige"
+  ]
+ },
+ {
+  "id": "g-218",
+  "kind": "未登记叫法",
+  "text": "守皇城的那队人马，昨夜少了一半。",
+  "before": [],
+  "terms": [
+   "o-jinjun"
+  ]
+ },
+ {
+  "id": "g-219",
+  "kind": "未登记叫法",
+  "text": "朝廷那处专查密事的衙门，手伸到了江南。",
+  "before": [],
+  "terms": [
+   "o-mingjing"
+  ]
+ },
+ {
+  "id": "g-221",
+  "kind": "未登记叫法",
+  "text": "调兵的凭证不见了，这事要捅破天。",
+  "before": [],
+  "terms": [
+   "i-hufu"
+  ]
+ },
+ {
+  "id": "g-222",
+  "kind": "未登记叫法",
+  "text": "小姐那把佩剑，剑鞘上刻着两个字。",
+  "before": [],
+  "terms": [
+   "i-qingshuang"
+  ]
+ },
+ {
+  "id": "g-223",
+  "kind": "未登记叫法",
+  "text": "那卷密档，谁拿到谁就是众矢之的。",
+  "before": [],
+  "terms": [
+   "i-mijuan"
+  ]
+ },
+ {
+  "id": "g-224",
+  "kind": "未登记叫法",
+  "text": "正月十五那晚，满城花灯，也满城杀机。",
+  "before": [],
+  "terms": [
+   "e-shangyuan"
+  ]
+ },
+ {
+  "id": "g-225",
+  "kind": "未登记叫法",
+  "text": "皇家秋日围猎那几天，行营里出了事。",
+  "before": [],
+  "terms": [
+   "e-qiulie"
+  ]
+ },
+ {
+  "id": "g-226",
+  "kind": "未登记叫法",
+  "text": "萧家那位小爷，可不好惹。",
+  "before": [],
+  "terms": [
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-228",
+  "kind": "未登记叫法",
+  "text": "那位穿杏黄袍的贵人，已在廊下站了半个时辰。",
+  "before": [],
+  "terms": [
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-229",
+  "kind": "未登记叫法",
+  "text": "楼里唱曲儿的那位，今早收了一封密信。",
+  "before": [],
+  "terms": [
+   "p-baiyu"
+  ]
+ },
+ {
+  "id": "g-233",
+  "kind": "未登记叫法",
+  "text": "小姐的贴身丫鬟，被人支开了一炷香。",
+  "before": [],
+  "terms": [
+   "p-awu"
+  ]
+ },
+ {
+  "id": "g-236",
+  "kind": "未登记叫法",
+  "text": "她腰间那柄佩剑，青得渗人。",
+  "before": [],
+  "terms": [
+   "i-qingshuang"
+  ]
+ },
+ {
+  "id": "g-238",
+  "kind": "未登记叫法",
+  "text": "萧家那位公子，脾气可比传闻里硬。",
+  "before": [],
+  "terms": [
+   "p-xiaojingxing"
+  ]
+ },
+ {
+  "id": "g-241",
+  "kind": "未登记叫法",
+  "text": "落雁楼头牌今夜开嗓，满座都安静了。",
+  "before": [],
+  "terms": [
+   "l-luoyanlou",
+   "p-baiyu"
+  ]
+ },
+ {
+  "id": "g-242",
+  "kind": "未登记叫法",
+  "text": "相爷的折子还没递上去吗？",
+  "before": [],
+  "terms": [
+   "p-linxiang"
+  ]
+ },
+ {
+  "id": "g-243",
+  "kind": "未登记叫法",
+  "text": "宫里那位娘娘一发话，谁还敢吭声。",
+  "before": [],
+  "terms": [
+   "p-guifei",
+   "t-niangniang"
+  ]
+ },
+ {
+  "id": "g-249",
+  "kind": "未登记叫法",
+  "text": "宫墙里头那位储君的住处，守卫换了三拨。",
+  "before": [],
+  "terms": [
+   "l-donggong"
+  ]
+ },
+ {
+  "id": "g-250",
+  "kind": "未登记叫法",
+  "text": "西边营里的兵，昨夜调动过。",
+  "before": [],
+  "terms": [
+   "l-xishan"
+  ]
+ },
+ {
+  "id": "g-252",
+  "kind": "未登记叫法",
+  "text": "江湖上那些打探消息的，最会挑地方交易。",
+  "before": [],
+  "terms": [
+   "o-tianjige"
+  ]
+ },
+ {
+  "id": "g-253",
+  "kind": "未登记叫法",
+  "text": "宫城巡防的甲士，今夜半数换了人。",
+  "before": [],
+  "terms": [
+   "o-jinjun"
+  ]
+ },
+ {
+  "id": "g-254",
+  "kind": "未登记叫法",
+  "text": "朝廷那帮查案的密探，鼻子比狗还灵。",
+  "before": [],
+  "terms": [
+   "o-mingjing"
+  ]
+ },
+ {
+  "id": "g-257",
+  "kind": "未登记叫法",
+  "text": "小姐那把随身剑，昨夜沾了血。",
+  "before": [],
+  "terms": [
+   "i-qingshuang"
+  ]
+ },
+ {
+  "id": "g-258",
+  "kind": "未登记叫法",
+  "text": "那卷密档一旦露面，朝堂要翻过来。",
+  "before": [],
+  "terms": [
+   "i-mijuan"
+  ]
+ }
+]
