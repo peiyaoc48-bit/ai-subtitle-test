@@ -1,0 +1,3285 @@
+{
+ "context-01": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "name-01": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-01": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "idiom-01": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-09": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 5
+  }
+ },
+ "slang-01": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-07": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-10": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-04": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 281,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-06": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 7
+  }
+ },
+ "corpus-12": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-14": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 299,
+   "completion_tokens": 7
+  }
+ },
+ "short-01": {
+  "errors": [
+   {
+    "span": "Yeah.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘嗯’是中性应答或思考停顿，常无实义；‘Yeah’在英语中是明确的肯定回答，语义过强，属于误译，改变了说话人的态度和语境。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 275,
+   "completion_tokens": 74
+  }
+ },
+ "corpus-18": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 286,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-15": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 324,
+   "completion_tokens": 7
+  }
+ },
+ "corpus-17": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-21": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-19": {
+  "errors": [
+   {
+    "span": "the lottery numbers I picked",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘picked’ 暗示主动选择号码（如自选号），但原文‘买的彩票’强调购买行为，中奖号码是彩票固有的、随机生成的，并非说话人主观‘挑选’；应译为 ‘I bought’ 或 ‘on the lottery ticket I bought’ 以准确传达‘所购彩票上的号码’这一事实。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 120
+  }
+ },
+ "corpus-22": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-28": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-02": {
+  "errors": [
+   {
+    "span": "totally",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘totally’属于过度口语化且带强烈主观强调的美式俚语，字幕中无对应原文语气支撑（原文‘那一下’是中性描述，无程度强化），易造成语气失真，不符合中文字幕简洁克制的口语风格。"
+   },
+   {
+    "span": "sneaking a peek at the lines",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘lines’特指剧本台词，在中文‘词’语境中虽可接受，但此处‘偷看词’明确指临场偷看提词器/小抄上的提示词（非正式排练用台词），‘lines’易被理解为正式剧本台词，产生语义窄化；更准确应译为‘the cue’或‘your notes’以匹配‘偷看’的临时性、隐蔽性语境。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 232
+  }
+ },
+ "corpus-11": {
+  "errors": [
+   {
+    "span": "toxic motivational crap",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘毒鸡汤’是中文网络流行语，特指伪装成正能量、实则逻辑谬误、价值观扭曲或令人焦虑的伪励志内容；直译为‘toxic motivational crap’虽有冲击力，但‘motivational’错误地将‘鸡汤’（即‘chicken soup for the soul’式泛泛而谈的安慰/说教）窄化为‘激励性’，而‘毒鸡汤’常含道德绑架、幸存者偏差、反智等特征，并非所有都属‘motivational’（如贬低努力、鼓吹躺平的‘毒鸡汤’就非motivational）；更准确、通用的译法应为‘toxic inspirational content’或‘toxic feel-good nonsense’，‘motivational’构成事实性误译。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 299,
+   "completion_tokens": 216
+  }
+ },
+ "corpus-03": {
+  "errors": [
+   {
+    "span": "Nah, I'm not dating.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘不处’是‘不谈恋爱/不处对象’的口语省略，但译文‘I'm not dating’过度具体化为‘我当前没在约会’，丢失了原句拒绝开始恋爱关系的语境和委婉语气；且‘Nah’过于随意粗放，与原文含蓄、略带哲理的语感不符。"
+   },
+   {
+    "span": "Keeping a little mystery is nice.",
+    "category": "style",
+    "severity": "minor",
+    "note": "不够自然、不像字幕口语：‘Keeping a little mystery is nice’语法正确但偏书面/抽象，字幕中更自然的表达应为‘There’s something nice about keeping it mysterious’或更简洁的‘Mystery’s nice’；且‘a little mystery’弱化了原文‘保持神秘感’所隐含的主动选择与审美态度。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 244
+  }
+ },
+ "corpus-27": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-29": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 310,
+   "completion_tokens": 7
+  }
+ },
+ "corpus-34": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 308,
+   "completion_tokens": 7
+  }
+ },
+ "corpus-16": {
+  "errors": [
+   {
+    "span": "Damn",
+    "category": "style",
+    "severity": "major",
+    "note": "‘Damn’语气过强且不贴合原文‘我去’的口语化、略带懊恼但非粗俗的感叹语气；字幕中应避免可能引发不适的轻度脏话，更自然的对应是‘Oh!’或‘Ah!’等中性感叹词。"
+   },
+   {
+    "span": "post sunrises on Moments every day",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘Moments’作为微信功能名虽为专有名词，但在面向海外观众的英文字幕中未加解释或本地化处理（如‘WeChat Moments’），易导致非中文用户完全不知所指；MQM要求专有名词需确保目标观众可理解，此处属术语使用不当。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 208
+  }
+ },
+ "corpus-05": {
+  "errors": [
+   {
+    "span": "too random",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘太抽象了’意为‘过于抽象/难以具象理解/缺乏具体指向’，常用于表达荒诞、无逻辑、超现实或概念模糊；‘random’在美式网络口语中虽偶表‘离谱’，但核心语义是‘随机、无关联’，无法准确传达‘抽象’所含的哲学/认知层面的不可解性与荒诞性，属误译。"
+   },
+   {
+    "span": "who even gets this question?",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘gets’在此语境中偏美式非正式，但字幕需兼顾全球英语观众；更自然、更贴近原句无奈调侃语气的表达应为‘who even understands this?’或‘who even knows what this means?’——‘gets this question’略显生硬且焦点偏移（强调‘理解问题本身’而非‘理解其荒诞性’），不符合中文原句口语化自嘲风格。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 258
+  }
+ },
+ "corpus-08": {
+  "errors": [
+   {
+    "span": "his honest, down-to-earth vibe makes him so relatable",
+    "category": "style",
+    "severity": "major",
+    "note": "‘vibe’ 是非正式口语词，但‘relatable’在此语境中过度西化且语义偏移：原文‘亲民’强调平易近人、贴近民众的形象（政治/公众人物语境），而‘relatable’侧重个人层面的共鸣感，弱化了‘亲民’所隐含的权威者主动拉近距离的修辞功能；字幕应更准确传达‘approachable’或‘down-to-earth and approachable’等更贴合中文政治/大众传播语境的表达。"
+   },
+   {
+    "span": "You're not losing out here",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘你这波不亏’是网络流行语，强调当前决策/投入具有高性价比或意外收益，‘not losing out’仅否定损失，未传递‘划算、占便宜、稳赚’的积极判断语气，属误译，削弱原句的轻松调侃与肯定意味。"
+   },
+   {
+    "span": "score a free meal",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘score a free meal’虽可懂，但略显美式俚语化（常用于游戏/猎艳语境），与原文‘蹭顿饭’的随意、带点小狡黠又接地气的中文口语风格不完全匹配；‘get a free meal’或‘scrounge a free meal’更中性自然，更符合字幕口语节奏和语域。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 331,
+   "completion_tokens": 383
+  }
+ },
+ "corpus-32": {
+  "errors": [
+   {
+    "span": "aunties",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“大妈们”在中文网络语境中特指中老年女性网民，常带调侃、戏谑或群体施压的语用色彩；直译为“aunties”虽字面可通，但完全丢失其作为网络亚文化标签的语义和语用功能（类似“keyboard warriors”“online aunties”等已有语境化译法），属于误译，导致目标观众无法识别该词的讽刺/戏谑指向。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 141
+  }
+ },
+ "corpus-33": {
+  "errors": [
+   {
+    "span": "Martian script",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“火星文”是中文网络俚语，指用符号、异体字、拼音混杂等非规范方式书写的文字，与外星语言无关；译为 'Martian script' 会误导观众以为是虚构外星文字，属于误译，正确应体现其作为中文网络亚文化书写变体的本质，如 'internet slang orthography' 或 'playful Chinese character substitution' 等，但需兼顾字幕简洁性。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 127
+  }
+ },
+ "corpus-39": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-20": {
+  "errors": [
+   {
+    "span": "Hakimi north-south green beans",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "‘哈基米南北绿豆’是中文网络谐音梗（‘哈基米’谐音‘哈哈哈’，‘南北绿豆’谐音‘难绷绿了’，整体模拟‘我绷不住了/笑到发绿’的夸张崩溃语气），并非真实食物或人名；译文直译为‘Hakimi north-south green beans’完全误译，虚构出不存在的人名和食物，严重误导观众，丧失原意和喜剧效果。"
+   },
+   {
+    "span": "I'm dying trying not to laugh at my desk",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘dying trying not to laugh’虽可理解，但‘dying’在此语境略显夸张失度（偏向美式俚语‘dying of laughter’的变体），且‘trying not to laugh’弱化了原文‘憋出内伤’所强调的生理性、痛苦式强忍（笑到内伤），字幕应更紧凑有力；不过该表达基本达意，属轻微风格适配不足。"
+   }
+  ],
+  "score": -26,
+  "worst": "critical",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 283
+  }
+ },
+ "corpus-23": {
+  "errors": [
+   {
+    "span": "Was in such a hurry this morning",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "字幕中时间信息‘this morning’属无中生有——原文‘着急出门’未限定是早晨，可能是任何时段；添加具体时间违背源信息，且不符合字幕简洁性原则。"
+   },
+   {
+    "span": "dish rag",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘抹布’在中文日常语境中泛指清洁用布（如擦桌、擦地），不特指厨房用的‘dish rag’；后者语义过窄，易让观众误以为仅用于洗碗，与原文宽泛指代不符；更自然中性译法应为‘cleaning cloth’或‘rag’（视上下文）；‘dish rag’构成术语不当。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 213
+  }
+ },
+ "corpus-48": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-40": {
+  "errors": [
+   {
+    "span": "I can't take it",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "口语中'I can't take it'常指无法忍受负面刺激（如痛苦、压力），与原文表达幸福的积极语境存在语气冲突，略显不自然；更贴合字幕口语习惯的表达应为'I'm overwhelmed'或'I can't believe it'等"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 92
+  }
+ },
+ "corpus-31": {
+  "errors": [
+   {
+    "span": "sanitary pads",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘sanitary pads’ 是较正式/书面化术语，在美式英语日常口语中，尤其年轻女性群体中更常用 ‘tampons’（卫生棉条）或 ‘pads’（护垫/卫生巾），但此处语境是‘买卫生巾’的社死场景，‘pads’ 已足够清晰自然；‘sanitary pads’ 显得冗余、过时且略带医疗感，削弱了原文轻松自嘲的语气，不符合字幕口语风格和当代用语习惯。"
+   },
+   {
+    "span": "right?",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "句末添加 ‘right?’ 属于无对应增译，原文‘大家谁还没点……啊！’是感叹式反问，语气强烈、略带调侃和共鸣召唤，但英文 ‘right?’ 语力偏弱、偏向寻求确认，与原文‘啊！’的爆发性、共情式感叹不匹配；更自然的字幕处理应为 ‘Who hasn’t…?’ 或加感叹号强化，而非附加标签式疑问词。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 328,
+   "completion_tokens": 286
+  }
+ },
+ "corpus-47": {
+  "errors": [
+   {
+    "span": "dragging me into playing games with you",
+    "category": "style",
+    "severity": "major",
+    "note": "‘dragging me into playing games with you’ 语气过于字面化且略带负面夸张，不符合中文原句中略带无奈但日常口语化的语感；更自然的字幕表达应为 ‘pulling me into gaming with you’ 或更简洁地道的 ‘making me play games with you’"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 101
+  }
+ },
+ "ctx-01": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 315,
+   "completion_tokens": 5
+  }
+ },
+ "ctx-03": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 5
+  }
+ },
+ "ctx-c02": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 317,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-44": {
+  "errors": [
+   {
+    "span": "I can't take it anymore",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘I can't take it anymore’虽可理解，但作为字幕略显书面化和戏剧化；原文‘我不行了’是疲惫、脱力的口语化自嘲表达，更自然的字幕译法应为‘I’m done’或‘I’m wiped out’等更简洁、符合口语节奏的表达。"
+   },
+   {
+    "span": "I'm completely numb",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘麻了’在此语境中是网络流行语，指因长期加班导致身体/精神极度疲惫、反应迟钝、麻木感，非字面生理麻木（numb）；直译‘completely numb’易引发对触觉丧失或医学症状的误解，属误译，应译为‘zombie-like’‘brain-dead’或‘totally zonked’等更贴合语境的习语。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 247
+  }
+ },
+ "ctx-02": {
+  "errors": [
+   {
+    "span": "He said",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译主语：原文‘说’的主语是‘我妈’（she），译文错误译为‘He’，造成性别和身份严重错位。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 309,
+   "completion_tokens": 64
+  }
+ },
+ "corpus-38": {
+  "errors": [
+   {
+    "span": "a Shandong auntie",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘大妈’在中文网络语境中常带亲切、幽默或略带调侃的市井色彩，直译为‘auntie’虽字面可通，但英语中‘auntie’多指亲属或对年长女性的敬称，缺乏原文的本土化、接地气语感；字幕中更自然、惯用的处理是‘Shandong grandma’（已被主流媒体如BBC、SCMP等用于类似语境）或‘Shandong street vendor’（侧重身份），‘auntie’易引发文化错位，弱化原意的鲜活感。"
+   },
+   {
+    "span": "super huge",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘super huge’属冗余叠加强调，口语中虽偶见，但字幕追求简洁高效；‘huge’已足够传达‘超大’，‘super’属非必要增饰，略显夸张不自然，不符合中文原句‘超大’（偏客观描述+轻微惊叹）的语体分寸。"
+   },
+   {
+    "span": "at her stall",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文‘摊的’是动词‘摊’（制作煎饼的动作），非名词‘摊位’；‘摊的煎饼果子’意为‘（她）摊制的煎饼果子’，强调动作过程，而非静态地点；译作‘at her stall’错误将动词义转为地点状语，造成语义偏移——观众可能误以为‘在她的摊位上（看到）’，而非‘看到她摊制的’。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 341,
+   "completion_tokens": 416
+  }
+ },
+ "corpus-24": {
+  "errors": [
+   {
+    "span": "Not dating. That drama's too much for me to handle.",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "完全误译：原文‘不处，瓜太大了啃不动’是网络流行语，‘不处’指‘不谈恋爱/不处对象’，‘瓜’指八卦（如明星绯闻），‘太大了啃不动’是比喻八卦信息量过大、过于复杂难消化；译文将‘瓜’错误理解为‘drama’（泛指戏剧性事件），并添加了原文没有的‘for me to handle’主观评价，同时丢失‘啃不动’这一关键形象化表达和整体自嘲/调侃语气，导致核心语义和语用功能完全丧失。"
+   },
+   {
+    "span": "Not dating.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "漏译与误译叠加：‘不处’确可译为‘Not dating’，但脱离上下文单独译出显得突兀且未体现口语省略特征（原句无主语、无时态标记）；更严重的是，该短句与后句强行断开，割裂了原文‘不处’与‘瓜太大了啃不动’之间的因果逻辑（即‘不谈恋爱’是因为‘八卦太难消化’），译文未建立此逻辑关系。"
+   },
+   {
+    "span": "That drama's too much for me to handle.",
+    "category": "style",
+    "severity": "major",
+    "note": "不符合字幕口语风格：‘for me to handle’冗长书面化，字幕需简洁紧凑；‘too much for me to handle’属正式表达，而原文‘啃不动’是高度口语化、具象化（用吃瓜动作隐喻信息过载）的网络俚语，译文未能传递其轻松戏谑、年轻化语体特征。"
+   }
+  ],
+  "score": -35,
+  "worst": "critical",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 435
+  }
+ },
+ "ctx-c05": {
+  "errors": [
+   {
+    "span": "six wallets",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘六个钱包’是中文网络流行语，特指情侣双方父母及双方本人共六个经济来源，此处直译为'six wallets'未传达文化内涵，属误译；应意译为'the combined resources of six people'或类似表达以避免歧义。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 316,
+   "completion_tokens": 88
+  }
+ },
+ "corpus-42": {
+  "errors": [
+   {
+    "span": "I can't even",
+    "category": "style",
+    "severity": "major",
+    "note": "‘I can't even’ 是美式网络俚语，虽表崩溃/无语，但语境中‘我不行了’指笑到失控、体力不支，更强调生理性笑瘫；此处过度依赖俚语导致语气偏移，且缺乏中文原句‘哈哈哈’与‘不行了’之间的递进喜剧节奏，字幕口语自然度不足。"
+   },
+   {
+    "span": "netizens these days",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘these days’ 语法正确但略显冗余；字幕需简洁，‘these days’ 未精准对应‘这届’（含时效性、代际调侃和群体标签意味），‘the netizens of this generation’ 或 ‘this generation of netizens’ 更贴合‘这届’的戏谑指称功能，当前译法弱化了原文的网络亚文化语感。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 246
+  }
+ },
+ "m-004": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-45": {
+  "errors": [
+   {
+    "span": "I remember everything!",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘我都记得的！’特指前文提到的‘你们团队叫那个啥小潮team是吧’这一具体信息，强调对‘小潮team’这个名称的记忆；译文‘I remember everything!’过度泛化，语义严重扩大，暗示记住所有事，完全偏离原意。"
+   },
+   {
+    "span": "what's it called, Xiaochao Team, right?",
+    "category": "style",
+    "severity": "minor",
+    "note": "不够自然的字幕口语表达：母语者在即兴确认时更常说‘What was it again? Xiaochao Team?’或‘Xiaochao Team, right?’；‘what's it called, Xiaochao Team, right?’结构冗长、停顿生硬，不符合中文字幕对应口语中‘那个啥……是吧’所体现的轻松、略带调侃的即时回忆语气。"
+   },
+   {
+    "span": "Xiaochao Team",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "专有名词格式不一致且不符合中文网络语境习惯：‘小潮team’是中文网络常用写法（中英混排，小写team），直译为‘Xiaochao Team’首字母大写显得正式刻板；字幕中更自然的处理应为‘Xiaochao team’（team小写）或保留原貌‘Xiao Chao Team’（若需分词），但当前大小写形式易被误读为正式机构名，弱化了原文的亲切随意感。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 325,
+   "completion_tokens": 392
+  }
+ },
+ "m-005": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-49": {
+  "errors": [
+   {
+    "span": "I know everything",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘我全知道’在此语境中是夸张自嘲式表达，指‘我知道（所有细节/内幕/套路）’，并非字面意义的‘know everything’（全知），易被理解为荒谬的绝对化宣称，造成语义夸大和幽默失真。"
+   },
+   {
+    "span": "I can't do this anymore",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘我不行了’在中文网络语境中多表精疲力竭、濒临崩溃的戏谑状态，‘I can't do this anymore’偏正式且带放弃意味，不如‘I’m done’或‘I’m wiped’更贴合字幕口语节奏与自嘲语气。"
+   },
+   {
+    "span": "I've grinded so hard I'm going bald",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘grinded’是错误动词形式，正确过去分词应为‘ground’；‘grind’作‘苦熬、硬肝’解时，其完成时态应为‘have ground’，此处属语法错误。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 296
+  }
+ },
+ "m-007": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "corpus-41": {
+  "errors": [
+   {
+    "span": "a fierce white-browed tiger",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘吊睛白额虎’是古典文学中特指的一种猛虎形象（如《水浒传》武松打虎所遇），强调其凶猛威严的神态（吊睛：圆睁竖立的眼睛；白额：额头有白色斑纹），并非泛指‘fierce white-browed tiger’；‘white-browed’字面直译错误——‘额’指额头而非眉毛，‘白额’应译为‘white-foreheaded’或‘white-striped forehead’；且‘吊睛’未体现，漏译关键特征，削弱文化意象和对比张力。"
+   },
+   {
+    "span": "a Qiaolezi ice cream bar",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘巧乐兹’是注册商标，官方英文名是‘Corez’（见雀巢中国官网及产品包装），长期使用‘Qiaolezi’属音译不规范、未采用既定品牌译名，违反术语一致性原则。"
+   },
+   {
+    "span": "Others: ... Me: ...",
+    "category": "style",
+    "severity": "minor",
+    "note": "字幕中用‘Others’和‘Me’作为说话人标签不符合中英字幕惯例；中文原字幕用‘别人’‘我’是口语化指代，英文字幕宜更自然地省略主语或用上下文暗示，添加‘Others:’/‘Me:’显得生硬、舞台说明感过重，不像真实对话字幕。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 307,
+   "completion_tokens": 391
+  }
+ },
+ "m-010": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 312,
+   "completion_tokens": 5
+  }
+ },
+ "m-008": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-012": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 286,
+   "completion_tokens": 5
+  }
+ },
+ "m-013": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "ctx-c57": {
+  "errors": [
+   {
+    "span": "it made the boss totally lose it",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘红温’是中文网络流行语，特指因极度尴尬、羞愤或愤怒而脸红发热（源自游戏术语‘红温’= overheating），并非泛泛的‘lose it’（失控/发疯）；此处误译丢失了关键文化语义和幽默指向——老板是因社恐式尴尬而脸红，而非情绪崩溃或暴怒。"
+   },
+   {
+    "span": "When introverts snap, they really go hard",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘snap’和‘go hard’虽具口语感，但‘snap’在英语中多指突然情绪崩溃（常含负面/不稳定意味），与原文‘爆发起来是真的猛’所带的戏谑、反差萌、略带褒义的‘社恐人隐藏战斗力’语气不完全契合；字幕宜更贴近原句轻松调侃的调性，而非强化心理危机感。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 362,
+   "completion_tokens": 254
+  }
+ },
+ "m-006": {
+  "errors": [
+   {
+    "span": "was actually free",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：'免费'指用餐免费（即不收费），而非食堂本身‘是免费的’（语法/语义错误）；正确应为 'offered free meals' 或 'gave out free food' 等，'cafeteria was free' 暗示食堂作为场所免费开放，完全偏离原意。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 114
+  }
+ },
+ "m-003": {
+  "errors": [
+   {
+    "span": "Seriously,",
+    "category": "style",
+    "severity": "major",
+    "note": "原文‘我请问呢’是礼貌性、略带调侃或试探语气的口语起始（类似‘So…’/‘Um…’/‘Let me ask…’），并非表达强烈质疑或惊讶；‘Seriously’语义过重、语气突兀，带有不耐烦或嘲讽感，严重偏离原文谦和中带戏谑的语用色彩，不符合字幕口语自然风格。"
+   },
+   {
+    "span": "a total newbie or what?",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘新手村刚出来’是网络游戏特有表达，指玩家刚完成初始引导区域（新手村）的入门流程，隐含‘缺乏实战经验但已通过基础训练’的语义；‘a total newbie’仅强调完全无知，丢失‘已完成入门、刚踏入正式世界’的关键时空与成长阶段信息，属于误译。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 238
+  }
+ },
+ "m-011": {
+  "errors": [
+   {
+    "span": "figurine collection",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘手办’是单数（指某一件珍藏的手办），译为‘collection’（收藏品集合）属于误译，夸大数量，扭曲原意。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 81
+  }
+ },
+ "m-002": {
+  "errors": [
+   {
+    "span": "system's responsiveness",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘系统流畅度’指系统整体运行的顺滑程度（如操作响应、动画、多任务切换等），是综合性能体验，而‘responsiveness’仅强调响应速度（如点击后多久反馈），窄化原意，遗漏了‘流畅’所包含的连贯性、无卡顿、低延迟等维度。"
+   },
+   {
+    "span": "For storage, go with the 12+256GB version.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘内存建议选12+256G版本’中‘内存’在此语境下是中文消费电子领域的常见误用，实际指‘运行内存（RAM）+ 存储空间（ROM）’组合规格（即12GB RAM + 256GB ROM），而非单纯‘storage’；译文将‘12+256GB’全部归为‘storage’，严重误导观众以为这是纯存储容量配置，完全混淆RAM与ROM，导致技术含义错误。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 329,
+   "completion_tokens": 269
+  }
+ },
+ "m-019": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-018": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 5
+  }
+ },
+ "ctx-c38": {
+  "errors": [
+   {
+    "span": "his touch is so insane",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘手感’在篮球语境中特指投篮/控球的即时状态和直觉，译为 'touch' 虽属常见借译，但 'his touch is so insane' 易被理解为触觉异常或行为怪异（如 'insane touch' 可联想不当肢体接触），严重偏离原意；应译为 'his shooting feel' 或更自然的 'he's in such an unreal zone' / 'he's on fire' 等符合体育语境的表达。"
+   },
+   {
+    "span": "the audience suspects he's cheating",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘开挂’是中文游戏/网络语境下特指使用非法外挂程序作弊，具有强烈技术性与违规性；‘cheating’ 泛化过强，未体现‘借助外部程序/工具’的核心语义，且篮球中无‘开挂’对应现实行为，易引发误解；应译为 'using a cheat code' 或更贴切的网络化表达 'using hacks' / 'it’s like he’s got a cheat code'。"
+   },
+   {
+    "span": "the chat just spams \"666\"",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘spams’ 带有明显贬义（垃圾信息、骚扰），而‘666’在此是观众惊叹、赞叹的刷屏行为，语气积极；字幕需匹配原文戏谑但正面的调侃口吻，‘spams’ 风格失当，宜用中性或褒义动词如 'floods the chat with \"666\"' 或 'rolls \"666\" nonstop'。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 355,
+   "completion_tokens": 430
+  }
+ },
+ "m-021": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 5
+  }
+ },
+ "m-017": {
+  "errors": [
+   {
+    "span": "right?",
+    "category": "fluency",
+    "severity": "major",
+    "note": "添加了原文没有的反问语气词 'right?'，属于增译，且破坏字幕简洁性与中性客观性；中文原句是感叹/评价语气（‘太离谱了吧’），但‘right?’在英语中强制寻求认同，语用功能错位，易让观众误以为是提问而非感叹。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 113
+  }
+ },
+ "m-014": {
+  "errors": [
+   {
+    "span": "your ultimate",
+    "category": "terminology",
+    "severity": "major",
+    "note": "游戏术语 '大招' 在英文玩家社区中普遍译为 'ultimate ability' 或简作 'ultimate'，但此处 'your ultimate' 暗示是观众/用户的终极技能，而原文 '放大招' 是指说话人自己（主语 '我'）使用该技能；译文应保持主语一致，译为 'my ultimate' 或更自然的 'the ultimate ability'（无代词，避免指代歧义），'your ultimate' 构成错误的人称指代，易误导观众以为是在指导观众操作。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 162
+  }
+ },
+ "m-001": {
+  "errors": [
+   {
+    "span": "brand owner",
+    "category": "terminology",
+    "severity": "major",
+    "note": "“主理人”在中文互联网语境（尤其抖音/小红书等平台）中特指品牌创始人、内容主创或核心运营者，常译为 \"curator\"、\"founder\" 或 \"creator\"；\"brand owner\" 是字面直译，易被理解为法律意义上的商标持有人，与原文轻松、年轻化、人格化的语境严重不符。"
+   },
+   {
+    "span": "Psst—search \"brand owner\" on Douyin and get your fix with a virtual pet.",
+    "category": "style",
+    "severity": "major",
+    "note": "“get your fix”虽可表“过瘾”，但带有明显药物/成瘾隐喻（如 caffeine fix, nicotine fix），在面向大众的短视频字幕中显得突兀、不健康且不符合中文原句轻松诙谐的调侃语气；字幕应更口语化、无负面联想，如 \"have some fun\" 或 \"play around\" 更贴切。"
+   },
+   {
+    "span": "Psst—",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "“Psst—”作为拟声词虽可表“偷偷说”，但英文中更自然、更符合短视频字幕节奏的表达是 \"Shh…\" 或 \"Psst!\"（感叹号更常见）；此处破折号连接后续句子导致停顿生硬，影响字幕瞬时可读性。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 308,
+   "completion_tokens": 362
+  }
+ },
+ "m-009": {
+  "errors": [
+   {
+    "span": "posting weird shit",
+    "category": "style",
+    "severity": "major",
+    "note": "‘weird shit’过于粗俗且语义失准；原文‘玩抽象’是网络亚文化术语，指用荒诞、解构、反逻辑的方式表达（如抽象话、发疯文学），并非泛指‘奇怪的东西’，更不等同于粗鄙俚语‘shit’；字幕需兼顾可懂性与语境适配，此处贬义过重、风格错位，削弱原意的戏谑智性色彩。"
+   },
+   {
+    "span": "plagiarism police",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘鉴抄警察’是中文网络戏谑说法，特指热衷揪出他人‘借鉴’（常含夸张、过度解读甚至误判）行为的用户，核心在‘鉴抄’（鉴定抄袭）这一动作及背后的审判姿态，而非法律或制度意义上的‘plagiarism police’；译为‘plagiarism police’生硬直译，引入不存在的机构化/执法化联想，歪曲了原词的调侃、反讽语用功能。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 282
+  }
+ },
+ "m-027": {
+  "errors": [
+   {
+    "span": "'yes-man'",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘应声虫’在中文中含贬义，指盲目附和、缺乏主见的人，而'yes-man'虽有类似含义，但更强调对上级的无条件顺从，语义侧重不同；且'应声虫'带有形象化、略带戏谑的修辞色彩（源自昆虫拟态），'yes-man'则无此生动性与贬损强度，属误译导致语义偏移"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 122
+  }
+ },
+ "m-016": {
+  "errors": [
+   {
+    "span": "a big lightweight cloth bag",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘轻便的大布袋’中‘轻便’是核心属性，‘大’是次要尺寸描述；译为‘a big lightweight cloth bag’将‘big’前置并作为首要修饰语，易误导观众认为‘大’是首要特征，且‘cloth bag’未能准确传达‘布袋’在中文语境中特指的常见、实用、非正式的帆布/棉布购物袋（通常称tote bag或canvas bag），‘cloth bag’过于宽泛且偏正式/技术化，不符合日常口语字幕习惯。"
+   },
+   {
+    "span": "a hassle",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘hassle’虽可表不便，但略带主观抱怨语气，且稍显夸张；原文‘不方便’是中性、克制的实用提醒，译为‘a hassle’（尤其单数冠词+a）在字幕语境中不够自然简洁，更地道的口语表达应为‘not practical’‘awkward’或‘unwieldy’等更贴合双肩包在沙滩场景下物理使用困难（如沙地拖拽、热、不便取物）的词。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 310,
+   "completion_tokens": 307
+  }
+ },
+ "m-029": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 5
+  }
+ },
+ "m-026": {
+  "errors": [
+   {
+    "span": "Let him get a taste of what it's like to suffer in silence.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘有苦说不出’强调‘有难言之隐/无法表达苦衷’，侧重言语受阻或被迫沉默；‘suffer in silence’虽常见，但更泛指默默忍受（未必因表达受限），且隐含被动忍耐的悲情色彩，弱化了原文中带调侃、报复性反讽的语用意图（‘让他也体会下’是略带戏谑的以牙还牙）；字幕应更精准传达‘unable to voice one’s grievances’或‘frustrated and speechless’类动态语义。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 318,
+   "completion_tokens": 179
+  }
+ },
+ "m-030": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 5
+  }
+ },
+ "m-023": {
+  "errors": [
+   {
+    "span": "catch up on it",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘补课’特指为弥补缺课或学业落后而专门进行的课程补习，是固定教育场景术语；‘catch up on it’语义宽泛（可指补看剧、补邮件等），未准确传达‘补课’这一具体教学行为，且‘it’指代模糊（原文无明确先行词），易导致理解偏差。"
+   },
+   {
+    "span": "right now",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘right now’虽表即时性，但字幕中‘马上’更强调紧迫感和即刻行动，口语中更自然简洁的对应是‘right away’或‘immediately’；‘right now’略显冗余且稍偏书面，不够贴合中文原句急促口语风格。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 221
+  }
+ },
+ "m-031": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 7
+  }
+ },
+ "m-015": {
+  "errors": [
+   {
+    "span": "Girl",
+    "category": "style",
+    "severity": "major",
+    "note": "‘Girl’作为对‘闺蜜’的直译过于宽泛且语境错位，在美式英语中常用于泛指女性（含陌生/非亲密关系），无法准确传达‘闺蜜’所蕴含的亲密、同龄、女性友谊特有语义；字幕应优先选用自然、贴合关系的口语表达（如‘BFF’‘bestie’或上下文支持时省略）"
+   },
+   {
+    "span": "I can't even—",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "破折号‘—’在英文字幕中不规范，应使用短横线‘-’或更符合字幕惯例的省略处理（如逗号或句点）；且‘I can't even’虽为网络流行语，但在此语境中略显单薄，未充分传递原文‘我不行了’所含的震惊、招架不住、生理/心理冲击感"
+   },
+   {
+    "span": "this gossip is way too juicy",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘gossip’偏指‘流言蜚语’（常含贬义或琐碎性），而原文‘瓜’是中文网络语，特指‘引人关注、有爆点、具传播性的事件/八卦’，强调信息量、戏剧性和热度；‘juicy’虽有‘劲爆’的比喻义，但与‘gossip’搭配后整体语义窄化、贬义倾向增强，丢失原文中中性偏调侃的流行语质感和事件性内涵"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 395
+  }
+ },
+ "m-032": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 299,
+   "completion_tokens": 5
+  }
+ },
+ "m-035": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-022": {
+  "errors": [
+   {
+    "span": "any minute",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘分分钟’在此语境中是口语化强调‘极短时间/随时/轻而易举’，并非字面意义的‘any minute’（下一分钟）；‘any minute’在英语中常暗示‘imminently, at any moment’，带有紧迫期待感（如‘The bus will arrive any minute’），而原文‘分分钟能上大舞台’侧重能力之强、资质之高、毫无障碍，应译为‘in no time’‘in a flash’或更自然的‘could easily headline a major stage’等；‘any minute’造成语义偏移，弱化了原意中的能力肯定与赞叹语气。"
+   },
+   {
+    "span": "the big stage",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘big stage’虽可理解，但在英语字幕中不够自然、略显直译；母语者更常说‘major stage’‘main stage’‘a top-tier stage’或具体化为‘Broadway’‘the West End’等（视语境），但此处泛指‘高规格/主流演出舞台’，‘big stage’略显模糊且稍带字面感，不符合中文字幕英译常见的简洁自然风格。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 309,
+   "completion_tokens": 315
+  }
+ },
+ "m-028": {
+  "errors": [
+   {
+    "span": "so cursed—I can't stop listening",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘魔性’在此语境中是网络流行语，形容发音奇特、洗脑、令人上头（带调侃/戏谑语气），并非字面‘被诅咒’（cursed）；‘I can't stop listening’属无依据增译，原文未含‘停不下来听’的语义，且将主观感受过度具象化，扭曲原意。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 129
+  }
+ },
+ "m-037": {
+  "errors": [
+   {
+    "span": "a trick",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘绝活’特指高难度、有独门技艺性质的表演（如杂技、传统手工艺绝技），'a trick'语义过泛，常指小把戏、魔术手法或欺骗行为，未能传达原文中‘令人惊叹的专业绝技’这一核心语义，属于误译。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 96
+  }
+ },
+ "m-020": {
+  "errors": [
+   {
+    "span": "crap",
+    "category": "style",
+    "severity": "major",
+    "note": "重复使用'crap'（一次作名词指废话，一次作动词指排便）造成语义混淆和不自然；中文‘拉屎’是粗俗但直白的口语，英文用'crap'作动词虽可表排便，但与前文名词'crap'同形，导致'it makes me want to crap'被误读为‘想干那堆废话’，严重损害表意清晰度和字幕即时可懂性"
+   },
+   {
+    "span": "as brainwashing as a virus",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译‘洗脑程度堪比病毒’：原文强调‘洗脑的强度/效果’与病毒相当（即传染性强、难以摆脱），而译文'as brainwashing as a virus'语法错误且语义荒谬（病毒不是一种‘洗脑行为’），正确应为'as infectious/contagious as a virus'或'as pervasive and hard to shake off as a virus'"
+   },
+   {
+    "span": "And all that 'so what, what are you gonna do' crap—",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "破折号后直接接逗号分隔的引号内容，标点嵌套不规范；字幕中引号内'what are you gonna do'宜加问号以匹配中文原句语气（‘那咋了又能怎’含反诘语气），当前缺少标点削弱反讽力度"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 322,
+   "completion_tokens": 375
+  }
+ },
+ "m-039": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-034": {
+  "errors": [
+   {
+    "span": "I can't take this group anymore.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘这群没法待了’是说话人主观表达自己无法继续留在该群体中，强调‘待（在群体中）’这一状态；译文‘I can't take this group’习惯上表示‘无法忍受这个群体（的言行/氛围）’，语义重心偏移，将‘无法共处/留下’曲解为‘无法容忍/承受’，丢失了‘待’所蕴含的空间/归属感维度，且‘this group’指代模糊，未体现原文口语中隐含的‘我们这个群体/这儿’的语境。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 159
+  }
+ },
+ "m-024": {
+  "errors": [
+   {
+    "span": "must be crying from how anxious you are",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘急哭’是口语化夸张表达，指因着急/焦急而忍不住想哭（情绪反应），并非字面‘因焦虑而正在哭泣’；译文将‘急’机械对应为‘anxious’（临床/心理意义上的焦虑），且‘must be crying’过度字面化，夸大并扭曲了原意——实际是调侃式反问，强调听众早已等得心焦难耐，而非真实哭泣或病理焦虑。"
+   },
+   {
+    "span": "Everyone here",
+    "category": "style",
+    "severity": "minor",
+    "note": "不够符合中文字幕口语风格：‘在座的各位’在中文里是略带戏谑、现场互动感强的称呼，‘Everyone here’虽无错，但偏书面/正式；字幕更宜用自然口语如‘You all’或‘All of you’以匹配原句的调侃语气和现场感。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 252
+  }
+ },
+ "m-044": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 5
+  }
+ },
+ "m-025": {
+  "errors": [
+   {
+    "span": "Starting the lesson at zero frames",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘0帧教学’是中文网络流行语，指毫无铺垫、直接进入核心内容（源自视频播放的‘第0帧’即起始瞬间），并非字面意义的视频帧数；译为‘at zero frames’属严重误译，完全丢失比喻义和语境幽默，应意译为‘jumping straight into the lesson with zero setup’或类似自然表达。"
+   },
+   {
+    "span": "no warm-up at all?",
+    "category": "style",
+    "severity": "minor",
+    "note": "虽基本达意，但‘no warm-up at all?’作为独立问句在字幕中略显书面化且语气单薄；原文‘连热身动作都省了’含夸张、调侃口吻，更地道的字幕表达应强化口语节奏与反讽感，如‘Not even a warm-up?!’或‘Skipping the warm-up entirely?!’"
+   },
+   {
+    "span": "This coach must be a former esports player.",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "标点使用不规范：英文口语字幕中，陈述句末尾不应使用句号（尤其在带推测/调侃语气时），应改用感叹号或省略标点以符合字幕断行与节奏习惯；且‘must be’稍显绝对，弱化了原文‘是……吧？’的揣测+戏谑语气，宜用‘is probably…’或‘must’ve been…’更贴合。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 320,
+   "completion_tokens": 379
+  }
+ },
+ "m-041": {
+  "errors": [
+   {
+    "span": "bizarre",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“太抽象了”意为过于抽象、难以理解或缺乏具体性，与“bizarre”（怪异、离奇）语义不符，属于误译，造成语气和含义偏差"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 70
+  }
+ },
+ "m-047": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-048": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-036": {
+  "errors": [
+   {
+    "span": "hold back my laughter and don't dare make a sound",
+    "category": "fluency",
+    "severity": "major",
+    "note": "‘hold back my laughter and don’t dare make a sound’ is redundant and unnatural in English; ‘hold back laughter’ already implies suppressing sound, so adding ‘don’t dare make a sound’ is repetitive and overly literal, violating subtitle fluency and concision norms."
+   },
+   {
+    "span": "When I watch funny videos,",
+    "category": "style",
+    "severity": "minor",
+    "note": "The clause ‘When I watch funny videos’ is grammatically correct but unnecessarily wordy and formal for subtitle style; native English subtitles would typically use a more concise, present-tense fragment like ‘I stifle my laughter watching funny videos’ to match the brevity and immediacy of spoken Chinese."
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 201
+  }
+ },
+ "m-049": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 318,
+   "completion_tokens": 7
+  }
+ },
+ "m-051": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-050": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 307,
+   "completion_tokens": 5
+  }
+ },
+ "m-045": {
+  "errors": [
+   {
+    "span": "getting woken up in the middle of the night",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘半夜把人吵醒’的主语是说话人自己（即‘我半夜把别人吵醒’），表达的是说话人因自身行为（如打呼、翻身、说梦话等）而打扰他人，感到愧疚或力不从心；译文‘getting woken up’错误地将主语变为‘被吵醒的人’，意思完全颠倒为‘自己被吵醒’，与原意相反。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 306,
+   "completion_tokens": 148
+  }
+ },
+ "m-054": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-043": {
+  "errors": [
+   {
+    "span": "killing me",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘killing me’虽为常见习语，但在此语境中过度夸张，原文‘看得我想笑’强调的是忍俊不禁的轻松调侃，而‘killing me’常含痛苦、崩溃或强烈不适感（如 ‘this is killing me’），与原文‘想笑’的积极/戏谑情绪相悖，造成语气和情感偏差。"
+   },
+   {
+    "span": "brutal",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘brutal’在英语中多指冷酷、残忍、毫不留情（如 brutal honesty），带有较强负面攻击性；而原文‘太损了’是中文网络口语，指幽默刻薄、损友式调侃，语义轻巧、亲密且无恶意，‘brutal’严重夸大贬义程度，扭曲原意的情感分量和语用色彩。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 237
+  }
+ },
+ "m-033": {
+  "errors": [
+   {
+    "span": "Brother B",
+    "category": "terminology",
+    "severity": "major",
+    "note": "“b哥”是中文网络语境中对昵称/绰号的亲切称呼（类似‘B哥’），直译为‘Brother B’不符合英语字幕惯例，易被误解为正式称谓或亲属关系；应音译为‘B Ge’或更自然地处理为‘B-ge’（加连字符表昵称）或直接‘B’（若上下文已建立人物身份），但‘Brother B’属生硬、不自然且误导性术语化翻译。"
+   },
+   {
+    "span": "that relatable moment from school days",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘school days’虽可理解，但在当代英语字幕中略显陈旧/文学化；更自然、口语化的表达应为 ‘back in school’ 或 ‘in school’，‘school days’多用于怀旧散文而非即时字幕语境，影响口语流畅度。"
+   },
+   {
+    "span": "get hit by a wave of inexplicable anger",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘get hit by a wave of...’ 是比喻性表达，但略显冗长夸张，不符合中文字幕原文‘一股无名火’简洁、口语化、略带戏谑的风格；字幕宜更紧凑自然，如 ‘suddenly feel inexplicable anger’ 或 ‘a sudden burst of anger’ 更贴合原语气。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 320,
+   "completion_tokens": 367
+  }
+ },
+ "m-057": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-053": {
+  "errors": [
+   {
+    "span": "Any ways to relieve it?",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "口语中更自然的表达是 'Any tips for relieving it?' 或 'Any way to relieve it?'（'ways' 应为单数 'way' 与 'any' 搭配，或改用复数但需冠词/限定词如 'Are there any ways...'）；当前形式语法不严谨且略显生硬，不符合字幕口语习惯。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 310,
+   "completion_tokens": 128
+  }
+ },
+ "m-040": {
+  "errors": [
+   {
+    "span": "I can't even—",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "破折号（em dash）在字幕中易被误读为停顿或中断，且‘I can't even’是网络化、高度语境依赖的美式口语，在无上下文支撑时显得突兀、不自然；中文字幕‘我不行了’在此处是疲惫/震惊/无力感的通用感叹，应译为更中性自然的口语表达（如‘I’m done’或‘I can’t take it’），而非依赖亚文化梗。"
+   },
+   {
+    "span": "this looks way too much like it.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘这也太像了吧’是感叹句，强调高度相似性并隐含惊讶/调侃语气；‘looks way too much like it’语法别扭（‘too much like it’搭配生硬，‘it’指代不明），且‘way too much’修饰‘like’不符合英语惯用法——正确表达应为‘this looks *so* much like it’或更自然的‘this is *uncannily* similar’/‘this is *spot-on*’；当前译文因结构错误导致语义模糊和不地道。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 307
+  }
+ },
+ "m-038": {
+  "errors": [
+   {
+    "span": "I'd suggest you go through all of them",
+    "category": "style",
+    "severity": "minor",
+    "note": "字幕中'建议你还是都看看'是口语化、略带劝诫/提醒语气的表达，'go through all of them'偏正式且中性，未传达原文中'还是……都……'所隐含的强调和轻微催促感；更自然的字幕译法应为 'you’d still be better off reviewing them all' 或 'just review them all'。"
+   },
+   {
+    "span": "last year's test-takers",
+    "category": "terminology",
+    "severity": "minor",
+    "note": "'test-takers'虽可理解，但在教育考试语境（尤其中国考生熟悉的TOEFL/IELTS/GRE等）中，'exam takers'或更常见的'candidates'更符合惯用术语；'test-takers'多用于语言能力测评（如 TOEFL iBT），而此处语境泛指'去年参加考试的人'，'candidates'更中立、通用且符合字幕简洁性要求。"
+   },
+   {
+    "span": "said that question 'definitely wouldn't be on the exam,' and it still showed up in the end",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "句末'and it still showed up in the end'结构冗长，'in the end'与前文'after all'语义重复，且不符合英文字幕简洁、节奏紧凑的要求；更符合字幕习惯的表达是 'but there it was!' 或 'yet it appeared!' —— 用短句+感叹式收尾更能还原原文'最后还是出现了'的意外感和口语张力。"
+   }
+  ],
+  "score": -3,
+  "worst": "minor",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 337,
+   "completion_tokens": 407
+  }
+ },
+ "m-055": {
+  "errors": [
+   {
+    "span": "a condom",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "‘byt’ 是中文网络俚语，指‘冰毒’（methamphetamine），而非‘condom’（安全套）；此处属严重误译，完全扭曲原意，可能引发严重误解或法律/安全认知错误。"
+   }
+  ],
+  "score": -25,
+  "worst": "critical",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 307,
+   "completion_tokens": 92
+  }
+ },
+ "m-060": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-062": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 308,
+   "completion_tokens": 5
+  }
+ },
+ "m-063": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 286,
+   "completion_tokens": 5
+  }
+ },
+ "m-056": {
+  "errors": [
+   {
+    "span": "over here",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文'我还死着'是网络流行语，表示'我还活着（但状态极差/很累/在硬撑）'，属反语修辞；译文' I'm still dead over here'字面意为'我在这儿已经死了'，完全误译原意，且'over here'无对应依据，属于无端增译并导致严重语义错误"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 112
+  }
+ },
+ "m-042": {
+  "errors": [
+   {
+    "span": "raked in cash from every direction",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘八方来财’是固定成语，喻指财源广进、四面八方都有收入，强调来源广泛、持续丰沛；‘raked in cash from every direction’字面直译虽可解，但‘from every direction’在英语中易引发空间方位联想（如物理上的四个方向），弱化了原意中‘商路通达、生意兴隆’的吉祥寓意和行业熟语色彩，属文化负载词误译，导致语义扁平化和语用失当。"
+   },
+   {
+    "span": "shining shoes",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘shining shoes’是美式常用表达，但字幕语境中‘擦皮鞋’特指底层体力劳动，带有自嘲与落差感；‘shining’偏重‘抛光发亮’的结果，而‘擦’强调动作过程与辛劳，‘polishing shoes’或‘buffing shoes’更贴近原动词质感，当前用词略显轻巧，削弱了原文的辛酸反讽语气。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 331,
+   "completion_tokens": 290
+  }
+ },
+ "m-046": {
+  "errors": [
+   {
+    "span": "you made my phone stink",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘把我手机整的骚哄的’是口语化夸张表达，指手机被弄得异常响亮/吵闹/花哨（如铃声、通知音效等被调得夸张刺耳或浮夸），并非字面‘发臭’；‘stink’完全误译语义，且丢失‘骚哄哄’所含的俚语色彩、贬义调侃语气及声音/感官层面的夸张感。"
+   },
+   {
+    "span": "you made my phone stink",
+    "category": "style",
+    "severity": "major",
+    "note": "‘you made my phone stink’是完整主谓宾句式，但原文‘把我手机整的骚哄的’是结果补语结构，无明确施事主语（‘你’在前句已出现，此处为承前省略的泛指/埋怨口吻），英译添加‘you’并用过去时‘made’过度具体化、书面化，不符合中文原句即兴抱怨的口语节奏和字幕简洁性要求。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 274
+  }
+ },
+ "m-066": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-068": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-069": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-059": {
+  "errors": [
+   {
+    "span": "Saw",
+    "category": "fluency",
+    "severity": "major",
+    "note": "字幕语境下应使用完整主谓结构或现在时态以符合英语字幕惯用表达，'Saw'为过去时且省略主语，显得突兀不完整；标准字幕通常用'Seeing...'（进行时表画面呈现）或'This shows...'等更自然的开场，或补全主语如'I saw...'但需上下文支持；此处孤立使用'Saw'不符合英语字幕语法规范。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 127
+  }
+ },
+ "m-052": {
+  "errors": [
+   {
+    "span": "literally",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘已急哭’是口语化表达，强调因焦急而哭，并非字面意义的‘literally crying’；‘literally’在此造成语义夸张和误译，暗示生理上正在哭泣，偏离原文‘急得哭出来’的因果/情态关系，且字幕中过度直译‘literal’易引发理解偏差。"
+   },
+   {
+    "span": "cold palace",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘冷宫’是特定历史文化概念（失宠妃嫔被幽禁的偏僻宫室），不可直译为‘cold palace’；该译法未传达其象征意义（失宠、被弃、政治性放逐），且英语观众无法识别此文化专有项，应采用广为接受的惯用译法‘the Cold Palace’（首字母大写、加定冠词，作为专有名词处理）或加简注，当前译法属于术语不当。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 257
+  }
+ },
+ "m-072": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-070": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 312,
+   "completion_tokens": 7
+  }
+ },
+ "m-058": {
+  "errors": [
+   {
+    "span": "beat your ass",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘弄你’在此语境中是网络流行语，意为‘收拾你/整你/让你不好过’，属模糊威胁或调侃语气，不特指身体暴力；‘beat your ass’过度具体化且暴力程度远超原文，属于误译，造成语义和语气严重偏差。"
+   },
+   {
+    "span": "I'll come back to China",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘回国’主语是说话人，但未明示‘我’是否在海外；‘come back to China’强行预设说话人当前身在国外，属无依据增译，可能与上下文事实矛盾（如说话人本就在国内），导致信息失真。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 206
+  }
+ },
+ "m-077": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-064": {
+  "errors": [
+   {
+    "span": "teacher certification",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘教师资格证’在中国官方语境中标准英文译名为 ‘Teacher Qualification Certificate’ 或简称为 ‘Teacher Qualification’；‘teacher certification’ 是美式用法，指教师执照（如美国州级 teaching license），易与中国的准入类职业资格混淆，属于术语不当。"
+   },
+   {
+    "span": "demo lesson",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘试讲’在教师资格面试中是正式考核环节，标准译法应为 ‘teaching demonstration’ 或 ‘mock teaching’；‘demo lesson’ 过于口语化且偏重教学演示（如产品演示），未能准确传达其作为标准化、评估性教学实践环节的性质。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 308,
+   "completion_tokens": 203
+  }
+ },
+ "m-074": {
+  "errors": [
+   {
+    "span": "post them",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘打卡’在中文网络语境中特指在社交平台（如微信朋友圈、小红书、微博）发布带有定位/标识的图文以证明到访，强调‘标记到此一游’的行为和仪式感；‘post them’泛化为普通发帖，完全丢失‘打卡’的核心语义（check-in / tag location / mark presence），属于误译。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 124
+  }
+ },
+ "m-076": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 329,
+   "completion_tokens": 5
+  }
+ },
+ "m-061": {
+  "errors": [
+   {
+    "span": "Girls, what do I do?",
+    "category": "style",
+    "severity": "major",
+    "note": "‘Girls, what do I do?’ 过度直译‘姐妹们’，且将原句的共情式吐槽（面向同龄女性观众的轻松调侃）误处理为第一人称求助，破坏了原文‘被迷晕了怎么办’这一网络流行语的戏谑语气和集体共鸣感；字幕中应体现‘姐妹们’作为呼语的亲切、口语化及群体认同功能，而非字面翻译成‘Girls’并嫁接疑问句。"
+   },
+   {
+    "span": "This move has me totally swooning.",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘swooning’虽表迷醉，但属较文学化/古风词汇（常关联维多利亚时代晕厥意象），与中文网络语‘迷晕了’（轻松夸张、带幽默自嘲的当代短视频语境）风格不匹配，略显突兀生硬，不够自然口语化。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 257
+  }
+ },
+ "m-078": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 323,
+   "completion_tokens": 7
+  }
+ },
+ "m-065": {
+  "errors": [
+   {
+    "span": "poses all melancholy",
+    "category": "fluency",
+    "severity": "major",
+    "note": "‘poses all melancholy’ 是生硬、不地道的英语表达；‘all + 形容词’结构在此处不符合英语习惯，应改为 ‘strikes melancholy poses’ 或 ‘strikes moody poses’ 等自然搭配。"
+   },
+   {
+    "span": "that xxx drama",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘that xxx drama’ 在口语字幕中略显指代模糊且不够自然；中文‘xxx剧’是泛指某部热门/典型偶像剧（带戏谑意味），英文字幕宜用更符合语境的泛称如 ‘a certain idol drama’ 或 ‘some melodramatic drama’，以保留原意的调侃语气。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 323,
+   "completion_tokens": 207
+  }
+ },
+ "m-085": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-082": {
+  "errors": [
+   {
+    "span": "I actually stayed to watch the Spring Festival Gala",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "字幕中'我真是留在了春晚看'强调的是'当场没走，一直看到春晚'的即时性与意外感，'actually stayed to watch'偏重'本没打算看却看了'，语气重心偏移；更自然的口语化表达应为 'I ended up watching the Spring Festival Gala' 或 'I just stayed for the Spring Festival Gala'"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 116
+  }
+ },
+ "m-071": {
+  "errors": [
+   {
+    "span": "literally crying from panic",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘急哭’是口语化表达，指因着急（而非恐慌）而哭，译为‘crying from panic’严重误译情绪原因，将‘着急’扭曲为‘恐慌’，语义偏差显著。"
+   },
+   {
+    "span": "answer me, answer me!",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘马上回’是承诺性回应（‘我立刻回复/回来’），非命令式‘answer me’；译文误将应答承诺译为强制要求对方回应，完全改变语用功能和人物关系。"
+   },
+   {
+    "span": "—answer me, answer me!",
+    "category": "style",
+    "severity": "major",
+    "note": "字幕中使用破折号连接两个祈使句不符合英语字幕口语习惯，且重复‘answer me’生硬夸张，缺乏中文原句‘马上回马上回’的急切但自然的叠用节奏，不似真实口语。"
+   }
+  ],
+  "score": -15,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 266
+  }
+ },
+ "m-084": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 5
+  }
+ },
+ "m-079": {
+  "errors": [
+   {
+    "span": "pull",
+    "category": "terminology",
+    "severity": "major",
+    "note": "在游戏语境中，'抽奖'应译为 'gacha' 或 'lottery'（如 'gacha pull' 虽有玩家俚语用法，但单独用 'pull' 无上下文时严重缺乏指代清晰度，属术语不当；标准字幕应优先使用更易懂、无歧义的 'lottery' 或 'gacha draw'，'pull' 单独出现不符合 MQM 术语一致性与观众可理解性要求"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 132
+  }
+ },
+ "m-083": {
+  "errors": [
+   {
+    "span": "hot",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "将中文口语感叹‘太帅了吧’译为‘too hot’属于误译：‘hot’在英语中常指性感或热度，与中文‘帅’（形容外貌英俊、气质出众）语义不匹配，易引发歧义；应选用‘cool’‘awesome’‘incredible’等更贴合‘帅气赞叹’的表达。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 106
+  }
+ },
+ "m-086": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 5
+  }
+ },
+ "m-073": {
+  "errors": [
+   {
+    "span": "showing the Spring Festival fun as this generation of young people starts to take charge",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译‘这届年轻人开始主持大局’：‘主持大局’在此语境中是比喻性表达，指承担家庭责任（如操办春节事务、主导年俗活动等），而非字面的‘take charge’（常暗示权力接管或管理职责）；‘Spring Festival fun’过度简化，丢失‘春节趣事’中‘趣事’特指具体、轻松诙谐的生活化事件，且与前半句‘整蛊的故事’形成风格呼应，译为‘fun’过于笼统、缺乏语境适配。"
+   },
+   {
+    "span": "a father-in-law who loves to play pranks",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘loves to play pranks’虽语义可通，但作为字幕口语略显书面化且力度不足；原文‘喜欢整蛊’带有鲜明网络语感和轻松戏谑色彩，更自然的字幕表达应为‘loves pulling pranks’或‘is always up to mischief’，以匹配短视频/综艺字幕的活泼语体。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 333,
+   "completion_tokens": 293
+  }
+ },
+ "m-087": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 5
+  }
+ },
+ "m-088": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 315,
+   "completion_tokens": 5
+  }
+ },
+ "m-092": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-090": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-093": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-067": {
+  "errors": [
+   {
+    "span": "Absolutely legendary",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘六百六十六’是中文网络流行语，源自‘666’，表示极度赞叹、厉害、牛，属数字谐音梗；译为‘Absolutely legendary’虽传达褒义，但完全丢失了原意中的数字文化符号、戏谑语气和亚文化语境，属于误译。"
+   },
+   {
+    "span": "Not even trying to hide it",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘装都不装了’是反讽式强调，意为‘连伪装/演戏的掩饰都彻底放弃了’，凸显角色已毫无包袱、放飞自我；译为‘Not even trying to hide it’语义模糊（hide what?），未能准确对应‘装’（即‘假装、演戏、端着’）这一核心动作，弱化了原文的讽刺力度和语义焦点。"
+   },
+   {
+    "span": "this one is a total drama queen",
+    "category": "style",
+    "severity": "major",
+    "note": "‘戏精本精’是高度凝练、戏谑的网络叠词结构（‘戏精’+‘本精’=‘戏精中的顶级戏精’），强调极致性与自嘲/调侃感；‘a total drama queen’虽有对应义，但‘drama queen’在英语中常含贬义（指爱小题大做、情绪化的人），且缺乏原文的夸张构词趣味和中文圈内共识语感，不符合字幕口语化、轻快、贴合网络语境的风格要求。"
+   }
+  ],
+  "score": -15,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 347,
+   "completion_tokens": 389
+  }
+ },
+ "m-097": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 5
+  }
+ },
+ "m-080": {
+  "errors": [
+   {
+    "span": "not bad",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘可以可以’是口语中表示‘尚可、勉强接受、凑合’的叠用强调，常含保留态度或轻微认可，而‘not bad’语义偏积极（相当于‘还不错’），程度和语气均过度上扬，造成语义偏差；且原文重复‘可以’隐含犹豫或弱肯定，译文完全丢失该语气特征。"
+   },
+   {
+    "span": "There's another one",
+    "category": "accuracy",
+    "severity": "minor",
+    "note": "原文‘还有一个’未明确指代‘一个什么’，语境中可能指代前文已提及的某类事物（如选项、方法、人等），译文直译为‘another one’虽常见，但过于空泛，缺乏指代清晰性；不过字幕受限于上下文省略，此属可接受简化，故判minor。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 284,
+   "completion_tokens": 235
+  }
+ },
+ "m-075": {
+  "errors": [
+   {
+    "span": "Stephen Chow's God of Gamblers film",
+    "category": "terminology",
+    "severity": "major",
+    "note": "片名《法国赌神》是周星驰电影《赌神2》的戏仿式中文网络译名，实际英文片名为 'God of Gamblers II'；'God of Gamblers' 单独指1989年刘德华主演的前作（非周星驰），此处误用片名导致严重归因错误，观众会误以为该梗出自刘德华版而非周星驰参演的续作。"
+   },
+   {
+    "span": "The 'I want to check the cards' meme",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘我要验牌’是粤语直译口语表达，标准字幕应体现其作为网络迷因的戏谑、夸张语气；直译为 'I want to check the cards' 过于字面且中性，丢失了原梗的荒诞感和表演性（实为角色突然高声、戏剧化地要求验牌），属关键语义弱化。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 312,
+   "completion_tokens": 270
+  }
+ },
+ "m-095": {
+  "errors": [
+   {
+    "span": "national TV",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘央视’特指China Central Television（CCTV），是专有名词，译为‘national TV’属于误译，泛化了原意，丢失了关键文化机构指代；字幕中应体现其唯一性与权威性，如‘CCTV’或‘China Central Television’。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 95
+  }
+ },
+ "m-089": {
+  "errors": [
+   {
+    "span": "don't let the boss catch you",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘别被老板发现’指不要让老板发现‘你憋不住’这一状态（如打喷嚏、笑、失态等），而非字面‘抓到你’；‘catch you’在此语境中易误解为‘当场抓住你（做某事）’，过度具象化且隐含违规行为，偏离原意；应译为 don’t let the boss find out / notice / see 等更中性的表达。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 143
+  }
+ },
+ "m-098": {
+  "errors": [
+   {
+    "span": "hate",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“反感”不等于“hate”，后者语义过重，属于情感强度误译；更准确的对应是“dislike”或“feel uncomfortable with”"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 64
+  }
+ },
+ "m-096": {
+  "errors": [
+   {
+    "span": "六百六十六",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "原文'六百六十六'是具体数字（常关联宗教/文化隐喻，如‘兽的数目’），译文完全遗漏该核心信息，代之以无关联的主观评价'That's awesome'，导致语义彻底失真且丧失原意和潜在文化指涉。"
+   }
+  ],
+  "score": -25,
+  "worst": "critical",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 283,
+   "completion_tokens": 94
+  }
+ },
+ "m-102": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 5
+  }
+ },
+ "m-104": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 5
+  }
+ },
+ "m-106": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 282,
+   "completion_tokens": 5
+  }
+ },
+ "m-108": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-091": {
+  "errors": [
+   {
+    "span": "so out there",
+    "category": "style",
+    "severity": "major",
+    "note": "‘so out there’ 是美式口语，含‘离谱、古怪、脱离现实’的贬义或戏谑色彩，但原文‘抽象到让人看不懂’是中性偏客观的描述，强调认知难度而非荒诞性；该表达在字幕语境中过于随意、不贴合原意语气，且可能引发歧义（如被理解为‘行为怪异’而非‘概念高度抽象’）"
+   },
+   {
+    "span": "no one can make sense of it",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘no one’ 绝对化过度，原文‘让人看不懂’是泛指常人/一般观众难以理解，并非字面意义的‘无人能懂’；译文夸大了不可理解的程度，造成语义偏差"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 301,
+   "completion_tokens": 220
+  }
+ },
+ "m-094": {
+  "errors": [
+   {
+    "span": "I can't",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "口语中‘I can't’单独使用不完整，缺乏宾语或补语，显得突兀；字幕中应体现‘我受不了了/笑死了’的语义，更自然的表达是‘I can't take it’或‘I'm dying’等。"
+   },
+   {
+    "span": "your description is way too funny",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘description’过于书面化且语义窄化，原文‘你这形容’是口语中对对方用词/表达方式的即时调侃，更贴切的字幕译法应为‘the way you put that’或‘how you just said that’；‘way too funny’虽可懂，但略显平淡，未充分传递原文‘太搞笑了吧’中带惊讶、夸张和互动调侃的语气。"
+   }
+  ],
+  "score": -2,
+  "worst": "minor",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 298,
+   "completion_tokens": 232
+  }
+ },
+ "m-111": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 281,
+   "completion_tokens": 5
+  }
+ },
+ "m-105": {
+  "errors": [
+   {
+    "span": "who's who",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘who’s who’ 是固定短语，但在此语境中略显书面化和模糊；字幕中更自然、更符合口语习惯的表达应为 ‘the relationships between characters’ 或 ‘how everyone is connected’，‘who’s who’ 容易让观众误解为‘谁是重要人物’而非‘人物关系’，削弱了原文‘琢磨人物关系’的具体语义。"
+   }
+  ],
+  "score": -1,
+  "worst": "minor",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 129
+  }
+ },
+ "m-099": {
+  "errors": [
+   {
+    "span": "Workplace Warmth",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘职场暖暖’是中文网络流行语，指职场中令人感到温暖、治愈、有爱的细节或行为（如同事关心、小惊喜等），并非正式术语；直译为带引号的专有名词 'Workplace Warmth' 会误导观众以为这是标准概念或品牌名称，且首字母大写强化了术语感，不符合原文口语化、戏谑、具象化的语感。"
+   },
+   {
+    "span": "You get ... now, right?",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘You get ... now, right?’ 是美式口语，但字幕中过度依赖‘get’+‘right?’结构显得轻佻随意，弱化了原文略带俏皮又带点确认/教学意味的语气；更自然的字幕表达应更简洁中性（如 ‘Got it?’ 或 ‘Now you know what “workplace warmth” means!’），当前译法略显冗余且语用不贴合中文原句节奏。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 270
+  }
+ },
+ "m-101": {
+  "errors": [
+   {
+    "span": "so directly",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘这么直观地’强调的是感知方式的具象性、可感性（如通过具体现象/身体反应/视觉化体验等），而非‘直接性’（directness）；‘so directly’误译，应传达‘viscerally’、‘tangibly’或‘in such a concrete way’等含义，此处扭曲了原意——网瘾的‘直观感’指突然清晰意识到其严重程度的冲击感，非时间或逻辑上的‘直接’。"
+   },
+   {
+    "span": "just how bad",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘just how bad’在口语中虽常见，但字幕语境下略显冗余且稍带夸张/贬义色彩；原文‘这么大’是中性、自嘲式量化表达，对应‘how severe’或‘how serious’更贴合语气，‘bad’隐含道德评判，偏离原文轻松自省的口吻。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 299,
+   "completion_tokens": 255
+  }
+ },
+ "m-081": {
+  "errors": [
+   {
+    "span": "weird, absurd content",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘抽象起号’是网络流行语，指以抽象、荒诞、解构常规的风格（如无厘头、符号化、反逻辑表达）冷启动账号，强调内容范式而非字面‘怪异’；‘weird, absurd’过度负面且偏离原意，误译核心策略，丢失‘抽象’作为特定亚文化创作方法的语义和圈层认同。"
+   },
+   {
+    "span": "blew up",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘blew up’虽表走红，但在中文字幕英译中属非正式口语，略显随意；字幕需兼顾清晰度与适度正式感，‘gained rapid popularity’或‘went viral’更稳重自然。"
+   },
+   {
+    "span": "a looks-based style",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘颜值风格’特指以高颜值人设为核心、突出外貌吸引力的内容路线（如精致妆造、镜头表现力、颜值反差），并非泛泛的‘looks-based’（该词易被理解为仅关注外表而隐含肤浅贬义）；应译为 ‘a high-visual-appeal persona’ 或 ‘an appearance-focused persona’ 以准确传达人设属性。"
+   },
+   {
+    "span": "giving her fans a huge contrast",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘大反差’在此语境中指人设/内容风格的强烈转变带来的戏剧性对比效果（从抽象到颜值），是主谓结构的结果，而非主动‘给予’粉丝某种东西；‘giving...a huge contrast’语法成立但语义错位，误将‘反差’处理为可授予的客体，正确应为 ‘creating a striking contrast for her fans’ 或 ‘delivering a dramatic shift in image’。"
+   }
+  ],
+  "score": -16,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 333,
+   "completion_tokens": 473
+  }
+ },
+ "m-115": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 303,
+   "completion_tokens": 5
+  }
+ },
+ "m-107": {
+  "errors": [
+   {
+    "span": "give them a piece of my mind",
+    "category": "style",
+    "severity": "major",
+    "note": "‘give them a piece of my mind’ 是正式/书面化表达，略带陈腐感，且隐含‘严厉斥责’的强烈对抗意味；原文‘想理论’语气更偏向‘讲道理、争个是非’，带有轻微委屈和急切，而非盛怒训斥，该习语过度强化情绪，不符合口语字幕自然度与语境分寸。"
+   },
+   {
+    "span": "so bad",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘so bad’ 在美式口语中虽可接受，但在字幕语境中稍显松散随意；‘so much’ 或直接省略（如 ‘it hurts—I’m in tears’）更简洁有力，符合字幕经济性与情感递进节奏；此处属风格不够精炼的小问题。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 322,
+   "completion_tokens": 230
+  }
+ },
+ "m-116": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 285,
+   "completion_tokens": 5
+  }
+ },
+ "m-103": {
+  "errors": [
+   {
+    "span": "I'd have bought a ticket and flown to Xi'an",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "时态误译：原文‘我高低现在就买机票飞西安’是虚拟语气表强烈意愿（即‘我本该/立刻就要买票飞过去’），用‘I'd have bought...’（过去完成虚拟，表示与过去事实相反）错误地暗示动作本应发生在过去且未发生；正确应为与现在/将来事实相反的虚拟（‘I'd buy...’或更自然的‘I’d be on a flight to Xi’an right now’），否则造成时间逻辑矛盾。"
+   },
+   {
+    "span": "give you a piece of my mind",
+    "category": "style",
+    "severity": "minor",
+    "note": "习语‘give you a piece of my mind’偏正式/书面，略带陈旧感，不符合中文原句‘找你算账’所承载的亲密、戏谑又带点撒娇的口语语境；字幕中更自然的对应应为‘call you out’, ‘confront you’, 或更贴合情绪的‘kick your butt’（若关系亲密）等，但当前译法虽可懂，略失鲜活感。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 331,
+   "completion_tokens": 296
+  }
+ },
+ "m-113": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 327,
+   "completion_tokens": 7
+  }
+ },
+ "m-109": {
+  "errors": [
+   {
+    "span": "at a New Year's Eve show",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘跨年晚会’应译为 ‘New Year's Eve gala’ 或 ‘New Year's Eve party’；‘show’ 过于宽泛且不准确，易被理解为普通演出/电视节目，无法传达中文‘晚会’（大型、喜庆、综合性文艺庆典）的语义和语境。"
+   },
+   {
+    "span": "that movie you mentioned",
+    "category": "style",
+    "severity": "minor",
+    "note": "字幕中‘that movie you mentioned’略显书面化和冗长；口语字幕更自然简洁的表达应为 ‘the movie you talked about’ 或更常见的 ‘the one you mentioned’，但此处属轻微风格问题，未达严重失真。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 304,
+   "completion_tokens": 206
+  }
+ },
+ "m-114": {
+  "errors": [
+   {
+    "span": "I shouldn't bother coming home",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘就别回家了’是带有强烈情绪的条件性断绝关系式威胁（隐含‘不找对象=失去家庭接纳’），而‘shouldn't bother coming home’语义过轻，传达的是‘没必要费事回来’，削弱了原句的严厉性、情感张力和家庭压力，丢失关键语用含义。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 124
+  }
+ },
+ "m-118": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 312,
+   "completion_tokens": 7
+  }
+ },
+ "m-122": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-120": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 312,
+   "completion_tokens": 5
+  }
+ },
+ "m-121": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-110": {
+  "errors": [
+   {
+    "span": "2,000",
+    "category": "terminology",
+    "severity": "major",
+    "note": "原文‘2000内’指人民币，未标注货币单位，易导致歧义（如被理解为美元或无单位数值）；字幕中应明确为‘¥2,000’或‘RMB 2,000’以符合术语规范和观众认知。"
+   },
+   {
+    "span": "Just remember to plan for socket placement",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘记得留好插座位置’强调预留/预留空间（即在装修/布线阶段预先确定并留出插座安装位置），‘plan for socket placement’语义过泛，未体现‘预留’这一关键动作和工程实践含义，易被理解为单纯规划而非物理预留，属误译。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 320,
+   "completion_tokens": 214
+  }
+ },
+ "m-124": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-123": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 5
+  }
+ },
+ "m-128": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 289,
+   "completion_tokens": 5
+  }
+ },
+ "m-112": {
+  "errors": [
+   {
+    "span": "half-assed",
+    "category": "style",
+    "severity": "major",
+    "note": "‘half-assed’ 是美式粗俗俚语，语气过于强烈、不雅，且带有明显贬损和冒犯性，不符合中文原句‘这么水了’所传达的轻松调侃、略带失望但非侮辱性的口语语感；字幕应避免引入原文没有的粗鄙色彩。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 110
+  }
+ },
+ "m-126": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 5
+  }
+ },
+ "m-117": {
+  "errors": [
+   {
+    "span": "officiate your wedding",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘证婚’在中文婚礼语境中特指作为证婚人（witness or marriage witness）宣读证婚词、见证并宣布婚姻成立，而非主持婚礼（officiate）；officiate 通常指主婚人/司仪（如牧师、法官等具有法定主持权的人），语义错位，易误导观众认为说话人将担任主婚角色。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 117
+  }
+ },
+ "m-132": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 5
+  }
+ },
+ "m-129": {
+  "errors": [
+   {
+    "span": "psycho",
+    "category": "style",
+    "severity": "major",
+    "note": "‘psycho’ 是贬义强烈、非正式且具冒犯性的俚语，远超原文‘精神病’的中性/临床语感；字幕中应避免使用可能引发污名化或过度戏剧化的词汇，宜译为 ‘mentally ill’ 或更贴合语境的 ‘crazy’（仍需谨慎）或 ‘unstable’，但 ‘psycho’ 属语气严重失当。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 133
+  }
+ },
+ "m-119": {
+  "errors": [
+   {
+    "span": "So unhinged",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘太抽象了’意为‘excessively abstract/obscure/theoretical’，指内容缺乏具象、难以理解；‘unhinged’意为精神失常、失控，语义严重偏离，属于误译。"
+   },
+   {
+    "span": "a full look at",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘a full look at’在字幕中略显冗长且不自然；‘contemporary young people’s mental state at a glance’或‘a snapshot of…’更符合字幕简洁口语风格。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 172
+  }
+ },
+ "m-131": {
+  "errors": [
+   {
+    "span": "I can't even—never thought I'd see the day.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘太阳打西边出来了’是固定习语，喻指极不可能发生的事（如‘天上下红雨’），需传达其反常性与荒谬感；译文‘never thought I'd see the day’虽表惊讶，但完全丢失‘违背自然规律’的核心意象和夸张修辞，削弱了原句的幽默与强调力度。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 134
+  }
+ },
+ "m-134": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 292,
+   "completion_tokens": 5
+  }
+ },
+ "m-136": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 320,
+   "completion_tokens": 7
+  }
+ },
+ "m-138": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-139": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  }
+ },
+ "m-140": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 288,
+   "completion_tokens": 5
+  }
+ },
+ "m-133": {
+  "errors": [
+   {
+    "span": "legit",
+    "category": "style",
+    "severity": "major",
+    "note": "‘legit’作为‘地道’的译法在字幕语境中过于俚语化、不正式且语域失当；字幕需兼顾可懂性与适度自然，‘authentic’或‘genuine’更稳妥，‘legit’易让部分观众（尤其非年轻群体）困惑或觉得轻浮。"
+   }
+  ],
+  "score": -5,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 300,
+   "completion_tokens": 114
+  }
+ },
+ "m-142": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 287,
+   "completion_tokens": 5
+  }
+ },
+ "m-127": {
+  "errors": [
+   {
+    "span": "a legend",
+    "category": "accuracy",
+    "severity": "critical",
+    "note": "‘六百六十六’是中文网络用语，指代‘666’（谐音‘溜溜溜’），表示赞叹、佩服，但绝非‘legend’；译为‘a legend’完全曲解原意，将俚语梗误译为人物称谓，造成严重语义错位。"
+   },
+   {
+    "span": "Why do you care so much about people calling you",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘你咋这么在意别人说六百六十六’中‘说六百六十六’是动宾结构（说+数字梗），强调‘说出这个数字’这一行为，而非‘称呼你为……’；译文‘calling you a legend’错误地将‘说666’重构为‘称呼你为传奇’，属于误译核心动作和语义关系。"
+   }
+  ],
+  "score": -30,
+  "worst": "critical",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 296,
+   "completion_tokens": 235
+  }
+ },
+ "m-143": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 5
+  }
+ },
+ "m-100": {
+  "errors": [
+   {
+    "span": "Xunji",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘训记’是APP名称，应音译为‘Xunji’（首字母大写）或按官方英文名处理；但‘Xunji’未加引号或大写不规范（如‘Xunji’应为‘Xunji’而非‘xunji’），且未确认是否为官方译名——更稳妥做法是保留中文名音译并加引号，或查证官方英文名（实际该APP官方英文名为‘Xunji’，但字幕中专有名词首次出现宜加引号以示专有，且大小写需统一；当前小写‘xunji’属拼写/术语不规范。然而此处原文为‘训记’，译文写作‘Xunji’（首字母大写）——经核查，该APP无广泛认可的官方英文名，国内应用商店显示为‘训记’，其官网及iOS/Android应用内均无英文名，因此‘Xunji’属合理音译；但问题在于：‘Xunji’在译文中未加引号，易被误认为普通名词（如‘xunji’像拼音词），而字幕中APP名称作为专有名词，按MQM术语类标准，首次出现应明确标示为专有（如加引号或使用公认品牌名）。当前未加引号，且与‘Keep’（带首字母大写+无引号）格式不一致（Keep是国际知名APP，有公认拼写；训记无公认英文名，更需显化其专有性），构成术语呈现不一致和不规范。"
+   },
+   {
+    "span": "their free workout courses",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘免费课程’未限定为‘workout’（健身训练），‘课程’在上下文中泛指运动教学课程，但‘workout’窄化了语义——‘训记’APP内容可能含瑜伽、普拉提、康复训练等非典型‘workout’范畴课程；且‘练’对应动词‘练习’，译为‘following...courses’尚可，但‘workout courses’属过度具体化，属误译。"
+   },
+   {
+    "span": "it's safe and structured",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘structured’虽可表‘系统’，但在口语化字幕中略显书面/生硬；中文‘系统’在此语境下强调‘有体系、循序渐进、科学安排’，更自然的字幕表达应为‘systematic’或‘well-structured’，但单用‘structured’不够地道，且与前半句口语风格（I recommend...）略有脱节。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 309,
+   "completion_tokens": 655
+  }
+ },
+ "m-147": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 7
+  }
+ },
+ "m-130": {
+  "errors": [
+   {
+    "span": "way too out there",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "“out there”虽可表‘离奇、古怪’，但在此语境下过度美式俚语化且语义偏移：原文‘太抽象’强调概念难以具象理解（abstract, hard to grasp concretely），而‘out there’更倾向指‘荒诞、脱离现实、怪异’，隐含贬义和主观猎奇感，弱化了‘抽象’这一核心认知属性，造成语义偏差。"
+   },
+   {
+    "span": "isn't it?",
+    "category": "style",
+    "severity": "minor",
+    "note": "反意疑问句‘isn't it?’在字幕中略显冗余且不够口语化；中文原句‘这比喻也太抽象了吧’是带感叹语气的陈述句，用‘right?’或无疑问结构（如‘That metaphor is way too abstract!’）更符合中文字幕简洁、自然的口语节奏。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 290,
+   "completion_tokens": 247
+  }
+ },
+ "m-149": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 291,
+   "completion_tokens": 5
+  }
+ },
+ "m-125": {
+  "errors": [
+   {
+    "span": "Abstract Bro",
+    "category": "terminology",
+    "severity": "major",
+    "note": "“抽象哥”是中文网络俚语，指行为夸张、不按常理出牌、充满荒诞感的人；直译为'Abstract Bro'属于生硬字面翻译，未传达其作为固定人设/绰号的语用内涵，且英文中无对应文化概念，易被误解为与‘抽象艺术’相关，应采用音译加简要意释（如'Axiang Bro'）或约定俗成的本地化译法（如'Absurdo Bro'），但需保持一致性及可识别性。"
+   },
+   {
+    "span": "grinds through practice questions",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘grinds through practice questions’虽可理解，但‘grind’在美式口语中多指高强度重复劳动（常含负面/疲惫意味），而原文‘安静做题’强调专注、沉稳、不张扬的学习状态，无负面或疲惫暗示；该译法语气偏重、略带戏谑，偏离原文平实略带调侃的轻松语调，不够自然贴合字幕口语风格。"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 288
+  }
+ },
+ "m-150": {
+  "errors": [],
+  "score": 0,
+  "worst": "none",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 302,
+   "completion_tokens": 5
+  }
+ },
+ "m-137": {
+  "errors": [
+   {
+    "span": "six family wallets",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "原文‘6个钱包’指6个个人钱包（如6位家庭成员各自的钱包），并非‘六个家庭的钱包’；‘family wallets’错误地将‘wallets’归属为‘family’所有，造成语义偏差，易误解为6个家庭共有的钱包或每个家庭一个钱包，而原文强调个体数量（人均）与钱包数量的对应关系。"
+   },
+   {
+    "span": "a million in savings per person",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘人均存款百万’指每人平均存款达100万元人民币，但译文‘a million’未标明货币单位，且未说明是人民币（CNY），在无上下文时极易被理解为美元（USD）或通用百万单位，构成严重信息缺失和潜在误导。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 294,
+   "completion_tokens": 223
+  }
+ },
+ "m-146": {
+  "errors": [
+   {
+    "span": "I can't hahaha",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘I can't hahaha’缺乏标点分隔，不符合英语口语字幕习惯；应加逗号或感叹号以体现笑声与前句的停顿和语气，如 ‘I can’t! Hahaha!’ 或 ‘I can’t—hahaha!’"
+   },
+   {
+    "span": "he's a genius",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘太有才了’是中文口语中高度语境化、带夸张和赞赏色彩的表达，直译为‘a genius’过度字面化且语义过重（genius 暗示非凡天赋），未能传达原文轻松幽默、略带调侃的语感；更贴切的字幕译法应体现‘有才’的鲜活口语感，如 ‘he’s hilarious’ ‘he’s got serious talent’ 或 ‘he’s unreal!’（视上下文而定）"
+   }
+  ],
+  "score": -6,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 293,
+   "completion_tokens": 243
+  }
+ },
+ "m-135": {
+  "errors": [
+   {
+    "span": "So what?",
+    "category": "style",
+    "severity": "major",
+    "note": "‘So what?’ 语气轻佻、冷漠，与原文‘那咋了’所含的调侃、略带戏谑又亲近的口语语感不符；字幕中更自然的对应应为 ‘What’s up?’ 或 ‘What happened?’ 等更中性/关切的口语表达。"
+   },
+   {
+    "span": "got charmed by her looks",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘被颜值征服’是中文网络流行语，强调被对方极高外貌吸引力强烈折服（带夸张、倾倒意味），‘charmed’ 语义过弱（仅表‘被吸引/取悦’），未能传达‘征服’的强度和戏谑感；更贴切的译法应体现‘won over’, ‘swept off your feet’, 或口语化强调如 ‘totally smitten by her looks’。"
+   },
+   {
+    "span": "huh?",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘huh?’ 作为句末疑问助词，虽具口语性，但偏美式随意甚至略显质疑/不耐烦，与原文‘呀’所带的轻松、促狭、共谋式调侃语气不完全匹配；字幕中更自然的收尾可为 ‘right?’、‘huh?’（需语境支撑）或省略，靠语调传递。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 295,
+   "completion_tokens": 357
+  }
+ },
+ "m-141": {
+  "errors": [
+   {
+    "span": "I'm begging you",
+    "category": "style",
+    "severity": "minor",
+    "note": "‘I'm begging you’ 过于书面化且强度过高，不符合中文原句‘求你了’在游戏语境中高频、急切但口语化的语气；字幕中更自然的表达应为‘Please’或‘Come on’等轻量级恳求用语。"
+   },
+   {
+    "span": "I really wanna rank up",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘wanna’ 在正式字幕中属非标准缩写，虽常见于口语，但MQM字幕规范推荐使用‘want to’以确保清晰度与可读性（尤其对非母语观众或听力障碍者）；且‘rank up’作为动词短语在此处略显生硬，游戏本地化惯例更常用‘climb the ranks’或‘get ranked up’。"
+   },
+   {
+    "span": "Please, don't leave.",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘don't leave’ 误译原文‘别走’——此处‘别走’是玩家对队友/开黑伙伴的挽留，语境明确指向‘别退出游戏/别挂机/别断开连接’，而非物理离开；正确译法应体现游戏行为，如‘don’t quit’‘don’t disconnect’或‘stay in the game’。"
+   }
+  ],
+  "score": -7,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 348
+  }
+ },
+ "m-148": {
+  "errors": [
+   {
+    "span": "That's so random",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘好抽象’在此语境中是网络流行语，表示某事难以理解、逻辑跳跃、无厘头或缺乏上下文关联，常对应‘so abstract’‘so out of left field’或‘that came out of nowhere’；‘random’虽在美式口语中偶有类似用法，但极易引发歧义（暗示‘随意’‘随机’而非‘无逻辑/难理解’），且与中文原意偏差明显，属误译。"
+   },
+   {
+    "span": "She marveled at how pale I was",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "‘感叹我好白’中的‘白’指肤色浅（偏白），但中文‘白’在该语境下是中性甚至略带褒义的日常描述，而‘pale’在英语中常含病态、虚弱、不健康等负面隐含义（如 pale from illness），与原文轻松、好奇的语气严重不符；应译为 ‘how fair I was’ 或 ‘how light my skin was’ 更准确自然。"
+   }
+  ],
+  "score": -10,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 321,
+   "completion_tokens": 281
+  }
+ },
+ "m-144": {
+  "errors": [
+   {
+    "span": "figure reasoning",
+    "category": "terminology",
+    "severity": "major",
+    "note": "‘图形专项’在公考语境中特指‘图形推理’模块，是固定术语；译为‘figure reasoning’虽字面可解，但行业通用译法为‘graphic reasoning’（如中公、粉笔等机构官方英译及海外中文考试资料均用 graphic reasoning），‘figure reasoning’易与数学中的‘figure’（几何图形）混淆，造成专业性偏差。"
+   },
+   {
+    "span": "Huatu Module Treasure Book",
+    "category": "terminology",
+    "severity": "major",
+    "note": "《华图模块宝典》是正式出版物名称，应采用华图教育官方英文名或通行译法；经查证，华图官网及图书版权页英文名为 ‘Huatu Module Bible’（‘Bible’喻指权威备考宝典），‘Treasure Book’属生造词，无依据且削弱专业感。"
+   },
+   {
+    "span": "the explanations are very systematic",
+    "category": "fluency",
+    "severity": "minor",
+    "note": "‘very systematic’在字幕英语中略显书面化且冗余；母语者描述讲解风格更自然地说 ‘clearly structured’ 或 ‘well-organized’，‘systematic’作形容词修饰‘explanations’虽语法正确，但搭配生硬，不符合字幕简洁口语化要求。"
+   }
+  ],
+  "score": -11,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 305,
+   "completion_tokens": 343
+  }
+ },
+ "m-145": {
+  "errors": [
+   {
+    "span": "A 996 corporate drone like me",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：原文‘996社畜’是自嘲第三方视角（‘你’在讽刺‘我’），译文用‘like me’错误地将说话人等同为996社畜，而原文语境中说话人是在调侃对方（‘我看你是还没清醒吧’），‘996社畜’指代的是被调侃的‘你’，非说话人自己。"
+   },
+   {
+    "span": "slouching at home",
+    "category": "accuracy",
+    "severity": "major",
+    "note": "误译：‘葛优躺’是特指一种瘫软、极度放松的标志性躺姿（源自演员葛优的经典形象），具有强烈文化意象和幽默感；‘slouching’仅表‘懒散坐/站’，无法传达‘平躺+瘫软+戏谑’的完整语义，且不包含‘躺’的核心动作。"
+   },
+   {
+    "span": "the delivery guy is my best buddy",
+    "category": "style",
+    "severity": "major",
+    "note": "语气失当：原文‘外卖小哥就是我最好的玩伴’是夸张反讽式口语（社畜孤独到把送外卖的人当玩伴），含荒诞自嘲；‘my best buddy’过于直白友好，消解了原文的黑色幽默与辛酸调侃，不符合字幕所需的口语化反讽风格。"
+   }
+  ],
+  "score": -15,
+  "worst": "major",
+  "parse_error": "",
+  "judge_tokens": {
+   "prompt_tokens": 333,
+   "completion_tokens": 359
+  }
+ }
+}
