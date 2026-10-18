@@ -3,7 +3,8 @@
 MQM 评测只需要原文，不需要手写翻译要点，所以可以低成本扩大规模。
 新抽样的句子用大模型批量标注分类（只用于分组统计，不影响打分）。
 
-运行：python scripts/build_mqm_set.py
+运行：python scripts/build_mqm_set.py              # 从头构建
+      python scripts/build_mqm_set.py extend 800   # 保留已有条目，再追加 800 条（已有评测结果可复用）
 输出：data/eval/mqm_set.json
 """
 import json
@@ -44,6 +45,28 @@ def categorize(batch):
     return [c if c in CATEGORIES else "普通句子" for c in cats] if len(cats) == len(batch) else ["普通句子"] * len(batch)
 
 
+def label(sample, first_id):
+    items = []
+    for start in range(0, len(sample), 25):
+        batch = sample[start:start + 25]
+        for j, (s, cat) in enumerate(zip(batch, categorize(batch))):
+            items.append({"id": f"m-{first_id + start + j:03d}", "source": s, "before": [], "category": cat,
+                          "origin": "语料训练集抽样"})
+        print(f"已分类 {min(start + 25, len(sample))}/{len(sample)}", file=sys.stderr)
+    return items
+
+
+def extend(n):
+    items = json.loads(OUT.read_text(encoding="utf-8"))
+    used = {i["source"] for i in items}
+    first = max(int(i["id"][2:]) for i in items if i["id"].startswith("m-")) + 1
+    random.seed(SEED + len(items))   # 换一个种子，避免和第一次抽样重复
+    items += label(random.sample([s for s in sentences() if s not in used], n), first)
+    OUT.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
+    from collections import Counter
+    print(f"评测集共 {len(items)} 条：{dict(Counter(i['category'] for i in items))}")
+
+
 def main():
     old = json.loads((ROOT / "data/eval/cases.json").read_text(encoding="utf-8"))
     ctx = json.loads((ROOT / "data/eval/context_cases.json").read_text(encoding="utf-8"))
@@ -54,11 +77,7 @@ def main():
     pool = [s for s in sentences() if s not in used]
     random.seed(SEED)
     sample = random.sample(pool, NEW_SAMPLES)
-    for start in range(0, len(sample), 25):
-        batch = sample[start:start + 25]
-        for j, (s, cat) in enumerate(zip(batch, categorize(batch))):
-            items.append({"id": f"m-{start + j + 1:03d}", "source": s, "before": [], "category": cat, "origin": "语料训练集抽样"})
-        print(f"已分类 {min(start + 25, len(sample))}/{len(sample)}", file=sys.stderr)
+    items += label(sample, 1)
 
     OUT.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
     from collections import Counter
@@ -66,4 +85,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "extend":
+        extend(int(sys.argv[2]) if len(sys.argv) > 2 else 800)
+    else:
+        main()
